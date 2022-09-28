@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Block from 'components/Block'
 import Footer from 'components/Footer'
 
@@ -44,11 +45,13 @@ export default function Home() {
             description="Discover and deploy boilerplate example Next.js projects."
           />
 
-          <Block
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            title="Deploy"
-            description="Instantly deploy your Next.js site to a public URL with Vercel."
-          />
+          <Link href="/example" passHref>
+            <Block
+              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              title="Go to another page"
+              description="GOGO"
+            />
+          </Link>
         </div>
       </main>
 

@@ -1,0 +1,37 @@
+import Head from 'next/head'
+import Link from 'next/link'
+import Block from 'components/Block'
+import Footer from 'components/Footer'
+import LoopAnimationExample from 'components/LoopAnimationExample'
+
+export default function Example() {
+  return (
+    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+      <Head>
+        <title>Exmaple pages</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
+        <h1 className="text-6xl font-bold">
+          Welcome to Example pages!
+        </h1>
+
+        <p className="mt-3 text-2xl">
+          This page has nothing to do....
+        </p>
+
+        <p className="mt-3 text-2xl">
+          <Link href="/">
+            <a className="text-blue-600">Back to top</a>
+          </Link>
+        </p>
+        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
+          <LoopAnimationExample text='Exmaple' />
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  )
+}
