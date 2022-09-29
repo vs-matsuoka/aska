@@ -1,6 +1,14 @@
 {
-  "name": "boilerplate-tw",
+  "name": "aska",
   "private": true,
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --fix"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
@@ -12,7 +20,9 @@
     "test:ci": "jest --runInBand",
     "generate": "yarn plop --plopfile generators/plopfile.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepare": "git config --local core.hooksPath .githooks && echo 'githooks installed' || echo 'githooks install failed'",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "autoprefixer": "^10.4.2",
@@ -47,6 +57,7 @@
     "eslint-plugin-storybook": "^0.6.4",
     "eslint-plugin-tailwindcss": "^3.3.2",
     "jest": "^27.4.7",
+    "lint-staged": "^13.0.3",
     "plop": "^3.0.5",
     "prettier": "2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.1",
