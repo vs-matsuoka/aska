@@ -6,7 +6,7 @@
 
 ### Prerequisites
 
-- Node.js v18.2.0
+- Node.js v18.10.0
   - どの手段で導入しても良いですが [nodenv](https://github.com/nodenv/nodenv) を使うことをおすすめします
 
 ### Run
