@@ -27,7 +27,7 @@ export default function ParallaxExample() {
           {
             speed: -20,
             children: (
-              <Image src={"banner-background.jpg"}
+              <Image src="/banner-background.jpg"
                 alt="background"
                 layout="fill"
               ></Image>
@@ -36,7 +36,7 @@ export default function ParallaxExample() {
           {
             speed: -40,
             children: (
-              <Image src={"volga.png"}
+              <Image src="/volga.png"
                 alt="volga"
                 layout="responsive"
                 width={4000}
@@ -47,7 +47,7 @@ export default function ParallaxExample() {
           {
             speed: -10,
             children: (
-              <Image src={"banner-foreground.png"}
+              <Image src="/banner-foreground.png"
                 alt="foreground"
                 layout="fill"
               ></Image>
