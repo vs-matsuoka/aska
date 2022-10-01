@@ -12,7 +12,8 @@
 ### Run
 
 ```bash
-yar
+corepack enable # エラーが出た場合は npm i -g corepack && nodenv rehash した後にもう一度実行してください
+yarn
 yarn dev
 ```
 
