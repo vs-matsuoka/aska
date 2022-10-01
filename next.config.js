@@ -5,7 +5,6 @@ module.exports = {
     unoptimized: true,
   },
   basePath: process.env.GITHUB_ACTIONS && "/aska",
-  assetPrefix: process.env.GITHUB_ACTIONS && "/aska/",
   trailingSlash: true,
   webpack: (config, { isServer }) => {
     if (!isServer) {

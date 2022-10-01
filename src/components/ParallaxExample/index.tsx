@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Parallax, ParallaxBanner, useParallax } from 'react-scroll-parallax'
+import { useAssetPath } from 'hooks/useAssetPath';
 
 export default function ParallaxExample() {
   const { ref: ref1 } = useParallax<HTMLHeadingElement>({ speed: 5 });
@@ -27,7 +28,7 @@ export default function ParallaxExample() {
           {
             speed: -20,
             children: (
-              <Image src="/banner-background.jpg"
+              <Image src={useAssetPath("/banner-background.jpg")}
                 alt="background"
                 layout="fill"
               ></Image>
@@ -36,7 +37,7 @@ export default function ParallaxExample() {
           {
             speed: -40,
             children: (
-              <Image src="/volga.png"
+              <Image src={useAssetPath("/volga.png")}
                 alt="volga"
                 layout="responsive"
                 width={4000}
@@ -47,7 +48,7 @@ export default function ParallaxExample() {
           {
             speed: -10,
             children: (
-              <Image src="/banner-foreground.png"
+              <Image src={useAssetPath("/banner-foreground.png")}
                 alt="foreground"
                 layout="fill"
               ></Image>
