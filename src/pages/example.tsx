@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Block from 'components/Block'
 import Footer from 'components/Footer'
 import LoopAnimationExample from 'components/LoopAnimationExample'
+import ParallaxExample from 'components/ParallaxExample'
 
 export default function Example() {
   return (
@@ -12,7 +13,7 @@ export default function Example() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
+      <main className="flex w-full flex-1 flex-col items-center justify-center text-center">
         <h1 className="text-6xl font-bold">
           Welcome to Example pages!
         </h1>
@@ -26,9 +27,8 @@ export default function Example() {
             <a className="text-blue-600">Back to top</a>
           </Link>
         </p>
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <LoopAnimationExample text='Exmaple' />
-        </div>
+        <LoopAnimationExample text='Exmaple' />
+        <ParallaxExample />
       </main>
 
       <Footer />

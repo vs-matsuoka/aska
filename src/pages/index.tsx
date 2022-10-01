@@ -47,8 +47,8 @@ export default function Home() {
 
           <Link href="/example" passHref>
             <Block
-              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              title="Go to another page"
+              href="https://placeholder.example.com"
+              title="てすとぺーじ"
               description="GOGO"
             />
           </Link>
