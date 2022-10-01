@@ -5,6 +5,8 @@ module.exports = {
     loader: "akamai",
     path: "",
   },
+  basePath: process.env.GITHUB_ACTIONS && "/aska",
+  trailingSlash: true,
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback.util = require.resolve("util/");
