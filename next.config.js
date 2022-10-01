@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
-  images: {
-    loader: "akamai",
-    path: "",
-  },
+  images: { unoptimized: true },
   basePath: process.env.GITHUB_ACTIONS && "/aska",
   trailingSlash: true,
   webpack: (config, { isServer }) => {
