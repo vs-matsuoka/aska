@@ -1,6 +1,5 @@
-name: Deploy to GitHub Pages
+name: deploy-to-github-pages
 
-# main ブランチ の push 時にこのワークフローを実行する
 on:
   push:
     branches:
