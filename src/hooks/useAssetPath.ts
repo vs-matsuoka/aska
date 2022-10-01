@@ -1,6 +1,10 @@
 import { useRouter } from 'next/router'
+import urlJoin from 'url-join'
 
 export const useAssetPath = (path: string) => {
-  const { basePath } = useRouter()
-  return `${basePath ? basePath : ''}/${path}`
+  let { basePath } = useRouter()
+  if (basePath) {
+    return urlJoin(basePath, path)
+  }
+  return path
 }

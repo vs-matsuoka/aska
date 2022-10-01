@@ -11,7 +11,7 @@ const Footer = () => (
     >
       Powered by{' '}
       <Image
-        src={useAssetPath("vercel.svg")}
+        src={useAssetPath("/vercel.svg")}
         alt="Vercel Logo"
         className="ml-2 h-4"
         width={100}
