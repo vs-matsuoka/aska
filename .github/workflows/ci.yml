@@ -18,8 +18,7 @@ jobs:
         id: yarn-cache
         with:
           path: |
-            ~/cache
-            !~/cache/exclude
+            ~/.next/cache
             **/node_modules
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
