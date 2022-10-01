@@ -13,6 +13,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "serve": "yarn build && serve ./out",
+    "aska-serve": "GITHUB_ACTIONS=true yarn build && serve ./",
     "start": "next start",
     "lint": "next lint",
     "test": "jest --maxWorkers=50%",
