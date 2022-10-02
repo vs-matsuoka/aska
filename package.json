@@ -16,6 +16,7 @@
     "aska-serve": "GITHUB_ACTIONS=true yarn build && serve ./",
     "start": "next start",
     "lint": "next lint",
+    "fix": "next lint --fix",
     "test": "jest --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
     "test:ci": "jest --runInBand",

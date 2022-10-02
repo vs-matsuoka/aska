@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Block from 'components/Block'
-import Footer from 'components/Footer'
+import Head from 'next/head';
+import Link from 'next/link';
+import Block from 'components/Block';
+import Footer from 'components/Footer';
 
 export default function Home() {
   return (
@@ -57,5 +57,5 @@ export default function Home() {
 
       <Footer />
     </div>
-  )
+  );
 }

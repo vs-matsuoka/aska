@@ -1,8 +1,8 @@
 export type BlockProps = {
-  href: string
-  title: string
-  description: string
-}
+  href: string;
+  title: string;
+  description: string;
+};
 
 const Block = ({ href, title, description }: BlockProps) => (
   <a
@@ -12,6 +12,6 @@ const Block = ({ href, title, description }: BlockProps) => (
     <h3 className="text-2xl font-bold">{title} &rarr;</h3>
     <p className="mt-4 text-xl">{description}</p>
   </a>
-)
+);
 
-export default Block
+export default Block;

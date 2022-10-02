@@ -1,11 +1,11 @@
-import { Story, Meta, ComponentStoryObj } from '@storybook/react'
-import { ParallaxProvider } from 'react-scroll-parallax'
-import ParallaxExample from '.'
+import { Story, Meta, ComponentStoryObj } from '@storybook/react';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import ParallaxExample from '.';
 
 export default {
   title: 'ParallaxExample',
   component: ParallaxExample
-} as Meta
+} as Meta;
 
 export const Default: ComponentStoryObj<typeof ParallaxExample> = {
   decorators: [
@@ -15,6 +15,6 @@ export const Default: ComponentStoryObj<typeof ParallaxExample> = {
       </ParallaxProvider>
     )
   ]
-}
+};
 
-Default.args = {}
+Default.args = {};

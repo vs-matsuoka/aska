@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import { useAssetPath } from 'hooks/useAssetPath'
+import Image from 'next/image';
+import { useAssetPath } from 'hooks/useAssetPath';
 
 const Footer = () => (
   <footer className="flex h-24 w-full items-center justify-center border-t">
@@ -11,7 +11,7 @@ const Footer = () => (
     >
       Powered by{' '}
       <Image
-        src={useAssetPath("/vercel.svg")}
+        src={useAssetPath('/vercel.svg')}
         alt="Vercel Logo"
         className="ml-2 h-4"
         width={100}
@@ -19,6 +19,6 @@ const Footer = () => (
       />
     </a>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;
