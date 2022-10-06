@@ -53,7 +53,6 @@ export default function Home() {
             />
           </Link>
 
-
           <Link href="/contestants" passHref>
             <Block
               href="https://placeholder.example.com"

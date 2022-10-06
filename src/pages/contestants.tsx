@@ -3,7 +3,13 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { useAssetPath } from 'hooks/useAssetPath';
 
-function ContestantBox(text: string, odd: boolean, shifting: boolean) {
+export type ContestantBoxProps = {
+  text: string;
+  odd: boolean;
+  shifting: boolean;
+};
+
+function ContestantBox({ text, odd, shifting }: ContestantBoxProps) {
   const shift = shifting ? '' : 'translate-x-[-50%]';
   const bg = odd ? 'bg-red' : 'bg-blue';
   const image = odd ? '/dog.png' : '/cat.png';
@@ -25,7 +31,13 @@ function ContestantBox(text: string, odd: boolean, shifting: boolean) {
   );
 }
 
-function CombinationBox(text1: string, text2: string, shifting: boolean) {
+export type CombinationBoxProps = {
+  text1: string;
+  text2: string;
+  shifting: boolean;
+};
+
+function CombinationBox({ text1, text2, shifting }: CombinationBoxProps) {
   const shift = shifting ? '' : 'translate-x-[-25%]';
   return (
     <div className={`col-span-2 flex -skew-x-6 shadow-xl ${shift}`}>
@@ -95,15 +107,25 @@ export default function Contestants() {
       <main className="w-full">
         {isContestant ? (
           <div className="grid -skew-y-6 grid-cols-[repeat(8,6rem)] place-content-center items-center justify-center gap-3 text-center">
-            {contestants.map((n, i) =>
-              ContestantBox(n, i % 2 === 0, i % (8 * 2) >= 8)
-            )}
+            {contestants.map((n, i) => (
+              <ContestantBox
+                text={n}
+                odd={i % 2 === 0}
+                shifting={i % (8 * 2) >= 8}
+                key={i}
+              />
+            ))}
           </div>
         ) : (
           <div className="grid -skew-y-6 grid-cols-[repeat(8,6rem)] place-content-center items-center justify-center gap-3 text-center">
-            {combinations.map((combi, i) =>
-              CombinationBox(combi[0], combi[1], i % (4 * 2) >= 4)
-            )}
+            {combinations.map((combi, i) => (
+              <CombinationBox
+                text1={combi[0]}
+                text2={combi[1]}
+                shifting={i % (4 * 2) >= 4}
+                key={i}
+              />
+            ))}
           </div>
         )}
       </main>
