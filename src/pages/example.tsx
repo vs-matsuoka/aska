@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Block from 'components/Block';
 import Footer from 'components/Footer';
 import LoopAnimationExample from 'components/LoopAnimationExample';
 import ParallaxExample from 'components/ParallaxExample';
