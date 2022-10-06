@@ -6,7 +6,7 @@ export type BlockProps = {
 
 const Block = ({ href, title, description }: BlockProps) => (
   <a
-    className="mt-6 flex w-96 flex-col rounded-xl border p-6 text-left hover:text-blue focus:text-blue"
+    className="mt-6 flex w-96 flex-col rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
     href={href}
   >
     <h3 className="text-2xl font-bold">{title} &rarr;</h3>

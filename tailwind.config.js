@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        black: '#191919',
-        red: '#b22d37',
-        blue: '#1146b3',
-        gold: {
+        mdmBlack: '#191919',
+        mdmRed: '#b22d37',
+        mdmBlue: '#1146b3',
+        mdmGold: {
           100: '#ccad70',
           900: '#b39d32'
         }
