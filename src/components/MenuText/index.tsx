@@ -8,7 +8,13 @@ export type MenuTextProps = {
 
 const MenuText = ({ href, imagePath }: MenuTextProps) => (
   <a href={href}>
-    <Image src={useAssetPath(imagePath)} />
+    <Image
+      src={useAssetPath(imagePath)}
+      alt="MenuBar Text"
+      layout="fixed"
+      width={150}
+      height={50}
+    />
   </a>
 );
 
