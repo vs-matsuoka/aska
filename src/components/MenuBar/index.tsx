@@ -5,7 +5,7 @@ const MenuBar = () => (
   <Image
     src={useAssetPath('/MenuBar/00_Menu_Base.png')}
     alt="MenuBar Base"
-    layout="responsive"
+    layout="fixed"
     width={1920}
     height={300}
   />
