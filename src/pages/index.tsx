@@ -60,6 +60,14 @@ export default function Home() {
               description="GOGO"
             />
           </Link>
+
+          <Link href="/top" passHref>
+            <Block
+              href="https://placeholder.example.com"
+              title="トップページ"
+              description="GOGO"
+            />
+          </Link>
         </div>
       </main>
 
