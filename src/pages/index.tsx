@@ -56,7 +56,7 @@ export default function Home() {
           <Link href="/contestants" passHref>
             <Block
               href="https://placeholder.example.com"
-              title="出場者一覧"
+              title="出場者一覧!"
               description="GOGO"
             />
           </Link>
