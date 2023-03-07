@@ -4,7 +4,6 @@ module.exports = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.GITHUB_ACTIONS && "/aska",
   trailingSlash: true,
   webpack: (config, { isServer }) => {
     if (!isServer) {

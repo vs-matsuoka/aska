@@ -26,7 +26,7 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 - `dev`: runs your application on `localhost:3000`
 - `build`: creates the production build version
 - `serve`: runs server application for static files
-- `aska-serve`: runs server application for static files, but it receives as `http://localhost:3000/aska`
+- `aska-serve`: runs server application for static files
 - `start`: starts a simple server with the build production code
 - `lint`: runs the linter in all components and pages
 - `fix`: runs the linter and fix codes
