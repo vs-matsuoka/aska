@@ -3,7 +3,7 @@ import { useAssetPath } from 'hooks/useAssetPath';
 
 export default function Top() {
   return (
-    <div className="static">
+    <div className="relative flex w-full items-center justify-center">
       <Image
         src={useAssetPath('/top/11_Top_pic_BG.png')}
         alt="background"
@@ -30,7 +30,7 @@ export default function Top() {
           height={1250}
         />
       </div>
-      <div className="absolute inset-0">
+      <div className="absolute top-0">
         <Image
           src={useAssetPath('/top/11_Top_pic_Overlay.png')}
           alt="overlay"
@@ -40,45 +40,7 @@ export default function Top() {
         />
       </div>
 
-      <div className="absolute top-[561px] left-[540px]">
-        <Image
-          src={useAssetPath('/top/11_Top_Text_12_Tate.png')}
-          alt="lefttext"
-          layout="fixed"
-          width={200}
-          height={500}
-        />
-      </div>
-      <div className="absolute top-[561px] left-[1180px]">
-        <Image
-          src={useAssetPath('/top/11_Top_Text_11_Tate.png')}
-          alt="righttext"
-          layout="fixed"
-          width={200}
-          height={500}
-        />
-      </div>
-
-      <div className="absolute top-[685px] left-[725px]">
-        <Image
-          src={useAssetPath('/top/11_Top_Frame_Right.png')}
-          alt="rightframe"
-          layout="fixed"
-          width={70}
-          height={380}
-        />
-      </div>
-      <div className="absolute top-[685px] left-[1125px]">
-        <Image
-          src={useAssetPath('/top/11_Top_Frame_Left.png')}
-          alt="leftframe"
-          layout="fixed"
-          width={70}
-          height={380}
-        />
-      </div>
-
-      <div className="absolute top-[89px] left-[597px]">
+      <div className="absolute top-[89px]">
         <Image
           src={useAssetPath('/top/11_Top_pic_Logo.png')}
           alt="logo"
@@ -87,7 +49,7 @@ export default function Top() {
           height={475}
         />
       </div>
-      <div className="absolute top-[533px] left-[760px]">
+      <div className="absolute top-[533px]">
         <Image
           src={useAssetPath('/top/11_Top_Text_01.png')}
           alt="date"
@@ -96,23 +58,27 @@ export default function Top() {
           height={125}
         />
       </div>
-      <div className="absolute top-[631px] left-[760px] flex flex-row justify-center">
-        <Image
-          src={useAssetPath('/top/11_Top_Text_02_niconico.png')}
-          alt="niconico"
-          layout="fixed"
-          width={200}
-          height={60}
-        />
-        <Image
-          src={useAssetPath('/top/11_Top_Text_03_youtube.png')}
-          alt="youtube"
-          layout="fixed"
-          width={200}
-          height={60}
-        />
+      <div className="absolute top-[631px] flex flex-row justify-center -space-x-[20px]">
+        <div>
+          <Image
+            src={useAssetPath('/top/11_Top_Text_02_niconico.png')}
+            alt="niconico"
+            layout="fixed"
+            width={200}
+            height={60}
+          />
+        </div>
+        <div>
+          <Image
+            src={useAssetPath('/top/11_Top_Text_03_youtube.png')}
+            alt="youtube"
+            layout="fixed"
+            width={200}
+            height={60}
+          />
+        </div>
       </div>
-      <div className="absolute top-[676px] left-[870px]">
+      <div className="absolute top-[676px]">
         <Image
           src={useAssetPath('/top/11_Top_Text_04_Twitter.png')}
           alt="twitter"
@@ -120,6 +86,48 @@ export default function Top() {
           width={180}
           height={70}
         />
+      </div>
+
+      <div className="absolute top-[561px] flex flex-row justify-center space-x-[430px]">
+        <div>
+          <Image
+            src={useAssetPath('/top/11_Top_Text_12_Tate.png')}
+            alt="lefttext"
+            layout="fixed"
+            width={200}
+            height={500}
+          />
+        </div>
+        <div>
+          <Image
+            src={useAssetPath('/top/11_Top_Text_11_Tate.png')}
+            alt="righttext"
+            layout="fixed"
+            width={200}
+            height={500}
+          />
+        </div>
+      </div>
+
+      <div className="absolute top-[685px] flex flex-row justify-center space-x-[330px]">
+        <div>
+          <Image
+            src={useAssetPath('/top/11_Top_Frame_Right.png')}
+            alt="rightframe"
+            layout="fixed"
+            width={70}
+            height={380}
+          />
+        </div>
+        <div>
+          <Image
+            src={useAssetPath('/top/11_Top_Frame_Left.png')}
+            alt="leftframe"
+            layout="fixed"
+            width={70}
+            height={380}
+          />
+        </div>
       </div>
     </div>
   );
