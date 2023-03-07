@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { useAssetPath } from 'hooks/useAssetPath';
-import MenuText from 'components/MenuText';
 
 const MenuBar = () => (
   <div className="relative">
@@ -11,12 +10,52 @@ const MenuBar = () => (
       width={1920}
       height={300}
     />
-    <div className="absolute inset-1/2 flex flex-row items-center justify-center">
-      <MenuText href="" imagePath="MenuBar/00_Menu_Text_01.png" />
-      <MenuText href="" imagePath="MenuBar/00_Menu_Text_02.png" />
-      <MenuText href="" imagePath="MenuBar/00_Menu_Text_03.png" />
-      <MenuText href="" imagePath="MenuBar/00_Menu_Text_04.png" />
-      <MenuText href="" imagePath="MenuBar/00_Menu_Text_05.png" />
+    <div className="absolute inset-1/2 flex flex-row items-center justify-center space-x-[37px]">
+      <a href="#">
+        <Image
+          src={useAssetPath('MenuBar/00_Menu_Text_01.png')}
+          alt="overview"
+          layout="fixed"
+          width={150}
+          height={50}
+        />
+      </a>
+      <a href="#">
+        <Image
+          src={useAssetPath('MenuBar/00_Menu_Text_02.png')}
+          alt="contestant"
+          layout="fixed"
+          width={150}
+          height={50}
+        />
+      </a>
+      <a href="#">
+        <Image
+          src={useAssetPath('MenuBar/00_Menu_Text_03.png')}
+          alt="movie"
+          layout="fixed"
+          width={150}
+          height={50}
+        />
+      </a>
+      <a href="#">
+        <Image
+          src={useAssetPath('MenuBar/00_Menu_Text_04.png')}
+          alt="operation"
+          layout="fixed"
+          width={150}
+          height={50}
+        />
+      </a>
+      <a href="#">
+        <Image
+          src={useAssetPath('MenuBar/00_Menu_Text_05.png')}
+          alt="unknown"
+          layout="fixed"
+          width={150}
+          height={50}
+        />
+      </a>
     </div>
   </div>
 );
