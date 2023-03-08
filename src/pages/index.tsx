@@ -5,7 +5,7 @@ import MenuBar from 'components/MenuBar';
 export default function Top() {
   return (
     <>
-      <div className="relative overflow-hidden flex w-full items-center justify-center">
+      <div className="relative flex w-full items-center justify-center overflow-hidden">
         <Image
           src={useAssetPath('/top/11_Top_pic_BG.png')}
           alt="background"
@@ -14,24 +14,28 @@ export default function Top() {
           width={1920}
           height={1080}
         />
-        <div className="absolute -top-[11px] -left-[325px]">
-          <Image
-            src={useAssetPath('/top/11_Top_pic_KeyVisual_Zeus.png')}
-            alt="zeus"
-            layout="fixed"
-            width={1250}
-            height={1250}
-          />
+
+        <div className="absolute flex flex-row justify-center space-x-[0px]">
+          <div className="-top-[11px]">
+            <Image
+              src={useAssetPath('/top/11_Top_pic_KeyVisual_Zeus.png')}
+              alt="zeus"
+              layout="fixed"
+              width={1250}
+              height={1250}
+            />
+          </div>
+          <div className="top-[69px]">
+            <Image
+              src={useAssetPath('/top/11_Top_pic_KeyVisual_Amatelas.png')}
+              alt="amatelas"
+              layout="fixed"
+              width={1250}
+              height={1250}
+            />
+          </div>
         </div>
-        <div className="absolute top-[69px] left-[959px]">
-          <Image
-            src={useAssetPath('/top/11_Top_pic_KeyVisual_Amatelas.png')}
-            alt="amatelas"
-            layout="fixed"
-            width={1250}
-            height={1250}
-          />
-        </div>
+
         <div className="absolute top-0">
           <Image
             src={useAssetPath('/top/11_Top_pic_Overlay.png')}
