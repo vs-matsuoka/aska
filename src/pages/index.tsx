@@ -1,77 +1,140 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import Block from 'components/Block';
-import Footer from 'components/Footer';
+import Image from 'next/image';
+import { useAssetPath } from 'hooks/useAssetPath';
+import MenuBar from 'components/MenuBar';
 
-export default function Home() {
+export default function Top() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <Block
-            href="https://nextjs.org/docs"
-            title="Documentation"
-            description="Find in-depth information about Next.js features and API."
+    <>
+      <div className="relative flex w-full items-center justify-center">
+        <Image
+          src={useAssetPath('/top/11_Top_pic_BG.png')}
+          alt="background"
+          layout="fixed"
+          className="object-none"
+          width={1920}
+          height={1080}
+        />
+        <div className="absolute -top-[11px] -left-[325px]">
+          <Image
+            src={useAssetPath('/top/11_Top_pic_KeyVisual_Zeus.png')}
+            alt="zeus"
+            layout="fixed"
+            width={1250}
+            height={1250}
           />
-
-          <Block
-            href="https://nextjs.org/learn"
-            title="Learn"
-            description="Learn about Next.js in an interactive course with quizzes!"
-          />
-
-          <Block
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            title="Examples"
-            description="Discover and deploy boilerplate example Next.js projects."
-          />
-
-          <Link href="/example" passHref>
-            <Block
-              href="https://placeholder.example.com"
-              title="てすとぺーじ"
-              description="GOGO"
-            />
-          </Link>
-
-          <Link href="/contestants" passHref>
-            <Block
-              href="https://placeholder.example.com"
-              title="出場者一覧"
-              description="GOGO"
-            />
-          </Link>
-
-          <Link href="/top" passHref>
-            <Block
-              href="https://placeholder.example.com"
-              title="トップページ"
-              description="GOGO"
-            />
-          </Link>
         </div>
-      </main>
+        <div className="absolute top-[69px] left-[959px]">
+          <Image
+            src={useAssetPath('/top/11_Top_pic_KeyVisual_Amatelas.png')}
+            alt="amatelas"
+            layout="fixed"
+            width={1250}
+            height={1250}
+          />
+        </div>
+        <div className="absolute top-0">
+          <Image
+            src={useAssetPath('/top/11_Top_pic_Overlay.png')}
+            alt="overlay"
+            layout="fixed"
+            width={1920}
+            height={1080}
+          />
+        </div>
 
-      <Footer />
-    </div>
+        <div className="absolute top-[89px]">
+          <Image
+            src={useAssetPath('/top/11_Top_pic_Logo.png')}
+            alt="logo"
+            layout="fixed"
+            width={725}
+            height={475}
+          />
+        </div>
+        <div className="absolute top-[533px]">
+          <Image
+            src={useAssetPath('/top/11_Top_Text_01.png')}
+            alt="date"
+            layout="fixed"
+            width={400}
+            height={125}
+          />
+        </div>
+        <div className="absolute top-[631px] flex flex-row justify-center -space-x-[20px]">
+          <div>
+            <Image
+              src={useAssetPath('/top/11_Top_Text_02_niconico.png')}
+              alt="niconico"
+              layout="fixed"
+              width={200}
+              height={60}
+            />
+          </div>
+          <div>
+            <Image
+              src={useAssetPath('/top/11_Top_Text_03_youtube.png')}
+              alt="youtube"
+              layout="fixed"
+              width={200}
+              height={60}
+            />
+          </div>
+        </div>
+        <div className="absolute top-[676px]">
+          <Image
+            src={useAssetPath('/top/11_Top_Text_04_Twitter.png')}
+            alt="twitter"
+            layout="fixed"
+            width={180}
+            height={70}
+          />
+        </div>
+
+        <div className="absolute top-[561px] flex flex-row justify-center space-x-[430px]">
+          <div>
+            <Image
+              src={useAssetPath('/top/11_Top_Text_12_Tate.png')}
+              alt="lefttext"
+              layout="fixed"
+              width={200}
+              height={500}
+            />
+          </div>
+          <div>
+            <Image
+              src={useAssetPath('/top/11_Top_Text_11_Tate.png')}
+              alt="righttext"
+              layout="fixed"
+              width={200}
+              height={500}
+            />
+          </div>
+        </div>
+
+        <div className="absolute top-[685px] flex flex-row justify-center space-x-[330px]">
+          <div>
+            <Image
+              src={useAssetPath('/top/11_Top_Frame_Right.png')}
+              alt="rightframe"
+              layout="fixed"
+              width={70}
+              height={380}
+            />
+          </div>
+          <div>
+            <Image
+              src={useAssetPath('/top/11_Top_Frame_Left.png')}
+              alt="leftframe"
+              layout="fixed"
+              width={70}
+              height={380}
+            />
+          </div>
+        </div>
+        <div className="fixed -top-[110px]">
+          <MenuBar />
+        </div>
+      </div>
+    </>
   );
 }
