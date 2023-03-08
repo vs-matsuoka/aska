@@ -13,7 +13,7 @@ const MenuBar = () => (
     <div className="absolute inset-1/2 flex flex-row items-center justify-center space-x-[37px]">
       <a href="#">
         <Image
-          src={useAssetPath('MenuBar/00_Menu_Text_01.png')}
+          src={useAssetPath('/MenuBar/00_Menu_Text_01.png')}
           alt="overview"
           layout="fixed"
           width={150}
@@ -22,7 +22,7 @@ const MenuBar = () => (
       </a>
       <a href="#">
         <Image
-          src={useAssetPath('MenuBar/00_Menu_Text_02.png')}
+          src={useAssetPath('/MenuBar/00_Menu_Text_02.png')}
           alt="contestant"
           layout="fixed"
           width={150}
@@ -31,7 +31,7 @@ const MenuBar = () => (
       </a>
       <a href="#">
         <Image
-          src={useAssetPath('MenuBar/00_Menu_Text_03.png')}
+          src={useAssetPath('/MenuBar/00_Menu_Text_03.png')}
           alt="movie"
           layout="fixed"
           width={150}
@@ -40,7 +40,7 @@ const MenuBar = () => (
       </a>
       <a href="#">
         <Image
-          src={useAssetPath('MenuBar/00_Menu_Text_04.png')}
+          src={useAssetPath('/MenuBar/00_Menu_Text_04.png')}
           alt="operation"
           layout="fixed"
           width={150}
@@ -49,7 +49,7 @@ const MenuBar = () => (
       </a>
       <a href="#">
         <Image
-          src={useAssetPath('MenuBar/00_Menu_Text_05.png')}
+          src={useAssetPath('/MenuBar/00_Menu_Text_05.png')}
           alt="unknown"
           layout="fixed"
           width={150}
