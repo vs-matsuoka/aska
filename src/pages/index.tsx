@@ -5,7 +5,7 @@ import MenuBar from 'components/MenuBar';
 export default function Top() {
   return (
     <>
-      <div className="relative flex w-full items-center justify-center">
+      <div className="relative overflow-hidden flex w-full items-center justify-center">
         <Image
           src={useAssetPath('/top/11_Top_pic_BG.png')}
           alt="background"
