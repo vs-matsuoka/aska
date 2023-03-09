@@ -15,8 +15,8 @@ export default function Top() {
           height={1080}
         />
 
-        <div className="absolute flex flex-row justify-center space-x-[0px]">
-          <div className="-top-[11px]">
+        <div className="absolute -top-6 flex flex-row justify-center space-x-[0px]">
+          <div className="">
             <Image
               src={useAssetPath('/top/11_Top_pic_KeyVisual_Zeus.png')}
               alt="zeus"
@@ -25,7 +25,7 @@ export default function Top() {
               height={1250}
             />
           </div>
-          <div className="top-[69px]">
+          <div className="mt-24">
             <Image
               src={useAssetPath('/top/11_Top_pic_KeyVisual_Amatelas.png')}
               alt="amatelas"
