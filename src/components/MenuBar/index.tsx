@@ -2,14 +2,18 @@ import Image from 'next/future/image';
 
 const MenuBar = () => (
   <div className="relative">
-    <Image
-      src="/MenuBar/00_Menu_Base.png"
-      alt="MenuBar Base"
-      className="select-none"
-      width={1920}
-      height={300}
-    />
-    <div className="absolute inset-1/2 flex flex-row items-center justify-center space-x-[37px]">
+    <div className="absolute top-[-113px] h-[190px] w-screen">
+      <Image
+        src="/MenuBar/00_Menu_Base.png"
+        alt="MenuBar Base"
+        className="h-[190px] select-none"
+        fill
+        style={{
+          objectFit: 'fill'
+        }}
+      />
+    </div>
+    <div className="absolute inset-1/2 top-[36px] flex flex-row items-center justify-center space-x-[37px]">
       <a href="#">
         <Image
           src="/MenuBar/00_Menu_Text_01.png"

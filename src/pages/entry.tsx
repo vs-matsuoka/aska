@@ -1,5 +1,5 @@
 import Image from 'next/future/image';
-import MenuBar from 'components/MenuBar';
+import Layout from 'components/Layout';
 
 type ContestantRowProps = {
   contestantImages: string[];
@@ -89,41 +89,23 @@ export default function Entry() {
     ]
   ];
   return (
-    <div className="relative h-screen w-full justify-center">
-      <div className="fixed">
-        <div className="h-screen w-screen"></div>
+    <Layout>
+      <div className="relative">
         <Image
-          src="/Entry/21_Entry_pic_BG.png"
-          alt="background"
-          fill
-          style={{
-            objectFit: 'cover'
-          }}
+          className="absolute left-[2rem] top-[-11rem]"
+          alt="entry"
+          src="/Entry/21_Entry_text_01.png"
+          width={500}
+          height={250}
         />
+        {contestantImageRows.map((row, index) => (
+          <ContestantRow
+            key={index}
+            contestantImages={row}
+            offset={index * 46}
+          />
+        ))}
       </div>
-      <div className="fixed top-[-110px] flex w-full items-center justify-center">
-        <MenuBar />
-      </div>
-      <div className="relative flex h-screen w-full items-center justify-center overflow-hidden">
-        <div className="relative ">
-          <div className="">
-            <Image
-              className="absolute left-[2rem] top-[-11rem]"
-              alt="entry"
-              src="/Entry/21_Entry_text_01.png"
-              width={500}
-              height={250}
-            />
-          </div>
-          {contestantImageRows.map((row, index) => (
-            <ContestantRow
-              key={index}
-              contestantImages={row}
-              offset={index * 46}
-            />
-          ))}
-        </div>
-      </div>
-    </div>
+    </Layout>
   );
 }
