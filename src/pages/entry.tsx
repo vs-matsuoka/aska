@@ -6,8 +6,6 @@ type ContestantRowProps = {
   offset: number;
 };
 
-// (85, 64), (33, 207), (164, 185), (216, 41)
-
 function ContestantRow({ contestantImages, offset }: ContestantRowProps) {
   return (
     <div
@@ -89,15 +87,16 @@ export default function Entry() {
     ]
   ];
   return (
-    <Layout>
+    <Layout withVignette>
       <div className="relative">
-        <Image
-          className="absolute left-[2rem] top-[-11rem]"
-          alt="entry"
-          src="/Entry/21_Entry_text_01.png"
-          width={500}
-          height={250}
-        />
+        <div className="absolute left-[2rem] top-[-11rem]">
+          <Image
+            alt="entry"
+            src="/Entry/21_Entry_text_01.png"
+            width={500}
+            height={250}
+          />
+        </div>
         {contestantImageRows.map((row, index) => (
           <ContestantRow
             key={index}
@@ -105,6 +104,21 @@ export default function Entry() {
             offset={index * 46}
           />
         ))}
+        <div className="absolute right-[3rem] bottom-[-8rem]">
+          <Image
+            alt="conbi"
+            src="/Entry/21_Entry_text_02_base.png"
+            width={600}
+            height={200}
+          />
+          <Image
+            alt="conbi"
+            className="absolute top-0 left-0"
+            src="/Entry/21_Entry_text_02.png"
+            width={600}
+            height={200}
+          />
+        </div>
       </div>
     </Layout>
   );
