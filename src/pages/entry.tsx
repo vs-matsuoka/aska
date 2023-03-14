@@ -1,11 +1,129 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import Footer from 'components/Footer';
-import LoopAnimationExample from 'components/LoopAnimationExample';
-import ParallaxExample from 'components/ParallaxExample';
+import Image from 'next/future/image';
+import MenuBar from 'components/MenuBar';
+
+type ContestantRowProps = {
+  contestantImages: string[];
+  offset: number;
+};
+
+// (85, 64), (33, 207), (164, 185), (216, 41)
+
+function ContestantRow({ contestantImages, offset }: ContestantRowProps) {
+  return (
+    <div
+      className="grid skew-y-[-10deg] grid-cols-[repeat(10,143px)]"
+      style={{ paddingLeft: `${offset}px` }}
+    >
+      {contestantImages.map((image, index) => (
+        <div key={image} className="relative h-[150px] w-[90px] skew-y-[10deg]">
+          <div className="h-[140px] w-[122px] skew-x-[-20deg] skew-y-[-11deg] bg-transparent"></div>
+          <Image
+            src={image}
+            className="absolute left-[-63px] top-[-57px] max-w-none hover:scale-125"
+            alt="contestant"
+            width={250}
+            height={250}
+            useMap={`#${image}`}
+            style={{
+              clipPath: 'polygon(34% 25%, 88% 15%, 66% 75%, 12% 85%)'
+            }}
+            onMouseOver={(e) => {
+              console.log(image);
+            }}
+          />
+        </div>
+      ))}
+    </div>
+  );
+}
 
 export default function Entry() {
+  const contestantImageRows = [
+    [
+      '/Entry/Frame/21_Entry_Frame_01.png',
+      '/Entry/Frame/21_Entry_Frame_02.png',
+      '/Entry/Frame/21_Entry_Frame_03.png',
+      '/Entry/Frame/21_Entry_Frame_04.png',
+      '/Entry/Frame/21_Entry_Frame_05.png',
+      '/Entry/Frame/21_Entry_Frame_06.png',
+      '/Entry/Frame/21_Entry_Frame_07.png',
+      '/Entry/Frame/21_Entry_Frame_08.png',
+      '/Entry/Frame/21_Entry_Frame_09.png',
+      '/Entry/Frame/21_Entry_Frame_10.png'
+    ],
+    [
+      '/Entry/Frame/21_Entry_Frame_11.png',
+      '/Entry/Frame/21_Entry_Frame_12.png',
+      '/Entry/Frame/21_Entry_Frame_13.png',
+      '/Entry/Frame/21_Entry_Frame_14.png',
+      '/Entry/Frame/21_Entry_Frame_15.png',
+      '/Entry/Frame/21_Entry_Frame_16.png',
+      '/Entry/Frame/21_Entry_Frame_17.png',
+      '/Entry/Frame/21_Entry_Frame_18.png',
+      '/Entry/Frame/21_Entry_Frame_19.png',
+      '/Entry/Frame/21_Entry_Frame_20.png'
+    ],
+    [
+      '/Entry/Frame/21_Entry_Frame_21.png',
+      '/Entry/Frame/21_Entry_Frame_22.png',
+      '/Entry/Frame/21_Entry_Frame_23.png',
+      '/Entry/Frame/21_Entry_Frame_24.png',
+      '/Entry/Frame/21_Entry_Frame_25.png',
+      '/Entry/Frame/21_Entry_Frame_26.png',
+      '/Entry/Frame/21_Entry_Frame_27.png',
+      '/Entry/Frame/21_Entry_Frame_28.png',
+      '/Entry/Frame/21_Entry_Frame_29.png',
+      '/Entry/Frame/21_Entry_Frame_30.png'
+    ],
+    [
+      '/Entry/Frame/21_Entry_Frame_31.png',
+      '/Entry/Frame/21_Entry_Frame_32.png',
+      '/Entry/Frame/21_Entry_Frame_33.png',
+      '/Entry/Frame/21_Entry_Frame_34.png',
+      '/Entry/Frame/21_Entry_Frame_35.png',
+      '/Entry/Frame/21_Entry_Frame_36.png',
+      '/Entry/Frame/21_Entry_Frame_37.png',
+      '/Entry/Frame/21_Entry_Frame_38.png',
+      '/Entry/Frame/21_Entry_Frame_39.png',
+      '/Entry/Frame/21_Entry_Frame_40.png'
+    ]
+  ];
   return (
-    <div className="relative flex w-full items-center justify-center overflow-hidden"></div>
+    <div className="relative h-screen w-full justify-center">
+      <div className="fixed">
+        <div className="h-screen w-screen"></div>
+        <Image
+          src="/Entry/21_Entry_pic_BG.png"
+          alt="background"
+          fill
+          style={{
+            objectFit: 'cover'
+          }}
+        />
+      </div>
+      <div className="fixed top-[-110px] flex w-full items-center justify-center">
+        <MenuBar />
+      </div>
+      <div className="relative flex h-screen w-full items-center justify-center overflow-hidden">
+        <div className="relative ">
+          <div className="">
+            <Image
+              className="absolute left-[2rem] top-[-11rem]"
+              alt="entry"
+              src="/Entry/21_Entry_text_01.png"
+              width={500}
+              height={250}
+            />
+          </div>
+          {contestantImageRows.map((row, index) => (
+            <ContestantRow
+              key={index}
+              contestantImages={row}
+              offset={index * 46}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
