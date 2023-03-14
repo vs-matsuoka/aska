@@ -40,7 +40,7 @@ export default function Top() {
           <div className="fixed -top-[110px]">
             <MenuBar />
           </div>
-          <div className="absolute -top-6 flex flex-row justify-center space-x-[0px]">
+          <div className="absolute -top-6 flex flex-row justify-center space-x-[0px] pt-20">
             <div className="">
               <Image
                 src={useAssetPath('/top/11_Top_pic_KeyVisual_Zeus.png')}
@@ -71,7 +71,7 @@ export default function Top() {
             />
           </div>
 
-          <div className="absolute top-[89px]">
+          <div className="absolute bottom-[450px]">
             <Image
               src={useAssetPath('/top/11_Top_pic_Logo.png')}
               alt="logo"
@@ -80,7 +80,7 @@ export default function Top() {
               height={475}
             />
           </div>
-          <div className="absolute top-[533px]">
+          <div className="absolute bottom-[448px]">
             <Image
               src={useAssetPath('/top/11_Top_Text_01.png')}
               alt="date"
@@ -89,7 +89,7 @@ export default function Top() {
               height={125}
             />
           </div>
-          <div className="absolute top-[631px] flex flex-row justify-center -space-x-[20px]">
+          <div className="absolute bottom-[415px] flex flex-row justify-center -space-x-[20px]">
             <div>
               <Image
                 src={useAssetPath('/top/11_Top_Text_02_niconico.png')}
@@ -109,7 +109,7 @@ export default function Top() {
               />
             </div>
           </div>
-          <div className="absolute top-[676px]">
+          <div className="absolute bottom-[360px]">
             <Image
               src={useAssetPath('/top/11_Top_Text_04_Twitter.png')}
               alt="twitter"
@@ -119,7 +119,7 @@ export default function Top() {
             />
           </div>
 
-          <div className="absolute top-[561px] flex flex-row justify-center space-x-[430px]">
+          <div className="absolute bottom-[42px] flex flex-row justify-center space-x-[430px]">
             <div>
               <Image
                 src={useAssetPath('/top/11_Top_Text_12_Tate.png')}
@@ -140,7 +140,7 @@ export default function Top() {
             </div>
           </div>
 
-          <div className="absolute top-[685px] flex flex-row justify-center space-x-[330px]">
+          <div className="absolute bottom-[38px] flex flex-row justify-center space-x-[330px]">
             <div>
               <Image
                 src={useAssetPath('/top/11_Top_Frame_Right.png')}
