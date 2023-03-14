@@ -13,7 +13,7 @@ export default function Top() {
   }, []);
 
   return (
-    <div className="relative flex w-full items-center justify-center overflow-hidden">
+    <div className="relative flex h-screen w-full items-center justify-center overflow-hidden">
       {isLoading ? (
         <>
           <div className="fixed">
@@ -37,6 +37,9 @@ export default function Top() {
             height={1080}
           />
 
+          <div className="fixed -top-[110px]">
+            <MenuBar />
+          </div>
           <div className="absolute -top-6 flex flex-row justify-center space-x-[0px]">
             <div className="">
               <Image
@@ -156,9 +159,6 @@ export default function Top() {
                 height={380}
               />
             </div>
-          </div>
-          <div className="fixed -top-[110px]">
-            <MenuBar />
           </div>
         </>
       )}
