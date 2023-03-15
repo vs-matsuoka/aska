@@ -32,7 +32,7 @@ function Layout({ children, withVignette }: LayoutProps) {
           <div className="h-screen w-screen"></div>
           <Image
             src="/Entry/21_Entry_pic_vignette.png"
-            alt="background"
+            alt="vignette background"
             fill
             style={{
               objectFit: 'fill'

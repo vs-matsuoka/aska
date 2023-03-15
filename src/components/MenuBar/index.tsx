@@ -26,7 +26,7 @@ const MenuBar = () => (
       <a href="#">
         <Image
           src="/MenuBar/00_Menu_Text_02.png"
-          alt="contestant"
+          alt="entry"
           className="max-w-none"
           width={150}
           height={50}
