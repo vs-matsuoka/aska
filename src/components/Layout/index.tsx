@@ -6,7 +6,7 @@ type LayoutProps = {
   withVignette?: boolean;
 };
 
-function Layout({ children, withVignette }: LayoutProps) {
+function Layout({ children }: LayoutProps) {
   return (
     <div
       className="grid min-h-screen w-full justify-center"
@@ -15,33 +15,8 @@ function Layout({ children, withVignette }: LayoutProps) {
         gridTemplateColumns: '100%'
       }}
     >
-      <div className="fixed">
-        <div className="h-screen w-screen"></div>
-        <Image
-          src="/Entry/21_Entry_pic_BG.png"
-          alt="background"
-          className="-z-50"
-          fill
-          style={{
-            objectFit: 'cover'
-          }}
-        />
-      </div>
-      {withVignette && (
-        <div className="fixed">
-          <div className="h-screen w-screen"></div>
-          <Image
-            src="/Entry/21_Entry_pic_vignette.png"
-            alt="vignette background"
-            fill
-            style={{
-              objectFit: 'fill'
-            }}
-          />
-        </div>
-      )}
       <div className="pt-20"></div>
-      <div className="relative flex items-center justify-center">
+      <div className="relative flex items-center justify-center" data-testid="children">
         {children}
       </div>
       <div className="fixed w-full">

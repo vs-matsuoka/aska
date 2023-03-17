@@ -1,6 +1,7 @@
 import Image from 'next/future/image';
 import { useCallback, useState } from 'react';
 import { useSpring, animated, config } from 'react-spring';
+import Background from 'components/Background';
 import Layout from 'components/Layout';
 
 type ContestantRowProps = {
@@ -158,6 +159,7 @@ const contestantImageRows = [
 export default function Entry() {
   return (
     <Layout withVignette>
+      <Background src="/Entry/21_Entry_pic_BG.png" />
       <div className="relative">
         <div className="absolute left-[2rem] top-[-11rem]">
           <Image

@@ -1,21 +1,13 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen, waitFor, within } from '@testing-library/react';
 
 import Layout from '.';
 
 describe('<Layout />', () => {
   it('正しくレンダリングされる', async () => {
-    render(<Layout />);
+    render(<Layout><h1>AAAAAAAAAAAAAA</h1></Layout>);
 
-    expect(screen.getByAltText('background')).toBeInTheDocument();
-    expect(
-      screen.queryByAltText('vignette background')
-    ).not.toBeInTheDocument();
-  });
+    const { getByText } = within(screen.getByTestId("children"));
 
-  it('withVignetteで正しくレンダリングされる', () => {
-    render(<Layout withVignette />);
-
-    expect(screen.getByAltText('background')).toBeInTheDocument();
-    expect(screen.getByAltText('vignette background')).toBeInTheDocument();
+    expect(getByText("AAAAAAAAAAAAAA")).toBeInTheDocument();
   });
 });
