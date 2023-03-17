@@ -158,8 +158,9 @@ const contestantImageRows = [
 
 export default function Entry() {
   return (
-    <Layout withVignette>
+    <Layout>
       <Background src="/Entry/21_Entry_pic_BG.png" />
+      <Background src="/Entry/21_Entry_pic_vignette.png" />
       <div className="relative">
         <div className="absolute left-[2rem] top-[-11rem]">
           <Image
