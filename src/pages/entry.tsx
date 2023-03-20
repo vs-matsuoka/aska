@@ -1,4 +1,5 @@
 import Image from 'next/future/image';
+import Link from 'next/link';
 import { useCallback, useState } from 'react';
 import { useSpring, animated, config } from 'react-spring';
 import Background from 'components/Background';
@@ -78,29 +79,33 @@ function ToggleCombiButton() {
         width={480}
         height={105}
       />
-      <div className="absolute top-0 left-0 transition hover:scale-125"
-        onMouseEnter={trigger} onMouseLeave={reset}>
-        <animated.div
-          className="absolute top-0 left-0"
-          style={{
-            filter: 'brightness(0) invert(1)',
-            ...styles,
-          }}
-        >
-          <Image
-            alt="conbi"
-            src="/Entry/21_Entry_text_02.png"
-            width={480}
-            height={105}
-          />
-        </animated.div>
-        <Image
-          alt="conbi"
-          src="/Entry/21_Entry_text_02.png"
-          width={480}
-          height={150}
-        />
-      </div>
+      <Link href="/entry" passHref>
+        <a>
+          <div className="absolute top-0 left-0 transition hover:scale-125"
+            onMouseEnter={trigger} onMouseLeave={reset}>
+            <animated.div
+              className="absolute top-0 left-0"
+              style={{
+                filter: 'brightness(0) invert(1)',
+                ...styles,
+              }}
+            >
+              <Image
+                alt="conbi"
+                src="/Entry/21_Entry_text_02.png"
+                width={480}
+                height={105}
+              />
+            </animated.div>
+            <Image
+              alt="conbi"
+              src="/Entry/21_Entry_text_02.png"
+              width={480}
+              height={150}
+            />
+          </div>
+        </a>
+      </Link>
     </div>
   );
 }
