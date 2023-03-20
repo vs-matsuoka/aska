@@ -9,6 +9,7 @@ type LayoutProps = {
 function Layout({ children }: LayoutProps) {
   const redOffset = -40;
   const blueOffset = -redOffset;
+  // TODO: どうにか画面の比率から角度を計算して、それを使ってパスを作るようにしたい
   const [redPath] = useSpring(() => ({
     from: { clipPath: `polygon(${0 + redOffset}% ${-100 + redOffset}%, ${100 + redOffset}% ${0 + redOffset}%, ${0 + redOffset}% ${100 + redOffset}%, ${-100 + redOffset}% ${0 + redOffset}%)` },
     to: { clipPath: `polygon(${100 + blueOffset}% ${0 + blueOffset}%, ${200 + blueOffset}% ${100 + blueOffset}%, ${100 + blueOffset}% ${200 + blueOffset}%, ${0 + blueOffset}% ${100 + blueOffset}%)` },
