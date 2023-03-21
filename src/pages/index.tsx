@@ -1,98 +1,10 @@
-import { useState, useEffect } from 'react';
-import { useSpring, animated, easings } from 'react-spring';
 import Image from 'next/image';
 import { useAssetPath } from 'hooks/useAssetPath';
 import MenuBar from 'components/MenuBar';
 
-function UpTransition() {
-  const upStyles = useSpring({
-    duration: 1000,
-    from: { x: 1600, y: 900 },
-    to: { x: -1600, y: -900 }
-  });
-  return (
-    <animated.div style={{ ...upStyles }}>
-      <Image
-        src={useAssetPath('/SlideBar/01_slidebar_Red.png')}
-        alt="slidebarRed"
-        className="absolute"
-        layout="fixed"
-        width={3000}
-        height={2500}
-      />
-    </animated.div>
-  );
-}
-
-function DownTransition() {
-  const downStyles = useSpring({
-    duration: 1000,
-    from: { x: -1600, y: -900 },
-    to: { x: 1600, y: 900 }
-  });
-  return (
-    <animated.div style={{ ...downStyles }}>
-      <Image
-        src={useAssetPath('/SlideBar/01_slidebar_Blue.png')}
-        alt="slidebarBlue"
-        className="absolute"
-        layout="fixed"
-        width={3000}
-        height={2500}
-      />
-    </animated.div>
-  );
-}
-
-function Transition() {
-  const downStyles = useSpring({
-    duration: 1000,
-    from: { x: -1600, y: -900 },
-    to: { x: 0, y: 0 }
-  });
-  const upStyles = useSpring({
-    duration: 1000,
-    from: { x: 1600, y: 900 },
-    to: { x: 0, y: 0 }
-  });
-  return (
-    <>
-      <animated.div style={{ ...upStyles }}>
-        <Image
-          src={useAssetPath('/SlideBar/01_slidebar_Red.png')}
-          alt="slidebarRed"
-          className="absolute"
-          layout="fixed"
-          width={3000}
-          height={2500}
-        />
-      </animated.div>
-      <animated.div style={{ ...downStyles }}>
-        <Image
-          src={useAssetPath('/SlideBar/01_slidebar_Blue.png')}
-          alt="slidebarBlue"
-          className="absolute"
-          layout="fixed"
-          width={3000}
-          height={2500}
-        />
-      </animated.div>
-    </>
-  );
-}
-
 export default function Top() {
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2 * 1000);
-  }, []);
-
   return (
     <div className="relative flex h-screen w-full items-center justify-center overflow-hidden">
-      <>
         <Image
           src={useAssetPath('/top/11_Top_pic_BG.png')}
           alt="background"
@@ -225,30 +137,6 @@ export default function Top() {
             />
           </div>
         </div>
-      </>
-
-      {isLoading ? (
-        <>
-          <div className="fixed">
-            <Image
-              src={useAssetPath('/top/11_Top_pic_Logo.png')}
-              alt="logo"
-              layout="fixed"
-              width={725}
-              height={475}
-            />
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="absolute">
-            <UpTransition />
-          </div>
-          <div className="absolute">
-            <DownTransition />
-          </div>
-        </>
-      )}
     </div>
   );
 }
