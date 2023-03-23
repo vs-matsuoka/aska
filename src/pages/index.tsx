@@ -1,69 +1,112 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import Block from 'components/Block';
-import Footer from 'components/Footer';
+import Image from 'next/future/image';
+import { Timeline } from 'react-twitter-widgets';
+import Background from 'components/Background';
+import Layout from 'components/Layout';
 
-export default function Home() {
+export default function Top() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <Block
-            href="https://nextjs.org/docs"
-            title="Documentation"
-            description="Find in-depth information about Next.js features and API."
+    <Layout withOverflowHidden>
+      <Background src="/Top/11_Top_pic_BG.png" />
+      <div className="absolute -top-6 flex flex-row justify-center space-x-[0px]">
+        <div className="">
+          <Image
+            src="/Top/11_Top_pic_KeyVisual_Zeus.png"
+            alt="zeus"
+            className="max-w-none"
+            width={1250}
+            height={1250}
           />
-
-          <Block
-            href="https://nextjs.org/learn"
-            title="Learn"
-            description="Learn about Next.js in an interactive course with quizzes!"
-          />
-
-          <Block
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            title="Examples"
-            description="Discover and deploy boilerplate example Next.js projects."
-          />
-
-          <Link href="/example" passHref>
-            <Block
-              href="https://placeholder.example.com"
-              title="てすとぺーじ"
-              description="GOGO"
-            />
-          </Link>
-
-          <Link href="/contestants" passHref>
-            <Block
-              href="https://placeholder.example.com"
-              title="出場者一覧"
-              description="GOGO"
-            />
-          </Link>
         </div>
-      </main>
-
-      <Footer />
-    </div>
+        <div className="mt-24">
+          <Image
+            src="/Top/11_Top_pic_KeyVisual_Amatelas.png"
+            alt="amatelas"
+            className="max-w-none"
+            width={1250}
+            height={1250}
+          />
+        </div>
+      </div>
+      <Background src="/Top/11_Top_pic_Overlay.png" />
+      <div className="absolute bottom-[450px]">
+        <Image
+          src="/Top/11_Top_pic_Logo.png"
+          alt="logo"
+          width={725}
+          height={475}
+        />
+      </div>
+      <div className="absolute bottom-[448px]">
+        <Image
+          src="/Top/11_Top_Text_01.png"
+          alt="date"
+          width={400}
+          height={125}
+        />
+      </div>
+      <div className="absolute bottom-[415px] flex flex-row justify-center space-x-[-20px]">
+        <div>
+          <Image
+            src="/Top/11_Top_Text_02_niconico.png"
+            alt="niconico"
+            width={200}
+            height={60}
+          />
+        </div>
+        <div>
+          <Image
+            src="/Top/11_Top_Text_03_youtube.png"
+            alt="youtube"
+            width={200}
+            height={60}
+          />
+        </div>
+      </div>
+      <div className="absolute bottom-[360px]">
+        <Image
+          src="/Top/11_Top_Text_04_Twitter.png"
+          alt="twitter"
+          width={180}
+          height={70}
+        />
+      </div>
+      <div className="absolute bottom-[42px] flex flex-row justify-center space-x-[430px]">
+        <div>
+          <Image
+            src="/Top/11_Top_Text_12_Tate.png"
+            alt="lefttext"
+            width={200}
+            height={500}
+          />
+        </div>
+        <div>
+          <Image
+            src="/Top/11_Top_Text_11_Tate.png"
+            alt="righttext"
+            width={200}
+            height={500}
+          />
+        </div>
+      </div>
+      <div className="absolute bottom-[38px] flex flex-row justify-center space-x-[330px]">
+        <div>
+          <Image
+            src="/Top/11_Top_Frame_Right.png"
+            alt="rightframe"
+            width={70}
+            height={380}
+          />
+        </div>
+        <div>
+          <Image
+            src="/Top/11_Top_Frame_Left.png"
+            alt="leftframe"
+            width={70}
+            height={380}
+          />
+        </div>
+      </div>
+      {/* <Timeline dataSource={{ sourceType: 'profile', screenName: 'otoMDM' }} /> */}
+    </Layout>
   );
 }
