@@ -1,9 +1,7 @@
 import Image from 'next/future/image';
-import OldImage from 'next/image';
-import { useAssetPath } from 'hooks/useAssetPath';
-import MenuBar from 'components/MenuBar';
-import Layout from 'components/Layout';
+import { Timeline } from 'react-twitter-widgets';
 import Background from 'components/Background';
+import Layout from 'components/Layout';
 
 export default function Top() {
   return (
@@ -46,7 +44,7 @@ export default function Top() {
           height={125}
         />
       </div>
-      <div className="absolute bottom-[415px] flex flex-row justify-center -space-x-[20px]">
+      <div className="absolute bottom-[415px] flex flex-row justify-center space-x-[-20px]">
         <div>
           <Image
             src="/Top/11_Top_Text_02_niconico.png"
@@ -90,13 +88,6 @@ export default function Top() {
           />
         </div>
       </div>
-      <a
-        className="twitter-timeline"
-        href="https://twitter.com/otoMDM?ref_src=twsrc%5Etfw"
-      >
-        Tweets by otoMDM
-      </a>{' '}
-      <script async src="https://platform.twitter.com/widgets.js"></script>
       <div className="absolute bottom-[38px] flex flex-row justify-center space-x-[330px]">
         <div>
           <Image
@@ -115,6 +106,7 @@ export default function Top() {
           />
         </div>
       </div>
+      {/* <Timeline dataSource={{ sourceType: 'profile', screenName: 'otoMDM' }} /> */}
     </Layout>
   );
 }

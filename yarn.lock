@@ -5083,6 +5083,7 @@ __metadata:
     react-dom: ^18.2.0
     react-scroll-parallax: ^3.3.1
     react-spring: ^9.5.5
+    react-twitter-widgets: ^1.11.0
     serve: ^14.0.1
     storybook-addon-next-router: ^4.0.0
     tailwindcss: ^3.0.16
@@ -11310,6 +11311,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"loadjs@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "loadjs@npm:4.2.0"
+  checksum: 2144723f55c75260ce6781b36009c40d098d96fe06e3ec5c85ba250cf96c3a0aa37169b829e818c40bcba7c5141a8e52736fec193333bb6260ab95f9a493a2ef
+  languageName: node
+  linkType: hard
+
 "locate-path@npm:^3.0.0":
   version: 3.0.0
   resolution: "locate-path@npm:3.0.0"
@@ -14171,6 +14179,17 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: ea04c04aca1dc50ab68933b541fbde9e36e7bd185f923431868428d6225c01105db9b574b1c1bf0a35817fa30978bff325c4ce9308dfb597189068bfac7bdd2f
+  languageName: node
+  linkType: hard
+
+"react-twitter-widgets@npm:^1.11.0":
+  version: 1.11.0
+  resolution: "react-twitter-widgets@npm:1.11.0"
+  dependencies:
+    loadjs: ^4.2.0
+  peerDependencies:
+    react: ^16.8.0 || ^17 || ^18
+  checksum: b568e0ceed94c997e2a41215e25422db3131d262ae7e0c80fd95fa2bf842078738ca677756219adf576846f04cc5ec46e5ec0342a6a076583dd1debff29bc5ab
   languageName: node
   linkType: hard
 
