@@ -15,7 +15,7 @@ function ContestantBox({ text, odd, shifting }: ContestantBoxProps) {
   const image = odd ? '/dog.png' : '/cat.png';
   return (
     <div
-      className={`h-24 w-24 -skew-x-6 border-4 border-mdmGold-100 ${bg} ${shift} shadow-xl`}
+      className={`border-mdmGold-100 h-24 w-24 -skew-x-6 border-4 ${bg} ${shift} shadow-xl`}
     >
       <div className="fixed top-[-5px] left-[-5px] h-24 w-24 skew-x-6 skew-y-6">
         <Image
@@ -41,7 +41,7 @@ function CombinationBox({ text1, text2, shifting }: CombinationBoxProps) {
   const shift = shifting ? '' : 'translate-x-[-25%]';
   return (
     <div className={`col-span-2 flex -skew-x-6 shadow-xl ${shift}`}>
-      <div className="h-24 w-28 border-y-4 border-l-4 border-mdmGold-100 bg-mdmRed">
+      <div className="border-mdmGold-100 h-24 w-28 border-y-4 border-l-4 bg-mdmRed">
         <div className="fixed top-[0] left-[0] h-24 w-24 skew-x-6 skew-y-6">
           <Image
             src={useAssetPath('/dog.png')}
@@ -52,7 +52,7 @@ function CombinationBox({ text1, text2, shifting }: CombinationBoxProps) {
         </div>
         {text1}
       </div>
-      <div className="h-24 w-28 border-y-4 border-r-4 border-mdmGold-100 bg-mdmBlue">
+      <div className="border-mdmGold-100 h-24 w-28 border-y-4 border-r-4 bg-mdmBlue">
         <div className="fixed top-[0] left-[107px] h-24 w-24 skew-x-6 skew-y-6">
           <Image
             src={useAssetPath('/cat.png')}
