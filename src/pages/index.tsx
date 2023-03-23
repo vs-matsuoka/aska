@@ -8,18 +8,7 @@ import Background from 'components/Background';
 export default function Top() {
   return (
     <Layout withOverflowHidden>
-      {/* <Image
-        src="/Top/11_Top_pic_BG.png"
-        alt="background"
-        layout="fixed"
-        className="object-none"
-        width={1920}
-        height={1080}
-      /> */}
       <Background src="/Top/11_Top_pic_BG.png" />
-      {/* <div className="fixed -top-[110px]">
-        <MenuBar />
-      </div> */}
       <div className="absolute -top-6 flex flex-row justify-center space-x-[0px]">
         <div className="">
           <Image
@@ -41,15 +30,6 @@ export default function Top() {
         </div>
       </div>
       <Background src="/Top/11_Top_pic_Overlay.png" />
-      {/* <div className="absolute top-0">
-        <Image
-          src="/Top/11_Top_pic_Overlay.png"
-          alt="overlay"
-          layout="fixed"
-          width={1920}
-          height={1080}
-        />
-      </div> */}
       <div className="absolute bottom-[450px]">
         <Image
           src="/Top/11_Top_pic_Logo.png"
