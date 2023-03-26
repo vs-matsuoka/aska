@@ -1,10 +1,9 @@
 {
   "extends": [
-    "next",
     "next/core-web-vitals",
-    "prettier",
     "plugin:storybook/recommended",
-    "plugin:tailwindcss/recommended"
+    "plugin:tailwindcss/recommended",
+    "prettier"
   ],
   "ignorePatterns": ["*.config.js"],
   "rules": {
