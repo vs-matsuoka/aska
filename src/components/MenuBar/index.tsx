@@ -1,4 +1,5 @@
 import Image from 'next/future/image';
+import Link from 'next/link';
 
 const MenuBar = () => (
   <div className="relative">
@@ -23,15 +24,17 @@ const MenuBar = () => (
           height={50}
         />
       </a>
-      <a href="#">
-        <Image
-          src="/MenuBar/00_Menu_Text_02.png"
-          alt="entry"
-          className="max-w-none"
-          width={150}
-          height={50}
-        />
-      </a>
+      <Link href="/entries" passHref>
+        <a>
+          <Image
+            src="/MenuBar/00_Menu_Text_02.png"
+            alt="entries"
+            className="max-w-none"
+            width={150}
+            height={50}
+          />
+        </a>
+      </Link>
       <a href="#">
         <Image
           src="/MenuBar/00_Menu_Text_03.png"
