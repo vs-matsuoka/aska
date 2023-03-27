@@ -1,8 +1,8 @@
-import Image from "next/future/image"
+import Image from 'next/future/image';
 
 type BackgroundProps = {
-  src: string,
-}
+  src: string;
+};
 
 function Background({ src }: BackgroundProps) {
   return (
@@ -18,7 +18,7 @@ function Background({ src }: BackgroundProps) {
         }}
       />
     </div>
-  )
+  );
 }
 
-export default Background
+export default Background;

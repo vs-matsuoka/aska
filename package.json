@@ -1,14 +1,6 @@
 {
   "name": "aska",
   "private": true,
-  "lint-staged": {
-    "*.{js,ts,jsx,tsx}": [
-      "eslint --fix"
-    ],
-    "*.{json,md}": [
-      "prettier --write"
-    ]
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
