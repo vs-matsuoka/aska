@@ -1,7 +1,8 @@
 import Image from 'next/future/image';
 import Link from 'next/link';
-import { useCallback, useState } from 'react';
+import { ReactElement, useCallback, useState } from 'react';
 import { useSpring, animated, config } from 'react-spring';
+import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
 import Layout from 'components/Layout';
 
@@ -79,7 +80,7 @@ function ToggleCombiButton() {
         width={480}
         height={105}
       />
-      <Link href="/entry" passHref>
+      <Link href="/entries" passHref>
         <a>
           <div
             className="absolute top-0 left-0 transition hover:scale-125"
@@ -164,9 +165,9 @@ const contestantImageRows = [
   ]
 ];
 
-export default function Entry() {
+const Entries: NextPageWithLayout = () => {
   return (
-    <Layout>
+    <>
       <Background src="/Entry/21_Entry_pic_BG.png" />
       <Background src="/Entry/21_Entry_pic_vignette.png" />
       <div className="relative">
@@ -187,6 +188,12 @@ export default function Entry() {
         ))}
         <ToggleCombiButton />
       </div>
-    </Layout>
+    </>
   );
-}
+};
+
+Entries.getLayout = function getLayout(page: ReactElement) {
+  return <Layout>{page}</Layout>;
+};
+
+export default Entries;

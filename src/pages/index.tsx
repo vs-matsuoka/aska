@@ -1,11 +1,13 @@
 import Image from 'next/future/image';
+import { ReactElement } from 'react';
 import { Timeline } from 'react-twitter-widgets';
+import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
 import Layout from 'components/Layout';
 
-export default function Top() {
+const Top: NextPageWithLayout = () => {
   return (
-    <Layout withOverflowHidden>
+    <>
       <Background src="/Top/11_Top_pic_BG.png" />
       <div className="absolute -top-6 flex flex-row justify-center space-x-[0px]">
         <div className="">
@@ -107,6 +109,12 @@ export default function Top() {
         </div>
       </div>
       {/* <Timeline dataSource={{ sourceType: 'profile', screenName: 'otoMDM' }} /> */}
-    </Layout>
+    </>
   );
-}
+};
+
+Top.getLayout = function getLayout(page: ReactElement) {
+  return <Layout withOverflowHidden>{page}</Layout>;
+};
+
+export default Top;
