@@ -1,9 +1,10 @@
 import Image from 'next/future/image';
 import { ReactElement } from 'react';
-import { Timeline } from 'react-twitter-widgets';
+// import { Timeline } from 'react-twitter-widgets';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
 import Layout from 'components/Layout';
+import Timeline from 'components/Timeline';
 
 const Top: NextPageWithLayout = () => {
   return (
@@ -30,85 +31,94 @@ const Top: NextPageWithLayout = () => {
         </div>
       </div>
       <Background src="/Top/11_Top_pic_Overlay.png" />
-      <div className="absolute bottom-[450px]">
-        <Image
-          src="/Top/11_Top_pic_Logo.png"
-          alt="logo"
-          width={725}
-          height={475}
-        />
-      </div>
-      <div className="absolute bottom-[448px]">
-        <Image
-          src="/Top/11_Top_Text_01.png"
-          alt="date"
-          width={400}
-          height={125}
-        />
-      </div>
-      <div className="absolute bottom-[415px] flex flex-row justify-center space-x-[-20px]">
+      <div className="absolute top-0 grid justify-items-center">
         <div>
+          {/* ロゴ */}
           <Image
-            src="/Top/11_Top_Text_02_niconico.png"
-            alt="niconico"
-            width={200}
-            height={60}
+            src="/Top/11_Top_pic_Logo.png"
+            alt="logo"
+            width={677}
+            height={386}
           />
         </div>
-        <div>
-          <Image
-            src="/Top/11_Top_Text_03_youtube.png"
-            alt="youtube"
-            width={200}
-            height={60}
-          />
+        <div className="flex">
+          <div className="flex">
+            <Image
+              src="/Top/11_Top_Text_12_Tate.png"
+              alt="left_text"
+              className="object-none"
+              width={175}
+              height={445}
+            />
+            <Image
+              src="/Top/11_Top_Frame_Left.png"
+              alt="left_frame"
+              className="object-none"
+              width={46}
+              height={366}
+            />
+          </div>
+          <div className="grid justify-items-center">
+            <Image
+              src="/Top/11_Top_Text_01.png"
+              alt="data"
+              width={373}
+              height={88}
+            />
+            <div className="flex">
+              <Image
+                src="/Top/11_Top_Text_02_niconico.png"
+                alt="niconico"
+                className="object-none"
+                width={172}
+                height={44}
+              />
+              <Image
+                src="/Top/11_Top_Text_03_youtube.png"
+                alt="youtube"
+                className="object-none"
+                width={172}
+                height={44}
+              />
+            </div>
+            <div className="mt-4 grid justify-items-center">
+              <Image
+                src="/Top/11_Top_Text_04_Twitter.png"
+                alt="twitter"
+                width={132}
+                height={35}
+              />
+              <div className="relative">
+                <div className="absolute">
+                  <Image
+                    src="/Top/11_Top_TwitterBG.png"
+                    alt="right_frame"
+                    width={370}
+                    height={410}
+                  />
+                </div>
+                <Timeline />
+              </div>
+            </div>
+          </div>
+          <div className="flex">
+            <Image
+              src="/Top/11_Top_Frame_Right.png"
+              alt="right_frame"
+              className="object-none"
+              width={46}
+              height={366}
+            />
+            <Image
+              src="/Top/11_Top_Text_11_Tate.png"
+              alt="right_text"
+              className="object-none"
+              width={157}
+              height={432}
+            />
+          </div>
         </div>
       </div>
-      <div className="absolute bottom-[360px]">
-        <Image
-          src="/Top/11_Top_Text_04_Twitter.png"
-          alt="twitter"
-          width={180}
-          height={70}
-        />
-      </div>
-      <div className="absolute bottom-[42px] flex flex-row justify-center space-x-[430px]">
-        <div>
-          <Image
-            src="/Top/11_Top_Text_12_Tate.png"
-            alt="lefttext"
-            width={200}
-            height={500}
-          />
-        </div>
-        <div>
-          <Image
-            src="/Top/11_Top_Text_11_Tate.png"
-            alt="righttext"
-            width={200}
-            height={500}
-          />
-        </div>
-      </div>
-      <div className="absolute bottom-[38px] flex flex-row justify-center space-x-[330px]">
-        <div>
-          <Image
-            src="/Top/11_Top_Frame_Right.png"
-            alt="rightframe"
-            width={70}
-            height={380}
-          />
-        </div>
-        <div>
-          <Image
-            src="/Top/11_Top_Frame_Left.png"
-            alt="leftframe"
-            width={70}
-            height={380}
-          />
-        </div>
-      </div>
-      {/* <Timeline dataSource={{ sourceType: 'profile', screenName: 'otoMDM' }} /> */}
     </>
   );
 };
