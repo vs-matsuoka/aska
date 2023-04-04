@@ -58,7 +58,7 @@ const Top: NextPageWithLayout = () => {
               height={366}
             />
           </div>
-          <div className="grid justify-items-center">
+          <div className="grid content-start justify-items-center">
             <Image
               src="/Top/11_Top_Text_01.png"
               alt="data"
@@ -89,7 +89,7 @@ const Top: NextPageWithLayout = () => {
                 height={35}
               />
               <div className="relative">
-                <div className="absolute">
+                <div className="">
                   <Image
                     src="/Top/11_Top_TwitterBG.png"
                     alt="right_frame"
@@ -97,7 +97,9 @@ const Top: NextPageWithLayout = () => {
                     height={410}
                   />
                 </div>
-                <Timeline />
+                <div className="absolute top-0">
+                  <Timeline />
+                </div>
               </div>
             </div>
           </div>
