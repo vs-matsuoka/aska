@@ -52,7 +52,7 @@ jobs:
           projectName: aska
           directory: ./out
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          branch: ${{ github.head_ref || github.ref_name }}
 
       - name: Outputs
         run: |
