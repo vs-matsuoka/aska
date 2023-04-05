@@ -53,7 +53,7 @@ const Top: NextPageWithLayout = () => {
             <Image
               src="/Top/11_Top_Frame_Left.png"
               alt="left_frame"
-              className="object-none"
+              className="mt-32 object-none"
               width={46}
               height={366}
             />
@@ -88,7 +88,7 @@ const Top: NextPageWithLayout = () => {
                 width={132}
                 height={35}
               />
-              <div className="relative">
+              <div className="relative -top-6">
                 <div className="">
                   <Image
                     src="/Top/11_Top_TwitterBG.png"
@@ -97,7 +97,7 @@ const Top: NextPageWithLayout = () => {
                     height={410}
                   />
                 </div>
-                <div className="absolute top-0">
+                <div className="absolute top-8">
                   <Timeline />
                 </div>
               </div>
@@ -107,7 +107,7 @@ const Top: NextPageWithLayout = () => {
             <Image
               src="/Top/11_Top_Frame_Right.png"
               alt="right_frame"
-              className="object-none"
+              className="mt-32 object-none"
               width={46}
               height={366}
             />
