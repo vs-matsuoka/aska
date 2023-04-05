@@ -45,7 +45,8 @@ jobs:
 
       - name: Publish to Cloudflare Pages
         id: cloudflare_pages_deploy
-        uses: cloudflare/pages-action@1
+        # 一時的に fork したリポジトリを使っている
+        uses: nisheretail/cloudflare-pages-action@fix-github-deployment-ref
         with:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
