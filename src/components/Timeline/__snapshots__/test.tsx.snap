@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Timeline /> should render the link 1`] = `
+<a
+  class="twitter-timeline"
+  data-chrome="nofooter noborders transparent noheader"
+  data-height="365"
+  data-theme="dark"
+  data-width="370"
+  href="https://twitter.com/otoMDM?ref_src=twsrc%5Etfw"
+>
+  Tweets by otoMDM
+</a>
+`;
