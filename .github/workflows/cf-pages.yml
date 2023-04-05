@@ -1,6 +1,10 @@
 name: Cloudflare Pages
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   publish:
@@ -8,6 +12,7 @@ jobs:
     permissions:
       contents: read
       deployments: write
+      statuses: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -46,3 +51,18 @@ jobs:
           projectName: aska
           directory: ./out
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Add publish URL as commit status
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const sha = context.payload.pull_request?.head.sha ?? context.sha;
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              context: 'Cloudflare Pages',
+              description: 'Cloudflare Pages deployment',
+              state: 'success',
+              sha,
+              target_url: "${{ steps.cloudflare_pages_deploy.outputs.url }}",
+            });
