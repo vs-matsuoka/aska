@@ -31,7 +31,7 @@ jobs:
         id: yarn-cache
         with:
           path: |
-            ~/.next/cache
+            ${{ github.workspace }}/.next/cache
             ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
