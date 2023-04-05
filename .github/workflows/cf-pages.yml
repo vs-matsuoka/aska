@@ -44,6 +44,7 @@ jobs:
         run: yarn build
 
       - name: Publish to Cloudflare Pages
+        id: cloudflare_pages_deploy
         uses: cloudflare/pages-action@1
         with:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
