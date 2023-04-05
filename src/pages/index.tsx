@@ -88,7 +88,7 @@ const Top: NextPageWithLayout = () => {
                 width={132}
                 height={35}
               />
-              <div className="relative -top-6">
+              <div className="relative -top-5">
                 <div className="">
                   <Image
                     src="/Top/11_Top_TwitterBG.png"
@@ -97,7 +97,7 @@ const Top: NextPageWithLayout = () => {
                     height={410}
                   />
                 </div>
-                <div className="absolute top-8">
+                <div className="absolute top-5">
                   <Timeline />
                 </div>
               </div>

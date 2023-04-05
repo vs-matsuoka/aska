@@ -19,7 +19,7 @@ const Timeline = () => {
     <a
       className="twitter-timeline"
       data-width="370"
-      data-height="360"
+      data-height="365"
       data-theme="dark"
       data-chrome="nofooter noborders transparent noheader"
       href="https://twitter.com/otoMDM?ref_src=twsrc%5Etfw"
