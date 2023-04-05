@@ -1,6 +1,7 @@
 {
   "extends": [
     "next/core-web-vitals",
+    "plugin:prettier/recommended",
     "plugin:storybook/recommended",
     "plugin:tailwindcss/recommended",
     "prettier"
