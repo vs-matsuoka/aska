@@ -45,7 +45,8 @@ jobs:
 
       - name: Publish to Cloudflare Pages
         id: cloudflare_pages_deploy
-        # 一時的に fork したリポジトリを使っている
+        # TODO: 一時的に fork したリポジトリを使っている
+        # TODO: https://github.com/cloudflare/pages-action/pull/70
         uses: nisheretail/cloudflare-pages-action@fix-github-deployment-ref
         with:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -53,6 +54,13 @@ jobs:
           projectName: aska
           directory: ./out
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Outputs
+        run: |
+          echo "ID: ${{ steps.cloudflare_pages_deploy.outputs.id }}"
+          echo "URL: ${{ steps.cloudflare_pages_deploy.outputs.url }}"
+          echo "Environment: ${{ steps.cloudflare_pages_deploy.outputs.environment }}"
+          echo "Alias: ${{ steps.cloudflare_pages_deploy.outputs.alias }}"
 
       - name: Add publish URL as commit status
         uses: actions/github-script@v6
