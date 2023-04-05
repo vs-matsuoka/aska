@@ -45,15 +45,14 @@ jobs:
 
       - name: Publish to Cloudflare Pages
         id: cloudflare_pages_deploy
-        # TODO: 一時的に fork したリポジトリを使っている
-        # TODO: https://github.com/cloudflare/pages-action/pull/70
-        uses: nisheretail/cloudflare-pages-action@fix-github-deployment-ref
+        uses: cloudflare/pages-action@1
         with:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           projectName: aska
           directory: ./out
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
 
       - name: Outputs
         run: |
