@@ -65,6 +65,7 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
+            const target_url = "${{ steps.cloudflare_pages_deploy.outputs.url }}";
             const sha = context.payload.pull_request?.head.sha ?? context.sha;
             await github.rest.repos.createCommitStatus({
               owner: context.repo.owner,
@@ -73,5 +74,20 @@ jobs:
               description: 'Cloudflare Pages deployment',
               state: 'success',
               sha,
-              target_url: "${{ steps.cloudflare_pages_deploy.outputs.url }}",
+              target_url,
+            });
+            const url_obj = new URL(target_url);
+            const alias_host = [
+              "${{ github.head_ref || github.ref_name }}".replace(/[^a-z0-9]/ig, "-"),
+              ...url_obj.host.split(".").slice(1)
+            ].join(".");
+            url_obj.host = alias_host;
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              context: 'Cloudflare Pages Alias',
+              description: 'Cloudflare Pages deployment alias',
+              state: 'success',
+              sha,
+              target_url: url_obj.toString(),
             });
