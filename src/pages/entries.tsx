@@ -17,7 +17,7 @@ function ContestantRow({ contestantImages, offset }: ContestantRowProps) {
       className="grid skew-y-[-10deg] grid-cols-[repeat(10,143px)]"
       style={{ paddingLeft: `${offset}px` }}
     >
-      {contestantImages.map((image, index) => (
+      {contestantImages.map((image) => (
         <div key={image} className="relative h-[150px] w-[90px] skew-y-[10deg]">
           <div className="h-[140px] w-[122px] skew-x-[-20deg] skew-y-[-11deg] bg-transparent"></div>
           <Image
