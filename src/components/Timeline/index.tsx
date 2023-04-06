@@ -17,6 +17,7 @@ const Timeline = () => {
   }, []);
   return (
     <a
+      // eslint-disable-next-line tailwindcss/no-custom-classname
       className="twitter-timeline"
       data-width="370"
       data-height="365"
