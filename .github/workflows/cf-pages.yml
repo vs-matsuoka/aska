@@ -77,11 +77,11 @@ jobs:
               target_url,
             });
             const url_obj = new URL(target_url);
-            const alias_url = [
-              "https://",
+            const alias_host = [
               "${{ github.head_ref || github.ref_name }}".replace(/[^a-z0-9]/ig, "-"),
               ...url_obj.host.split(".").slice(1)
             ].join(".");
+            url_obj.host = alias_host;
             await github.rest.repos.createCommitStatus({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -89,5 +89,5 @@ jobs:
               description: 'Cloudflare Pages deployment alias',
               state: 'success',
               sha,
-              target_url: alias_url,
+              target_url: url_obj.toString(),
             });
