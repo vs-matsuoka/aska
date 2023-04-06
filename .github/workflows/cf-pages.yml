@@ -77,7 +77,11 @@ jobs:
               target_url,
             });
             const url_obj = new URL(target_url);
-            const alias_url = ["${{ github.head_ref || github.ref_name }}".replace(/[^a-z0-9]/ig, "-"), ...url_obj.host.split(".").slice(1)].join(".");
+            const alias_url = [
+              "https://",
+              "${{ github.head_ref || github.ref_name }}".replace(/[^a-z0-9]/ig, "-"),
+              ...url_obj.host.split(".").slice(1)
+            ].join(".");
             await github.rest.repos.createCommitStatus({
               owner: context.repo.owner,
               repo: context.repo.repo,
