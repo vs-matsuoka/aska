@@ -5,33 +5,74 @@ import { useSpring, animated, config } from 'react-spring';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
 import Layout from 'components/Layout';
+import useModal from 'hooks/useModal';
 
 type ContestantRowProps = {
   contestantImages: string[];
   offset: number;
+  onModalOpen: () => void;
 };
 
-function ContestantRow({ contestantImages, offset }: ContestantRowProps) {
+function Contestant({
+  src,
+  onModalOpen
+}: {
+  src: string;
+  onModalOpen: () => void;
+}) {
+  const [styles, api] = useSpring(() => ({
+    from: { opacity: 0 },
+    to: { opacity: 0 },
+    config: {
+      // duration: 50
+    }
+  }));
+  return (
+    <div key={src} className="relative h-[150px] w-[90px] skew-y-[10deg]">
+      <div className="h-[140px] w-[122px] skew-x-[-20deg] skew-y-[-11deg] bg-transparent"></div>
+      <a href="#">
+        <div
+          className="absolute left-[-63px] top-[-57px] max-w-none"
+          style={{
+            clipPath: 'polygon(34% 25%, 88% 15%, 66% 75%, 12% 85%)'
+          }}
+          onClick={onModalOpen}
+        >
+          <Image
+            src={src}
+            className="max-w-none"
+            alt="contestant"
+            width={250}
+            height={250}
+          />
+          <animated.div
+            className="absolute left-[60px] top-[51px] h-[150px] w-[130px] skew-x-[-20deg] skew-y-[-11deg] bg-white"
+            style={styles}
+            onMouseEnter={() => {
+              api.start({
+                from: { opacity: 1 },
+                to: { opacity: 0 }
+              });
+            }}
+          ></animated.div>
+        </div>
+      </a>
+    </div>
+  );
+}
+
+function ContestantRow({
+  contestantImages,
+  offset,
+  onModalOpen
+}: ContestantRowProps) {
   return (
     <div
       className="grid skew-y-[-10deg] grid-cols-[repeat(10,143px)]"
       style={{ paddingLeft: `${offset}px` }}
     >
       {contestantImages.map((image) => (
-        <div key={image} className="relative h-[150px] w-[90px] skew-y-[10deg]">
-          <div className="h-[140px] w-[122px] skew-x-[-20deg] skew-y-[-11deg] bg-transparent"></div>
-          <Image
-            src={image}
-            className="absolute left-[-63px] top-[-57px] max-w-none hover:scale-125"
-            alt="contestant"
-            width={250}
-            height={250}
-            useMap={`#${image}`}
-            style={{
-              clipPath: 'polygon(34% 25%, 88% 15%, 66% 75%, 12% 85%)'
-            }}
-          />
-        </div>
+        <Contestant src={image} onModalOpen={onModalOpen} key={image} />
       ))}
     </div>
   );
@@ -114,6 +155,118 @@ function ToggleCombiButton() {
   );
 }
 
+function ResponsiveImage({
+  src,
+  alt,
+  width,
+  height,
+  className
+}: {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  className?: string;
+}) {
+  const standard = 1920;
+  return (
+    <div
+      className={className}
+      style={{
+        width: `${(width / standard) * 100}vw`,
+        height: `${(height / standard) * 100}vw`
+      }}
+    >
+      <Image src={src} alt={alt} className="max-w-none" fill></Image>
+    </div>
+  );
+}
+
+function ContestantModal({
+  isOpen,
+  onClose
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+}) {
+  return (
+    <div
+      className={`fixed inset-0 ${
+        isOpen ? 'opacity-100' : 'opacity-0'
+      } transition-all duration-200 ${isOpen ? '' : 'pointer-events-none'}`}
+    >
+      <Background src="/Modal/22_Entry_Modal_BG.png" />
+      <div
+        className={`relative flex h-screen items-center justify-center ${
+          isOpen ? 'block' : 'hidden'
+        }`}
+      >
+        <div className="relative">
+          <ResponsiveImage
+            src="/Modal/22_Entry_Modal_pic_FudeBase.png"
+            alt="FudeBase"
+            width={1500}
+            height={850}
+          />
+          <div className="absolute top-[2.5vw] left-[-1.25vw]">
+            <ResponsiveImage
+              src="/Modal/chara/22_Modal_chara_01.png"
+              alt="阿保草"
+              width={800}
+              height={750}
+            />
+          </div>
+          <div className="absolute top-[14.7vw] left-[33.3vw]">
+            <ResponsiveImage
+              src="/Modal/icon/22_Modal_icon_01.png"
+              alt="icon"
+              width={750}
+              height={120}
+            />
+            <div className="absolute left-[1.2vw] top-[6vw]">
+              <ResponsiveImage
+                src="/Modal/22_Entry_pic_Line.png"
+                width={750}
+                height={20}
+                alt="line"
+              />
+            </div>
+            <a href="#">
+              <div
+                className="absolute left-[37vw] top-[-2vw]"
+                onClick={onClose}
+              >
+                <ResponsiveImage
+                  src="/Modal/22_Modal_Close.png"
+                  width={55}
+                  height={55}
+                  alt="line"
+                />
+              </div>
+            </a>
+          </div>
+          <div className="absolute top-[21vw] left-[-4vw]">
+            <ResponsiveImage
+              src="/Modal/22_Modal_Back.png"
+              alt="Back"
+              width={75}
+              height={75}
+            />
+          </div>
+          <div className="absolute top-[21vw] left-[78vw]">
+            <ResponsiveImage
+              src="/Modal/22_Modal_Next.png"
+              alt="Next"
+              width={75}
+              height={75}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 const contestantImageRows = [
   [
     '/Entry/Frame/21_Entry_Frame_01.png',
@@ -166,6 +319,8 @@ const contestantImageRows = [
 ];
 
 const Entries: NextPageWithLayout = () => {
+  const { isOpen, onOpen, onClose } = useModal();
+
   return (
     <>
       <Background src="/Entry/21_Entry_pic_BG.png" />
@@ -184,10 +339,12 @@ const Entries: NextPageWithLayout = () => {
             key={index}
             contestantImages={row}
             offset={index * 46}
+            onModalOpen={onOpen}
           />
         ))}
         <ToggleCombiButton />
       </div>
+      <ContestantModal isOpen={isOpen} onClose={onClose} />
     </>
   );
 };

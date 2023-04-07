@@ -5,7 +5,7 @@ exports[`<Background /> should render the heading 1`] = `
   class="fixed"
 >
   <div
-    class="h-screen w-screen"
+    class="pointer-events-none h-screen w-screen"
   />
   <img
     alt="background"
