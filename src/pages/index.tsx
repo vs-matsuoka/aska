@@ -1,6 +1,5 @@
 import Image from 'next/future/image';
 import { ReactElement } from 'react';
-// import { Timeline } from 'react-twitter-widgets';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
 import Layout from 'components/Layout';
@@ -46,16 +45,9 @@ const Top: NextPageWithLayout = () => {
             <Image
               src="/Top/11_Top_Text_12_Tate.png"
               alt="left_text"
-              className="object-none"
+              className="mr-6 object-none"
               width={175}
               height={445}
-            />
-            <Image
-              src="/Top/11_Top_Frame_Left.png"
-              alt="left_frame"
-              className="mt-32 object-none"
-              width={46}
-              height={366}
             />
           </div>
           <div className="grid content-start justify-items-center">
@@ -82,22 +74,23 @@ const Top: NextPageWithLayout = () => {
               />
             </div>
             <div className="mt-4 grid justify-items-center">
-              <Image
-                src="/Top/11_Top_Text_04_Twitter.png"
-                alt="twitter"
-                width={132}
-                height={35}
-              />
-              <div className="relative -top-5">
+              <div className="relative top-[-2px] grid justify-items-center">
                 <div className="">
                   <Image
-                    src="/Top/11_Top_TwitterBG.png"
-                    alt="right_frame"
-                    width={370}
-                    height={410}
+                    src="/Top/11_Top_Twitter_Timeline.png"
+                    alt="twitter_timeline"
+                    className="object-none"
+                    width={412}
+                    height={404}
                   />
                 </div>
-                <div className="absolute top-5">
+                <div className="absolute top-0 grid justify-items-center">
+                  <Image
+                    src="/Top/11_Top_Text_04_Twitter.png"
+                    alt="twitter"
+                    width={132}
+                    height={35}
+                  />
                   <Timeline />
                 </div>
               </div>
@@ -105,16 +98,9 @@ const Top: NextPageWithLayout = () => {
           </div>
           <div className="flex">
             <Image
-              src="/Top/11_Top_Frame_Right.png"
-              alt="right_frame"
-              className="mt-32 object-none"
-              width={46}
-              height={366}
-            />
-            <Image
               src="/Top/11_Top_Text_11_Tate.png"
               alt="right_text"
-              className="object-none"
+              className="ml-6 object-none"
               width={157}
               height={432}
             />

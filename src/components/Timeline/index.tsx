@@ -14,8 +14,8 @@ const Timeline = () => {
     <a
       // eslint-disable-next-line tailwindcss/no-custom-classname
       className="twitter-timeline"
-      data-width="370"
-      data-height="365"
+      data-width="320"
+      data-height="335"
       data-theme="dark"
       data-chrome="nofooter noborders transparent noheader"
       href="https://twitter.com/otoMDM?ref_src=twsrc%5Etfw"
