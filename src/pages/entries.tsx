@@ -187,6 +187,7 @@ function ResponsiveImage(
         src={src}
         alt={alt}
         className="max-w-none"
+        priority={true}
         fill
         {...imageProps}
       ></Image>
