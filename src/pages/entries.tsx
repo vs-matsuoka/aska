@@ -1,7 +1,8 @@
-import Image from 'next/future/image';
+import Image, { ImageProps } from 'next/future/image';
 import Link from 'next/link';
 import { ReactElement, useCallback, useState } from 'react';
-import { useSpring, animated, config } from 'react-spring';
+import { useMediaQuery } from 'react-responsive';
+import { useSpring, animated } from 'react-spring';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
 import Layout from 'components/Layout';
@@ -28,25 +29,27 @@ function Contestant({
     }
   }));
   return (
-    <div key={src} className="relative h-[150px] w-[90px] skew-y-[10deg]">
-      <div className="h-[140px] w-[122px] skew-x-[-20deg] skew-y-[-11deg] bg-transparent"></div>
+    <div
+      key={src}
+      className="relative h-[7.8125vw] w-[4.6875vw] skew-y-[10deg] 4xl:h-[150px] 4xl:w-[90px]"
+    >
+      <div className="h-[7.2916666667vw] w-[6.3541666667vw] skew-x-[-20deg] skew-y-[-11deg] bg-transparent 4xl:h-[140px] 4xl:w-[122px]"></div>
       <a href="#">
         <div
-          className="absolute left-[-63px] top-[-57px] max-w-none"
+          className="absolute left-[-3.28125vw] top-[-2.9687557vw] max-w-none 4xl:left-[-63px] 4xl:top-[-57px]"
           style={{
             clipPath: 'polygon(34% 25%, 88% 15%, 66% 75%, 12% 85%)'
           }}
           onClick={onModalOpen}
         >
-          <Image
+          <ResponsiveImage
             src={src}
-            className="max-w-none"
             alt="contestant"
             width={250}
             height={250}
           />
           <animated.div
-            className="absolute left-[60px] top-[51px] h-[150px] w-[130px] skew-x-[-20deg] skew-y-[-11deg] bg-white"
+            className="absolute left-[3.125vw] top-[2.65625vw] h-[7.8125vw] w-[6.7708333333vw] skew-x-[-20deg] skew-y-[-11deg] bg-white 4xl:left-[60px] 4xl:top-[51px] 4xl:h-[150px] 4xl:w-[130px]"
             style={styles}
             onMouseEnter={() => {
               api.start({
@@ -66,10 +69,14 @@ function ContestantRow({
   offset,
   onModalOpen
 }: ContestantRowProps) {
+  const isNarrow = useMediaQuery({ query: '(min-width: 1920px)' });
+
   return (
     <div
-      className="grid skew-y-[-10deg] grid-cols-[repeat(10,143px)]"
-      style={{ paddingLeft: `${offset}px` }}
+      className="grid skew-y-[-10deg] grid-cols-[repeat(10,7.4479166667vw)] 4xl:grid-cols-[repeat(10,143px)]"
+      style={{
+        paddingLeft: isNarrow ? `${offset}px` : `${(offset / 1920) * 100}vw`
+      }}
     >
       {contestantImages.map((image) => (
         <Contestant src={image} onModalOpen={onModalOpen} key={image} />
@@ -107,14 +114,14 @@ function ToggleCombiButton() {
   }, []);
 
   return (
-    <div className="absolute right-[3rem] bottom-[-8rem]">
-      <Image
+    <div className="absolute right-[2.5vw] bottom-[-6.5vw] 4xl:right-[3rem] 4xl:bottom-[-8rem]">
+      <ResponsiveImage
         alt="conbi"
         src="/Entry/21_Entry_text_02_base.png"
         width={480}
         height={105}
       />
-      <Image
+      <ResponsiveImage
         alt="conbi"
         className={'absolute top-0 left-0 ' + (shadowOn ? '' : 'hidden')}
         src="/Entry/21_Entry_text_02_shadow.png"
@@ -128,6 +135,12 @@ function ToggleCombiButton() {
             onMouseEnter={trigger}
             onMouseLeave={reset}
           >
+            <ResponsiveImage
+              alt="conbi"
+              src="/Entry/21_Entry_text_02.png"
+              width={480}
+              height={105}
+            />
             <animated.div
               className="absolute top-0 left-0"
               style={{
@@ -135,19 +148,16 @@ function ToggleCombiButton() {
                 ...styles
               }}
             >
-              <Image
+              <ResponsiveImage
                 alt="conbi"
                 src="/Entry/21_Entry_text_02.png"
                 width={480}
                 height={105}
+                style={{
+                  filter: 'brightness(0) invert(1)'
+                }}
               />
             </animated.div>
-            <Image
-              alt="conbi"
-              src="/Entry/21_Entry_text_02.png"
-              width={480}
-              height={150}
-            />
           </div>
         </a>
       </Link>
@@ -155,29 +165,31 @@ function ToggleCombiButton() {
   );
 }
 
-function ResponsiveImage({
-  src,
-  alt,
-  width,
-  height,
-  className
-}: {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-  className?: string;
-}) {
+function ResponsiveImage(
+  props: Omit<ImageProps, 'fill' | 'width' | 'height'> & {
+    width: number;
+    height: number;
+  }
+) {
+  const { width, height, src, alt, className, ...imageProps } = props;
   const standard = 1920;
+  const isNarrow = useMediaQuery({ query: '(min-width: 1920px)' });
+
   return (
     <div
       className={className}
       style={{
-        width: `${(width / standard) * 100}vw`,
-        height: `${(height / standard) * 100}vw`
+        width: isNarrow ? `${width}px` : `${(width / standard) * 100}vw`,
+        height: isNarrow ? `${height}px` : `${(height / standard) * 100}vw`
       }}
     >
-      <Image src={src} alt={alt} className="max-w-none" fill></Image>
+      <Image
+        src={src}
+        alt={alt}
+        className="max-w-none"
+        fill
+        {...imageProps}
+      ></Image>
     </div>
   );
 }
@@ -208,7 +220,7 @@ function ContestantModal({
             width={1500}
             height={850}
           />
-          <div className="absolute top-[2.5vw] left-[-1.25vw]">
+          <div className="absolute top-[2.5vw] left-[-1.25vw] 4xl:top-[48px] 4xl:left-[-24px]">
             <ResponsiveImage
               src="/Modal/chara/22_Modal_chara_01.png"
               alt="阿保草"
@@ -216,14 +228,14 @@ function ContestantModal({
               height={750}
             />
           </div>
-          <div className="absolute top-[14.7vw] left-[33.3vw]">
+          <div className="absolute top-[14.7vw] left-[33.3vw] 4xl:top-[282.24px] 4xl:left-[639.36px]">
             <ResponsiveImage
               src="/Modal/icon/22_Modal_icon_01.png"
               alt="icon"
               width={750}
               height={120}
             />
-            <div className="absolute left-[1.2vw] top-[6vw]">
+            <div className="absolute left-[1.2vw] top-[6vw] 4xl:left-[23px] 4xl:top-[115.2px]">
               <ResponsiveImage
                 src="/Modal/22_Entry_pic_Line.png"
                 width={750}
@@ -233,7 +245,7 @@ function ContestantModal({
             </div>
             <a href="#">
               <div
-                className="absolute left-[37vw] top-[-2vw]"
+                className="absolute left-[37vw] top-[-2vw] 4xl:left-[710px] 4xl:top-[-38.4px]"
                 onClick={onClose}
               >
                 <ResponsiveImage
@@ -245,7 +257,7 @@ function ContestantModal({
               </div>
             </a>
           </div>
-          <div className="absolute top-[21vw] left-[-4vw]">
+          <div className="absolute top-[21vw] left-[-4vw] 4xl:top-[403.2px] 4xl:left-[-76.8px]">
             <ResponsiveImage
               src="/Modal/22_Modal_Back.png"
               alt="Back"
@@ -253,7 +265,7 @@ function ContestantModal({
               height={75}
             />
           </div>
-          <div className="absolute top-[21vw] left-[78vw]">
+          <div className="absolute top-[21vw] left-[78vw] 4xl:top-[403.2px] 4xl:left-[1497.6px]">
             <ResponsiveImage
               src="/Modal/22_Modal_Next.png"
               alt="Next"
@@ -326,8 +338,8 @@ const Entries: NextPageWithLayout = () => {
       <Background src="/Entry/21_Entry_pic_BG.png" />
       <Background src="/Entry/21_Entry_pic_vignette.png" />
       <div className="relative">
-        <div className="absolute left-[2rem] top-[-11rem]">
-          <Image
+        <div className="absolute left-[1.9vw] top-[-10vw] 4xl:left-[36.48px] 4xl:top-[-211.2px]">
+          <ResponsiveImage
             alt="entry"
             src="/Entry/21_Entry_text_01.png"
             width={500}
