@@ -62,15 +62,15 @@ const Top: NextPageWithLayout = () => {
                 src="/Top/11_Top_Text_02_niconico.png"
                 alt="niconico"
                 className="object-none"
-                width={172}
-                height={44}
+                width={180}
+                height={50}
               />
               <Image
                 src="/Top/11_Top_Text_03_youtube.png"
                 alt="youtube"
                 className="object-none"
-                width={172}
-                height={44}
+                width={180}
+                height={50}
               />
             </div>
             <div className="mt-4 grid justify-items-center">
@@ -88,8 +88,8 @@ const Top: NextPageWithLayout = () => {
                   <Image
                     src="/Top/11_Top_Text_04_Twitter.png"
                     alt="twitter"
-                    width={132}
-                    height={35}
+                    width={140}
+                    height={40}
                   />
                   <Timeline />
                 </div>
