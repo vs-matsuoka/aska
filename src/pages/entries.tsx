@@ -356,14 +356,13 @@ const contestantImageRows = [
     '/Entry/Frame/21_Entry_Frame_03.png',
     '/Entry/Frame/21_Entry_Frame_04.png',
     '/Entry/Frame/21_Entry_Frame_05.png',
-    '/Entry/Frame/21_Entry_Frame_06.png',
     '/Entry/Frame/21_Entry_Frame_07.png',
     '/Entry/Frame/21_Entry_Frame_08.png',
     '/Entry/Frame/21_Entry_Frame_09.png',
-    '/Entry/Frame/21_Entry_Frame_10.png'
+    '/Entry/Frame/21_Entry_Frame_10.png',
+    '/Entry/Frame/21_Entry_Frame_11.png'
   ],
   [
-    '/Entry/Frame/21_Entry_Frame_11.png',
     '/Entry/Frame/21_Entry_Frame_12.png',
     '/Entry/Frame/21_Entry_Frame_13.png',
     '/Entry/Frame/21_Entry_Frame_14.png',
@@ -372,7 +371,8 @@ const contestantImageRows = [
     '/Entry/Frame/21_Entry_Frame_17.png',
     '/Entry/Frame/21_Entry_Frame_18.png',
     '/Entry/Frame/21_Entry_Frame_19.png',
-    '/Entry/Frame/21_Entry_Frame_20.png'
+    '/Entry/Frame/21_Entry_Frame_20.png',
+    '/Entry/Frame/21_Entry_Frame_21.png'
   ],
   [
     '/Entry/Frame/21_Entry_Frame_22.png',
