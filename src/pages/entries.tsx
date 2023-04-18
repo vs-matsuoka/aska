@@ -305,7 +305,6 @@ const contestantImageRows = [
     '/Entry/Frame/21_Entry_Frame_20.png'
   ],
   [
-    '/Entry/Frame/21_Entry_Frame_21.png',
     '/Entry/Frame/21_Entry_Frame_22.png',
     '/Entry/Frame/21_Entry_Frame_23.png',
     '/Entry/Frame/21_Entry_Frame_24.png',
@@ -314,10 +313,10 @@ const contestantImageRows = [
     '/Entry/Frame/21_Entry_Frame_27.png',
     '/Entry/Frame/21_Entry_Frame_28.png',
     '/Entry/Frame/21_Entry_Frame_29.png',
-    '/Entry/Frame/21_Entry_Frame_30.png'
+    '/Entry/Frame/21_Entry_Frame_30.png',
+    '/Entry/Frame/21_Entry_Frame_31.png'
   ],
   [
-    '/Entry/Frame/21_Entry_Frame_31.png',
     '/Entry/Frame/21_Entry_Frame_32.png',
     '/Entry/Frame/21_Entry_Frame_33.png',
     '/Entry/Frame/21_Entry_Frame_34.png',
@@ -326,7 +325,8 @@ const contestantImageRows = [
     '/Entry/Frame/21_Entry_Frame_37.png',
     '/Entry/Frame/21_Entry_Frame_38.png',
     '/Entry/Frame/21_Entry_Frame_39.png',
-    '/Entry/Frame/21_Entry_Frame_40.png'
+    '/Entry/Frame/21_Entry_Frame_40.png',
+    '/Entry/Frame/21_Entry_Frame_41_Secret.png'
   ]
 ];
 
