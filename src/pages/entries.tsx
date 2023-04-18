@@ -1,6 +1,8 @@
 import Image, { ImageProps } from 'next/future/image';
+import Head from 'next/head';
 import Link from 'next/link';
-import { ReactElement, useCallback, useState } from 'react';
+import Script from 'next/script';
+import { ReactElement, useCallback, useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { useSpring, animated } from 'react-spring';
 import { NextPageWithLayout } from './_app';
@@ -177,10 +179,11 @@ function ResponsiveImage(
 
   return (
     <div
-      className={className}
+      className={`${className ?? ''}`}
       style={{
         width: isNarrow ? `${width}px` : `${(width / standard) * 100}vw`,
-        height: isNarrow ? `${height}px` : `${(height / standard) * 100}vw`
+        height: isNarrow ? `${height}px` : `${(height / standard) * 100}vw`,
+        objectFit: 'cover'
       }}
     >
       <Image
@@ -201,6 +204,10 @@ function ContestantModal({
   isOpen: boolean;
   onClose: () => void;
 }) {
+  useEffect(() => {
+    // FUCK
+    window.FONTPLUS.reload();
+  });
   return (
     <div
       className={`fixed inset-0 ${
@@ -209,69 +216,132 @@ function ContestantModal({
     >
       <Background src="/Modal/22_Entry_Modal_BG.png" />
       <div
-        className={`relative flex h-screen items-center justify-center ${
+        className={`relative flex h-full items-center justify-center ${
           isOpen ? 'block' : 'hidden'
         }`}
+        onClick={onClose}
       >
-        <div className="relative">
+        <div
+          className="absolute"
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+        >
           <ResponsiveImage
             src="/Modal/22_Entry_Modal_pic_FudeBase.png"
             alt="FudeBase"
+            className="relative"
             width={1500}
             height={850}
           />
-          <div className="absolute top-[2.5vw] left-[-1.25vw] 4xl:top-[48px] 4xl:left-[-24px]">
-            <ResponsiveImage
-              src="/Modal/chara/22_Modal_chara_01.png"
-              alt="阿保草"
-              width={800}
-              height={750}
-            />
-          </div>
-          <div className="absolute top-[14.7vw] left-[33.3vw] 4xl:top-[282.24px] 4xl:left-[639.36px]">
-            <ResponsiveImage
-              src="/Modal/icon/22_Modal_icon_01.png"
-              alt="icon"
-              width={750}
-              height={120}
-            />
-            <div className="absolute left-[1.2vw] top-[6vw] 4xl:left-[23px] 4xl:top-[115.2px]">
+        </div>
+        <div
+          className="relative"
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+        >
+          <div className="flex">
+            <div>
               <ResponsiveImage
-                src="/Modal/22_Entry_pic_Line.png"
-                width={750}
-                height={20}
-                alt="line"
+                src="/Modal/22_Modal_Back.png"
+                alt="contestant"
+                className="relative"
+                width={70}
+                height={690}
               />
             </div>
-            <a href="#">
-              <div
-                className="absolute left-[37vw] top-[-2vw] 4xl:left-[710px] 4xl:top-[-38.4px]"
-                onClick={onClose}
-              >
+            <div className="flex">
+              <ResponsiveImage
+                src="/Modal/contestants/22_Modal_contestant_01.png"
+                alt="contestant"
+                className="relative"
+                width={600}
+                height={700}
+              />
+              <div className="my-auto h-auto">
+                <div
+                  className="absolute right-[5.8854166667vw] top-[2.2395833333vw] 4xl:right-[113px] 4xl:top-[43px]"
+                  onClick={onClose}
+                >
+                  <a href="#">
+                    <ResponsiveImage
+                      src="/Modal/22_Modal_Close.png"
+                      alt="close"
+                      className="relative"
+                      width={55}
+                      height={55}
+                    />
+                  </a>
+                </div>
                 <ResponsiveImage
-                  src="/Modal/22_Modal_Close.png"
-                  width={55}
-                  height={55}
-                  alt="line"
+                  src="/Modal/icon/22_Modal_icon_01.png"
+                  alt="icon"
+                  className="relative"
+                  width={680}
+                  height={100}
                 />
+                <ResponsiveImage
+                  src="/Modal/22_Entry_pic_Line.png"
+                  alt="line"
+                  className="relative"
+                  width={725}
+                  height={10}
+                />
+                {/* テキストサイズを決定する */}
+                <div
+                  className="my-[0.5208333333vw] w-[37.7604166667vw] text-[1.3020833333vw] font-bold text-white 4xl:my-[10px] 4xl:w-[725px] 4xl:text-[25px]"
+                  style={{
+                    fontFamily: 'UDKakugo_LargePr6-HV',
+                    lineHeight: '1.7'
+                  }}
+                >
+                  丁寧なアニメ素材YTPMVから勢いのある松岡修造MADまで
+                  <br />
+                  幅広い素材を独自のアイデアで面白く掘り下げる投稿者
+                  <br />
+                  さまざまな作風を使いこなし、従来の音MADを切り開く！
+                </div>
+                <div className="flex">
+                  <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
+                    <ResponsiveImage
+                      src="/Modal/22_Modal_pic_SNS_Nico.png"
+                      alt="niconico"
+                      className="relative"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                  <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
+                    <ResponsiveImage
+                      src="/Modal/22_Modal_pic_SNS_Youtube.png"
+                      alt="youtube"
+                      className="relative"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                  <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
+                    <ResponsiveImage
+                      src="/Modal/22_Modal_pic_SNS_Twitter.png"
+                      alt="twitter"
+                      className="relative"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                </div>
               </div>
-            </a>
-          </div>
-          <div className="absolute top-[21vw] left-[-4vw] 4xl:top-[403.2px] 4xl:left-[-76.8px]">
-            <ResponsiveImage
-              src="/Modal/22_Modal_Back.png"
-              alt="Back"
-              width={75}
-              height={75}
-            />
-          </div>
-          <div className="absolute top-[21vw] left-[78vw] 4xl:top-[403.2px] 4xl:left-[1497.6px]">
-            <ResponsiveImage
-              src="/Modal/22_Modal_Next.png"
-              alt="Next"
-              width={75}
-              height={75}
-            />
+            </div>
+            <div>
+              <ResponsiveImage
+                src="/Modal/22_Modal_Next.png"
+                alt="contestant"
+                className="relative"
+                width={70}
+                height={690}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -337,6 +407,7 @@ const Entries: NextPageWithLayout = () => {
     <>
       <Background src="/Entry/21_Entry_pic_BG.png" />
       <Background src="/Entry/21_Entry_pic_vignette.png" />
+      {/* <Head></Head> */}
       <div className="relative">
         <div className="absolute left-[1.9vw] top-[-10vw] 4xl:left-[36.48px] 4xl:top-[-211.2px]">
           <ResponsiveImage
