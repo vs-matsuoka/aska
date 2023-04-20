@@ -16,6 +16,12 @@
           "order": "asc"
         }
       }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 180
+      }
     ]
   }
 }

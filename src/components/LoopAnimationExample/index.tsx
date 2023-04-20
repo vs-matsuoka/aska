@@ -10,12 +10,7 @@ function RotationBox() {
     to: { rotateZ: 180 },
     loop: true
   });
-  return (
-    <animated.div
-      className="h-20 w-20 rounded-xl bg-emerald-400"
-      style={{ ...styles }}
-    />
-  );
+  return <animated.div className="h-20 w-20 rounded-xl bg-emerald-400" style={{ ...styles }} />;
 }
 
 function BackNForth() {
@@ -33,17 +28,12 @@ function BackNForth() {
 
   return (
     <>
-      <animated.div
-        className="rounded-l bg-emerald-400"
-        style={{ width, height, ...styles }}
-      />
+      <animated.div className="rounded-l bg-emerald-400" style={{ width, height, ...styles }} />
     </>
   );
 }
 
-export default function LoopAnimationExample({
-  text
-}: LoopAnimationExampleProps) {
+export default function LoopAnimationExample({ text }: LoopAnimationExampleProps) {
   return (
     <div>
       <div className="md:container md:mx-auto">

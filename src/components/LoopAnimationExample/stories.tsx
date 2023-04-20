@@ -6,9 +6,7 @@ export default {
   component: LoopAnimationExample
 } as Meta;
 
-export const Default: Story<LoopAnimationExampleProps> = (args) => (
-  <LoopAnimationExample {...args} />
-);
+export const Default: Story<LoopAnimationExampleProps> = (args) => <LoopAnimationExample {...args} />;
 
 Default.args = {
   text: 'Exmaple'

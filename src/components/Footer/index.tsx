@@ -9,14 +9,7 @@ const Footer = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      Powered by{' '}
-      <Image
-        src={useAssetPath('/vercel.svg')}
-        alt="Vercel Logo"
-        className="ml-2 h-4"
-        width={100}
-        height={100}
-      />
+      Powered by <Image src={useAssetPath('/vercel.svg')} alt="Vercel Logo" className="ml-2 h-4" width={100} height={100} />
     </a>
   </footer>
 );

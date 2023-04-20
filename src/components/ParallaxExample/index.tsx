@@ -33,35 +33,15 @@ export default function ParallaxExample() {
         layers={[
           {
             speed: -20,
-            children: (
-              <Image
-                src={useAssetPath('/banner-background.jpg')}
-                alt="background"
-                layout="fill"
-              ></Image>
-            )
+            children: <Image src={useAssetPath('/banner-background.jpg')} alt="background" layout="fill"></Image>
           },
           {
             speed: -40,
-            children: (
-              <Image
-                src={useAssetPath('/volga.png')}
-                alt="volga"
-                layout="responsive"
-                width={4000}
-                height={4000}
-              ></Image>
-            )
+            children: <Image src={useAssetPath('/volga.png')} alt="volga" layout="responsive" width={4000} height={4000}></Image>
           },
           {
             speed: -10,
-            children: (
-              <Image
-                src={useAssetPath('/banner-foreground.png')}
-                alt="foreground"
-                layout="fill"
-              ></Image>
-            )
+            children: <Image src={useAssetPath('/banner-foreground.png')} alt="foreground" layout="fill"></Image>
           }
         ]}
         className="aspect-[16/9]"
@@ -71,50 +51,37 @@ export default function ParallaxExample() {
             <h1
               className="whitespace-nowrap text-5xl font-bold text-white"
               style={{
-                textShadow:
-                  '-1px -1px 2px #333, 1px -1px 2px #333, -1px 1px 2px #333, 1px 1px 2px #333'
+                textShadow: '-1px -1px 2px #333, 1px -1px 2px #333, -1px 1px 2px #333, 1px 1px 2px #333'
               }}
             >
               かっこいい
             </h1>
           </Parallax>
-          <Parallax
-            translateX={['900px', '-180px']}
-            translateY={['48px', '48px']}
-          >
+          <Parallax translateX={['900px', '-180px']} translateY={['48px', '48px']}>
             <h1
               className="whitespace-nowrap text-5xl font-bold text-white"
               style={{
-                textShadow:
-                  '-1px -1px 2px #333, 1px -1px 2px #333, -1px 1px 2px #333, 1px 1px 2px #333'
+                textShadow: '-1px -1px 2px #333, 1px -1px 2px #333, -1px 1px 2px #333, 1px 1px 2px #333'
               }}
             >
               え？
             </h1>
           </Parallax>
-          <Parallax
-            translateX={['900px', '-180px']}
-            translateY={['96px', '96px']}
-          >
+          <Parallax translateX={['900px', '-180px']} translateY={['96px', '96px']}>
             <h1
               className="whitespace-nowrap text-5xl font-bold text-white"
               style={{
-                textShadow:
-                  '-1px -1px 2px #333, 1px -1px 2px #333, -1px 1px 2px #333, 1px 1px 2px #333'
+                textShadow: '-1px -1px 2px #333, 1px -1px 2px #333, -1px 1px 2px #333, 1px 1px 2px #333'
               }}
             >
               嘘だろ
             </h1>
           </Parallax>
-          <Parallax
-            translateX={['1800px', '-180px']}
-            translateY={['144px', '144px']}
-          >
+          <Parallax translateX={['1800px', '-180px']} translateY={['144px', '144px']}>
             <p
               className="whitespace-nowrap text-5xl font-bold text-white"
               style={{
-                textShadow:
-                  '-1px -1px 2px #333, 1px -1px 2px #333, -1px 1px 2px #333, 1px 1px 2px #333'
+                textShadow: '-1px -1px 2px #333, 1px -1px 2px #333, -1px 1px 2px #333, 1px 1px 2px #333'
               }}
             >
               きたあああああああああああああああああああああああああああああ

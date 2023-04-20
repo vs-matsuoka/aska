@@ -6,6 +6,4 @@ export default {
   component: Background
 } as Meta;
 
-export const Default: Story = () => (
-  <Background src="/Entry/21_Entry_pic_BG.png" />
-);
+export const Default: Story = () => <Background src="/Entry/21_Entry_pic_BG.png" />;

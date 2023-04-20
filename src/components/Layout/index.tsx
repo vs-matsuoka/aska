@@ -16,9 +16,7 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
   // TODO: どうにか画面の比率から角度を計算して、それを使ってパスを作るようにしたい
   const [redPath, redApi] = useSpring(() => ({
     from: {
-      clipPath: `polygon(${0 + upsideOffset}% ${-100 + upsideOffset}%, ${
-        100 + upsideOffset
-      }% ${0 + upsideOffset}%, ${0 + upsideOffset}% ${100 + upsideOffset}%, ${
+      clipPath: `polygon(${0 + upsideOffset}% ${-100 + upsideOffset}%, ${100 + upsideOffset}% ${0 + upsideOffset}%, ${0 + upsideOffset}% ${100 + upsideOffset}%, ${
         -100 + upsideOffset
       }% ${0 + upsideOffset}%)`
     }
@@ -27,11 +25,9 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
 
   const [bluePath, blueApi] = useSpring(() => ({
     from: {
-      clipPath: `polygon(${100 + downsideOffset}% ${0 + downsideOffset}%, ${
-        200 + downsideOffset
-      }% ${100 + downsideOffset}%, ${100 + downsideOffset}% ${
-        200 + downsideOffset
-      }%, ${0 + downsideOffset}% ${100 + downsideOffset}%)`
+      clipPath: `polygon(${100 + downsideOffset}% ${0 + downsideOffset}%, ${200 + downsideOffset}% ${100 + downsideOffset}%, ${100 + downsideOffset}% ${200 + downsideOffset}%, ${
+        0 + downsideOffset
+      }% ${100 + downsideOffset}%)`
     }
     // to: { clipPath: `polygon(${0 + redOffset}% ${-100 + redOffset}%, ${100 + redOffset}% ${0 + redOffset}%, ${0 + redOffset}% ${100 + redOffset}%, ${-100 + redOffset}% ${0 + redOffset}%)` },
   }));
@@ -40,43 +36,28 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
 
   useEffect(() => {
     if (router) {
-      const handleRouteChange = (
-        url: string,
-        { shallow }: { shallow: boolean }
-      ) => {
-        console.log(
-          `App is changing to ${url} ${
-            shallow ? 'with' : 'without'
-          } shallow routing`
-        );
+      const handleRouteChange = (url: string, { shallow }: { shallow: boolean }) => {
+        console.log(`App is changing to ${url} ${shallow ? 'with' : 'without'} shallow routing`);
         redApi.start({
           to: {
             clipPath: redIsUpside
-              ? `polygon(${100 + downsideOffset}% ${0 + downsideOffset}%, ${
-                  200 + downsideOffset
-                }% ${100 + downsideOffset}%, ${100 + downsideOffset}% ${
-                  200 + downsideOffset
-                }%, ${0 + downsideOffset}% ${100 + downsideOffset}%)`
-              : `polygon(${0 + upsideOffset}% ${-100 + upsideOffset}%, ${
-                  100 + upsideOffset
-                }% ${0 + upsideOffset}%, ${0 + upsideOffset}% ${
-                  100 + upsideOffset
-                }%, ${-100 + upsideOffset}% ${0 + upsideOffset}%)`
+              ? `polygon(${100 + downsideOffset}% ${0 + downsideOffset}%, ${200 + downsideOffset}% ${100 + downsideOffset}%, ${100 + downsideOffset}% ${200 + downsideOffset}%, ${
+                  0 + downsideOffset
+                }% ${100 + downsideOffset}%)`
+              : `polygon(${0 + upsideOffset}% ${-100 + upsideOffset}%, ${100 + upsideOffset}% ${0 + upsideOffset}%, ${0 + upsideOffset}% ${100 + upsideOffset}%, ${
+                  -100 + upsideOffset
+                }% ${0 + upsideOffset}%)`
           }
         });
         blueApi.start({
           to: {
             clipPath: redIsUpside
-              ? `polygon(${0 + upsideOffset}% ${-100 + upsideOffset}%, ${
-                  100 + upsideOffset
-                }% ${0 + upsideOffset}%, ${0 + upsideOffset}% ${
-                  100 + upsideOffset
-                }%, ${-100 + upsideOffset}% ${0 + upsideOffset}%)`
-              : `polygon(${100 + downsideOffset}% ${0 + downsideOffset}%, ${
-                  200 + downsideOffset
-                }% ${100 + downsideOffset}%, ${100 + downsideOffset}% ${
-                  200 + downsideOffset
-                }%, ${0 + downsideOffset}% ${100 + downsideOffset}%)`
+              ? `polygon(${0 + upsideOffset}% ${-100 + upsideOffset}%, ${100 + upsideOffset}% ${0 + upsideOffset}%, ${0 + upsideOffset}% ${100 + upsideOffset}%, ${
+                  -100 + upsideOffset
+                }% ${0 + upsideOffset}%)`
+              : `polygon(${100 + downsideOffset}% ${0 + downsideOffset}%, ${200 + downsideOffset}% ${100 + downsideOffset}%, ${100 + downsideOffset}% ${200 + downsideOffset}%, ${
+                  0 + downsideOffset
+                }% ${100 + downsideOffset}%)`
           }
         });
       };
@@ -91,9 +72,7 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
 
   return (
     <div
-      className={`grid min-h-screen w-full justify-center ${
-        withOverflowHidden ? 'overflow-hidden' : ''
-      }`}
+      className={`grid min-h-screen w-full justify-center ${withOverflowHidden ? 'overflow-hidden' : ''}`}
       // <div className="relative flex h-screen w-full items-center justify-center overflow-hidden">
       style={{
         gridTemplateRows: 'auto 1fr',
@@ -101,10 +80,7 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
       }}
     >
       <div className="pt-20"></div>
-      <div
-        className="relative flex items-center justify-center"
-        data-testid="children"
-      >
+      <div className="relative flex items-center justify-center" data-testid="children">
         {children}
       </div>
       <div className="absolute"></div>
@@ -117,10 +93,7 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
           }}
         >
           <div className="h-[74px]"></div>
-          <animated.div
-            className="h-full w-screen bg-mdmBlue"
-            style={{ ...bluePath }}
-          ></animated.div>
+          <animated.div className="h-full w-screen bg-mdmBlue" style={{ ...bluePath }}></animated.div>
         </div>
       </div>
       <div className="pointer-events-none absolute">
@@ -132,10 +105,7 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
           }}
         >
           <div className="h-[74px]"></div>
-          <animated.div
-            className="h-full w-screen bg-mdmRed"
-            style={{ ...redPath }}
-          ></animated.div>
+          <animated.div className="h-full w-screen bg-mdmRed" style={{ ...redPath }}></animated.div>
         </div>
       </div>
       <div className="fixed w-full">
