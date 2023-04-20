@@ -191,6 +191,7 @@ const About: NextPageWithLayout = () => {
           height: 'calc(100vh - 5rem)'
         }}
       >
+        <ResponsiveImage src="/Concept/41_pic_Base_C.png" alt="logo" className="absolute" width={1920} height={750} />
         {/* ロゴ + 文言 */}
         <FadeInTrigger distance={rpx(200)} rootMargin="0px" triggerOnce>
           <div
