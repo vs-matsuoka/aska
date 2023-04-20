@@ -1,11 +1,5 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:prettier/recommended",
-    "plugin:storybook/recommended",
-    "plugin:tailwindcss/recommended",
-    "prettier"
-  ],
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended", "plugin:storybook/recommended", "plugin:tailwindcss/recommended", "prettier"],
   "ignorePatterns": ["*.config.js"],
   "rules": {
     "tailwindcss/classnames-order": "off",
