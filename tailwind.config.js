@@ -11,7 +11,8 @@ module.exports = {
         mdmBlue: '#1247b3'
       },
       screens: {
-        '4xl': '1920px'
+        '4xl': '1920px',
+        sp: '750px'
       }
     }
   },
