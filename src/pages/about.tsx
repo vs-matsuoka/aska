@@ -185,7 +185,7 @@ const About: NextPageWithLayout = () => {
   return (
     <>
       <div
-        className="w-screen justify-center overflow-y-scroll bg-[url('/Concept/41_Pic_BG.png')] bg-cover bg-local"
+        className="w-screen justify-center overflow-x-hidden overflow-y-scroll bg-[url('/Concept/41_Pic_BG.png')] bg-cover bg-local"
         style={{
           // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
           height: 'calc(100vh - 5rem)'
