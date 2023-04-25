@@ -242,18 +242,18 @@ const contestantImageRows = [
     '/Pair/Frame/31_Pair_Frame_10.png'
   ],
   [
-    '/Pair/Frame/31_Pair_Frame_11.png',
-    '/Pair/Frame/31_Pair_Frame_12.png',
-    '/Pair/Frame/31_Pair_Frame_13.png',
-    '/Pair/Frame/31_Pair_Frame_14.png',
-    '/Pair/Frame/31_Pair_Frame_15.png'
+    '/Pair/Frame/31_Pair_Frame_Secret_11.png',
+    '/Pair/Frame/31_Pair_Frame_Secret_12.png',
+    '/Pair/Frame/31_Pair_Frame_Secret_13.png',
+    '/Pair/Frame/31_Pair_Frame_Secret_14.png',
+    '/Pair/Frame/31_Pair_Frame_Secret_15.png'
   ],
   [
-    '/Pair/Frame/31_Pair_Frame_16.png',
-    '/Pair/Frame/31_Pair_Frame_17.png',
-    '/Pair/Frame/31_Pair_Frame_18.png',
-    '/Pair/Frame/31_Pair_Frame_19.png',
-    '/Pair/Frame/31_Pair_Frame_20.png'
+    '/Pair/Frame/31_Pair_Frame_Secret_16.png',
+    '/Pair/Frame/31_Pair_Frame_Secret_17.png',
+    '/Pair/Frame/31_Pair_Frame_Secret_18.png',
+    '/Pair/Frame/31_Pair_Frame_Secret_19.png',
+    '/Pair/Frame/31_Pair_Frame_Secret_20.png'
   ]
 ];
 
