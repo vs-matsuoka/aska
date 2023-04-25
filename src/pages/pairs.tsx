@@ -27,19 +27,27 @@ function Pair({ src, onModalOpen }: { src: string; onModalOpen: () => void }) {
   return (
     <div key={src} className="relative h-[7.8125vw] w-[9.375vw] skew-y-[10deg] 4xl:h-[150px] 4xl:w-[180px]">
       <div className="h-[7.2916666667vw] w-[12.7083333334vw] skew-x-[-20deg] skew-y-[-11deg] bg-transparent 4xl:h-[140px] 4xl:w-[244px]"></div>
-      <a href="#">
+      <a {...(src.includes('Secret') ? {} : { href: '#' })}>
         <div
           className="absolute left-[-3.28125vw] top-[-2.9687557vw] max-w-none 4xl:left-[-63px] 4xl:top-[-57px]"
           style={{
             clipPath: 'polygon(16% 26%, 100% 1%, 84% 74%, 0 98%)'
           }}
-          onClick={onModalOpen}
+          onClick={() => {
+            if (src.includes('Secret')) {
+              return;
+            }
+            onModalOpen();
+          }}
         >
           <ResponsiveImage src={src} alt="pair" width={330} height={200} />
           <animated.div
             className="absolute left-[1.8229166667vw] top-[1.5104166667vw] h-[7.8125vw] w-[13.5416666666vw] skew-x-[-20deg] skew-y-[-11deg] bg-white 4xl:left-[35px] 4xl:top-[29px] 4xl:h-[150px] 4xl:w-[260px]"
             style={styles}
             onMouseEnter={() => {
+              if (src.includes('Secret')) {
+                return;
+              }
               api.start({
                 from: { opacity: 1 },
                 to: { opacity: 0 }
