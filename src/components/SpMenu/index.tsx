@@ -34,6 +34,14 @@ const SpMenu = () => {
       <div className="fixed bottom-[4.266666666666667vw] right-[4.266666666666667vw] sp:bottom-[32px] sp:right-[32px]" onClick={onOpen}>
         <ResponsiveImage alt="menu" src="/SP/UnderMenu/s01_UnderMenu_CircleIcon.png" className="relative" width={95} height={95} />
       </div>
+      <div className="fixed bottom-0 left-[-0.8vw] sp:left-[-6px]">
+        <div className="relative">
+          <ResponsiveImage alt="base" src="/SP/UnderMenu/s01_UnderMenu_LeftBase.png" className="" width={350} height={150} />
+          <div className="absolute bottom-[2.13333333vw] left-[2.8vw] sp:bottom-[16px] sp:left-[21px]">
+            <ResponsiveImage alt="logo" src="/SP/UnderMenu/s01_UnderMenu_Logo.png" className="" width={270} height={135} />
+          </div>
+        </div>
+      </div>
 
       {/* メニューモーダル */}
       <div className={`${isOpen ? '' : 'invisible'}`}>
