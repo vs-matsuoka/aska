@@ -80,12 +80,12 @@ export default function Entries() {
           <ResponsiveImage alt="banner" src={column} className="relative" width={750} height={127} />
         ))}
       </div>
-      <div className="mt-[20vw] sp:mt-[150px]">&nbsp;</div>
+      <div className="mt-[16.6666667vw] sp:mt-[125px]">&nbsp;</div>
 
       <div className="fixed top-0 left-1/2 -translate-x-1/2">
-        <div className="relative">
+        <div className="relative right-[0.4vw] sp:right-[0px]">
           <ResponsiveImage alt="topBanner" src="/SP/Entry/s21_EntryIndex_TopBanner.png" className="" width={750} height={130} />
-          <div className="absolute top-0 right-0">
+          <div className="absolute top-0 right-[-0.66666667vw] sp:right-[-0px]">
             <ResponsiveImage alt="combiButton" src="/SP/Entry/s21_EntryIndex_TopText.png" className="" width={315} height={130} />
           </div>
         </div>
