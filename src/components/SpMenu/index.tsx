@@ -30,7 +30,7 @@ const SpMenu = () => {
   const { isOpen, onOpen, onClose } = useModal();
 
   return (
-    <>
+    <div className={`${isOpen ? 'fixed inset-0' : 'fixed'}`}>
       <div className="fixed bottom-[4.266666666666667vw] right-[4.266666666666667vw] sp:bottom-[32px] sp:right-[32px]" onClick={onOpen}>
         <ResponsiveImage alt="menu" src="/SP/UnderMenu/s01_UnderMenu_CircleIcon.png" className="relative" width={95} height={95} />
       </div>
@@ -46,7 +46,7 @@ const SpMenu = () => {
       {/* メニューモーダル */}
       <div className={`${isOpen ? '' : 'invisible'}`}>
         <Background src="/SP/Menu/s00_Menu_BG.png" />
-        <div className="grid justify-items-center space-y-[2.133333333333333vw] sp:space-y-[16px]">
+        <div className="grid justify-items-center space-y-[2.133333333333333vw] pt-[4.26666667vw] sp:space-y-[16px] sp:pt-[32px]">
           <ResponsiveImage alt="top" src="/SP/Menu/s00_Button_01_Top.png" className="relative" width={686} height={100} />
           <ResponsiveImage alt="concept" src="/SP/Menu/s00_Button_02_Concept.png" className="relative" width={686} height={100} />
           <ResponsiveImage alt="entries" src="/SP/Menu/s00_Button_03_Entries.png" className="relative" width={686} height={100} />
@@ -63,7 +63,7 @@ const SpMenu = () => {
           <ResponsiveImage alt="close" src="/SP/Menu/s00_Button_21_Close.png" className="" width={95} height={95} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

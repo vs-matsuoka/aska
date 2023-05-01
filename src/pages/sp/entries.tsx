@@ -74,13 +74,15 @@ export default function Entries() {
     <>
       <Background src="/SP/Entry/s21_Entry_BG.png" />
 
-      <div className="mt-[18.53333333vw] grid justify-items-center space-y-[1.2vw] sp:mt-[139px] sp:space-y-[9px]">
+      <div className="grid justify-items-center space-y-[1.2vw] pt-[18.53333333vw] sp:space-y-[9px] sp:pt-[139px]">
         {contestantImageColumns.map((column, index) => (
           // eslint-disable-next-line react/jsx-key
           <ResponsiveImage alt="banner" src={column} className="relative" width={750} height={127} />
         ))}
       </div>
-      <div className="fixed top-0">
+      <div className="mt-[20vw] sp:mt-[150px]">&nbsp;</div>
+
+      <div className="fixed top-0 left-1/2 -translate-x-1/2">
         <div className="relative">
           <ResponsiveImage alt="topBanner" src="/SP/Entry/s21_EntryIndex_TopBanner.png" className="" width={750} height={130} />
           <div className="absolute top-0 right-0">
