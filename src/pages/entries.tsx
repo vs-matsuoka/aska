@@ -27,19 +27,27 @@ function Contestant({ src, onModalOpen }: { src: string; onModalOpen: () => void
   return (
     <div key={src} className="relative h-[7.8125vw] w-[4.6875vw] skew-y-[10deg] 4xl:h-[150px] 4xl:w-[90px]">
       <div className="h-[7.2916666667vw] w-[6.3541666667vw] skew-x-[-20deg] skew-y-[-11deg] bg-transparent 4xl:h-[140px] 4xl:w-[122px]"></div>
-      <a href="#">
+      <a {...(src.includes('Secret') ? {} : { href: '#' })}>
         <div
           className="absolute left-[-3.28125vw] top-[-2.9687557vw] max-w-none 4xl:left-[-63px] 4xl:top-[-57px]"
           style={{
             clipPath: 'polygon(34% 25%, 88% 15%, 66% 75%, 12% 85%)'
           }}
-          onClick={onModalOpen}
+          onClick={() => {
+            if (src.includes('Secret')) {
+              return;
+            }
+            onModalOpen();
+          }}
         >
           <ResponsiveImage src={src} alt="contestant" width={250} height={250} />
           <animated.div
             className="absolute left-[3.125vw] top-[2.65625vw] h-[7.8125vw] w-[6.7708333333vw] skew-x-[-20deg] skew-y-[-11deg] bg-white 4xl:left-[60px] 4xl:top-[51px] 4xl:h-[150px] 4xl:w-[130px]"
             style={styles}
             onMouseEnter={() => {
+              if (src.includes('Secret')) {
+                return;
+              }
               api.start({
                 from: { opacity: 1 },
                 to: { opacity: 0 }
