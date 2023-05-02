@@ -8,15 +8,16 @@ import { useSpring, animated } from 'react-spring';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
 import Layout from 'components/Layout';
+import entries, { Entry } from 'const/entries';
 import useModal from 'hooks/useModal';
 
 type ContestantRowProps = {
-  contestantImages: string[];
+  contestants: Entry[];
   offset: number;
   onModalOpen: () => void;
 };
 
-function Contestant({ src, onModalOpen }: { src: string; onModalOpen: () => void }) {
+function Contestant({ entry, onModalOpen }: { entry: Entry; onModalOpen: () => void }) {
   const [styles, api] = useSpring(() => ({
     from: { opacity: 0 },
     to: { opacity: 0 },
@@ -25,27 +26,27 @@ function Contestant({ src, onModalOpen }: { src: string; onModalOpen: () => void
     }
   }));
   return (
-    <div key={src} className="relative h-[7.8125vw] w-[4.6875vw] skew-y-[10deg] 4xl:h-[150px] 4xl:w-[90px]">
+    <div key={entry.index} className="relative h-[7.8125vw] w-[4.6875vw] skew-y-[10deg] 4xl:h-[150px] 4xl:w-[90px]">
       <div className="h-[7.2916666667vw] w-[6.3541666667vw] skew-x-[-20deg] skew-y-[-11deg] bg-transparent 4xl:h-[140px] 4xl:w-[122px]"></div>
-      <a {...(src.includes('Secret') ? {} : { href: '#' })}>
+      <a {...(entry.iconSrc.includes('Secret') ? {} : { href: '#' })}>
         <div
           className="absolute left-[-3.28125vw] top-[-2.9687557vw] max-w-none 4xl:left-[-63px] 4xl:top-[-57px]"
           style={{
             clipPath: 'polygon(34% 25%, 88% 15%, 66% 75%, 12% 85%)'
           }}
           onClick={() => {
-            if (src.includes('Secret')) {
+            if (entry.iconSrc.includes('Secret')) {
               return;
             }
             onModalOpen();
           }}
         >
-          <ResponsiveImage src={src} alt="contestant" width={250} height={250} />
+          <ResponsiveImage src={entry.iconSrc} alt="contestant" width={250} height={250} />
           <animated.div
             className="absolute left-[3.125vw] top-[2.65625vw] h-[7.8125vw] w-[6.7708333333vw] skew-x-[-20deg] skew-y-[-11deg] bg-white 4xl:left-[60px] 4xl:top-[51px] 4xl:h-[150px] 4xl:w-[130px]"
             style={styles}
             onMouseEnter={() => {
-              if (src.includes('Secret')) {
+              if (entry.iconSrc.includes('Secret')) {
                 return;
               }
               api.start({
@@ -60,7 +61,7 @@ function Contestant({ src, onModalOpen }: { src: string; onModalOpen: () => void
   );
 }
 
-function ContestantRow({ contestantImages, offset, onModalOpen }: ContestantRowProps) {
+function ContestantRow({ contestants, offset, onModalOpen }: ContestantRowProps) {
   const isNarrow = useMediaQuery({ query: '(min-width: 1920px)' });
 
   return (
@@ -70,8 +71,8 @@ function ContestantRow({ contestantImages, offset, onModalOpen }: ContestantRowP
         paddingLeft: isNarrow ? `${offset}px` : `${(offset / 1920) * 100}vw`
       }}
     >
-      {contestantImages.map((image) => (
-        <Contestant src={image} onModalOpen={onModalOpen} key={image} />
+      {contestants.map((contestant) => (
+        <Contestant entry={contestant} onModalOpen={onModalOpen} key={contestant.index} />
       ))}
     </div>
   );
@@ -235,56 +236,15 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
   );
 }
 
-const contestantImageRows = [
-  [
-    '/Entry/Frame/21_Entry_Frame_01.png',
-    '/Entry/Frame/21_Entry_Frame_02.png',
-    '/Entry/Frame/21_Entry_Frame_03.png',
-    '/Entry/Frame/21_Entry_Frame_04.png',
-    '/Entry/Frame/21_Entry_Frame_05.png',
-    '/Entry/Frame/21_Entry_Frame_07.png',
-    '/Entry/Frame/21_Entry_Frame_08.png',
-    '/Entry/Frame/21_Entry_Frame_09.png',
-    '/Entry/Frame/21_Entry_Frame_10.png',
-    '/Entry/Frame/21_Entry_Frame_11.png'
-  ],
-  [
-    '/Entry/Frame/21_Entry_Frame_12.png',
-    '/Entry/Frame/21_Entry_Frame_13.png',
-    '/Entry/Frame/21_Entry_Frame_14.png',
-    '/Entry/Frame/21_Entry_Frame_15.png',
-    '/Entry/Frame/21_Entry_Frame_16.png',
-    '/Entry/Frame/21_Entry_Frame_17.png',
-    '/Entry/Frame/21_Entry_Frame_18.png',
-    '/Entry/Frame/21_Entry_Frame_19.png',
-    '/Entry/Frame/21_Entry_Frame_20.png',
-    '/Entry/Frame/21_Entry_Frame_21.png'
-  ],
-  [
-    '/Entry/Frame/21_Entry_Frame_22.png',
-    '/Entry/Frame/21_Entry_Frame_23.png',
-    '/Entry/Frame/21_Entry_Frame_24.png',
-    '/Entry/Frame/21_Entry_Frame_25.png',
-    '/Entry/Frame/21_Entry_Frame_26.png',
-    '/Entry/Frame/21_Entry_Frame_27.png',
-    '/Entry/Frame/21_Entry_Frame_28.png',
-    '/Entry/Frame/21_Entry_Frame_29.png',
-    '/Entry/Frame/21_Entry_Frame_30.png',
-    '/Entry/Frame/21_Entry_Frame_31.png'
-  ],
-  [
-    '/Entry/Frame/21_Entry_Frame_32.png',
-    '/Entry/Frame/21_Entry_Frame_33.png',
-    '/Entry/Frame/21_Entry_Frame_34.png',
-    '/Entry/Frame/21_Entry_Frame_35.png',
-    '/Entry/Frame/21_Entry_Frame_36.png',
-    '/Entry/Frame/21_Entry_Frame_37.png',
-    '/Entry/Frame/21_Entry_Frame_38.png',
-    '/Entry/Frame/21_Entry_Frame_39.png',
-    '/Entry/Frame/21_Entry_Frame_40.png',
-    '/Entry/Frame/21_Entry_Frame_41_Secret.png'
-  ]
-];
+// https://gist.github.com/webinista/11240585?permalink_comment_id=2363393#gistcomment-2363393
+function chunk<T>(arr: Array<T>, chunkSize: number): Array<Array<T>> {
+  return arr.reduce(
+    (prevVal: any, currVal: any, currIndx: number, array: Array<T>) => (!(currIndx % chunkSize) ? prevVal.concat([array.slice(currIndx, currIndx + chunkSize)]) : prevVal),
+    []
+  );
+}
+
+const contestantRows = chunk(entries, 10);
 
 const Entries: NextPageWithLayout = () => {
   const { isOpen, onOpen, onClose } = useModal();
@@ -298,8 +258,8 @@ const Entries: NextPageWithLayout = () => {
         <div className="absolute left-[1.9vw] top-[-10vw] 4xl:left-[36.48px] 4xl:top-[-211.2px]">
           <ResponsiveImage alt="entry" src="/Entry/21_Entry_text_01.png" width={500} height={250} />
         </div>
-        {contestantImageRows.map((row, index) => (
-          <ContestantRow key={index} contestantImages={row} offset={index * 46} onModalOpen={onOpen} />
+        {contestantRows.map((row, index) => (
+          <ContestantRow key={index} contestants={row} offset={index * 46} onModalOpen={onOpen} />
         ))}
         <ToggleEntryButton />
       </div>
