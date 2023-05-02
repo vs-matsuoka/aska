@@ -197,7 +197,7 @@ const About: NextPageWithLayout = () => {
           <div
             className="flex w-screen justify-center"
             style={{
-              marginTop: rpx(270),
+              paddingTop: rpx(270),
               gap: rpx(20)
             }}
           >
