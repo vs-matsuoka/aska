@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TeamItem /> should render correctly 1`] = `
+<div
+  class="h-[140px] w-[320px] border-[4px] border-[#ccad70] bg-gradient-to-t from-[#262426] via-[#262426] to-[#3a393a]"
+>
+  <div
+    class="absolute ml-[-4px] mt-[-4px]"
+  >
+    <img
+      alt="grad"
+      data-nimg="future"
+      decoding="async"
+      height="140"
+      loading="lazy"
+      src="/_next/image?url=%2FTeam%2Fgrad_long.png&w=640&q=75"
+      srcset="/_next/image?url=%2FTeam%2Fgrad_long.png&w=384&q=75 1x, /_next/image?url=%2FTeam%2Fgrad_long.png&w=640&q=75 2x"
+      style="color: transparent;"
+      width="320"
+    />
+  </div>
+  <div
+    class="relative flex gap-[12px]"
+  >
+    <div
+      class="my-[14px] ml-[8px]"
+    >
+      <div
+        class="flex"
+      >
+        <img
+          alt="葉月味"
+          data-nimg="future"
+          decoding="async"
+          height="104"
+          loading="lazy"
+          src="/_next/image?url=%2FTeam%2Ftest.jpg&w=256&q=75"
+          srcset="/_next/image?url=%2FTeam%2Ftest.jpg&w=128&q=75 1x, /_next/image?url=%2FTeam%2Ftest.jpg&w=256&q=75 2x"
+          style="color: transparent;"
+          width="104"
+        />
+      </div>
+    </div>
+    <div
+      class="mt-[14px] drop-shadow-[0_0_3px_#000000]"
+      style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+    >
+      <p
+        class="text-[15px] text-white"
+        data-testid="role"
+      >
+        特番制作
+      </p>
+      <p
+        class="mt-[8px] text-[28px] text-white"
+        data-testid="name"
+      >
+        葉月味
+      </p>
+    </div>
+  </div>
+</div>
+`;

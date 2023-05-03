@@ -3961,13 +3961,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^27.4.0":
-  version: 27.5.2
-  resolution: "@types/jest@npm:27.5.2"
+"@types/jest@npm:^29.5.1":
+  version: 29.5.1
+  resolution: "@types/jest@npm:29.5.1"
   dependencies:
-    jest-matcher-utils: ^27.0.0
-    pretty-format: ^27.0.0
-  checksum: 7e11c6826aa429ad990dc262e4e4b54aa36573287fddf15773e4137f07d11d3105f0dd9f1baff73252160a057df23f5529bb83b1bf83cd3f45f9460a5ca5c22e
+    expect: ^29.0.0
+    pretty-format: ^29.0.0
+  checksum: 0a22491dec86333c0e92b897be2c809c922a7b2b0aa5604ac369810d6b2360908b4a3f2c6892e8a237a54fa1f10ecefe0e823ec5fcb7915195af4dfe88d2197e
   languageName: node
   linkType: hard
 
@@ -5060,7 +5060,7 @@ __metadata:
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.4.0
     "@testing-library/user-event": ^14.4.3
-    "@types/jest": ^27.4.0
+    "@types/jest": ^29.5.1
     "@types/node": ^17.0.10
     "@types/react": ^18.0.21
     autoprefixer: ^10.4.2
@@ -10586,7 +10586,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-matcher-utils@npm:^27.0.0, jest-matcher-utils@npm:^27.5.1":
+"jest-matcher-utils@npm:^27.5.1":
   version: 27.5.1
   resolution: "jest-matcher-utils@npm:27.5.1"
   dependencies:
@@ -13812,7 +13812,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^27.0.0, pretty-format@npm:^27.0.2, pretty-format@npm:^27.5.1":
+"pretty-format@npm:^27.0.2, pretty-format@npm:^27.5.1":
   version: 27.5.1
   resolution: "pretty-format@npm:27.5.1"
   dependencies:
