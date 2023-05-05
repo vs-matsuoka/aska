@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 import Background from 'components/Background';
 import SpMenu from 'components/SpMenu';
+import entries, { Entry } from 'const/entries';
 
 function ResponsiveImage(
   props: Omit<ImageProps, 'fill' | 'width' | 'height'> & {
@@ -50,6 +51,12 @@ export default function Entries() {
           </div>
         </div>
       </div>
+      <div className="mx-[4vw] mt-[63.3333333vw] grid grid-cols-5 justify-items-center gap-[2.13333333vw] sp:mx-[30px] sp:mt-[475px] sp:gap-[16px]">
+        {entries.map((row, index) => (
+          <ResponsiveImage alt="icon" src={row.spIconSrc} className="relative" width={125} height={125} key={index} />
+        ))}
+      </div>
+      <div className="mt-[16.6666667vw] sp:mt-[125px]">&nbsp;</div>
       <SpMenu />
     </>
   );
