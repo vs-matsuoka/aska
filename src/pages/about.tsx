@@ -5,6 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useSpring, animated, easings } from 'react-spring';
 import { NextPageWithLayout } from './_app';
 import Layout from 'components/Layout';
+import ResponsiveImage from 'components/ResponsiveImage';
 
 interface FadeInTriggerProps {
   children?: ReactNode;
@@ -156,30 +157,6 @@ const ppx = (px: number) => {
 // baseのアニメーション: 15f
 // フェードインしながら: 10f
 // https://media.discordapp.net/attachments/1016776358199836722/1097948252986421329/image.png?width=444&height=276
-
-function ResponsiveImage(
-  props: Omit<ImageProps, 'fill' | 'width' | 'height'> & {
-    width: number;
-    height: number;
-  }
-) {
-  const { width, height, src, alt, className, ...imageProps } = props;
-  const standard = 1920;
-  const isNarrow = useMediaQuery({ query: '(min-width: 1920px)' });
-
-  return (
-    <div
-      className={`${className ?? ''}`}
-      style={{
-        width: `${(width / standard) * 100}vw`,
-        height: `${(height / standard) * 100}vw`,
-        objectFit: 'cover'
-      }}
-    >
-      <Image src={src} alt={alt} className="max-w-none" fill {...imageProps}></Image>
-    </div>
-  );
-}
 
 const About: NextPageWithLayout = () => {
   return (
