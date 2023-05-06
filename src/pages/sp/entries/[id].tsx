@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 import Background from 'components/Background';
 import SpMenu from 'components/SpMenu';
-import entries, { Entry } from 'const/entries';
+import entries from 'const/entries';
 
 function ResponsiveImage(
   props: Omit<ImageProps, 'fill' | 'width' | 'height'> & {
