@@ -49,29 +49,34 @@ const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
   return (
     <>
       <Background src="/SP/Entry_Detail/s22_Entry_BG.png" />
-      <div className="relative top-[10.4vw] sp:top-[78px]">
+      {/* sp:top-[78px] */}
+      <div className="relative top-[10.4vw]">
         <SpResponsiveImage alt="kirinuki" src={props.kirinukiSrc} className="" width={750} height={800} />
-        <div className="absolute top-[5.2vw] right-[4.13333333vw] flex justify-center gap-[1.86666667vw] sp:top-[39px] sp:right-[31px] sp:gap-[14px]">
+        {/* sp:top-[39px] sp:right-[31px] sp:gap-[14px] */}
+        <div className="absolute top-[5.2vw] right-[4.13333333vw] flex justify-center gap-[1.86666667vw]">
           <SpResponsiveImage alt="niconico" src="/SP/Entry_Detail/s22_Button_11_SNS_NicoNico.png" className="relative" width={66} height={66} />
           <SpResponsiveImage alt="youtube" src="/SP/Entry_Detail/s22_Button_12_SNS_Youtube.png" className="relative" width={66} height={66} />
           <SpResponsiveImage alt="twitter" src="/SP/Entry_Detail/s22_Button_13_SNS_Twitter.png" className="relative" width={66} height={66} />
         </div>
-        <div className="absolute top-[89.46666667vw] sp:top-[671px]">
+        {/* sp:top-[671px] */}
+        <div className="absolute top-[89.46666667vw]">
           <div className="relative">
             <SpResponsiveImage alt="base" src="/SP/Entry_Detail/s22_Entry_Base.png" className="" width={750} height={500} />
-            <div className="absolute top-[4.26666667vw] sp:top-[32px]">
+            {/* sp:top-[32px] */}
+            <div className="absolute top-[4.26666667vw]">
               <SpResponsiveImage alt="name" src={props.nameSrc} className="relative" width={750} height={250} />
             </div>
-            <div className="absolute top-[24.5333333vw] right-[2.26666667vw] sp:top-[184px] sp:right-[17px]">
+            {/* sp:top-[184px] sp:right-[17px] */}
+            <div className="absolute top-[24.5333333vw] right-[2.26666667vw]">
               <SpResponsiveImage alt="info" src="/SP/Entry_Detail/Info/s22_Entry_info_01.png" className="relative" width={600} height={250} />
             </div>
           </div>
         </div>
       </div>
-      <div className="mx-[4vw] mt-[63.3333333vw] grid grid-cols-5 justify-items-center gap-[2.13333333vw] sp:mx-[30px] sp:mt-[475px] sp:gap-[16px]">
-        {entries.map((entry, index) => getEntryIcon(entry, index))}
-      </div>
-      <div className="mt-[16.6666667vw] sp:mt-[125px]">&nbsp;</div>
+      {/* sp:mx-[30px] sp:mt-[475px] sp:gap-[16px] */}
+      <div className="mx-[4vw] mt-[63.3333333vw] grid grid-cols-5 justify-items-center gap-[2.13333333vw]">{entries.map((entry, index) => getEntryIcon(entry, index))}</div>
+      {/* sp:mt-[125px] */}
+      <div className="mt-[16.6666667vw]">&nbsp;</div>
       <SpMenu />
     </>
   );
