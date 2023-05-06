@@ -79,10 +79,10 @@ const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
         </div>
       </div>
       <div className="mx-[4vw] mt-[63.3333333vw] grid grid-cols-5 justify-items-center gap-[2.13333333vw] sp:mx-[30px] sp:mt-[475px] sp:gap-[16px]">
-        {entries.map((row, index) => (
-          <Link href={'/sp/entries/' + (++index).toString()} key={index} passHref>
+        {entries.map((entry, index) => (
+          <Link href={'/sp/entries/' + entry.index.toString()} key={index} passHref>
             <a>
-              <ResponsiveImage alt="icon" src={row.spIconSrc} className="relative" width={125} height={125} key={index} />
+              <ResponsiveImage alt="icon" src={entry.spIconSrc} className="relative" width={125} height={125} key={index} />
             </a>
           </Link>
         ))}

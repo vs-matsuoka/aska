@@ -35,7 +35,7 @@ export default function Entries() {
 
       <div className="grid justify-items-center space-y-[1.2vw] pt-[18.53333333vw] sp:space-y-[9px] sp:pt-[139px]">
         {entries.map((column, index) => (
-          <Link href={'/sp/entries/' + (++index).toString()} key={index} passHref>
+          <Link href={'/sp/entries/' + column.index.toString()} key={index} passHref>
             <a>
               <ResponsiveImage alt="banner" src={column.spBannerSrc} className="relative" width={750} height={127} key={index} />
             </a>

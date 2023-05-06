@@ -91,7 +91,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 7,
+    index: 6,
     name: 'KAISATSU',
     iconSrc: '/Entry/Frame/21_Entry_Frame_07.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_06.png',
@@ -106,7 +106,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 8,
+    index: 7,
     name: 'カスk°',
     iconSrc: '/Entry/Frame/21_Entry_Frame_08.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_07.png',
@@ -121,7 +121,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 9,
+    index: 8,
     name: '神酒',
     iconSrc: '/Entry/Frame/21_Entry_Frame_09.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_08.png',
@@ -136,7 +136,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 10,
+    index: 9,
     name: '♪くらっち♪',
     iconSrc: '/Entry/Frame/21_Entry_Frame_10.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_09.png',
@@ -151,7 +151,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 11,
+    index: 10,
     name: 'くろしおり',
     iconSrc: '/Entry/Frame/21_Entry_Frame_11.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_10.png',
@@ -166,7 +166,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 12,
+    index: 11,
     name: 'グラコロ',
     iconSrc: '/Entry/Frame/21_Entry_Frame_12.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_11.png',
@@ -181,7 +181,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 13,
+    index: 12,
     name: 'さくれい',
     iconSrc: '/Entry/Frame/21_Entry_Frame_13.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_12.png',
@@ -196,7 +196,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 14,
+    index: 13,
     name: 'Ckiro',
     iconSrc: '/Entry/Frame/21_Entry_Frame_14.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_13.png',
@@ -211,7 +211,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 15,
+    index: 14,
     name: 'JR根岸線「関内駅」から徒歩5分',
     iconSrc: '/Entry/Frame/21_Entry_Frame_15.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_14.png',
@@ -226,7 +226,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 16,
+    index: 15,
     name: '菅沼',
     iconSrc: '/Entry/Frame/21_Entry_Frame_16.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_15.png',
@@ -241,7 +241,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 17,
+    index: 16,
     name: '聖なるバリア －ミラーフォース－',
     iconSrc: '/Entry/Frame/21_Entry_Frame_17.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_16.png',
@@ -256,7 +256,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 18,
+    index: 17,
     name: '大好きクラブ',
     iconSrc: '/Entry/Frame/21_Entry_Frame_18.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_17.png',
@@ -271,7 +271,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 19,
+    index: 18,
     name: 'だがしやだがしや',
     iconSrc: '/Entry/Frame/21_Entry_Frame_19.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_18.png',
@@ -286,7 +286,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 20,
+    index: 19,
     name: '月裏',
     iconSrc: '/Entry/Frame/21_Entry_Frame_20.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_19.png',
@@ -301,7 +301,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 21,
+    index: 20,
     name: '手稲。',
     iconSrc: '/Entry/Frame/21_Entry_Frame_21.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_20.png',
@@ -316,7 +316,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 22,
+    index: 21,
     name: 'tokachi',
     iconSrc: '/Entry/Frame/21_Entry_Frame_22.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_21.png',
@@ -331,7 +331,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 23,
+    index: 22,
     name: 'とそちか',
     iconSrc: '/Entry/Frame/21_Entry_Frame_23.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_22.png',
@@ -346,7 +346,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 24,
+    index: 23,
     name: 'なぽり',
     iconSrc: '/Entry/Frame/21_Entry_Frame_24.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_23.png',
@@ -361,7 +361,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 25,
+    index: 24,
     name: 'ネロ',
     iconSrc: '/Entry/Frame/21_Entry_Frame_25.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_24.png',
@@ -376,7 +376,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 26,
+    index: 25,
     name: '灰色マテリアル',
     iconSrc: '/Entry/Frame/21_Entry_Frame_26.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_25.png',
@@ -391,7 +391,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 27,
+    index: 26,
     name: 'ハウステンボス',
     iconSrc: '/Entry/Frame/21_Entry_Frame_27.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_26.png',
@@ -406,7 +406,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 28,
+    index: 27,
     name: 'Happy Machinery',
     iconSrc: '/Entry/Frame/21_Entry_Frame_28.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_27.png',
@@ -421,7 +421,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 29,
+    index: 28,
     name: 'ばとじっぷ',
     iconSrc: '/Entry/Frame/21_Entry_Frame_29.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_28.png',
@@ -436,7 +436,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 30,
+    index: 29,
     name: 'Ximco',
     iconSrc: '/Entry/Frame/21_Entry_Frame_30.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_29.png',
@@ -451,7 +451,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 31,
+    index: 30,
     name: '微熱',
     iconSrc: '/Entry/Frame/21_Entry_Frame_31.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_30.png',
@@ -466,7 +466,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 32,
+    index: 31,
     name: '水無月☆★',
     iconSrc: '/Entry/Frame/21_Entry_Frame_32.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_31.png',
@@ -481,7 +481,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 33,
+    index: 32,
     name: 'MUMEI',
     iconSrc: '/Entry/Frame/21_Entry_Frame_33.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_32.png',
@@ -496,7 +496,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 34,
+    index: 33,
     name: 'メカP',
     iconSrc: '/Entry/Frame/21_Entry_Frame_34.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_33.png',
@@ -511,7 +511,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 35,
+    index: 34,
     name: 'メスシリンダー',
     iconSrc: '/Entry/Frame/21_Entry_Frame_35.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_34.png',
@@ -526,7 +526,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 36,
+    index: 35,
     name: 'わたくし氏',
     iconSrc: '/Entry/Frame/21_Entry_Frame_36.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_35.png',
@@ -541,7 +541,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 37,
+    index: 36,
     name: 'わたぴー',
     iconSrc: '/Entry/Frame/21_Entry_Frame_37.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_36.png',
@@ -556,7 +556,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 38,
+    index: 37,
     name: 'わっつー',
     iconSrc: '/Entry/Frame/21_Entry_Frame_38.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_37.png',
@@ -571,7 +571,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 39,
+    index: 38,
     name: '【Kyoro】',
     iconSrc: '/Entry/Frame/21_Entry_Frame_39.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_38.png',
@@ -586,7 +586,7 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 40,
+    index: 39,
     name: 'Theas',
     iconSrc: '/Entry/Frame/21_Entry_Frame_40.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_39.png',
@@ -601,11 +601,11 @@ const entries: Entry[] = [
     niconicoLink: ''
   },
   {
-    index: 41,
+    index: 40,
     name: '???',
     iconSrc: '/Entry/Frame/21_Entry_Frame_41_Secret.png',
     spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_40_Secret.png',
-    spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_41_secret.png',
+    spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_40_secret.png',
     spKirinukiSrc: '',
     spNameSrc: '',
     spInfoSrc: '',
