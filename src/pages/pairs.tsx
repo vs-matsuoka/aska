@@ -8,6 +8,7 @@ import { useSpring, animated } from 'react-spring';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
 import Layout from 'components/Layout';
+import ResponsiveImage from 'components/ResponsiveImage';
 import useModal from 'hooks/useModal';
 
 type PairRowProps = {
@@ -133,30 +134,6 @@ function ToggleEntriesButton() {
           </div>
         </a>
       </Link>
-    </div>
-  );
-}
-
-function ResponsiveImage(
-  props: Omit<ImageProps, 'fill' | 'width' | 'height'> & {
-    width: number;
-    height: number;
-  }
-) {
-  const { width, height, src, alt, className, ...imageProps } = props;
-  const standard = 1920;
-  const isNarrow = useMediaQuery({ query: '(min-width: 1920px)' });
-
-  return (
-    <div
-      className={`${className ?? ''}`}
-      style={{
-        width: isNarrow ? `${width}px` : `${(width / standard) * 100}vw`,
-        height: isNarrow ? `${height}px` : `${(height / standard) * 100}vw`,
-        objectFit: 'cover'
-      }}
-    >
-      <Image src={src} alt={alt} className="max-w-none" fill {...imageProps}></Image>
     </div>
   );
 }
