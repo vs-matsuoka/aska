@@ -28,7 +28,7 @@ export default function Entries() {
       {/* sp:mt-[125px] */}
       <div className="mt-[16.6666667vw]">&nbsp;</div>
 
-      <div className="fixed inset-0">
+      <div className="fixed top-0 left-0">
         <div className="relative right-0">
           <SpResponsiveImage alt="topBanner" src="/SP/Entry/s21_EntryIndex_TopBanner.png" className="" width={750} height={130} />
           <Link href="/sp/pairs" passHref>
