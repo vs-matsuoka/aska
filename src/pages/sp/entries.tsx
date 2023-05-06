@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 import Background from 'components/Background';
 import SpMenu from 'components/SpMenu';
-import entries from 'const/entries';
+import entries, { Entry } from 'const/entries';
 
 function ResponsiveImage(
   props: Omit<ImageProps, 'fill' | 'width' | 'height'> & {
@@ -28,19 +28,27 @@ function ResponsiveImage(
   );
 }
 
+function getEntryBanner(entry: Entry, index: number) {
+  if (entry.spBannerSrc.includes('secret')) {
+    return <ResponsiveImage alt="banner" src={entry.spBannerSrc} className="relative" width={750} height={127} key={index} />;
+  } else {
+    return (
+      <Link href={'/sp/entries/' + entry.index.toString()} key={index} passHref>
+        <a>
+          <ResponsiveImage alt="banner" src={entry.spBannerSrc} className="relative" width={750} height={127} key={index} />
+        </a>
+      </Link>
+    );
+  }
+}
+
 export default function Entries() {
   return (
     <>
       <Background src="/SP/Entry/s21_Entry_BG.png" />
 
       <div className="grid justify-items-center space-y-[1.2vw] pt-[18.53333333vw] sp:space-y-[9px] sp:pt-[139px]">
-        {entries.map((column, index) => (
-          <Link href={'/sp/entries/' + column.index.toString()} key={index} passHref>
-            <a>
-              <ResponsiveImage alt="banner" src={column.spBannerSrc} className="relative" width={750} height={127} key={index} />
-            </a>
-          </Link>
-        ))}
+        {entries.map((column, index) => getEntryBanner(column, index))}
       </div>
       <div className="mt-[16.6666667vw] sp:mt-[125px]">&nbsp;</div>
 

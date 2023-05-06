@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 import Background from 'components/Background';
 import SpMenu from 'components/SpMenu';
-import entries from 'const/entries';
+import entries, { Entry } from 'const/entries';
 
 function ResponsiveImage(
   props: Omit<ImageProps, 'fill' | 'width' | 'height'> & {
@@ -27,6 +27,20 @@ function ResponsiveImage(
       <Image src={src} alt={alt} className="max-w-none" fill {...imageProps}></Image>
     </div>
   );
+}
+
+function getEntryIcon(entry: Entry, index: number) {
+  if (entry.spBannerSrc.includes('secret')) {
+    return <ResponsiveImage alt="icon" src={entry.spIconSrc} className="relative" width={125} height={125} key={index} />;
+  } else {
+    return (
+      <Link href={'/sp/entries/' + entry.index.toString()} key={index} passHref>
+        <a>
+          <ResponsiveImage alt="icon" src={entry.spIconSrc} className="relative" width={125} height={125} key={index} />
+        </a>
+      </Link>
+    );
+  }
 }
 
 type EntryProps = InferGetStaticPropsType<typeof getStaticProps>;
@@ -79,13 +93,7 @@ const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
         </div>
       </div>
       <div className="mx-[4vw] mt-[63.3333333vw] grid grid-cols-5 justify-items-center gap-[2.13333333vw] sp:mx-[30px] sp:mt-[475px] sp:gap-[16px]">
-        {entries.map((entry, index) => (
-          <Link href={'/sp/entries/' + entry.index.toString()} key={index} passHref>
-            <a>
-              <ResponsiveImage alt="icon" src={entry.spIconSrc} className="relative" width={125} height={125} key={index} />
-            </a>
-          </Link>
-        ))}
+        {entries.map((entry, index) => getEntryIcon(entry, index))}
       </div>
       <div className="mt-[16.6666667vw] sp:mt-[125px]">&nbsp;</div>
       <SpMenu />
