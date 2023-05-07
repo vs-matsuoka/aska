@@ -1,4 +1,4 @@
-import Image, { ImageProps } from 'next/future/image';
+import Image, { ImageProps } from 'next/image';
 import { useMediaQuery } from 'react-responsive';
 
 function ResponsiveImage(

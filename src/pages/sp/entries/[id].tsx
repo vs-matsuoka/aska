@@ -11,9 +11,7 @@ function getEntryIcon(entry: Entry, index: number) {
   } else {
     return (
       <Link href={'/sp/entries/' + entry.index.toString()} key={index} passHref>
-        <a>
-          <SpResponsiveImage alt="icon" src={entry.spIconSrc} className="relative" width={125} height={125} key={index} />
-        </a>
+        <SpResponsiveImage alt="icon" src={entry.spIconSrc} className="relative" width={125} height={125} key={index} />
       </Link>
     );
   }

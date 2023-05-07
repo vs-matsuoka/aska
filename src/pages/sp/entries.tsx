@@ -10,9 +10,7 @@ function getEntryBanner(entry: Entry, index: number) {
   } else {
     return (
       <Link href={'/sp/entries/' + entry.index.toString()} key={index} passHref>
-        <a>
-          <SpResponsiveImage alt="banner" src={entry.spBannerSrc} className="relative" width={750} height={127} key={index} />
-        </a>
+        <SpResponsiveImage alt="banner" src={entry.spBannerSrc} className="relative" width={750} height={127} key={index} />
       </Link>
     );
   }
@@ -32,11 +30,9 @@ export default function Entries() {
         <div className="relative right-0">
           <SpResponsiveImage alt="topBanner" src="/SP/Entry/s21_EntryIndex_TopBanner.png" className="" width={750} height={130} />
           <Link href="/sp/pairs" passHref>
-            <a>
-              <div className="absolute top-0 right-0">
-                <SpResponsiveImage alt="combiButton" src="/SP/Entry/s21_EntryIndex_TopText.png" className="" width={315} height={130} />
-              </div>
-            </a>
+            <div className="absolute top-0 right-0">
+              <SpResponsiveImage alt="combiButton" src="/SP/Entry/s21_EntryIndex_TopText.png" className="" width={315} height={130} />
+            </div>
           </Link>
         </div>
       </div>

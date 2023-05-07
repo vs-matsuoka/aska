@@ -44,11 +44,9 @@ export default function Entries() {
         <div className="relative">
           <SpResponsiveImage alt="topBanner" src="/SP/Pair/s31_PairIndex_TopBanner.png" width={750} height={130} />
           <Link href="/sp/entries" passHref>
-            <a>
-              <div className="absolute top-0 right-0">
-                <SpResponsiveImage alt="pairButton" src="/SP/Pair/s31_PairIndex_TopText.png" width={315} height={130} />
-              </div>
-            </a>
+            <div className="absolute top-0 right-0">
+              <SpResponsiveImage alt="pairButton" src="/SP/Pair/s31_PairIndex_TopText.png" width={315} height={130} />
+            </div>
           </Link>
         </div>
       </div>

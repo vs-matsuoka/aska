@@ -1,4 +1,4 @@
-import Image, { ImageProps } from 'next/future/image';
+import Image, { ImageProps } from 'next/image';
 import { ReactElement, ReactNode, useCallback, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useMediaQuery } from 'react-responsive';

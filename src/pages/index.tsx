@@ -1,4 +1,4 @@
-import Image from 'next/future/image';
+import Image from 'next/image';
 import { ReactElement } from 'react';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';

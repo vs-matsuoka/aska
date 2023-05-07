@@ -1,5 +1,5 @@
-import Image, { ImageProps } from 'next/future/image';
 import Head from 'next/head';
+import Image, { ImageProps } from 'next/image';
 import Link from 'next/link';
 import Script from 'next/script';
 import { ReactElement, useCallback, useEffect, useState } from 'react';
@@ -112,28 +112,26 @@ function ToggleEntryButton() {
       <ResponsiveImage alt="conbi" src="/Entry/21_Entry_text_02_base.png" width={480} height={105} />
       <ResponsiveImage alt="conbi" className={'absolute top-0 left-0 ' + (shadowOn ? '' : 'hidden')} src="/Entry/21_Entry_text_02_shadow.png" width={480} height={105} />
       <Link href="/pairs" passHref>
-        <a>
-          <div className="absolute top-0 left-0 transition hover:scale-125" onMouseEnter={trigger} onMouseLeave={reset}>
-            <ResponsiveImage alt="conbi" src="/Entry/21_Entry_text_02.png" width={480} height={105} />
-            <animated.div
-              className="absolute top-0 left-0"
+        <div className="absolute top-0 left-0 transition hover:scale-125" onMouseEnter={trigger} onMouseLeave={reset}>
+          <ResponsiveImage alt="conbi" src="/Entry/21_Entry_text_02.png" width={480} height={105} />
+          <animated.div
+            className="absolute top-0 left-0"
+            style={{
+              filter: 'brightness(0) invert(1)',
+              ...styles
+            }}
+          >
+            <ResponsiveImage
+              alt="conbi"
+              src="/Entry/21_Entry_text_02.png"
+              width={480}
+              height={105}
               style={{
-                filter: 'brightness(0) invert(1)',
-                ...styles
+                filter: 'brightness(0) invert(1)'
               }}
-            >
-              <ResponsiveImage
-                alt="conbi"
-                src="/Entry/21_Entry_text_02.png"
-                width={480}
-                height={105}
-                style={{
-                  filter: 'brightness(0) invert(1)'
-                }}
-              />
-            </animated.div>
-          </div>
-        </a>
+            />
+          </animated.div>
+        </div>
       </Link>
     </div>
   );
