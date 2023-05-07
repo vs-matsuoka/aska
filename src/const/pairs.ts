@@ -146,7 +146,7 @@ const pairs: Pair[] = [
   {
     index: 13,
     name: '',
-    spIconSrc: '',
+    spIconSrc: '/SP/Pair_Detail/Icon/s32_PairIcon_secret_13.png',
     spBannerSrc: '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_13.png',
     spKirinukiSrc: '',
     spNameSrc: '',
@@ -157,7 +157,7 @@ const pairs: Pair[] = [
   {
     index: 14,
     name: '',
-    spIconSrc: '',
+    spIconSrc: '/SP/Pair_Detail/Icon/s32_PairIcon_secret_14.png',
     spBannerSrc: '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_14.png',
     spKirinukiSrc: '',
     spNameSrc: '',
@@ -168,7 +168,7 @@ const pairs: Pair[] = [
   {
     index: 15,
     name: '',
-    spIconSrc: '',
+    spIconSrc: '/SP/Pair_Detail/Icon/s32_PairIcon_secret_15.png',
     spBannerSrc: '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_15.png',
     spKirinukiSrc: '',
     spNameSrc: '',
@@ -179,7 +179,7 @@ const pairs: Pair[] = [
   {
     index: 16,
     name: '',
-    spIconSrc: '',
+    spIconSrc: '/SP/Pair_Detail/Icon/s32_PairIcon_secret_16.png',
     spBannerSrc: '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_16.png',
     spKirinukiSrc: '',
     spNameSrc: '',
@@ -190,7 +190,7 @@ const pairs: Pair[] = [
   {
     index: 17,
     name: '',
-    spIconSrc: '',
+    spIconSrc: '/SP/Pair_Detail/Icon/s32_PairIcon_secret_17.png',
     spBannerSrc: '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_17.png',
     spKirinukiSrc: '',
     spNameSrc: '',
@@ -201,7 +201,7 @@ const pairs: Pair[] = [
   {
     index: 18,
     name: '',
-    spIconSrc: '',
+    spIconSrc: '/SP/Pair_Detail/Icon/s32_PairIcon_secret_18.png',
     spBannerSrc: '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_18.png',
     spKirinukiSrc: '',
     spNameSrc: '',
@@ -212,7 +212,7 @@ const pairs: Pair[] = [
   {
     index: 19,
     name: '',
-    spIconSrc: '',
+    spIconSrc: '/SP/Pair_Detail/Icon/s32_PairIcon_secret_19.png',
     spBannerSrc: '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_19.png',
     spKirinukiSrc: '',
     spNameSrc: '',
@@ -223,7 +223,7 @@ const pairs: Pair[] = [
   {
     index: 20,
     name: '',
-    spIconSrc: '',
+    spIconSrc: '/SP/Pair_Detail/Icon/s32_PairIcon_secret_20.png',
     spBannerSrc: '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_20.png',
     spKirinukiSrc: '',
     spNameSrc: '',
@@ -232,3 +232,5 @@ const pairs: Pair[] = [
     description: ''
   }
 ];
+
+export default pairs;

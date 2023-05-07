@@ -6,7 +6,7 @@ import SpResponsiveImage from 'components/SpResponsiveImage';
 import entries, { Entry } from 'const/entries';
 
 function getEntryIcon(entry: Entry, index: number) {
-  if (entry.spBannerSrc.includes('secret')) {
+  if (entry.spIconSrc.includes('secret')) {
     return <SpResponsiveImage alt="icon" src={entry.spIconSrc} className="relative" width={125} height={125} key={index} />;
   } else {
     return (
