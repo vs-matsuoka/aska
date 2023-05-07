@@ -2,29 +2,19 @@ import Link from 'next/link';
 import Background from 'components/Background';
 import SpMenu from 'components/SpMenu';
 import SpResponsiveImage from 'components/SpResponsiveImage';
+import pairs, { Pair } from 'const/pairs';
 
-const contestantImageColumns = [
-  '/SP/Pair/Banner/s21_PairIndex_Banner_01.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_02.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_03.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_04.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_05.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_06.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_07.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_08.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_09.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_10.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_11.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_12.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_13.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_14.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_15.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_16.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_17.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_18.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_19.png',
-  '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_20.png'
-];
+function getPairBanner(pair: Pair, index: number) {
+  if (pair.spBannerSrc.includes('Secret')) {
+    return <SpResponsiveImage alt="banner" src={pair.spBannerSrc} className="relative" width={750} height={127} key={index} />;
+  } else {
+    return (
+      <Link href={'/sp/pairs/' + pair.index.toString()} key={index} passHref>
+        <SpResponsiveImage alt="banner" src={pair.spBannerSrc} className="relative" width={750} height={127} key={index} />
+      </Link>
+    );
+  }
+}
 
 export default function Entries() {
   return (
@@ -32,11 +22,7 @@ export default function Entries() {
       <Background src="/SP/Pair/s31_Pair_BG.png" />
 
       {/* sp:space-y-[9px] sp:pt-[139px] */}
-      <div className="grid justify-items-center space-y-[1.2vw] pt-[18.53333333vw]">
-        {contestantImageColumns.map((column, index) => (
-          <SpResponsiveImage alt="banner" src={column} className="relative" width={750} height={127} key={index} />
-        ))}
-      </div>
+      <div className="grid justify-items-center space-y-[1.2vw] pt-[18.53333333vw]">{pairs.map((pair, index) => getPairBanner(pair, index))}</div>
       {/* sp:mt-[125px] */}
       <div className="mt-[16.6666667vw]">&nbsp;</div>
 
