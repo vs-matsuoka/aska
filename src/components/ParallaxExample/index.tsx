@@ -33,15 +33,27 @@ export default function ParallaxExample() {
         layers={[
           {
             speed: -20,
-            children: <Image src={useAssetPath('/banner-background.jpg')} alt="background" layout="fill"></Image>
+            children: <Image src={useAssetPath('/banner-background.jpg')} alt="background" fill sizes="100vw"></Image>
           },
           {
             speed: -40,
-            children: <Image src={useAssetPath('/volga.png')} alt="volga" layout="responsive" width={4000} height={4000}></Image>
+            children: (
+              <Image
+                src={useAssetPath('/volga.png')}
+                alt="volga"
+                width={4000}
+                height={4000}
+                sizes="100vw"
+                style={{
+                  width: '100%',
+                  height: 'auto'
+                }}
+              ></Image>
+            )
           },
           {
             speed: -10,
-            children: <Image src={useAssetPath('/banner-foreground.png')} alt="foreground" layout="fill"></Image>
+            children: <Image src={useAssetPath('/banner-foreground.png')} alt="foreground" fill sizes="100vw"></Image>
           }
         ]}
         className="aspect-[16/9]"

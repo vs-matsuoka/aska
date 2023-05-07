@@ -1,4 +1,4 @@
-import Image, { ImageProps } from 'next/future/image';
+import Image, { ImageProps } from 'next/image';
 import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 import Background from 'components/Background';
@@ -31,20 +31,14 @@ const SpMenu = () => {
         {/* sp:space-y-[16px] sp:pt-[32px] */}
         <div className="grid justify-items-center space-y-[2.133333333333333vw] pt-[4.26666667vw]">
           <Link href="/sp" passHref>
-            <a>
-              <SpResponsiveImage alt="top" src="/SP/Menu/s00_Button_01_Top.png" className="relative" width={686} height={100} />
-            </a>
+            <SpResponsiveImage alt="top" src="/SP/Menu/s00_Button_01_Top.png" className="relative" width={686} height={100} />
           </Link>
           <SpResponsiveImage alt="concept" src="/SP/Menu/s00_Button_02_Concept.png" className="relative" width={686} height={100} />
           <Link href="/sp/entries" passHref>
-            <a>
-              <SpResponsiveImage alt="entries" src="/SP/Menu/s00_Button_03_Entries.png" className="relative" width={686} height={100} />
-            </a>
+            <SpResponsiveImage alt="entries" src="/SP/Menu/s00_Button_03_Entries.png" className="relative" width={686} height={100} />
           </Link>
           <Link href="/sp/pairs" passHref>
-            <a>
-              <SpResponsiveImage alt="combi" src="/SP/Menu/s00_Button_04_Unei.png" className="relative" width={686} height={100} />
-            </a>
+            <SpResponsiveImage alt="combi" src="/SP/Menu/s00_Button_04_Unei.png" className="relative" width={686} height={100} />
           </Link>
           <SpResponsiveImage alt="unei" src="/SP/Menu/s00_Button_05_Movie.png" className="relative" width={686} height={100} />
           <SpResponsiveImage alt="movie" src="/SP/Menu/s00_Button_06_Secret.png" className="relative" width={686} height={100} />

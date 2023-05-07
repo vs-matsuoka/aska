@@ -8,7 +8,7 @@ exports[`<ResponsiveImage /> should render the heading 1`] = `
   <img
     alt="a"
     class="max-w-none"
-    data-nimg="future-fill"
+    data-nimg="fill"
     decoding="async"
     loading="lazy"
     sizes="100vw"

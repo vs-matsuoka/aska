@@ -39,14 +39,10 @@ export default function Top() {
           {/* sp:gap-[16px] */}
           <div className="flex gap-[2.133333333333333vw]">
             <Link href="/sp/entries" passHref>
-              <a>
-                <SpResponsiveImage src="/SP/Top/s11_Top_Button_11_Concept.png" alt="entry" className="relative" width={335} height={192} />
-              </a>
+              <SpResponsiveImage src="/SP/Top/s11_Top_Button_11_Concept.png" alt="entry" className="relative" width={335} height={192} />
             </Link>
             <Link href="/sp/pairs" passHref>
-              <a>
-                <SpResponsiveImage src="/SP/Top/s11_Top_Button_12_Entries.png" alt="combi" className="relative" width={335} height={192} />
-              </a>
+              <SpResponsiveImage src="/SP/Top/s11_Top_Button_12_Entries.png" alt="combi" className="relative" width={335} height={192} />
             </Link>
           </div>
           {/* sp:mt-[16px] sp:gap-[16px] */}
