@@ -41,7 +41,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build
-        run: yarn build
+        run: yarn export
 
       - name: Publish to Cloudflare Pages
         id: cloudflare_pages_deploy
