@@ -30,9 +30,15 @@ export default function Top() {
 
         {/* sp:mt-[3px] sp:space-y-[24px] */}
         <div className="top-0 mt-[0.4vw] flex flex-col items-center space-y-[3.2vw]">
-          <SpResponsiveImage src="/SP/Top/s11_Top_Button_01_SNS_NicoNico.png" alt="niconico" className="relative" width={380} height={48} />
-          <SpResponsiveImage src="/SP/Top/s11_Top_Button_02_SNS_YouTube.png" alt="youtube" className="relative" width={380} height={48} />
-          <SpResponsiveImage src="/SP/Top/s11_Top_Button_03_SNS_Twitter.png" alt="twitter" className="relative" width={380} height={48} />
+          <a href="https://www.nicovideo.jp/user/78465303" target="_blank">
+            <SpResponsiveImage src="/SP/Top/s11_Top_Button_01_SNS_NicoNico.png" alt="niconico" className="relative" width={380} height={48} />
+          </a>
+          <a href="https://www.youtube.com/@otoMDM" target="_blank">
+            <SpResponsiveImage src="/SP/Top/s11_Top_Button_02_SNS_YouTube.png" alt="youtube" className="relative" width={380} height={48} />
+          </a>
+          <a href="https://twitter.com/otoMDM" target="_blank">
+            <SpResponsiveImage src="/SP/Top/s11_Top_Button_03_SNS_Twitter.png" alt="twitter" className="relative" width={380} height={48} />
+          </a>
         </div>
         {/* sp:mx-[32px] sp:mt-[106px] */}
         <div className="mx-[4.2666666666667vw] mt-[14.1333333333vw] grid justify-items-center">
