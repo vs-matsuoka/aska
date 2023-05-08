@@ -33,7 +33,9 @@ const SpMenu = () => {
           <Link href="/sp" passHref>
             <SpResponsiveImage alt="top" src="/SP/Menu/s00_Button_01_Top.png" className="relative" width={686} height={100} />
           </Link>
-          <SpResponsiveImage alt="concept" src="/SP/Menu/s00_Button_02_Concept.png" className="relative" width={686} height={100} />
+          <Link href="/sp/about" passHref>
+            <SpResponsiveImage alt="concept" src="/SP/Menu/s00_Button_02_Concept.png" className="relative" width={686} height={100} />
+          </Link>
           <Link href="/sp/entries" passHref>
             <SpResponsiveImage alt="entries" src="/SP/Menu/s00_Button_03_Entries.png" className="relative" width={686} height={100} />
           </Link>

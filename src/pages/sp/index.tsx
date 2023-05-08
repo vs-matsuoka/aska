@@ -47,7 +47,9 @@ export default function Top() {
           </div>
           {/* sp:mt-[16px] sp:gap-[16px] */}
           <div className="mt-[2.133333333333333vw] flex gap-[2.133333333333333vw]">
-            <SpResponsiveImage src="/SP/Top/s11_Top_Button_13_Unei.png" alt="overview" className="relative" width={218} height={128} />
+            <Link href="/sp/about" passHref>
+              <SpResponsiveImage src="/SP/Top/s11_Top_Button_13_Unei.png" alt="overview" className="relative" width={218} height={128} />
+            </Link>
             <SpResponsiveImage src="/SP/Top/s11_Top_Button_14_Movie.png" alt="unei" className="relative" width={218} height={128} />
             <SpResponsiveImage src="/SP/Top/s11_Top_Button_15_Secret.png" alt="movie" className="relative" width={218} height={128} />
           </div>
