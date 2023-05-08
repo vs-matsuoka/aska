@@ -19,8 +19,12 @@ function getPairIcon(pair: Pair, index: number) {
 
 type PairProps = InferGetStaticPropsType<typeof getStaticProps>;
 
+export type Param = {};
+
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = pairs.map((value) => ({
+  const noSecretPairs = pairs.filter((pair) => !pair.spIconSrc.includes('secret'));
+
+  const paths = noSecretPairs.map((value) => ({
     params: {
       id: value.index.toString()
     }

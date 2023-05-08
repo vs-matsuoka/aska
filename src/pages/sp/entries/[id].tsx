@@ -6,7 +6,7 @@ import SpResponsiveImage from 'components/SpResponsiveImage';
 import entries, { Entry } from 'const/entries';
 
 function getEntryIcon(entry: Entry, index: number) {
-  if (entry.spIconSrc.includes('secret')) {
+  if (entry.spIconSrc.includes('Secret')) {
     return <SpResponsiveImage alt="icon" src={entry.spIconSrc} className="relative" width={125} height={125} key={index} />;
   } else {
     return (
@@ -20,7 +20,9 @@ function getEntryIcon(entry: Entry, index: number) {
 type EntryProps = InferGetStaticPropsType<typeof getStaticProps>;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = entries.map((value) => ({
+  const noSecretEntries = entries.filter((entries) => !entries.spIconSrc.includes('Secret'));
+
+  const paths = noSecretEntries.map((value) => ({
     params: {
       id: value.index.toString()
     }
