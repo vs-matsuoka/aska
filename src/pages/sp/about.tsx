@@ -25,13 +25,17 @@ export default function About() {
         <SpResponsiveImage alt="topBanner" src="/SP/Concept/s41_Concept_Compo04.png" className="relative" width={750} height={700} />
       </div>
       {/* sp:mt-[35px] ml-[18x] */}
-      <div className="mt-[4.66666667vw] ml-[2.4vw]">
-        <SpResponsiveImage alt="topBanner" src="/SP/Concept/s41_Concept_Link01.png" className="relative" width={600} height={225} />
-      </div>
+      <Link href="/sp/entries" passHref>
+        <div className="mt-[4.66666667vw] ml-[2.4vw]">
+          <SpResponsiveImage alt="topBanner" src="/SP/Concept/s41_Concept_Link01.png" className="relative" width={600} height={225} />
+        </div>
+      </Link>
       {/* sp:mt-[3px] ml-[172x] */}
-      <div className="mt-[0.4vw] ml-[22.933333333vw]">
-        <SpResponsiveImage alt="topBanner" src="/SP/Concept/s41_Concept_Link02.png" className="relative" width={600} height={225} />
-      </div>
+      <Link href="/sp/pairs" passHref>
+        <div className="mt-[0.4vw] ml-[22.933333333vw] overflow-hidden">
+          <SpResponsiveImage alt="topBanner" src="/SP/Concept/s41_Concept_Link02.png" className="relative" width={600} height={225} />
+        </div>
+      </Link>
       {/* sp:mt-[125px] */}
       <div className="mt-[16.6666667vw]">&nbsp;</div>
       <SpMenu />
