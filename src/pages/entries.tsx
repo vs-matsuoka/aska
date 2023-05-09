@@ -1,7 +1,4 @@
-import Head from 'next/head';
-import Image, { ImageProps } from 'next/image';
 import Link from 'next/link';
-import Script from 'next/script';
 import { ReactElement, useCallback, useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { useSpring, animated } from 'react-spring';
@@ -10,6 +7,7 @@ import Background from 'components/Background';
 import Layout from 'components/Layout';
 import ResponsiveImage from 'components/ResponsiveImage';
 import entries, { Entry } from 'const/entries';
+import { EntryContextType, EntryProvider, useEntryContext } from 'contexts/EntryContext';
 import useModal from 'hooks/useModal';
 
 type ContestantRowProps = {
@@ -26,30 +24,33 @@ function Contestant({ entry, onModalOpen }: { entry: Entry; onModalOpen: () => v
       // duration: 50
     }
   }));
+  const { setEntry } = useEntryContext() as EntryContextType;
   return (
     <div key={entry.index} className="relative h-[7.8125vw] w-[4.6875vw] skew-y-[10deg] 4xl:h-[150px] 4xl:w-[90px]">
       <div className="h-[7.2916666667vw] w-[6.3541666667vw] skew-x-[-20deg] skew-y-[-11deg] bg-transparent 4xl:h-[140px] 4xl:w-[122px]"></div>
-      <a {...(entry.iconSrc.includes('Secret') ? {} : { href: '#' })}>
+      <a {...(entry.frameSrc.includes('Secret') ? {} : { href: '#' })}>
         <div
           className="absolute left-[-3.28125vw] top-[-2.9687557vw] max-w-none 4xl:left-[-63px] 4xl:top-[-57px]"
           style={{
             clipPath: 'polygon(34% 25%, 88% 15%, 66% 75%, 12% 85%)'
           }}
           onClick={() => {
-            if (entry.iconSrc.includes('Secret')) {
+            if (entry.frameSrc.includes('Secret')) {
               return;
             }
+            setEntry(entry);
             onModalOpen();
           }}
         >
-          <ResponsiveImage src={entry.iconSrc} alt="contestant" width={250} height={250} />
+          <ResponsiveImage src={entry.frameSrc} alt="contestant" width={250} height={250} priority />
           <animated.div
             className="absolute left-[3.125vw] top-[2.65625vw] h-[7.8125vw] w-[6.7708333333vw] skew-x-[-20deg] skew-y-[-11deg] bg-white 4xl:left-[60px] 4xl:top-[51px] 4xl:h-[150px] 4xl:w-[130px]"
             style={styles}
             onMouseEnter={() => {
-              if (entry.iconSrc.includes('Secret')) {
+              if (entry.frameSrc.includes('Secret')) {
                 return;
               }
+              setEntry(entry);
               api.start({
                 from: { opacity: 1 },
                 to: { opacity: 0 }
@@ -142,6 +143,7 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
     // FUCK
     window.FONTPLUS.reload();
   });
+  const { entry } = useEntryContext() as EntryContextType;
   return (
     <div className={`fixed inset-0 ${isOpen ? 'opacity-100' : 'opacity-0'} transition-all duration-200 ${isOpen ? '' : 'pointer-events-none'}`}>
       <Background src="/Modal/22_Entry_Modal_BG.png" />
@@ -165,14 +167,14 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
               <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="back" className="relative" width={70} height={690} />
             </div>
             <div className="flex">
-              <ResponsiveImage src="/Modal/contestants/22_Modal_contestant_01.png" alt="contestant" className="relative" width={600} height={700} />
+              <ResponsiveImage src={entry.contestantSrc} alt="contestant" className="relative" width={600} height={700} priority />
               <div className="my-auto h-auto">
                 <div className="absolute right-[5.8854166667vw] top-[2.2395833333vw] 4xl:right-[113px] 4xl:top-[43px]" onClick={onClose}>
                   <a href="#">
                     <ResponsiveImage src="/Modal/22_Modal_Close.png" alt="close" className="relative" width={55} height={55} />
                   </a>
                 </div>
-                <ResponsiveImage src="/Modal/icon/22_Modal_icon_01.png" alt="icon" className="relative" width={680} height={100} />
+                <ResponsiveImage src={entry.iconSrc} alt="icon" className="relative" width={680} height={100} priority />
                 <ResponsiveImage src="/Modal/22_Entry_pic_Line.png" alt="line" className="relative" width={725} height={10} />
                 {/* テキストサイズを決定する */}
                 <div
@@ -226,19 +228,21 @@ const Entries: NextPageWithLayout = () => {
 
   return (
     <>
-      <Background src="/Entry/21_Entry_pic_BG.png" />
-      <Background src="/Entry/21_Entry_pic_vignette.png" />
-      {/* <Head></Head> */}
-      <div className="relative">
-        <div className="absolute left-[1.9vw] top-[-10vw] 4xl:left-[36.48px] 4xl:top-[-211.2px]">
-          <ResponsiveImage alt="entry" src="/Entry/21_Entry_text_01.png" width={500} height={250} />
+      <EntryProvider>
+        <Background src="/Entry/21_Entry_pic_BG.png" />
+        <Background src="/Entry/21_Entry_pic_vignette.png" />
+        {/* <Head></Head> */}
+        <div className="relative">
+          <div className="absolute left-[1.9vw] top-[-10vw] 4xl:left-[36.48px] 4xl:top-[-211.2px]">
+            <ResponsiveImage alt="entry" src="/Entry/21_Entry_text_01.png" width={500} height={250} />
+          </div>
+          {contestantRows.map((row, index) => (
+            <ContestantRow key={index} contestants={row} offset={index * 46} onModalOpen={onOpen} />
+          ))}
+          <ToggleEntryButton />
         </div>
-        {contestantRows.map((row, index) => (
-          <ContestantRow key={index} contestants={row} offset={index * 46} onModalOpen={onOpen} />
-        ))}
-        <ToggleEntryButton />
-      </div>
-      <ContestantModal isOpen={isOpen} onClose={onClose} />
+        <ContestantModal isOpen={isOpen} onClose={onClose} />
+      </EntryProvider>
     </>
   );
 };
