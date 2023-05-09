@@ -1,4 +1,4 @@
-import Image from 'next/future/image';
+import Image from 'next/image';
 
 type BackgroundProps = {
   src: string;
@@ -13,6 +13,7 @@ function Background({ src }: BackgroundProps) {
         alt="background"
         className="-z-50"
         fill
+        quality={100}
         style={{
           objectFit: 'cover'
         }}

@@ -36,7 +36,24 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
 
   useEffect(() => {
     if (router) {
-      const handleRouteChange = (url: string, { shallow }: { shallow: boolean }) => {
+      const handleRouteChangeStart = (url: string, { shallow }: { shallow: boolean }) => {
+        console.log(`App is changing to ${url} ${shallow ? 'with' : 'without'} shallow routing`);
+        redApi.start({
+          to: {
+            clipPath: redIsUpside
+              ? `polygon(${100}% ${0}%, ${200}% ${100}%, ${100}% ${200}%, ${0}% ${100}%)`
+              : `polygon(${0}% ${-100}%, ${100}% ${0}%, ${0}% ${100}%, ${-100}% ${0}%)`
+          }
+        });
+        blueApi.start({
+          to: {
+            clipPath: redIsUpside
+              ? `polygon(${0}% ${-100}%, ${100}% ${0}%, ${0}% ${100}%, ${-100}% ${0}%)`
+              : `polygon(${100}% ${0}%, ${200}% ${100}%, ${100}% ${200}%, ${0}% ${100}%)`
+          }
+        });
+      };
+      const handleRouteChangeComplete = (url: string, { shallow }: { shallow: boolean }) => {
         console.log(`App is changing to ${url} ${shallow ? 'with' : 'without'} shallow routing`);
         redApi.start({
           to: {
@@ -61,10 +78,12 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
           }
         });
       };
-      router.events.on('routeChangeStart', handleRouteChange);
+      router.events.on('routeChangeStart', handleRouteChangeStart);
+      router.events.on('routeChangeComplete', handleRouteChangeComplete);
       return () => {
         setRedIsUpside((r) => !r);
-        router.events.off('routeChangeStart', handleRouteChange);
+        router.events.off('routeChangeStart', handleRouteChangeStart);
+        router.events.off('routeChangeComplete', handleRouteChangeComplete);
       };
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -18,8 +18,8 @@ export default function Example() {
         <p className="mt-3 text-2xl">This page has nothing to do....</p>
 
         <p className="mt-3 text-2xl">
-          <Link href="/">
-            <a className="text-blue-600">Back to top</a>
+          <Link href="/" className="text-blue-600">
+            Back to top
           </Link>
         </p>
         <LoopAnimationExample text="Exmaple" />
