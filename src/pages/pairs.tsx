@@ -4,10 +4,11 @@ import { useMediaQuery } from 'react-responsive';
 import { useSpring, animated } from 'react-spring';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
+import FireOnlyOnServerSide from 'components/FireOnlyOnServerSide';
 import Layout from 'components/Layout';
 import ResponsiveImage from 'components/ResponsiveImage';
-import pairs, { Pair } from 'const/pairs';
-import { PairContext, PairContextType, PairProvider, usePairContext } from 'contexts/PairContext';
+import pairs, { Pair as Pair } from 'const/pairs';
+import { PairContextType, PairProvider, usePairContext } from 'contexts/PairContext';
 import useModal from 'hooks/useModal';
 import { searchNextPublished, searchPrevPublished } from 'utils/nextPrev';
 
@@ -17,7 +18,7 @@ type PairRowProps = {
   onModalOpen: () => void;
 };
 
-function Pair({ pair, onModalOpen }: { pair: Pair; onModalOpen: () => void }) {
+function PairButton({ pair, onModalOpen }: { pair: Pair; onModalOpen: () => void }) {
   const [styles, api] = useSpring(() => ({
     from: { opacity: 0 },
     to: { opacity: 0 },
@@ -75,7 +76,7 @@ function PairRow({ pairs, offset, onModalOpen }: PairRowProps) {
       }}
     >
       {pairs.map((pair, i) => (
-        <Pair pair={pair} onModalOpen={onModalOpen} key={i} />
+        <PairButton pair={pair} onModalOpen={onModalOpen} key={i} />
       ))}
     </div>
   );
@@ -149,6 +150,22 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
   const prevPair = searchPrevPublished(pairs, pair);
   return (
     <div className={`fixed inset-0 ${isOpen ? 'opacity-100' : 'opacity-0'} transition-all duration-200 ${isOpen ? '' : 'pointer-events-none'}`}>
+      {/*
+      DIRTY HACK: 今回の場合、next-export-optimize-images は next build のタイミングで <Image> タグを通過した画像のみを対象に変換を行う。
+      この対応のため、サーバーサイドでのみレンダリングされる箇所を作成し、そこにクライアントサイドで動的にレンダリングされる予定の画像一覧をレンダリングするようにしておく。
+    */}
+      <FireOnlyOnServerSide>
+        {pairs
+          .filter((pair) => pair.isPublished)
+          .map((pair) => (
+            <div key={pair.index}>
+              <ResponsiveImage src={pair.illustSrc} alt="pair" className="relative" width={600} height={600} priority />
+              <ResponsiveImage src={pair.nameSrc} alt="icon" className="relative" width={690} height={90} priority />
+              <ResponsiveImage src={pair.hnASrc} alt="name" className="relative" width={325} height={50} />
+              <ResponsiveImage src={pair.hnBSrc} alt="name" className="relative" width={325} height={50} />
+            </div>
+          ))}
+      </FireOnlyOnServerSide>
       <Background src="/Pair_Modal/32_Pair_Modal_BG.png" />
       <div className={`relative flex h-full items-center justify-center ${isOpen ? 'block' : 'hidden'}`} onClick={onClose}>
         <div

@@ -4,6 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useSpring, animated } from 'react-spring';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
+import FireOnlyOnServerSide from 'components/FireOnlyOnServerSide';
 import Layout from 'components/Layout';
 import ResponsiveImage from 'components/ResponsiveImage';
 import entries, { Entry } from 'const/entries';
@@ -17,7 +18,7 @@ type ContestantRowProps = {
   onModalOpen: () => void;
 };
 
-function Contestant({ entry, onModalOpen }: { entry: Entry; onModalOpen: () => void }) {
+function ContestantButton({ entry, onModalOpen }: { entry: Entry; onModalOpen: () => void }) {
   const [styles, api] = useSpring(() => ({
     from: { opacity: 0 },
     to: { opacity: 0 },
@@ -75,7 +76,7 @@ function ContestantRow({ contestants, offset, onModalOpen }: ContestantRowProps)
       }}
     >
       {contestants.map((contestant) => (
-        <Contestant entry={contestant} onModalOpen={onModalOpen} key={contestant.index} />
+        <ContestantButton entry={contestant} onModalOpen={onModalOpen} key={contestant.index} />
       ))}
     </div>
   );
@@ -149,6 +150,21 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
   const prevEntry = searchPrevPublished(entries, entry);
   return (
     <div className={`fixed inset-0 ${isOpen ? 'opacity-100' : 'opacity-0'} transition-all duration-200 ${isOpen ? '' : 'pointer-events-none'}`}>
+      {/*
+        DIRTY HACK: 今回の場合、next-export-optimize-images は next build のタイミングで <Image> タグを通過した画像のみを対象に変換を行う。
+        この対応のため、サーバーサイドでのみレンダリングされる箇所を作成し、そこにクライアントサイドで動的にレンダリングされる予定の画像一覧をレンダリングするようにしておく。
+      */}
+      <FireOnlyOnServerSide>
+        {entries
+          .filter((entry) => entry.isPublished)
+          .map((entry) => (
+            <div key={entry.index}>
+              <ResponsiveImage src={entry.contestantSrc} alt="contestant" className="relative" width={600} height={700} priority />
+              <ResponsiveImage src={entry.iconSrc} alt="icon" className="relative" width={680} height={100} priority />
+            </div>
+          ))}
+      </FireOnlyOnServerSide>
+
       <Background src="/Modal/22_Entry_Modal_BG.png" />
       <div className={`relative flex h-full items-center justify-center ${isOpen ? 'block' : 'hidden'}`} onClick={onClose}>
         <div

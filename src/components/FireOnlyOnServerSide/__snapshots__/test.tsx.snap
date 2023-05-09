@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FireOnlyOnServerSide /> should not render on ServerSide 1`] = `YO`;
+
+exports[`<FireOnlyOnServerSide /> should render on ClientSide 1`] = `null`;
