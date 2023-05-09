@@ -13,6 +13,7 @@ function Background({ src }: BackgroundProps) {
         alt="background"
         className="-z-50"
         fill
+        quality={100}
         style={{
           objectFit: 'cover'
         }}

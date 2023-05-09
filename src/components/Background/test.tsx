@@ -8,7 +8,7 @@ describe('<Background />', () => {
     const { container } = render(<Background src={expectedSrc} />);
 
     expect(screen.getByAltText('background')).toBeInTheDocument();
-    expect(screen.getByAltText('background')).toHaveAttribute('src', `/_next/image?url=${encodeURIComponent(expectedSrc)}&w=3840&q=75`);
+    expect(screen.getByAltText('background')).toHaveAttribute('src', `/_next/image?url=${encodeURIComponent(expectedSrc)}&w=3840&q=100`);
 
     expect(container.firstChild).toMatchSnapshot();
   });

@@ -1,8 +1,10 @@
+const withExportImages = require('next-export-optimize-images');
+
 /** @type {import('next').NextConfig} */
-module.exports = {
+module.exports = withExportImages({
   reactStrictMode: true,
   images: {
-    unoptimized: true
+    // unoptimized: true
   },
   trailingSlash: true,
   webpack: (config, { isServer }) => {
@@ -12,4 +14,4 @@ module.exports = {
     }
     return config;
   }
-};
+});
