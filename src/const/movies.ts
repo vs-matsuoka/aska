@@ -1,3 +1,9 @@
+export type MovieCategory = {
+  index: number;
+  name: string;
+  movieList: Movie[];
+};
+
 export type Movie = {
   index: number;
   title: string;
@@ -87,3 +93,23 @@ const specialPrograms: Movie[] = [
     youtubeUrl: 'https://youtu.be/q65tyDWSCgw'
   }
 ];
+
+const movieCategoryList: MovieCategory[] = [
+  {
+    index: 1,
+    name: '特別告知',
+    movieList: specialNotices
+  },
+  {
+    index: 2,
+    name: 'コンビ告知',
+    movieList: genericNotices
+  },
+  {
+    index: 1,
+    name: '特別番組',
+    movieList: specialPrograms
+  }
+];
+
+export default movieCategoryList;
