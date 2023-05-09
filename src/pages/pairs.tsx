@@ -209,8 +209,8 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
                     <ResponsiveImage src={pair.nameSrc} alt="icon" className="relative" width={690} height={90} priority />
                   </div>
                   <div className="ml-[0.3645833333vw] flex gap-[0.7291666667vw] 4xl:ml-[7px] 4xl:gap-[14px]">
-                    <ResponsiveImage src={pair.hnASrc} alt="name" className="relative" width={325} height={50} />
-                    <ResponsiveImage src={pair.hnBSrc} alt="name" className="relative" width={325} height={50} />
+                    <ResponsiveImage src={pair.hnASrc} alt="name" className="relative" width={325} height={50} priority />
+                    <ResponsiveImage src={pair.hnBSrc} alt="name" className="relative" width={325} height={50} priority />
                   </div>
                 </div>
                 <ResponsiveImage src="/Pair_Modal/32_Pair_Modal_pic_Line.png" alt="line" className="relative" width={685} height={10} />
