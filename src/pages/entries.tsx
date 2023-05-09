@@ -9,6 +9,7 @@ import ResponsiveImage from 'components/ResponsiveImage';
 import entries, { Entry } from 'const/entries';
 import { EntryContextType, EntryProvider, useEntryContext } from 'contexts/EntryContext';
 import useModal from 'hooks/useModal';
+import { searchNextPublished, searchPrevPublished } from 'utils/nextPrev';
 
 type ContestantRowProps = {
   contestants: Entry[];
@@ -143,7 +144,9 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
     // FUCK
     window.FONTPLUS.reload();
   });
-  const { entry } = useEntryContext() as EntryContextType;
+  const { entry, setEntry } = useEntryContext() as EntryContextType;
+  const nextEntry = searchNextPublished(entries, entry);
+  const prevEntry = searchPrevPublished(entries, entry);
   return (
     <div className={`fixed inset-0 ${isOpen ? 'opacity-100' : 'opacity-0'} transition-all duration-200 ${isOpen ? '' : 'pointer-events-none'}`}>
       <Background src="/Modal/22_Entry_Modal_BG.png" />
@@ -163,9 +166,17 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
           }}
         >
           <div className="flex">
-            <div>
-              <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="back" className="relative" width={70} height={690} />
-            </div>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                setEntry(prevEntry);
+              }}
+            >
+              <div>
+                <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="back" className="relative" width={70} height={690} />
+              </div>
+            </a>
             <div className="flex">
               <ResponsiveImage src={entry.contestantSrc} alt="contestant" className="relative" width={600} height={700} priority />
               <div className="my-auto h-auto">
@@ -203,9 +214,17 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
                 </div>
               </div>
             </div>
-            <div>
-              <ResponsiveImage src="/Modal/22_Modal_Next.png" alt="next" className="relative" width={70} height={690} />
-            </div>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                setEntry(nextEntry);
+              }}
+            >
+              <div>
+                <ResponsiveImage src="/Modal/22_Modal_Next.png" alt="next" className="relative" width={70} height={690} />
+              </div>
+            </a>
           </div>
         </div>
       </div>

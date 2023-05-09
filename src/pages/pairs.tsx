@@ -9,6 +9,7 @@ import ResponsiveImage from 'components/ResponsiveImage';
 import pairs, { Pair } from 'const/pairs';
 import { PairContext, PairContextType, PairProvider, usePairContext } from 'contexts/PairContext';
 import useModal from 'hooks/useModal';
+import { searchNextPublished, searchPrevPublished } from 'utils/nextPrev';
 
 type PairRowProps = {
   pairs: Pair[];
@@ -143,7 +144,9 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
     // FUCK
     window.FONTPLUS.reload();
   });
-  const { pair } = usePairContext() as PairContextType;
+  const { pair, setPair } = usePairContext() as PairContextType;
+  const nextPair = searchNextPublished(pairs, pair);
+  const prevPair = searchPrevPublished(pairs, pair);
   return (
     <div className={`fixed inset-0 ${isOpen ? 'opacity-100' : 'opacity-0'} transition-all duration-200 ${isOpen ? '' : 'pointer-events-none'}`}>
       <Background src="/Pair_Modal/32_Pair_Modal_BG.png" />
@@ -163,9 +166,17 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
           }}
         >
           <div className="flex">
-            <div>
-              <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="back" className="relative" width={70} height={690} />
-            </div>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                setPair(prevPair);
+              }}
+            >
+              <div>
+                <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="back" className="relative" width={70} height={690} />
+              </div>
+            </a>
             <div className="flex">
               <div className="my-auto h-auto">
                 <ResponsiveImage src={pair.illustSrc} alt="pair" className="relative" width={600} height={600} priority />
@@ -202,9 +213,17 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
                 </div>
               </div>
             </div>
-            <div>
-              <ResponsiveImage src="/Modal/22_Modal_Next.png" alt="next" className="relative" width={70} height={690} />
-            </div>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                setPair(nextPair);
+              }}
+            >
+              <div>
+                <ResponsiveImage src="/Modal/22_Modal_Next.png" alt="next" className="relative" width={70} height={690} />
+              </div>
+            </a>
           </div>
         </div>
       </div>

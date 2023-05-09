@@ -14,6 +14,7 @@ export type Entry = {
   twitterLink: string;
   youtubeLink: string;
   niconicoLink: string;
+  isPublished: boolean;
 };
 
 const entries: Entry[] = [
@@ -32,7 +33,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 2,
@@ -49,7 +51,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 3,
@@ -66,7 +69,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 4,
@@ -83,7 +87,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 5,
@@ -100,7 +105,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 6,
@@ -117,7 +123,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 7,
@@ -134,7 +141,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 8,
@@ -151,7 +159,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 9,
@@ -168,7 +177,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 10,
@@ -185,7 +195,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 11,
@@ -202,7 +213,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 12,
@@ -219,7 +231,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 13,
@@ -236,7 +249,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 14,
@@ -253,7 +267,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 15,
@@ -270,7 +285,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 16,
@@ -287,7 +303,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 17,
@@ -304,7 +321,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 18,
@@ -321,7 +339,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 19,
@@ -338,7 +357,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 20,
@@ -355,7 +375,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 21,
@@ -372,7 +393,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 22,
@@ -389,7 +411,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 23,
@@ -406,7 +429,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 24,
@@ -423,7 +447,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 25,
@@ -440,7 +465,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 26,
@@ -457,7 +483,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 27,
@@ -474,7 +501,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 28,
@@ -491,7 +519,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 29,
@@ -508,7 +537,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 30,
@@ -525,7 +555,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 31,
@@ -542,7 +573,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 32,
@@ -559,7 +591,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 33,
@@ -576,7 +609,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 34,
@@ -593,7 +627,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 35,
@@ -610,7 +645,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 36,
@@ -627,7 +663,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 37,
@@ -644,7 +681,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 38,
@@ -661,7 +699,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 39,
@@ -678,7 +717,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: true
   },
   {
     index: 40,
@@ -695,7 +735,8 @@ const entries: Entry[] = [
     description: '',
     twitterLink: '',
     youtubeLink: '',
-    niconicoLink: ''
+    niconicoLink: '',
+    isPublished: false
   }
 ];
 

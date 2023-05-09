@@ -13,6 +13,7 @@ export type Pair = {
   spBaseASrc: string;
   spBaseBSrc: string;
   description: string;
+  isPublished: boolean;
 };
 
 const pairs: Pair[] = [
@@ -30,7 +31,8 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_01.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_01_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_01_B.png',
-    description: ''
+    description: '',
+    isPublished: true
   },
   {
     index: 2,
@@ -46,7 +48,8 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_02.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_02_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_02_B.png',
-    description: ''
+    description: '',
+    isPublished: true
   },
   {
     index: 3,
@@ -62,7 +65,8 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_03.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_03_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_03_B.png',
-    description: ''
+    description: '',
+    isPublished: true
   },
   {
     index: 4,
@@ -78,7 +82,8 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_04.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_04_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_04_B.png',
-    description: ''
+    description: '',
+    isPublished: true
   },
   {
     index: 5,
@@ -94,7 +99,8 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_05.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_05_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_05_B.png',
-    description: ''
+    description: '',
+    isPublished: true
   },
   {
     index: 6,
@@ -110,7 +116,8 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_06.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_06_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_06_B.png',
-    description: ''
+    description: '',
+    isPublished: true
   },
   {
     index: 7,
@@ -126,7 +133,8 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_07.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_07_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_07_B.png',
-    description: ''
+    description: '',
+    isPublished: true
   },
   {
     index: 8,
@@ -142,7 +150,8 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_08.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_08_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_08_B.png',
-    description: ''
+    description: '',
+    isPublished: true
   },
   {
     index: 9,
@@ -158,7 +167,8 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_09.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_09_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_09_B.png',
-    description: ''
+    description: '',
+    isPublished: true
   },
   {
     index: 10,
@@ -174,7 +184,8 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_10.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_10_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_10_B.png',
-    description: ''
+    description: '',
+    isPublished: true
   },
   {
     index: 11,
@@ -190,7 +201,8 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_11.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_11_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_11_B.png',
-    description: ''
+    description: '',
+    isPublished: true
   },
   {
     index: 12,
@@ -206,7 +218,8 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_12.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_12_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_12_B.png',
-    description: ''
+    description: '',
+    isPublished: true
   },
   {
     index: 13,
@@ -222,7 +235,8 @@ const pairs: Pair[] = [
     spNameSrc: '',
     spBaseASrc: '',
     spBaseBSrc: '',
-    description: ''
+    description: '',
+    isPublished: false
   },
   {
     index: 14,
@@ -238,7 +252,8 @@ const pairs: Pair[] = [
     spNameSrc: '',
     spBaseASrc: '',
     spBaseBSrc: '',
-    description: ''
+    description: '',
+    isPublished: false
   },
   {
     index: 15,
@@ -254,7 +269,8 @@ const pairs: Pair[] = [
     spNameSrc: '',
     spBaseASrc: '',
     spBaseBSrc: '',
-    description: ''
+    description: '',
+    isPublished: false
   },
   {
     index: 16,
@@ -270,7 +286,8 @@ const pairs: Pair[] = [
     spNameSrc: '',
     spBaseASrc: '',
     spBaseBSrc: '',
-    description: ''
+    description: '',
+    isPublished: false
   },
   {
     index: 17,
@@ -286,7 +303,8 @@ const pairs: Pair[] = [
     spNameSrc: '',
     spBaseASrc: '',
     spBaseBSrc: '',
-    description: ''
+    description: '',
+    isPublished: false
   },
   {
     index: 18,
@@ -302,7 +320,8 @@ const pairs: Pair[] = [
     spNameSrc: '',
     spBaseASrc: '',
     spBaseBSrc: '',
-    description: ''
+    description: '',
+    isPublished: false
   },
   {
     index: 19,
@@ -318,7 +337,8 @@ const pairs: Pair[] = [
     spNameSrc: '',
     spBaseASrc: '',
     spBaseBSrc: '',
-    description: ''
+    description: '',
+    isPublished: false
   },
   {
     index: 20,
@@ -334,7 +354,8 @@ const pairs: Pair[] = [
     spNameSrc: '',
     spBaseASrc: '',
     spBaseBSrc: '',
-    description: ''
+    description: '',
+    isPublished: false
   }
 ];
 
