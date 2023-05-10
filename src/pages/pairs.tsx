@@ -141,11 +141,11 @@ function ToggleEntriesButton() {
 }
 
 function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+  const { pair, setPair } = usePairContext() as PairContextType;
   useEffect(() => {
     // FUCK
     window.FONTPLUS.reload();
-  });
-  const { pair, setPair } = usePairContext() as PairContextType;
+  }, [pair]);
   const nextPair = searchNextPublished(pairs, pair);
   const prevPair = searchPrevPublished(pairs, pair);
   return (
