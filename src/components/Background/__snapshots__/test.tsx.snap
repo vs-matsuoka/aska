@@ -2,14 +2,14 @@
 
 exports[`<Background /> should render the heading 1`] = `
 <div
-  class="fixed"
+  class="fixed -z-50"
 >
   <div
     class="h-screen w-screen"
   />
   <img
     alt="background"
-    class="-z-50 select-none"
+    class="select-none"
     data-nimg="fill"
     decoding="async"
     loading="lazy"
