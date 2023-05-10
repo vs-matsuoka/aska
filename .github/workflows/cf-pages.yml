@@ -63,6 +63,13 @@ jobs:
           tree -a .next/
           tree -a node_modules/.cache/
 
+      - name: tree
+        run: |
+          tree -a .
+
+      - run: ls -al node_modules/.cache/
+      - run: ls -al node_modules/.cache/next-export-optimize-images/
+
       - name: Build
         run: yarn export
 
