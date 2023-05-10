@@ -45,14 +45,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-
 
+      - run: mkdir -p ${{ github.workspace }}/node_modules/.cache
+
       - uses: actions/cache@v3
         id: next-export-optimize-images-cache
         with:
           path: |
-            ${{ github.workspace }}/node_modules/.cache/next-export-optimize-images
-          key: ${{ runner.os }}-next-export-optimize-images-${{ hashFiles('src/**/*') }}-${{ hashFiles('public/**/*') }}
+            ${{ github.workspace }}/node_modules/.cache
+          key: ${{ runner.os }}-node_modules-cache-${{ hashFiles('src/**/*') }}-${{ hashFiles('public/**/*') }}
           restore-keys: |
-            ${{ runner.os }}-next-export-optimize-images-
+            ${{ runner.os }}-node_modules-cache-
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
