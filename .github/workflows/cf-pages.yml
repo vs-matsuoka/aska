@@ -38,13 +38,22 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - uses: actions/cache@v3
+        id: dot-next-cache
+        with:
+          path: |
+            ${{ github.workspace }}/.next
+          key: ${{ runner.os }}-dot-next-${{ hashFiles('.next/**/*.json') }}
+          restore-keys: |
+            ${{ runner.os }}-dot-next-
+
+      - uses: actions/cache@v3
         id: next-export-optimize-images-cache
         with:
           path: |
             ${{ github.workspace }}/node_modules/.cache/next-export-optimize-images
-          key: ${{ runner.os }}-next-export-optimize-images
+          key: ${{ runner.os }}-next-export-optimize-images-${{ hashFiles('src/**/*') }}-${{ hashFiles('public/**/*') }}
           restore-keys: |
-            ${{ runner.os }}-next-export-optimize-images
+            ${{ runner.os }}-next-export-optimize-images-
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
