@@ -19,7 +19,7 @@ exports[`<SpTeamItem /> should render the heading 1`] = `
           <img
             alt="葉月味"
             class="max-w-none"
-            data-nimg="future-fill"
+            data-nimg="fill"
             decoding="async"
             loading="lazy"
             sizes="100vw"

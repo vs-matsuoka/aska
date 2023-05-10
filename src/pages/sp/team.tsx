@@ -1,4 +1,4 @@
-import Image, { ImageProps } from 'next/future/image';
+import Image, { ImageProps } from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';

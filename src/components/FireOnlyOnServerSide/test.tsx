@@ -9,7 +9,6 @@ describe('<FireOnlyOnServerSide />', () => {
     const ui = <FireOnlyOnServerSide>YO</FireOnlyOnServerSide>;
     const container = document.createElement('div');
     container.innerHTML = renderToString(ui);
-    console.log(container.innerHTML);
     document.body.appendChild(container);
 
     expect(container.innerHTML).toMatch('YO');

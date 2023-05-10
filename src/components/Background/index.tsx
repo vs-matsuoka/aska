@@ -7,11 +7,11 @@ type BackgroundProps = {
 function Background({ src }: BackgroundProps) {
   return (
     <div className="fixed">
-      <div className="pointer-events-none h-screen w-screen"></div>
+      <div className="h-screen w-screen"></div>
       <Image
         src={src}
         alt="background"
-        className="-z-50"
+        className="-z-50 select-none"
         fill
         quality={100}
         style={{
