@@ -2,9 +2,9 @@ export type TeamMember = {
   name: string;
   role: string;
   iconSrc: string;
-  twitterLink: string | null;
-  youtubeLink: string | null;
-  niconicoLink: string | null;
+  twitterLink?: string;
+  youtubeLink?: string;
+  niconicoLink?: string;
   hasLongName?: boolean;
 };
 
@@ -21,7 +21,7 @@ const team: {
       role: '主催',
       iconSrc: '/Icon/運営/運営_icon_那須ピーマン.jpg',
       twitterLink: 'https://twitter.com/nasu_pmen',
-      youtubeLink: null,
+      youtubeLink: undefined,
       niconicoLink: 'https://www.nicovideo.jp/user/57979076'
     },
     {
@@ -29,7 +29,7 @@ const team: {
       role: '制作進行',
       iconSrc: '/Icon/運営/運営_icon_1時.jpg',
       twitterLink: 'https://twitter.com/AlarmOneOclock',
-      youtubeLink: null,
+      youtubeLink: undefined,
       niconicoLink: 'https://www.nicovideo.jp/user/7375756'
     },
     {
@@ -37,7 +37,7 @@ const team: {
       role: '制作進行',
       iconSrc: '/Icon/運営/運営_icon_きっかん.jpg',
       twitterLink: 'https://twitter.com/ktzkn_',
-      youtubeLink: null,
+      youtubeLink: undefined,
       niconicoLink: 'https://www.nicovideo.jp/user/12224942'
     },
     {
@@ -45,7 +45,7 @@ const team: {
       role: '制作進行',
       iconSrc: '/Icon/運営/運営_icon_たいうお.jpg',
       twitterLink: 'https://twitter.com/taiuo',
-      youtubeLink: null,
+      youtubeLink: undefined,
       niconicoLink: 'https://www.nicovideo.jp/user/17924481'
     },
     {
@@ -53,7 +53,7 @@ const team: {
       role: '制作進行',
       iconSrc: '/Icon/運営/運営_icon_ともしげ.jpg',
       twitterLink: 'https://twitter.com/Tomoshigeii',
-      youtubeLink: null,
+      youtubeLink: undefined,
       niconicoLink: 'https://www.nicovideo.jp/user/169655'
     },
     {
@@ -61,7 +61,7 @@ const team: {
       role: '放送ディレクター',
       iconSrc: '/Icon/運営/運営_icon_埜村武.jpg',
       twitterLink: 'https://twitter.com/hayami5121',
-      youtubeLink: null,
+      youtubeLink: undefined,
       niconicoLink: 'https://www.nicovideo.jp/user/93583784'
     },
     {
@@ -69,7 +69,7 @@ const team: {
       role: '特番ディレクター',
       iconSrc: '/Icon/運営/運営_icon_ゴムーン.jpg',
       twitterLink: 'https://twitter.com/gomuun',
-      youtubeLink: null,
+      youtubeLink: undefined,
       niconicoLink: 'https://www.nicovideo.jp/user/14019936'
     },
     {
@@ -77,7 +77,7 @@ const team: {
       role: '特番ディレクター',
       iconSrc: '/Icon/運営/運営_icon_ふーふー.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/20600830',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/nanana555'
     },
     {
@@ -85,7 +85,7 @@ const team: {
       role: 'アートディレクター',
       iconSrc: '/Icon/運営/運営_icon_単三型.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/148815',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/tomimasu'
     },
     {
@@ -101,7 +101,7 @@ const team: {
       role: '制作補佐',
       iconSrc: '/Icon/運営/運営_icon_咲崎(♂).jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/4560337',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/5k2k3'
     }
   ],
@@ -119,7 +119,7 @@ const team: {
       role: 'ロゴ制作',
       iconSrc: '/Icon/実行委員会/制作/ロゴ_icon_名残雪.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/15912157',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/niveous_yuzuko'
     },
     {
@@ -135,7 +135,7 @@ const team: {
       role: 'WEBサイト制作',
       iconSrc: '/Icon/実行委員会/制作/Web_icon_名有り.png',
       niconicoLink: 'https://www.nicovideo.jp/user/8786995/',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/_naari_'
     },
     {
@@ -159,7 +159,7 @@ const team: {
       role: '集合絵',
       iconSrc: '/Icon/実行委員会/制作/集合絵_icon_dedeen.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/124361135',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/DE_DE_EN'
     }
   ],
@@ -169,7 +169,7 @@ const team: {
       role: '立ち絵',
       iconSrc: '/Icon/実行委員会/立ち絵/立ち絵_icon_おこじょ.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/27392744',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/okojyo_237'
     },
     {
@@ -177,7 +177,7 @@ const team: {
       role: '立ち絵',
       iconSrc: '/Icon/実行委員会/立ち絵/立ち絵_icon_岩鉄ハガネール.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/45111275',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/gantetuiwaku',
       hasLongName: true
     },
@@ -186,7 +186,7 @@ const team: {
       role: '立ち絵',
       iconSrc: '/Icon/実行委員会/立ち絵/立ち絵_icon_微生物.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/31942706',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/Bseibutsu'
     },
     {
@@ -194,7 +194,7 @@ const team: {
       role: '立ち絵',
       iconSrc: '/Icon/実行委員会/立ち絵/立ち絵_icon_マアム.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/4536010',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/Nyoaaaaaaaa'
     },
     {
@@ -202,7 +202,7 @@ const team: {
       role: '立ち絵',
       iconSrc: '/Icon/実行委員会/立ち絵/立ち絵_icon_ミーナさん.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/31284786',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/normal_Mina_xxx'
     },
     {
@@ -210,7 +210,7 @@ const team: {
       role: '立ち絵',
       iconSrc: '/Icon/実行委員会/立ち絵/立ち絵_icon_my0nruri.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/71976201',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/my0nruri'
     },
     {
@@ -218,7 +218,7 @@ const team: {
       role: '立ち絵',
       iconSrc: '/Icon/実行委員会/立ち絵/立ち絵_icon_四文字.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/93208976',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/_yonmoji_'
     },
     {
@@ -236,7 +236,7 @@ const team: {
       role: '出場者告知',
       iconSrc: '/Icon/実行委員会/告知/告知_icon_冬眠します.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/1018080/',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/toumin_z'
     },
     {
@@ -244,7 +244,7 @@ const team: {
       role: '汎用告知',
       iconSrc: '/Icon/実行委員会/告知/告知映像_icon_餡砂糖.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/56560368',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/Anzato10'
     },
     {
@@ -252,7 +252,7 @@ const team: {
       role: '汎用告知',
       iconSrc: '/Icon/実行委員会/告知/告知映像_icon_ちょのゆし.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/78688100',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/chonoyushi'
     },
     {
@@ -276,7 +276,7 @@ const team: {
       role: '中間告知A サポート',
       iconSrc: '/Icon/実行委員会/告知/告知映像_icon_とととと.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/44355080',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/totototo0507'
     },
     {
@@ -293,7 +293,7 @@ const team: {
       name: '仲邑飛鳥',
       role: '特番制作',
       iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_仲邑飛鳥.png',
-      niconicoLink: null,
+      niconicoLink: undefined,
       youtubeLink: 'https://www.youtube.com/@worldknik',
       twitterLink: 'https://twitter.com/N_Asuka'
     },
@@ -302,8 +302,8 @@ const team: {
       role: '特番制作',
       iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_namacream_.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/23328012',
-      youtubeLink: null,
-      twitterLink: null
+      youtubeLink: undefined,
+      twitterLink: undefined
     },
     {
       name: '葉月味',
@@ -318,7 +318,7 @@ const team: {
       role: '特番制作',
       iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_ピンクの象.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/47463792',
-      youtubeLink: null,
+      youtubeLink: undefined,
       twitterLink: 'https://twitter.com/pink_elephant_g'
     },
     {

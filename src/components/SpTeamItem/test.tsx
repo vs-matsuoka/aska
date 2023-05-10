@@ -1,10 +1,11 @@
 import { render, screen } from '@testing-library/react';
 
 import SpTeamItem from '.';
+import team from 'const/team';
 
 describe('<SpTeamItem />', () => {
   it('should render the heading', () => {
-    const { container } = render(<SpTeamItem imgSrc="/Team/test.jpg" name="葉月味" role="特番制作" />);
+    const { container } = render(<SpTeamItem member={team.unnei[0]} />);
 
     expect(screen.getByTestId('role')).toBeInTheDocument();
     expect(screen.getByTestId('name')).toBeInTheDocument();
