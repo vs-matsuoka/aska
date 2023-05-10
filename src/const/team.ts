@@ -145,23 +145,23 @@ const team: {
       niconicoLink: 'https://www.nicovideo.jp/user/59152228',
       youtubeLink: 'https://www.youtube.com/@Bymnet1845',
       twitterLink: 'https://twitter.com/komeijiikeda'
-    },
-    {
-      name: 'R.M.',
-      role: '作曲',
-      iconSrc: '/Icon/実行委員会/制作/作曲_icon_R.M..jpg',
-      niconicoLink: 'https://www.nicovideo.jp/user/24971920',
-      youtubeLink: 'https://www.youtube.com/@R_M___',
-      twitterLink: 'https://twitter.com/R_M___'
-    },
-    {
-      name: 'dedeen',
-      role: '集合絵',
-      iconSrc: '/Icon/実行委員会/制作/集合絵_icon_dedeen.jpg',
-      niconicoLink: 'https://www.nicovideo.jp/user/124361135',
-      youtubeLink: null,
-      twitterLink: 'https://twitter.com/DE_DE_EN'
     }
+    // ,{
+    //   name: 'R.M.',
+    //   role: '作曲',
+    //   iconSrc: '/Icon/実行委員会/制作/作曲_icon_R.M..jpg',
+    //   niconicoLink: 'https://www.nicovideo.jp/user/24971920',
+    //   youtubeLink: 'https://www.youtube.com/@R_M___',
+    //   twitterLink: 'https://twitter.com/R_M___'
+    // },
+    // {
+    //   name: 'dedeen',
+    //   role: '集合絵',
+    //   iconSrc: '/Icon/実行委員会/制作/集合絵_icon_dedeen.jpg',
+    //   niconicoLink: 'https://www.nicovideo.jp/user/124361135',
+    //   youtubeLink: null,
+    //   twitterLink: 'https://twitter.com/DE_DE_EN'
+    // }
   ],
   tachie: [
     {
