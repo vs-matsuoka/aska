@@ -67,16 +67,14 @@ jobs:
         run: |
           tree -a .
 
-      - run: ls -al node_modules/.cache/
-      - run: ls -al node_modules/.cache/next-export-optimize-images/
+      - run: ls -al .
 
       - name: Build
         run: yarn export
 
-      - name: tree
-        run: |
-          tree -a .next/
-          tree -a node_modules/.cache/
+      - run: ls -al .
+
+      - run: ls -al node_modules/.cache/
 
       - name: Publish to Cloudflare Pages
         id: cloudflare_pages_deploy
