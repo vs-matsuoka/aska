@@ -40,18 +40,16 @@ jobs:
         id: dot-next-cache
         with:
           path: |
-            ${{ github.workspace }}/.next/cache
+            .next/cache
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-
-
-      - run: mkdir -p ${{ github.workspace }}/node_modules/.cache
 
       - uses: actions/cache@v3
         id: next-export-optimize-images-cache
         with:
           path: |
-            ${{ github.workspace }}/node_modules/.cache
+            node_modules/.cache
           key: ${{ runner.os }}-node_modules-cache-${{ hashFiles('src/**/*') }}-${{ hashFiles('public/**/*') }}
           restore-keys: |
             ${{ runner.os }}-node_modules-cache-
