@@ -1,12 +1,15 @@
-import { ReactElement } from 'react';
+import { ReactElement, useEffect } from 'react';
 import { NextPageWithLayout } from './_app';
-import Background from 'components/Background';
 import Layout from 'components/Layout';
 import ResponsiveImage from 'components/ResponsiveImage';
 import TeamItem from 'components/TeamItem';
 import team from 'const/team';
 
 const Team: NextPageWithLayout = () => {
+  useEffect(() => {
+    // FUCK
+    window.FONTPLUS.reload();
+  });
   return (
     <div className="">
       <div
