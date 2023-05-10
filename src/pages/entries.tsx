@@ -141,11 +141,11 @@ function ToggleEntryButton() {
 }
 
 function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+  const { entry, setEntry } = useEntryContext() as EntryContextType;
   useEffect(() => {
     // FUCK
     window.FONTPLUS.reload();
-  });
-  const { entry, setEntry } = useEntryContext() as EntryContextType;
+  }, [entry]);
   const nextEntry = searchNextPublished(entries, entry);
   const prevEntry = searchPrevPublished(entries, entry);
   return (
