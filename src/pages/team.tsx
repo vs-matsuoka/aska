@@ -15,6 +15,7 @@ const Team: NextPageWithLayout = () => {
         <TeamItem imgSrc="/Team/test.jpg" name="葉月味" role="特番制作" />
         <TeamItem imgSrc="/Team/test.jpg" name="葉月味" role="特番制作" />
         <TeamItem imgSrc="/Team/test.jpg" name="葉月味" role="特番制作" />
+        yo
       </div>
     </>
   );
