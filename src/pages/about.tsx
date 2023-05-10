@@ -1,7 +1,5 @@
-import Image, { ImageProps } from 'next/image';
 import { ReactElement, ReactNode, useCallback, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { useMediaQuery } from 'react-responsive';
 import { useSpring, animated, easings } from 'react-spring';
 import { NextPageWithLayout } from './_app';
 import Layout from 'components/Layout';
