@@ -57,8 +57,12 @@ export default function Top() {
             <Link href="/sp/about" passHref>
               <SpResponsiveImage src="/SP/Top/s11_Top_Button_13_Unei.png" alt="overview" className="relative" width={218} height={128} />
             </Link>
-            <SpResponsiveImage src="/SP/Top/s11_Top_Button_14_Movie.png" alt="unei" className="relative" width={218} height={128} />
-            <SpResponsiveImage src="/SP/Top/s11_Top_Button_15_Secret.png" alt="movie" className="relative" width={218} height={128} />
+            <Link href="/sp/team" passHref>
+              <SpResponsiveImage src="/SP/Top/s11_Top_Button_14_Movie.png" alt="unei" className="relative" width={218} height={128} />
+            </Link>
+            <Link href="/sp/movies" passHref>
+              <SpResponsiveImage src="/SP/Top/s11_Top_Button_15_Secret.png" alt="movie" className="relative" width={218} height={128} />
+            </Link>
           </div>
         </div>
       </div>
