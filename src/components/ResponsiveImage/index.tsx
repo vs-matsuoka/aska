@@ -1,5 +1,5 @@
 import Image, { ImageProps } from 'next/image';
-import { useMediaQuery } from 'react-responsive';
+import { useEffect, useState } from 'react';
 
 function ResponsiveImage(
   props: Omit<ImageProps, 'fill' | 'width' | 'height'> & {
@@ -10,7 +10,18 @@ function ResponsiveImage(
 ) {
   const { alwaysResponsive, width, height, src, alt, className, ...imageProps } = props;
   const standard = 1920;
-  const isNarrow = useMediaQuery({ query: '(min-width: 1920px)' });
+  // useMediaQuery だとクライアントサイドでのレンダリング時に
+  // const isNarrow = useMediaQuery({ query: '(min-width: 1920px)' });
+  const [isNarrow, setIsNarrow] = useState(false);
+  useEffect(() => {
+    setIsNarrow(window.innerWidth > 1920);
+    const updateWindowDimensions = () => {
+      setIsNarrow(window.innerWidth > 1920);
+    };
+
+    window.addEventListener('resize', updateWindowDimensions);
+    return () => window.removeEventListener('resize', updateWindowDimensions);
+  }, []);
   const isFixedWidth = alwaysResponsive ? false : isNarrow;
 
   return (
