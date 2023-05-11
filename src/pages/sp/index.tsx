@@ -44,7 +44,6 @@ export default function Top() {
               <SpResponsiveImage src="/SP/Top/s11_Top_Button_03_SNS_Twitter.png" alt="twitter" className="relative" width={380} height={48} />
             </a>
           </div>
-          {/* sp:mx-[32px] sp:mt-[106px] */}
           <div className="mx-[4.2666666666667vw] mt-[14.1333333333vw] grid justify-items-center">
             {/* sp:gap-[16px] */}
             <div className="flex gap-[2.133333333333333vw]">
@@ -60,8 +59,12 @@ export default function Top() {
               <Link href="/sp/about" passHref>
                 <SpResponsiveImage src="/SP/Top/s11_Top_Button_13_Unei.png" alt="overview" className="relative" width={218} height={128} />
               </Link>
-              <SpResponsiveImage src="/SP/Top/s11_Top_Button_14_Movie.png" alt="unei" className="relative" width={218} height={128} />
-              <SpResponsiveImage src="/SP/Top/s11_Top_Button_15_Secret.png" alt="movie" className="relative" width={218} height={128} />
+              <Link href="/sp/team" passHref>
+                <SpResponsiveImage src="/SP/Top/s11_Top_Button_14_Movie.png" alt="unei" className="relative" width={218} height={128} />
+              </Link>
+              <Link href="/sp/movies" passHref>
+                <SpResponsiveImage src="/SP/Top/s11_Top_Button_15_Secret.png" alt="movie" className="relative" width={218} height={128} />
+              </Link>
             </div>
           </div>
         </div>

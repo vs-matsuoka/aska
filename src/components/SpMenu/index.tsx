@@ -43,8 +43,12 @@ const SpMenu = () => {
           <Link href="/sp/pairs" passHref>
             <SpResponsiveImage alt="combi" src="/SP/Menu/s00_Button_04_Unei.png" className="relative" width={686} height={100} />
           </Link>
-          <SpResponsiveImage alt="unei" src="/SP/Menu/s00_Button_05_Movie.png" className="relative" width={686} height={100} />
-          <SpResponsiveImage alt="movie" src="/SP/Menu/s00_Button_06_Secret.png" className="relative" width={686} height={100} />
+          <Link href="/sp/team" passHref>
+            <SpResponsiveImage alt="unei" src="/SP/Menu/s00_Button_05_Movie.png" className="relative" width={686} height={100} />
+          </Link>
+          <Link href="/sp/movies" passHref>
+            <SpResponsiveImage alt="movie" src="/SP/Menu/s00_Button_06_Secret.png" className="relative" width={686} height={100} />
+          </Link>
         </div>
         {/* sp:mt-[33px] sp:space-x-[33px] */}
         <div className="mt-[4.4vw] flex justify-center space-x-[4.4vw]">
