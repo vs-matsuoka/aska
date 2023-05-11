@@ -6,6 +6,7 @@ import { useSpring, animated, easings } from 'react-spring';
 import { NextPageWithLayout } from './_app';
 import Layout from 'components/Layout';
 import ResponsiveImage from 'components/ResponsiveImage';
+import Title from 'components/Title';
 
 interface FadeInTriggerProps {
   children?: ReactNode;
@@ -161,6 +162,7 @@ const ppx = (px: number) => {
 const About: NextPageWithLayout = () => {
   return (
     <>
+      <Title title="概要" />
       <div
         className="w-screen justify-center overflow-x-hidden overflow-y-scroll bg-[url('/Concept/41_Pic_BG.png')] bg-cover bg-local"
         style={{
@@ -168,9 +170,11 @@ const About: NextPageWithLayout = () => {
           height: 'calc(100vh - 5rem)'
         }}
       >
-        <ResponsiveImage src="/Concept/41_pic_Base_C.png" alt="logo" className="absolute" width={1920} height={750} />
         {/* ロゴ + 文言 */}
         <FadeInTrigger distance={rpx(200)} rootMargin="0px" triggerOnce>
+          <div className="absolute w-full">
+            <ResponsiveImage src="/Concept/41_pic_Base_C.png" alt="logo" width={1920} height={750} />
+          </div>
           <div
             className="flex w-screen justify-center"
             style={{

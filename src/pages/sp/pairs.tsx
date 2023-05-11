@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Background from 'components/Background';
 import SpMenu from 'components/SpMenu';
 import SpResponsiveImage from 'components/SpResponsiveImage';
+import Title from 'components/Title';
 import pairs, { Pair } from 'const/pairs';
 
 function getPairBanner(pair: Pair, index: number) {
@@ -16,9 +17,10 @@ function getPairBanner(pair: Pair, index: number) {
   }
 }
 
-export default function Entries() {
+export default function Pairs() {
   return (
     <>
+      <Title title="コンビ" />
       <Background src="/SP/Pair/s31_Pair_BG.png" />
 
       {/* sp:space-y-[9px] sp:pt-[139px] */}

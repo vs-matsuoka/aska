@@ -2,10 +2,12 @@ import Link from 'next/link';
 import Background from 'components/Background';
 import SpMenu from 'components/SpMenu';
 import SpResponsiveImage from 'components/SpResponsiveImage';
+import Title from 'components/Title';
 
 export default function About() {
   return (
     <>
+      <Title title="概要" />
       <Background src="/SP/Concept/s41_Concept_BG.png" />
       <SpResponsiveImage alt="compo0" src="/SP/Concept/s41_Concept_Compo00.png" className="relative" width={750} height={700} />
       {/* sp:mt-[-91px] */}

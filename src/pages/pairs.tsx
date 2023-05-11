@@ -7,6 +7,7 @@ import Background from 'components/Background';
 import FireOnlyOnServerSide from 'components/FireOnlyOnServerSide';
 import Layout from 'components/Layout';
 import ResponsiveImage from 'components/ResponsiveImage';
+import Title from 'components/Title';
 import pairs, { Pair as Pair } from 'const/pairs';
 import { PairContextType, PairProvider, usePairContext } from 'contexts/PairContext';
 import useModal from 'hooks/useModal';
@@ -263,18 +264,31 @@ const Pairs: NextPageWithLayout = () => {
 
   return (
     <>
+      <Title title="コンビ" />
+      <Background src="/Pair/31_Pair_pic_BG.png" />
+      <Background src="/Pair/31_Pair_pic_vignette.png" />
       <PairProvider>
-        <Background src="/Pair/31_Pair_pic_BG.png" />
-        <Background src="/Pair/31_Pair_pic_vignette.png" />
-        {/* <Head></Head> */}
-        <div className="relative">
-          <div className="absolute left-[1.9vw] top-[-10vw] 4xl:left-[36.48px] 4xl:top-[-211.2px]">
-            <ResponsiveImage alt="pair" src="/Pair/31_Pair_text_01.png" width={500} height={250} />
+        <div
+          className="flex w-screen justify-center overflow-x-hidden"
+          style={{
+            // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
+            height: 'calc(100vh - 5rem)'
+          }}
+        >
+          {/* <Head></Head> */}
+          <div className="relative my-auto h-[46.875vw] w-[82.8125vw] 4xl:h-[900px] 4xl:w-[1590px]">
+            <div className="relative">
+              <div className="absolute top-[8.8541666667vw] 4xl:top-[170px]">
+                <div className="absolute left-[1.9vw] top-[-10vw] 4xl:left-[36.48px] 4xl:top-[-211.2px]">
+                  <ResponsiveImage alt="pair" src="/Pair/31_Pair_text_01.png" width={500} height={250} />
+                </div>
+                {pairRows.map((row, index) => (
+                  <PairRow key={index} pairs={row} offset={index * 46} onModalOpen={onOpen} />
+                ))}
+                <ToggleEntriesButton />
+              </div>
+            </div>
           </div>
-          {pairRows.map((row, index) => (
-            <PairRow key={index} pairs={row} offset={index * 46} onModalOpen={onOpen} />
-          ))}
-          <ToggleEntriesButton />
         </div>
         <PairModal isOpen={isOpen} onClose={onClose} />
       </PairProvider>

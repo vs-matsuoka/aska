@@ -1,9 +1,11 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import { ReactElement } from 'react';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
 import Layout from 'components/Layout';
 import Timeline from 'components/Timeline';
+import Title from 'components/Title';
 import otomdmLink from 'const/otomdmLink';
 
 const Top: NextPageWithLayout = () => {
@@ -19,6 +21,7 @@ const Top: NextPageWithLayout = () => {
   }, [router]); */
   return (
     <>
+      <Title />
       <Background src="/Top/11_Top_pic_BG.png" />
       <div className="absolute -top-6 flex flex-row justify-center space-x-[0px]">
         <div className="">
