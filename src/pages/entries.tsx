@@ -265,18 +265,28 @@ const Entries: NextPageWithLayout = () => {
   return (
     <>
       <Title title="出場者" />
+      <Background src="/Entry/21_Entry_pic_BG.png" />
+      <Background src="/Entry/21_Entry_pic_vignette.png" />
       <EntryProvider>
-        <Background src="/Entry/21_Entry_pic_BG.png" />
-        <Background src="/Entry/21_Entry_pic_vignette.png" />
-        {/* <Head></Head> */}
-        <div className="relative">
-          <div className="absolute left-[1.9vw] top-[-10vw] 4xl:left-[36.48px] 4xl:top-[-211.2px]">
-            <ResponsiveImage alt="entry" src="/Entry/21_Entry_text_01.png" width={500} height={250} />
+        <div
+          className="flex w-screen justify-center overflow-x-hidden"
+          style={{
+            // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
+            height: 'calc(100vh - 5rem)'
+          }}
+        >
+          {/* <Head></Head> */}
+          <div className="relative my-auto h-[46.875vw] w-[82.8125vw] 4xl:h-[900px] 4xl:w-[1590px]">
+            <div className="absolute top-[8.8541666667vw] 4xl:top-[170px]">
+              <div className="absolute left-[1.9vw] top-[-10vw] 4xl:left-[36.48px] 4xl:top-[-211.2px]">
+                <ResponsiveImage alt="entry" src="/Entry/21_Entry_text_01.png" width={500} height={250} />
+              </div>
+              {contestantRows.map((row, index) => (
+                <ContestantRow key={index} contestants={row} offset={index * 46} onModalOpen={onOpen} />
+              ))}
+              <ToggleEntryButton />
+            </div>
           </div>
-          {contestantRows.map((row, index) => (
-            <ContestantRow key={index} contestants={row} offset={index * 46} onModalOpen={onOpen} />
-          ))}
-          <ToggleEntryButton />
         </div>
         <ContestantModal isOpen={isOpen} onClose={onClose} />
       </EntryProvider>
