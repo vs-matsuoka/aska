@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Background from 'components/Background';
 import SpMenu from 'components/SpMenu';
 import SpResponsiveImage from 'components/SpResponsiveImage';
+import Title from 'components/Title';
 import entries, { Entry } from 'const/entries';
 
 function getEntryIcon(entry: Entry, index: number) {
@@ -34,13 +35,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }: GetStaticPropsContext) => {
+export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
   const entry = entries.find((entry) => entry.index.toString() == params!.id);
   return {
     props: {
       index: entry!.index,
       kirinukiSrc: entry!.spKirinukiSrc,
-      nameSrc: entry!.spNameSrc
+      nameSrc: entry!.spNameSrc,
+      name: entry!.name
     }
   };
 };
@@ -48,6 +50,7 @@ export const getStaticProps: GetStaticProps = async ({ params }: GetStaticPropsC
 const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
   return (
     <>
+      <Title title={props.name} />
       <Background src="/SP/Entry_Detail/s22_Entry_BG.png" />
       {/* sp:top-[78px] */}
       <div className="relative top-[10.4vw]">

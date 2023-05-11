@@ -3,6 +3,7 @@ import { NextPageWithLayout } from './_app';
 import Layout from 'components/Layout';
 import ResponsiveImage from 'components/ResponsiveImage';
 import TeamItem from 'components/TeamItem';
+import Title from 'components/Title';
 import team from 'const/team';
 
 const Team: NextPageWithLayout = () => {
@@ -11,7 +12,8 @@ const Team: NextPageWithLayout = () => {
     window.FONTPLUS.reload();
   });
   return (
-    <div className="">
+    <>
+      <Title title="運営" />
       <div
         className="w-screen overflow-y-scroll bg-[url('/Team/51_BG.png')] bg-cover bg-local"
         style={{
@@ -71,7 +73,7 @@ const Team: NextPageWithLayout = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

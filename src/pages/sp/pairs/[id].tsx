@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Background from 'components/Background';
 import SpMenu from 'components/SpMenu';
 import SpResponsiveImage from 'components/SpResponsiveImage';
+import Title from 'components/Title';
 import pairs, { Pair } from 'const/pairs';
 
 function getPairIcon(pair: Pair, index: number) {
@@ -34,7 +35,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }: GetStaticPropsContext) => {
+export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
   const pair = pairs.find((pair) => pair.index.toString() == params!.id);
   return {
     props: {
@@ -42,7 +43,8 @@ export const getStaticProps: GetStaticProps = async ({ params }: GetStaticPropsC
       kirinukiSrc: pair!.spKirinukiSrc,
       nameSrc: pair!.spNameSrc,
       baseASrc: pair!.spBaseASrc,
-      baseBSrc: pair!.spBaseBSrc
+      baseBSrc: pair!.spBaseBSrc,
+      name: pair!.name
     }
   };
 };
@@ -50,6 +52,7 @@ export const getStaticProps: GetStaticProps = async ({ params }: GetStaticPropsC
 const PairPage: NextPage<PairProps> = (props: PairProps) => {
   return (
     <>
+      <Title title={props.name} />
       <Background src="/SP/Pair_Detail/s32_Entry_BG.png" />
       {/* sp:top-[51px] */}
       <div className="relative top-[6.8vw]">

@@ -7,6 +7,7 @@ import Background from 'components/Background';
 import FireOnlyOnServerSide from 'components/FireOnlyOnServerSide';
 import Layout from 'components/Layout';
 import ResponsiveImage from 'components/ResponsiveImage';
+import Title from 'components/Title';
 import pairs, { Pair as Pair } from 'const/pairs';
 import { PairContextType, PairProvider, usePairContext } from 'contexts/PairContext';
 import useModal from 'hooks/useModal';
@@ -263,6 +264,7 @@ const Pairs: NextPageWithLayout = () => {
 
   return (
     <>
+      <Title title="コンビ" />
       <PairProvider>
         <Background src="/Pair/31_Pair_pic_BG.png" />
         <Background src="/Pair/31_Pair_pic_vignette.png" />
