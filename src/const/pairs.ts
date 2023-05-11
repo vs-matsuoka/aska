@@ -31,7 +31,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_01.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_01_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_01_B.png',
-    description: '',
+    description: '音声・映像 技巧派の二人がコンビ結成\n積み上げたノウハウをどう凌駕する！？',
     isPublished: true
   },
   {
@@ -48,7 +48,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_02.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_02_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_02_B.png',
-    description: '',
+    description: '好きなコンテンツへ実直に向き合う二人を\n結びつける動画は？放送まで乞うご期待！',
     isPublished: true
   },
   {
@@ -65,7 +65,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_03.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_03_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_03_B.png',
-    description: '',
+    description: '超・広範囲の視野と手腕を持つ二人の\nスペクタクルにあなたも没頭必至！？',
     isPublished: true
   },
   {
@@ -82,7 +82,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_04.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_04_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_04_B.png',
-    description: '',
+    description: '現代を語るに欠かせない二人がコンビ結成\n重なり合うセッションに、皆酔いしれる！',
     isPublished: true
   },
   {
@@ -99,7 +99,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_05.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_05_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_05_B.png',
-    description: '',
+    description: '異なるジャンルで活動する二人が連結！\nコンビの目指す先まで、乗り遅れるな！',
     isPublished: true
   },
   {
@@ -116,7 +116,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_06.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_06_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_06_B.png',
-    description: '',
+    description: '計算高い目線から練られたアイデアでもって\n音MADの構造をどう組み立てるのか！？',
     isPublished: true
   },
   {
@@ -133,7 +133,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_07.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_07_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_07_B.png',
-    description: '',
+    description: 'ベテラン素材を駆使するニューカマー同士\n手を組んだ！音MDM天に吹かせ新風！',
     isPublished: true
   },
   {
@@ -150,7 +150,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_08.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_08_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_08_B.png',
-    description: '',
+    description: '二人の動画は常に第一線をリード！\n誰も彼もが盛り上がること間違いなし！',
     isPublished: true
   },
   {
@@ -167,7 +167,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_09.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_09_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_09_B.png',
-    description: '',
+    description: '素材にかけるアイデアも見識も深い作者が\n放送に懸ける熱、全身で浴びよ！',
     isPublished: true
   },
   {
@@ -184,7 +184,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_10.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_10_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_10_B.png',
-    description: '',
+    description: '視聴者を魅了し続けてきた二人が織りなす\n音MADの究極形とは？見逃し厳禁！',
     isPublished: true
   },
   {
@@ -201,7 +201,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_11.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_11_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_11_B.png',
-    description: '',
+    description: '流行の先陣を切ってきたヒットメーカー\n音MDM天の視聴者全員、狙い撃ちにする！',
     isPublished: true
   },
   {
@@ -218,7 +218,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_12.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_12_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_12_B.png',
-    description: '',
+    description: 'この二人の力がどこで奮うか予測不能！\n乱れ打つ作為からはもう逃れられない！？',
     isPublished: true
   },
   {

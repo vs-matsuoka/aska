@@ -211,23 +211,26 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
                     fontFamily: 'UDKakugo_LargePr6-HV',
                     lineHeight: '1.7'
                   }}
-                >
-                  丁寧なアニメ素材YTPMVから勢いのある松岡修造MADまで
-                  <br />
-                  幅広い素材を独自のアイデアで面白く掘り下げる投稿者
-                  <br />
-                  さまざまな作風を使いこなし、従来の音MADを切り開く！
-                </div>
+                  dangerouslySetInnerHTML={{ __html: entry.description.replaceAll('\n', '<br />') }}
+                ></div>
                 <div className="flex">
-                  <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
-                    <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Nico.png" alt="niconico" className="relative" width={50} height={50} />
-                  </div>
-                  <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
-                    <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Youtube.png" alt="youtube" className="relative" width={50} height={50} />
-                  </div>
-                  <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
-                    <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Twitter.png" alt="twitter" className="relative" width={50} height={50} />
-                  </div>
+                  <a target="_blank" href={entry.niconicoLink} rel="noopener noreferrer">
+                    <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
+                      <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Nico.png" alt="niconico" className="relative" width={50} height={50} />
+                    </div>
+                  </a>
+                  {entry.youtubeLink && (
+                    <a target="_blank" href={entry.youtubeLink} rel="noopener noreferrer">
+                      <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
+                        <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Youtube.png" alt="youtube" className="relative" width={50} height={50} />
+                      </div>
+                    </a>
+                  )}
+                  <a target="_blank" href={entry.twitterLink} rel="noopener noreferrer">
+                    <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
+                      <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Twitter.png" alt="twitter" className="relative" width={50} height={50} />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
