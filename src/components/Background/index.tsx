@@ -6,12 +6,12 @@ type BackgroundProps = {
 
 function Background({ src }: BackgroundProps) {
   return (
-    <div className="fixed">
+    <div className="fixed -z-50">
       <div className="h-screen w-screen"></div>
       <Image
         src={src}
         alt="background"
-        className="-z-50 select-none"
+        className="select-none"
         fill
         quality={100}
         style={{
