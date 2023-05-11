@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 import Background from 'components/Background';
 import SpResponsiveImage from 'components/SpResponsiveImage';
+import otomdmLink from 'const/otomdmLink';
 import useModal from 'hooks/useModal';
 
 const SpMenu = () => {
@@ -47,9 +48,15 @@ const SpMenu = () => {
         </div>
         {/* sp:mt-[33px] sp:space-x-[33px] */}
         <div className="mt-[4.4vw] flex justify-center space-x-[4.4vw]">
-          <SpResponsiveImage alt="niconico" src="/SP/Menu/s00_Button_11_SNS_NicoNico.png" className="relative" width={95} height={95} />
-          <SpResponsiveImage alt="youtube" src="/SP/Menu/s00_Button_12_SNS_Youtube.png" className="relative" width={95} height={95} />
-          <SpResponsiveImage alt="twitter" src="/SP/Menu/s00_Button_13_SNS_Twitter.png" className="relative" width={95} height={95} />
+          <a href={otomdmLink.niconico} target="_blank">
+            <SpResponsiveImage alt="niconico" src="/SP/Menu/s00_Button_11_SNS_NicoNico.png" className="relative" width={95} height={95} />
+          </a>
+          <a href={otomdmLink.youtube} target="_blank">
+            <SpResponsiveImage alt="youtube" src="/SP/Menu/s00_Button_12_SNS_Youtube.png" className="relative" width={95} height={95} />
+          </a>
+          <a href={otomdmLink.twitter} target="_blank">
+            <SpResponsiveImage alt="twitter" src="/SP/Menu/s00_Button_13_SNS_Twitter.png" className="relative" width={95} height={95} />
+          </a>
         </div>
         {/* sp:bottom-[32px] sp:right-[32px] */}
         <div className="fixed bottom-[4.266666666666667vw] right-[4.266666666666667vw]" onClick={onClose}>

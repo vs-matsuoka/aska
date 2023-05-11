@@ -1,23 +1,24 @@
-import Head from 'next/head';
-import Image, { ImageProps } from 'next/image';
 import Link from 'next/link';
-import Script from 'next/script';
 import { ReactElement, useCallback, useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { useSpring, animated } from 'react-spring';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
+import FireOnlyOnServerSide from 'components/FireOnlyOnServerSide';
 import Layout from 'components/Layout';
 import ResponsiveImage from 'components/ResponsiveImage';
+import pairs, { Pair as Pair } from 'const/pairs';
+import { PairContextType, PairProvider, usePairContext } from 'contexts/PairContext';
 import useModal from 'hooks/useModal';
+import { searchNextPublished, searchPrevPublished } from 'utils/nextPrev';
 
 type PairRowProps = {
-  contestantImages: string[];
+  pairs: Pair[];
   offset: number;
   onModalOpen: () => void;
 };
 
-function Pair({ src, onModalOpen }: { src: string; onModalOpen: () => void }) {
+function PairButton({ pair, onModalOpen }: { pair: Pair; onModalOpen: () => void }) {
   const [styles, api] = useSpring(() => ({
     from: { opacity: 0 },
     to: { opacity: 0 },
@@ -25,30 +26,33 @@ function Pair({ src, onModalOpen }: { src: string; onModalOpen: () => void }) {
       // duration: 50
     }
   }));
+  const { setPair } = usePairContext() as PairContextType;
   return (
-    <div key={src} className="relative h-[7.8125vw] w-[9.375vw] skew-y-[10deg] 4xl:h-[150px] 4xl:w-[180px]">
+    <div key={pair.frameSrc} className="relative h-[7.8125vw] w-[9.375vw] skew-y-[10deg] 4xl:h-[150px] 4xl:w-[180px]">
       <div className="h-[7.2916666667vw] w-[12.7083333334vw] skew-x-[-20deg] skew-y-[-11deg] bg-transparent 4xl:h-[140px] 4xl:w-[244px]"></div>
-      <a {...(src.includes('Secret') ? {} : { href: '#' })}>
+      <a {...(pair.frameSrc.includes('Secret') ? {} : { href: '#' })}>
         <div
           className="absolute left-[-3.28125vw] top-[-2.9687557vw] max-w-none 4xl:left-[-63px] 4xl:top-[-57px]"
           style={{
             clipPath: 'polygon(16% 26%, 100% 1%, 84% 74%, 0 98%)'
           }}
           onClick={() => {
-            if (src.includes('Secret')) {
+            if (pair.frameSrc?.includes('Secret')) {
               return;
             }
+            setPair(pair);
             onModalOpen();
           }}
         >
-          <ResponsiveImage src={src} alt="pair" width={330} height={200} />
+          <ResponsiveImage src={pair.frameSrc} alt="pair" width={330} height={200} priority />
           <animated.div
             className="absolute left-[1.8229166667vw] top-[1.5104166667vw] h-[7.8125vw] w-[13.5416666666vw] skew-x-[-20deg] skew-y-[-11deg] bg-white 4xl:left-[35px] 4xl:top-[29px] 4xl:h-[150px] 4xl:w-[260px]"
             style={styles}
             onMouseEnter={() => {
-              if (src.includes('Secret')) {
+              if (pair.frameSrc.includes('Secret')) {
                 return;
               }
+              setPair(pair);
               api.start({
                 from: { opacity: 1 },
                 to: { opacity: 0 }
@@ -61,7 +65,7 @@ function Pair({ src, onModalOpen }: { src: string; onModalOpen: () => void }) {
   );
 }
 
-function PairRow({ contestantImages, offset, onModalOpen }: PairRowProps) {
+function PairRow({ pairs, offset, onModalOpen }: PairRowProps) {
   const isNarrow = useMediaQuery({ query: '(min-width: 1920px)' });
 
   return (
@@ -71,8 +75,8 @@ function PairRow({ contestantImages, offset, onModalOpen }: PairRowProps) {
         paddingLeft: isNarrow ? `${offset}px` : `${(offset / 1920) * 100}vw`
       }}
     >
-      {contestantImages.map((image) => (
-        <Pair src={image} onModalOpen={onModalOpen} key={image} />
+      {pairs.map((pair, i) => (
+        <PairButton pair={pair} onModalOpen={onModalOpen} key={i} />
       ))}
     </div>
   );
@@ -137,12 +141,31 @@ function ToggleEntriesButton() {
 }
 
 function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+  const { pair, setPair } = usePairContext() as PairContextType;
   useEffect(() => {
     // FUCK
     window.FONTPLUS.reload();
-  });
+  }, [pair]);
+  const nextPair = searchNextPublished(pairs, pair);
+  const prevPair = searchPrevPublished(pairs, pair);
   return (
     <div className={`fixed inset-0 ${isOpen ? 'opacity-100' : 'opacity-0'} transition-all duration-200 ${isOpen ? '' : 'pointer-events-none'}`}>
+      {/*
+      DIRTY HACK: 今回の場合、next-export-optimize-images は next build のタイミングで <Image> タグを通過した画像のみを対象に変換を行う。
+      この対応のため、サーバーサイドでのみレンダリングされる箇所を作成し、そこにクライアントサイドで動的にレンダリングされる予定の画像一覧をレンダリングするようにしておく。
+    */}
+      <FireOnlyOnServerSide>
+        {pairs
+          .filter((pair) => pair.isPublished)
+          .map((pair) => (
+            <div key={pair.index}>
+              <ResponsiveImage src={pair.illustSrc} alt="pair" className="relative" width={600} height={600} priority />
+              <ResponsiveImage src={pair.nameSrc} alt="icon" className="relative" width={690} height={90} priority />
+              <ResponsiveImage src={pair.hnASrc} alt="name" className="relative" width={325} height={50} />
+              <ResponsiveImage src={pair.hnBSrc} alt="name" className="relative" width={325} height={50} />
+            </div>
+          ))}
+      </FireOnlyOnServerSide>
       <Background src="/Pair_Modal/32_Pair_Modal_BG.png" />
       <div className={`relative flex h-full items-center justify-center ${isOpen ? 'block' : 'hidden'}`} onClick={onClose}>
         <div
@@ -160,12 +183,20 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
           }}
         >
           <div className="flex">
-            <div>
-              <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="back" className="relative" width={70} height={690} />
-            </div>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                setPair(prevPair);
+              }}
+            >
+              <div>
+                <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="back" className="relative" width={70} height={690} />
+              </div>
+            </a>
             <div className="flex">
               <div className="my-auto h-auto">
-                <ResponsiveImage src="/Pair_Modal/Illust/32_Pair_Modal_Illust_01.png" alt="pair" className="relative" width={600} height={600} />
+                <ResponsiveImage src={pair.illustSrc} alt="pair" className="relative" width={600} height={600} priority />
               </div>
               <div className="my-auto h-auto">
                 <div className="absolute right-[5.8854166667vw] top-[2.2395833333vw] 4xl:right-[113px] 4xl:top-[43px]" onClick={onClose}>
@@ -175,11 +206,11 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
                 </div>
                 <div className="mb-[0.4166666667vw] 4xl:mb-[8px]">
                   <div className="mb-[0.3125vw] 4xl:mb-[6px]">
-                    <ResponsiveImage src="/Pair_Modal/Name/32_Pair_Modal_Name_01.png" alt="icon" className="relative" width={690} height={90} />
+                    <ResponsiveImage src={pair.nameSrc} alt="icon" className="relative" width={690} height={90} priority />
                   </div>
                   <div className="ml-[0.3645833333vw] flex gap-[0.7291666667vw] 4xl:ml-[7px] 4xl:gap-[14px]">
-                    <ResponsiveImage src="/Pair_Modal/HN/32_Pair_Modal_HN_01A.png" alt="name" className="relative" width={325} height={50} />
-                    <ResponsiveImage src="/Pair_Modal/HN/32_Pair_Modal_HN_01B.png" alt="name" className="relative" width={325} height={50} />
+                    <ResponsiveImage src={pair.hnASrc} alt="name" className="relative" width={325} height={50} priority />
+                    <ResponsiveImage src={pair.hnBSrc} alt="name" className="relative" width={325} height={50} priority />
                   </div>
                 </div>
                 <ResponsiveImage src="/Pair_Modal/32_Pair_Modal_pic_Line.png" alt="line" className="relative" width={685} height={10} />
@@ -199,9 +230,17 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
                 </div>
               </div>
             </div>
-            <div>
-              <ResponsiveImage src="/Modal/22_Modal_Next.png" alt="next" className="relative" width={70} height={690} />
-            </div>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                setPair(nextPair);
+              }}
+            >
+              <div>
+                <ResponsiveImage src="/Modal/22_Modal_Next.png" alt="next" className="relative" width={70} height={690} />
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -209,55 +248,36 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
   );
 }
 
-const contestantImageRows = [
-  [
-    '/Pair/Frame/31_Pair_Frame_01.png',
-    '/Pair/Frame/31_Pair_Frame_02.png',
-    '/Pair/Frame/31_Pair_Frame_03.png',
-    '/Pair/Frame/31_Pair_Frame_04.png',
-    '/Pair/Frame/31_Pair_Frame_05.png'
-  ],
-  [
-    '/Pair/Frame/31_Pair_Frame_06.png',
-    '/Pair/Frame/31_Pair_Frame_07.png',
-    '/Pair/Frame/31_Pair_Frame_08.png',
-    '/Pair/Frame/31_Pair_Frame_09.png',
-    '/Pair/Frame/31_Pair_Frame_10.png'
-  ],
-  [
-    '/Pair/Frame/31_Pair_Frame_Secret_11.png',
-    '/Pair/Frame/31_Pair_Frame_Secret_12.png',
-    '/Pair/Frame/31_Pair_Frame_Secret_13.png',
-    '/Pair/Frame/31_Pair_Frame_Secret_14.png',
-    '/Pair/Frame/31_Pair_Frame_Secret_15.png'
-  ],
-  [
-    '/Pair/Frame/31_Pair_Frame_Secret_16.png',
-    '/Pair/Frame/31_Pair_Frame_Secret_17.png',
-    '/Pair/Frame/31_Pair_Frame_Secret_18.png',
-    '/Pair/Frame/31_Pair_Frame_Secret_19.png',
-    '/Pair/Frame/31_Pair_Frame_Secret_20.png'
-  ]
-];
+// https://gist.github.com/webinista/11240585?permalink_comment_id=2363393#gistcomment-2363393
+function chunk<T>(arr: Array<T>, chunkSize: number): Array<Array<T>> {
+  return arr.reduce(
+    (prevVal: any, currVal: any, currIndx: number, array: Array<T>) => (!(currIndx % chunkSize) ? prevVal.concat([array.slice(currIndx, currIndx + chunkSize)]) : prevVal),
+    []
+  );
+}
+
+const pairRows = chunk(pairs, 5);
 
 const Pairs: NextPageWithLayout = () => {
   const { isOpen, onOpen, onClose } = useModal();
 
   return (
     <>
-      <Background src="/Pair/31_Pair_pic_BG.png" />
-      <Background src="/Pair/31_Pair_pic_vignette.png" />
-      {/* <Head></Head> */}
-      <div className="relative">
-        <div className="absolute left-[1.9vw] top-[-10vw] 4xl:left-[36.48px] 4xl:top-[-211.2px]">
-          <ResponsiveImage alt="pair" src="/Pair/31_Pair_text_01.png" width={500} height={250} />
+      <PairProvider>
+        <Background src="/Pair/31_Pair_pic_BG.png" />
+        <Background src="/Pair/31_Pair_pic_vignette.png" />
+        {/* <Head></Head> */}
+        <div className="relative">
+          <div className="absolute left-[1.9vw] top-[-10vw] 4xl:left-[36.48px] 4xl:top-[-211.2px]">
+            <ResponsiveImage alt="pair" src="/Pair/31_Pair_text_01.png" width={500} height={250} />
+          </div>
+          {pairRows.map((row, index) => (
+            <PairRow key={index} pairs={row} offset={index * 46} onModalOpen={onOpen} />
+          ))}
+          <ToggleEntriesButton />
         </div>
-        {contestantImageRows.map((row, index) => (
-          <PairRow key={index} contestantImages={row} offset={index * 46} onModalOpen={onOpen} />
-        ))}
-        <ToggleEntriesButton />
-      </div>
-      <PairModal isOpen={isOpen} onClose={onClose} />
+        <PairModal isOpen={isOpen} onClose={onClose} />
+      </PairProvider>
     </>
   );
 };

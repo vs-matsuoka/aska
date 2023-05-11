@@ -22,7 +22,7 @@ function ResponsiveImage(
         objectFit: 'cover'
       }}
     >
-      <Image src={src} alt={alt} className="max-w-none" fill {...imageProps}></Image>
+      <Image src={src} alt={alt} className="max-w-none" fill sizes={`${width}px`} {...imageProps}></Image>
     </div>
   );
 }

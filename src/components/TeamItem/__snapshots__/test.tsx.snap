@@ -2,57 +2,67 @@
 
 exports[`<TeamItem /> should render correctly 1`] = `
 <div
-  class="h-[140px] w-[320px] border-[4px] border-[#ccad70] bg-gradient-to-t from-[#262426] via-[#262426] to-[#3a393a]"
+  class="relative h-[7.2916666667vw] w-[16.6666666667vw] border-[0.2083333333vw] border-[#ccad70] bg-gradient-to-t from-[#262426] via-[#262426] to-[#3a393a] 4xl:h-[140px] 4xl:w-[320px] 4xl:border-[4px]"
 >
   <div
-    class="absolute ml-[-4px] mt-[-4px]"
-  >
-    <img
-      alt="grad"
-      data-nimg="1"
-      decoding="async"
-      height="140"
-      loading="lazy"
-      src="/_next/image?url=%2FTeam%2Fgrad_long.png&w=640&q=75"
-      srcset="/_next/image?url=%2FTeam%2Fgrad_long.png&w=384&q=75 1x, /_next/image?url=%2FTeam%2Fgrad_long.png&w=640&q=75 2x"
-      style="color: transparent;"
-      width="320"
-    />
-  </div>
-  <div
-    class="relative flex gap-[12px]"
+    class="absolute ml-[-0.2083333333vw] mt-[-0.2083333333vw] 4xl:ml-[-4px] 4xl:mt-[-4px]"
   >
     <div
-      class="my-[14px] ml-[8px]"
+      class="relative"
+      style="width: 16.666666666666664vw; height: 7.291666666666667vw; object-fit: cover;"
+    >
+      <img
+        alt="grad"
+        class="max-w-none"
+        data-nimg="fill"
+        decoding="async"
+        loading="lazy"
+        sizes="320px"
+        src="/_next/image?url=%2FTeam%2Fgrad_long.png&w=3840&q=75"
+        srcset="/_next/image?url=%2FTeam%2Fgrad_long.png&w=16&q=75 16w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=32&q=75 32w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=48&q=75 48w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=64&q=75 64w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=96&q=75 96w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=128&q=75 128w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=256&q=75 256w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=384&q=75 384w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=640&q=75 640w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=750&q=75 750w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=828&q=75 828w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=1080&q=75 1080w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=1200&q=75 1200w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=1920&q=75 1920w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=2048&q=75 2048w, /_next/image?url=%2FTeam%2Fgrad_long.png&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+      />
+    </div>
+  </div>
+  <div
+    class="relative flex gap-[0.625vw] 4xl:gap-[12px]"
+  >
+    <div
+      class="my-[0.7291666667vw] ml-[0.4166666667vw] 4xl:my-[14px] 4xl:ml-[8px]"
     >
       <div
         class="flex"
       >
-        <img
-          alt="葉月味"
-          data-nimg="1"
-          decoding="async"
-          height="104"
-          loading="lazy"
-          src="/_next/image?url=%2FTeam%2Ftest.jpg&w=256&q=75"
-          srcset="/_next/image?url=%2FTeam%2Ftest.jpg&w=128&q=75 1x, /_next/image?url=%2FTeam%2Ftest.jpg&w=256&q=75 2x"
-          style="color: transparent;"
-          width="104"
-        />
+        <div
+          class="relative"
+          style="width: 5.416666666666667vw; height: 5.416666666666667vw; object-fit: cover;"
+        >
+          <img
+            alt="葉月味"
+            class="max-w-none"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="104px"
+            src="/_next/image?url=%2FTeam%2Ftest.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2FTeam%2Ftest.jpg&w=16&q=75 16w, /_next/image?url=%2FTeam%2Ftest.jpg&w=32&q=75 32w, /_next/image?url=%2FTeam%2Ftest.jpg&w=48&q=75 48w, /_next/image?url=%2FTeam%2Ftest.jpg&w=64&q=75 64w, /_next/image?url=%2FTeam%2Ftest.jpg&w=96&q=75 96w, /_next/image?url=%2FTeam%2Ftest.jpg&w=128&q=75 128w, /_next/image?url=%2FTeam%2Ftest.jpg&w=256&q=75 256w, /_next/image?url=%2FTeam%2Ftest.jpg&w=384&q=75 384w, /_next/image?url=%2FTeam%2Ftest.jpg&w=640&q=75 640w, /_next/image?url=%2FTeam%2Ftest.jpg&w=750&q=75 750w, /_next/image?url=%2FTeam%2Ftest.jpg&w=828&q=75 828w, /_next/image?url=%2FTeam%2Ftest.jpg&w=1080&q=75 1080w, /_next/image?url=%2FTeam%2Ftest.jpg&w=1200&q=75 1200w, /_next/image?url=%2FTeam%2Ftest.jpg&w=1920&q=75 1920w, /_next/image?url=%2FTeam%2Ftest.jpg&w=2048&q=75 2048w, /_next/image?url=%2FTeam%2Ftest.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+          />
+        </div>
       </div>
     </div>
     <div
-      class="mt-[14px] drop-shadow-[0_0_3px_#000000]"
+      class="mt-[0.7291666667vw] drop-shadow-[0_0_0.15625vw_#000000] 4xl:mt-[14px] 4xl:drop-shadow-[0_0_3px_#000000]"
       style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
     >
       <p
-        class="text-[15px] text-white"
+        class="text-[0.78125vw] text-white 4xl:text-[15px]"
         data-testid="role"
       >
         特番制作
       </p>
       <p
-        class="mt-[8px] text-[28px] text-white"
+        class="mt-[0.4166666667vw] text-white 4xl:mt-[8px] text-[1.4583333333vw] 4xl:text-[28px]"
         data-testid="name"
       >
         葉月味

@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SpTeamItem /> should render the heading 1`] = `
+<div
+  class="h-[10vw] w-[93.3333333333vw] border-[0.2666666667vw] border-[#ccad70] bg-gradient-to-t from-[#262426] to-[#3a393a]"
+>
+  <div
+    class="flex gap-[0.8vw]"
+  >
+    <div
+      class="my-[1.0666666667vw] ml-[1.2vw]"
+    >
+      <div
+        class="relative flex"
+      >
+        <div
+          style="width: 7.333333333333333vw; height: 7.333333333333333vw;"
+        >
+          <img
+            alt="那須ピーマン"
+            class="max-w-none"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=640&q=75 640w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=750&q=75 750w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=828&q=75 828w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=1080&q=75 1080w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=1200&q=75 1200w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=1920&q=75 1920w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=2048&q=75 2048w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="mt-[0.6666666667vw]"
+      style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+    >
+      <p
+        class="text-[2.6666666667vw] text-white"
+        data-testid="role"
+      >
+        主催
+      </p>
+      <p
+        class="ml-[2vw] mt-[0.5333333333vw] text-[4.8vw] text-[#CCAD70]"
+        data-testid="name"
+      >
+        那須ピーマン
+      </p>
+    </div>
+    <div
+      class="flex h-auto grow flex-row-reverse"
+    >
+      <div
+        class="my-auto mr-[2.2666666667vw] flex gap-[2.4vw]"
+      >
+        <a
+          href="https://www.nicovideo.jp/user/57979076"
+        >
+          <div
+            class="relative"
+            style="width: 7.333333333333333vw; height: 7.333333333333333vw;"
+          >
+            <img
+              alt="niconico"
+              class="max-w-none"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=3840&q=75"
+              srcset="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=640&q=75 640w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=750&q=75 750w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=828&q=75 828w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=1080&q=75 1080w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=1200&q=75 1200w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=1920&q=75 1920w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=2048&q=75 2048w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            />
+          </div>
+        </a>
+        <div
+          class="opacity-50"
+        >
+          <div
+            class="relative"
+            style="width: 7.333333333333333vw; height: 7.333333333333333vw;"
+          >
+            <img
+              alt="youtube"
+              class="max-w-none"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=3840&q=75"
+              srcset="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=640&q=75 640w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=750&q=75 750w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=828&q=75 828w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=1080&q=75 1080w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=1200&q=75 1200w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=1920&q=75 1920w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=2048&q=75 2048w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            />
+          </div>
+        </div>
+        <a
+          href="https://twitter.com/nasu_pmen"
+        >
+          <div
+            class="relative"
+            style="width: 7.333333333333333vw; height: 7.333333333333333vw;"
+          >
+            <img
+              alt="twitter"
+              class="max-w-none"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=3840&q=75"
+              srcset="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=640&q=75 640w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=750&q=75 750w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=828&q=75 828w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=1080&q=75 1080w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=1200&q=75 1200w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=1920&q=75 1920w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=2048&q=75 2048w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
