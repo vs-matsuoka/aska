@@ -24,9 +24,9 @@ const MenuBar = () => (
       <Link href="/entries" passHref>
         <Image src="/MenuBar/00_Menu_Text_03.png" alt="entries" className="max-w-none" width={150} height={50} />
       </Link>
-      <a href="#">
+      <Link href="/movies" passHref>
         <Image src="/MenuBar/00_Menu_Text_04.png" alt="movie" className="max-w-none" width={150} height={50} />
-      </a>
+      </Link>
       <Link href="/team" passHref>
         <Image src="/MenuBar/00_Menu_Text_05.png" alt="operation" className="max-w-none" width={150} height={50} />
       </Link>
