@@ -145,7 +145,7 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
   const { entry, setEntry } = useEntryContext() as EntryContextType;
   useEffect(() => {
     // FUCK
-    window.FONTPLUS.reload();
+    // window.FONTPLUS.reload();
   }, [entry]);
   const nextEntry = searchNextPublished(entries, entry);
   const prevEntry = searchPrevPublished(entries, entry);

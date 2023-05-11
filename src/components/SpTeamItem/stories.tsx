@@ -11,7 +11,7 @@ export default {
 export const Default: Story = () => {
   useEffect(() => {
     // FUCK
-    window.FONTPLUS.reload();
+    // window.FONTPLUS.reload();
   });
   return (
     <>

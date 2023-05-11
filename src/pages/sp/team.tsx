@@ -28,7 +28,7 @@ function SpTeamHeader({ children }: { children: ReactNode }) {
 export default function Team() {
   useEffect(() => {
     // FUCK
-    window.FONTPLUS.reload();
+    // window.FONTPLUS.reload();
   });
   return (
     <>
