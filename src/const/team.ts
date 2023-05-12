@@ -60,7 +60,7 @@ const team: {
       name: '埜村武',
       role: '放送ディレクター',
       iconSrc: '/Icon/運営/運営_icon_埜村武.jpg',
-      twitterLink: 'https://twitter.com/hayami5121',
+      twitterLink: 'https://twitter.com/nomuratakeshi2',
       youtubeLink: undefined,
       niconicoLink: 'https://www.nicovideo.jp/user/14019936'
     },
@@ -68,7 +68,7 @@ const team: {
       name: 'ゴムーン',
       role: '特番ディレクター',
       iconSrc: '/Icon/運営/運営_icon_ゴムーン.jpg',
-      twitterLink: 'https://twitter.com/gomuun',
+      twitterLink: 'https://twitter.com/hayami5121',
       youtubeLink: undefined,
       niconicoLink: 'https://www.nicovideo.jp/user/93583784'
     },
