@@ -62,7 +62,7 @@ const team: {
       iconSrc: '/Icon/運営/運営_icon_埜村武.jpg',
       twitterLink: 'https://twitter.com/hayami5121',
       youtubeLink: undefined,
-      niconicoLink: 'https://www.nicovideo.jp/user/93583784'
+      niconicoLink: 'https://www.nicovideo.jp/user/14019936'
     },
     {
       name: 'ゴムーン',
@@ -70,7 +70,7 @@ const team: {
       iconSrc: '/Icon/運営/運営_icon_ゴムーン.jpg',
       twitterLink: 'https://twitter.com/gomuun',
       youtubeLink: undefined,
-      niconicoLink: 'https://www.nicovideo.jp/user/14019936'
+      niconicoLink: 'https://www.nicovideo.jp/user/93583784'
     },
     {
       name: 'ふーふー',
@@ -320,6 +320,14 @@ const team: {
       niconicoLink: 'https://www.nicovideo.jp/user/47463792',
       youtubeLink: undefined,
       twitterLink: 'https://twitter.com/pink_elephant_g'
+    },
+    {
+      name: 'ユビュちんちら',
+      role: '特番制作',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_ユビュちんちら.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/14090495',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/Ub2_chilla'
     },
     {
       name: 'Lixy',

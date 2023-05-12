@@ -55,6 +55,8 @@ exports[`<SpTeamItem /> should render the heading 1`] = `
       >
         <a
           href="https://www.nicovideo.jp/user/57979076"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <div
             class="relative"
@@ -95,6 +97,8 @@ exports[`<SpTeamItem /> should render the heading 1`] = `
         </div>
         <a
           href="https://twitter.com/nasu_pmen"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <div
             class="relative"
