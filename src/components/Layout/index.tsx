@@ -98,7 +98,7 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
         gridTemplateColumns: '100%'
       }}
     >
-      <div className="pt-20"></div>
+      <div className="pt-16"></div>
       <div className="relative flex items-center justify-center" data-testid="children">
         {children}
       </div>

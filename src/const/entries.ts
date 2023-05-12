@@ -313,7 +313,7 @@ const entries: Entry[] = [
     spInfoSrc: '',
     iconAlt: '',
     description:
-      '配信者をメインに音MADを制作する作者だけどなんだアレ！？\n近年では「曲が素材シリーズ」や映像メイカーとしても有名に\n1発想も技術も兼ね備えた罠カードが、音MDM天を破壊する！',
+      '配信者をメインに音MADを制作する作者だけどなんだアレ！？\n近年では「曲が素材シリーズ」や映像メイカーとしても有名に\n発想も技術も兼ね備えた罠カードが、音MDM天を破壊する！',
     niconicoLink: 'https://www.nicovideo.jp/user/38110073',
     youtubeLink: 'https://www.youtube.com/@Mirror_Force',
     twitterLink: 'https://twitter.com/c44095762',

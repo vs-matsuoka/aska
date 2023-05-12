@@ -100,8 +100,6 @@ function ToggleEntryButton() {
     }
   }));
 
-  const [shadowOn, setShadowOn] = useState(true);
-
   const trigger = useCallback(() => {
     const handler = setTimeout(() => {
       api.start({
@@ -109,22 +107,14 @@ function ToggleEntryButton() {
         to: { clipPath: 'polygon(-25% 0%, -15% 0%, -40% 100%, -50% 100%)' }
       });
     }, 150);
-    setShadowOn(false);
     return () => clearTimeout(handler);
   }, [api]);
-
-  const reset = useCallback(() => {
-    // const handler = setTimeout(() => {
-    setShadowOn(true);
-    // }, 150);
-    // return () => clearTimeout(handler);
-  }, []);
 
   return (
     <div className="absolute right-[2.5vw] bottom-[-6.6666666667vw] 4xl:right-[48px] 4xl:bottom-[-128px]">
       <ResponsiveImage alt="conbi" src="/Entry/21_Entry_text_02_base.png" width={480} height={105} />
       <Link href="/pairs" passHref>
-        <div className="absolute top-0 left-0 transition hover:scale-125" onMouseEnter={trigger} onMouseLeave={reset}>
+        <div className="absolute top-0 left-0 transition hover:scale-125" onMouseEnter={trigger}>
           <ResponsiveImage alt="conbi" src="/Entry/21_Entry_text_02.png" width={480} height={105} />
           <animated.div
             className="absolute top-0 left-0"
@@ -283,7 +273,7 @@ const Entries: NextPageWithLayout = () => {
           className="flex w-screen justify-center overflow-x-hidden"
           style={{
             // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
-            height: 'calc(100vh - 5rem)'
+            height: 'calc(100vh - 4rem)'
           }}
         >
           {/* <Head></Head> */}

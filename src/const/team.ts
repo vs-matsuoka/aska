@@ -241,7 +241,7 @@ const team: {
     },
     {
       name: '餡砂糖',
-      role: '汎用告知',
+      role: 'コンビ告知',
       iconSrc: '/Icon/実行委員会/告知/告知映像_icon_餡砂糖.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/56560368',
       youtubeLink: undefined,
@@ -249,7 +249,7 @@ const team: {
     },
     {
       name: 'ちょのゆし',
-      role: '汎用告知',
+      role: 'コンビ告知',
       iconSrc: '/Icon/実行委員会/告知/告知映像_icon_ちょのゆし.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/78688100',
       youtubeLink: undefined,
@@ -257,7 +257,7 @@ const team: {
     },
     {
       name: 'めがっちP',
-      role: '汎用告知',
+      role: 'コンビ告知',
       iconSrc: '/Icon/実行委員会/告知/告知映像_icon_めがっちP.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/32781937',
       youtubeLink: 'https://youtube.com/playlist?list=PLAPCxD_cd1F50vJit_nk3fuXOzpNgzHIc',
@@ -281,7 +281,7 @@ const team: {
     },
     {
       name: '零',
-      role: '特殊告知A',
+      role: '特殊告知「流行」',
       iconSrc: '/Icon/実行委員会/告知/告知映像_icon_零.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/8420196',
       youtubeLink: 'https://www.youtube.com/@zeromission2nd',
