@@ -91,8 +91,6 @@ function ToggleEntriesButton() {
     }
   }));
 
-  const [shadowOn, setShadowOn] = useState(true);
-
   const trigger = useCallback(() => {
     const handler = setTimeout(() => {
       api.start({
@@ -100,23 +98,14 @@ function ToggleEntriesButton() {
         to: { clipPath: 'polygon(-25% 0%, -15% 0%, -40% 100%, -50% 100%)' }
       });
     }, 150);
-    setShadowOn(false);
     return () => clearTimeout(handler);
   }, [api]);
-
-  const reset = useCallback(() => {
-    // const handler = setTimeout(() => {
-    setShadowOn(true);
-    // }, 150);
-    // return () => clearTimeout(handler);
-  }, []);
 
   return (
     <div className="absolute right-[2.5vw] bottom-[-6.5vw] 4xl:right-[3rem] 4xl:bottom-[-8rem]">
       <ResponsiveImage alt="conbi" src="/Pair/31_Pair_text_02_base.png" width={480} height={105} />
-      <ResponsiveImage alt="conbi" className={'absolute top-0 left-0 ' + (shadowOn ? '' : 'hidden')} src="/Pair/31_Pair_text_02_shadow.png" width={480} height={105} />
       <Link href="/entries" passHref>
-        <div className="absolute top-0 left-0 transition hover:scale-125" onMouseEnter={trigger} onMouseLeave={reset}>
+        <div className="absolute top-0 left-0 transition hover:scale-125" onMouseEnter={trigger}>
           <ResponsiveImage alt="conbi" src="/Pair/31_Pair_text_02.png" width={480} height={105} />
           <animated.div
             className="absolute top-0 left-0"
