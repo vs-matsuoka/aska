@@ -64,7 +64,7 @@ const MovieCard = ({ item, key }: { item: Movie; key: number }) => {
 export default function Movies() {
   useEffect(() => {
     // FUCK
-    window.FONTPLUS.reload();
+    // window.FONTPLUS.reload();
   });
   return (
     <>
@@ -115,7 +115,7 @@ export default function Movies() {
         }}
       >
         {/* sp:w-[75px] sp:h-[700px] sp:text-[40px] */}
-        <div className="relative flex h-[10vw] w-[93.3333333vw] items-center justify-center bg-gradient-to-t from-[#CCAD70] to-[#B99855] text-[5.3333333vw]">特別告知</div>
+        <div className="relative flex h-[10vw] w-[93.3333333vw] items-center justify-center bg-gradient-to-t from-[#CCAD70] to-[#B99855] text-[5.3333333vw]">事前番組</div>
       </div>
       {/* sp:mx-[25px] sp:mt-[15px] sp-gap[15px] sp:text-[40px] */}
       <div className="relative mx-[3.3333333vw] mt-[2vw] grid grid-cols-3 justify-items-center gap-[2vw]">

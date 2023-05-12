@@ -145,7 +145,7 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
   const { pair, setPair } = usePairContext() as PairContextType;
   useEffect(() => {
     // FUCK
-    window.FONTPLUS.reload();
+    // window.FONTPLUS.reload();
   }, [pair]);
   const nextPair = searchNextPublished(pairs, pair);
   const prevPair = searchPrevPublished(pairs, pair);
@@ -217,18 +217,13 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
                 <ResponsiveImage src="/Pair_Modal/32_Pair_Modal_pic_Line.png" alt="line" className="relative" width={685} height={10} />
                 {/* テキストサイズを決定する */}
                 <div
-                  className="my-[0.5208333333vw] w-[37.7604166667vw] text-[1.3020833333vw] font-bold text-white 4xl:my-[10px] 4xl:w-[725px] 4xl:text-[25px]"
+                  className="my-[0.5208333333vw] w-[37.7604166667vw] text-[1.9270833333vw] font-bold text-white 4xl:my-[10px] 4xl:w-[725px] 4xl:text-[37px]"
                   style={{
                     fontFamily: 'UDKakugo_LargePr6-HV',
                     lineHeight: '1.7'
                   }}
-                >
-                  丁寧なアニメ素材YTPMVから勢いのある松岡修造MADまで
-                  <br />
-                  幅広い素材を独自のアイデアで面白く掘り下げる投稿者
-                  <br />
-                  さまざまな作風を使いこなし、従来の音MADを切り開く！
-                </div>
+                  dangerouslySetInnerHTML={{ __html: pair.description.replaceAll('\n', '<br />') }}
+                ></div>
               </div>
             </div>
             <a

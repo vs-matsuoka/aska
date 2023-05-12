@@ -9,7 +9,7 @@ import team from 'const/team';
 const Team: NextPageWithLayout = () => {
   useEffect(() => {
     // FUCK
-    window.FONTPLUS.reload();
+    // window.FONTPLUS.reload();
   });
   return (
     <>

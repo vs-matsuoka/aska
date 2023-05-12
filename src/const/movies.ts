@@ -9,6 +9,7 @@ const movies: {
   genericNotices: Movie[];
   specialPrograms: Movie[];
 } = {
+  // 特別告知
   specialNotices: [
     {
       index: 1,
@@ -26,6 +27,7 @@ const movies: {
       youtubeUrl: 'https://youtu.be/oWVHp--jqaU'
     }
   ],
+  // コンビ告知
   genericNotices: [
     {
       index: 1,
@@ -83,6 +85,7 @@ const movies: {
       youtubeUrl: 'https://youtu.be/Ma7zHBKMPB4'
     }
   ],
+  // 事前番組
   specialPrograms: [
     {
       index: 1,
