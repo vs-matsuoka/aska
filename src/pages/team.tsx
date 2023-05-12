@@ -28,7 +28,7 @@ const Team: NextPageWithLayout = () => {
           </div>
           <div className="grid grid-cols-[repeat(5,min-content)] justify-center gap-[0.46875vw] 4xl:gap-[9px]">
             {team.unnei.map((item) => (
-              <TeamItem key={item.name} imgSrc={item.iconSrc} {...item} />
+              <TeamItem key={item.name} member={item} />
             ))}
           </div>
           {/* 制作 */}
@@ -37,7 +37,7 @@ const Team: NextPageWithLayout = () => {
           </div>
           <div className="grid grid-cols-[repeat(5,min-content)] justify-center gap-[0.46875vw] 4xl:gap-[9px]">
             {team.seisaku.map((item) => (
-              <TeamItem key={item.name} imgSrc={item.iconSrc} {...item} />
+              <TeamItem key={item.name} member={item} />
             ))}
           </div>
           {/* 立ち絵 */}
@@ -46,7 +46,7 @@ const Team: NextPageWithLayout = () => {
           </div>
           <div className="grid grid-cols-[repeat(5,min-content)] justify-center gap-[0.46875vw] 4xl:gap-[9px]">
             {team.tachie.map((item) => (
-              <TeamItem key={item.name} imgSrc={item.iconSrc} {...item} />
+              <TeamItem key={item.name} member={item} />
             ))}
           </div>
           {/* 告知 */}
@@ -55,7 +55,7 @@ const Team: NextPageWithLayout = () => {
           </div>
           <div className="grid grid-cols-[repeat(5,min-content)] justify-center gap-[0.46875vw] 4xl:gap-[9px]">
             {team.kokuchi.map((item) => (
-              <TeamItem key={item.name} imgSrc={item.iconSrc} {...item} />
+              <TeamItem key={item.name} member={item} />
             ))}
           </div>
           {/* 放送 */}
@@ -64,7 +64,7 @@ const Team: NextPageWithLayout = () => {
           </div>
           <div className="grid grid-cols-[repeat(5,min-content)] justify-center gap-[0.46875vw] 4xl:gap-[9px]">
             {team.housou.map((item) => (
-              <TeamItem key={item.name} imgSrc={item.iconSrc} {...item} />
+              <TeamItem key={item.name} member={item} />
             ))}
           </div>
           {/* 制作メンバーは随時更新! */}
