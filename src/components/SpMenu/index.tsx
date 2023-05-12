@@ -14,7 +14,17 @@ type SpMenuItemProps = {
 function SpMenuItem({ src, alt, path, onClose }: SpMenuItemProps) {
   const router = useRouter();
   if (router.pathname == path) {
-    return <SpResponsiveImage alt={alt} src={src} className="relative" width={686} height={100} onClick={onClose} />;
+    return (
+      <a
+        href={path}
+        onClick={(e) => {
+          e.preventDefault();
+          onClose();
+        }}
+      >
+        <SpResponsiveImage alt={alt} src={src} className="relative" width={686} height={100} />
+      </a>
+    );
   } else {
     return (
       <Link href={path} passHref>
