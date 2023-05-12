@@ -1,10 +1,28 @@
-import Image, { ImageProps } from 'next/image';
 import Link from 'next/link';
-import { useMediaQuery } from 'react-responsive';
+import { useRouter } from 'next/router';
 import Background from 'components/Background';
 import SpResponsiveImage from 'components/SpResponsiveImage';
-import otomdmLink from 'const/otomdmLink';
 import useModal from 'hooks/useModal';
+
+type SpMenuItemProps = {
+  src: string;
+  alt: string;
+  path: string;
+  onClose: () => void;
+};
+
+function SpMenuItem({ src, alt, path, onClose }: SpMenuItemProps) {
+  const router = useRouter();
+  if (router.pathname == path) {
+    return <SpResponsiveImage alt={alt} src={src} className="relative" width={686} height={100} onClick={onClose} />;
+  } else {
+    return (
+      <Link href={path} passHref>
+        <SpResponsiveImage alt={alt} src={src} className="relative" width={686} height={100} />
+      </Link>
+    );
+  }
+}
 
 const SpMenu = () => {
   const { isOpen, onOpen, onClose } = useModal();
@@ -37,21 +55,11 @@ const SpMenu = () => {
           <Link href="/sp" passHref>
             <SpResponsiveImage alt="top" src="/SP/Menu/s00_Button_01_Top.png" className="relative" width={686} height={100} />
           </Link>
-          <Link href="/sp/about" passHref>
-            <SpResponsiveImage alt="concept" src="/SP/Menu/s00_Button_02_Concept.png" className="relative" width={686} height={100} />
-          </Link>
-          <Link href="/sp/entries" passHref>
-            <SpResponsiveImage alt="entries" src="/SP/Menu/s00_Button_03_Entries.png" className="relative" width={686} height={100} />
-          </Link>
-          <Link href="/sp/pairs" passHref>
-            <SpResponsiveImage alt="combi" src="/SP/Menu/s00_Button_04_Unei.png" className="relative" width={686} height={100} />
-          </Link>
-          <Link href="/sp/team" passHref>
-            <SpResponsiveImage alt="unei" src="/SP/Menu/s00_Button_05_Movie.png" className="relative" width={686} height={100} />
-          </Link>
-          <Link href="/sp/movies" passHref>
-            <SpResponsiveImage alt="movie" src="/SP/Menu/s00_Button_06_Secret.png" className="relative" width={686} height={100} />
-          </Link>
+          <SpMenuItem src="/SP/Menu/s00_Button_02_Concept.png" alt="concept" path="/sp/about" onClose={onClose} />
+          <SpMenuItem src="/SP/Menu/s00_Button_03_Entries.png" alt="entries" path="/sp/entries" onClose={onClose} />
+          <SpMenuItem src="/SP/Menu/s00_Button_04_Unei.png" alt="combi" path="/sp/pairs" onClose={onClose} />
+          <SpMenuItem src="/SP/Menu/s00_Button_05_Movie.png" alt="unei" path="/sp/team" onClose={onClose} />
+          <SpMenuItem src="/SP/Menu/s00_Button_06_Secret.png" alt="movie" path="/sp/movies" onClose={onClose} />
         </div>
         {/* sp:mt-[33px] sp:space-x-[33px] */}
         <div className="mt-[4.4vw] flex justify-center space-x-[4.4vw]">{/* メニューの下に何か配置したい場合ここに */}</div>

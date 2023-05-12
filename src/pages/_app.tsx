@@ -42,7 +42,8 @@ const UDKakugoLargePr6EStrings = getUniqueCharacters(
     'コンビ告知',
     '事前番組',
     Object.entries(team).map(([, members]) => members.map((mem) => mem.name + mem.role)),
-    Object.entries(movies).map(([, movieArr]) => movieArr.map((mov) => mov.title))
+    Object.entries(movies).map(([, movieArr]) => movieArr.map((mov) => mov.title)),
+    entries.map((entry) => entry.spDescription)
   ]
     .flat(4)
     .join('')

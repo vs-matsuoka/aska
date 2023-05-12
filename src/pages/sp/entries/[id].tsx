@@ -37,12 +37,17 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
   const entry = entries.find((entry) => entry.index.toString() == params!.id);
+  const youtubeLink = entry?.youtubeLink == undefined ? null : entry?.youtubeLink;
   return {
     props: {
       index: entry!.index,
       kirinukiSrc: entry!.spKirinukiSrc,
       nameSrc: entry!.spNameSrc,
-      name: entry!.name
+      name: entry!.name,
+      description: entry!.spDescription,
+      niconicoLink: entry!.niconicoLink,
+      youtubeLink: youtubeLink,
+      twitterLink: entry!.twitterLink
     }
   };
 };
@@ -57,9 +62,17 @@ const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
         <SpResponsiveImage alt="kirinuki" src={props.kirinukiSrc} className="" width={750} height={800} />
         {/* sp:top-[39px] sp:right-[31px] sp:gap-[14px] */}
         <div className="absolute top-[5.2vw] right-[4.13333333vw] flex justify-center gap-[1.86666667vw]">
-          <SpResponsiveImage alt="niconico" src="/SP/Entry_Detail/s22_Button_11_SNS_NicoNico.png" className="relative" width={66} height={66} />
-          <SpResponsiveImage alt="youtube" src="/SP/Entry_Detail/s22_Button_12_SNS_Youtube.png" className="relative" width={66} height={66} />
-          <SpResponsiveImage alt="twitter" src="/SP/Entry_Detail/s22_Button_13_SNS_Twitter.png" className="relative" width={66} height={66} />
+          <a target="_blank" href={props.niconicoLink} rel="noopener noreferrer">
+            <SpResponsiveImage alt="niconico" src="/SP/Entry_Detail/s22_Button_11_SNS_NicoNico.png" className="relative" width={66} height={66} />
+          </a>
+          {props.youtubeLink && (
+            <a target="_blank" href={props.youtubeLink} rel="noopener noreferrer">
+              <SpResponsiveImage alt="youtube" src="/SP/Entry_Detail/s22_Button_12_SNS_Youtube.png" className="relative" width={66} height={66} />
+            </a>
+          )}
+          <a target="_blank" href={props.twitterLink} rel="noopener noreferrer">
+            <SpResponsiveImage alt="twitter" src="/SP/Entry_Detail/s22_Button_13_SNS_Twitter.png" className="relative" width={66} height={66} />
+          </a>
         </div>
         {/* sp:top-[671px] */}
         <div className="absolute top-[89.46666667vw]">
@@ -69,9 +82,16 @@ const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
             <div className="absolute top-[4.26666667vw]">
               <SpResponsiveImage alt="name" src={props.nameSrc} className="relative" width={750} height={250} />
             </div>
-            {/* sp:top-[184px] sp:right-[17px] */}
-            <div className="absolute top-[24.5333333vw] right-[2.26666667vw]">
-              <SpResponsiveImage alt="info" src="/SP/Entry_Detail/Info/s22_Entry_info_01.png" className="relative" width={600} height={250} />
+            {/* sp:top-[250px] sp:right-[40px] sp:text-[30px] */}
+            <div
+              className="absolute top-[33.3333333vw] right-[5.3333333vw] skew-y-[-10deg] text-[4vw] tracking-[.07em] text-white"
+              style={{
+                fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
+                lineHeight: '1.3'
+              }}
+              dangerouslySetInnerHTML={{ __html: props.description.replaceAll('\n', '<br />') }}
+            >
+              {/* {props.description} */}
             </div>
           </div>
         </div>
