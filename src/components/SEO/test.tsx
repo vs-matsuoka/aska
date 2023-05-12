@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import Title from '.';
+import SEO from '.';
 
 jest.mock('next/head', () => {
   return {
@@ -13,14 +13,14 @@ jest.mock('next/head', () => {
 
 describe('<Title />', () => {
   it('should render default title', () => {
-    render(<Title />, {
+    render(<SEO />, {
       container: document.head
     });
     expect(document.title).toBe('音MAD DREAM MATCH -天-');
   });
 
   it('should render title with suffix', () => {
-    render(<Title title="テスト" />, {
+    render(<SEO title="テスト" />, {
       container: document.head
     });
     expect(document.title).toBe('テスト | 音MAD DREAM MATCH -天-');

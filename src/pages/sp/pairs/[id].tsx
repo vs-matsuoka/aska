@@ -1,9 +1,9 @@
 import { GetStaticPaths, GetStaticPropsContext, InferGetStaticPropsType, NextPage } from 'next';
 import Link from 'next/link';
 import Background from 'components/Background';
+import SEO from 'components/SEO';
 import SpMenu from 'components/SpMenu';
 import SpResponsiveImage from 'components/SpResponsiveImage';
-import Title from 'components/Title';
 import pairs, { Pair } from 'const/pairs';
 
 function getPairIcon(pair: Pair, index: number) {
@@ -52,7 +52,7 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
 const PairPage: NextPage<PairProps> = (props: PairProps) => {
   return (
     <>
-      <Title title={props.name} />
+      <SEO title={props.name} />
       <Background src="/SP/Pair_Detail/s32_Entry_BG.png" />
       {/* sp:top-[51px] */}
       <div className="relative top-[6.8vw]">
