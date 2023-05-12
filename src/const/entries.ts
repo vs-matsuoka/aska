@@ -125,7 +125,7 @@ const entries: Entry[] = [
     spDescription: '正統派MADを送り出した歴戦の投稿者\n人物を深く掘り下げる構成を得意とする\n情熱あふれる動画で熱くなれ！',
     iconAlt: '',
     description:
-      '元気が出る正統派松岡修造MADを送り出してきたベテラン投稿者\n人物を深く掘り下げるセリフ選びや替え歌、人力を得意とする\n濃いストーリーが紡がれる、情熱あふれる動画で熱くなれ！',
+      '元気が出る正統派松岡修造MADを送り出してきた歴戦の投稿者\n人物を深く掘り下げるセリフ選びや替え歌、人力を得意とする\n濃いストーリーが紡がれる、情熱あふれる動画で熱くなれ！',
     niconicoLink: 'https://www.nicovideo.jp/user/2153500',
     youtubeLink: undefined,
     twitterLink: 'https://twitter.com/kai_satsu',
@@ -200,7 +200,8 @@ const entries: Entry[] = [
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_10.png',
     spDescription: '',
     iconAlt: '',
-    description: '',
+    description:
+      '郷愁を感じる爽やかな鉄道MADを確かな技術で送り出す投稿者\n同ジャンルで貴重な音MADらしい作りやギミックもお手のもの\n万物を流転させる作者が繋ぐ線路は、どこに向かっていくのか！',
     niconicoLink: 'https://www.nicovideo.jp/user/16417282',
     youtubeLink: 'https://www.youtube.com/@9640l1',
     twitterLink: 'https://twitter.com/kr4oli',
@@ -238,7 +239,7 @@ const entries: Entry[] = [
     spDescription: '',
     iconAlt: '',
     description:
-      'テーマオールスター・数々の合作で様々な素材を華麗に捌きつつ\nYouTuber・恋愛サーキュレーションMADでの活躍も周知の事実\nノンストップでオシャ連続投稿する作者の動画は進化し続ける！',
+      'テーマオールスター・数々の合作で様々な素材を華麗に捌きつつ\nYouTuber・恋愛サーキュレーションMADの活躍も周知の事実\nノンストップでオシャ連続投稿する作者の動画は進化し続ける！',
     niconicoLink: 'https://www.nicovideo.jp/user/55975521',
     youtubeLink: 'https://www.youtube.com/@sakurei_2015',
     twitterLink: 'https://twitter.com/sakurei_2015',
@@ -256,7 +257,8 @@ const entries: Entry[] = [
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_13.png',
     spDescription: '',
     iconAlt: '',
-    description: '',
+    description:
+      'KYM素材を隅から隅まで網羅、同ジャンルを支え続ける熟練者\n映像技術は留まることなく、高水準な実写撮影も音MADへ吸収\n泣く子も黙る力強いビジュアルで圧倒しながら突き進む！',
     niconicoLink: 'https://www.nicovideo.jp/user/11076215',
     youtubeLink: undefined,
     twitterLink: 'https://twitter.com/Ckirored',
@@ -275,7 +277,7 @@ const entries: Entry[] = [
     spDescription: '',
     iconAlt: '',
     description:
-      'レスリングシリーズ、中でもヒロミとアメゲイを多用する兄貴は\nどんな糸口も音MADの面白さへと昇華する歪みねえ発想の持ち主\n"斉藤洋子式"をも生み出した、誰も真似できない着眼点が光る！',
+      'レスリングシリーズ、中でもヒロミとアメゲイを多用する兄貴は\nどんな糸口も音MADの面白さへ昇華する歪みねえ発想の持ち主\n"斉藤洋子式"をも生み出した、誰も真似できない着眼点が光る！',
     niconicoLink: 'https://www.nicovideo.jp/user/6070737',
     youtubeLink: 'https://www.youtube.com/@JR-uj6kc',
     twitterLink: 'https://twitter.com/kannai',
@@ -331,7 +333,8 @@ const entries: Entry[] = [
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_17.png',
     spDescription: '',
     iconAlt: '',
-    description: '',
+    description:
+      '淫夢素材の中でも定番の題材からめいさくを連発してきた先輩\n音声でも名を馳せるが、近年は様々な素材で鮮やかな映像を披露\n活動範囲をどんどん広げる作者の活躍に、全く目が離せない！',
     niconicoLink: 'https://www.nicovideo.jp/user/64924825',
     youtubeLink: 'https://www.youtube.com/@user-ks9hf8bx1l',
     twitterLink: 'https://twitter.com/niggerofpokemon',
@@ -387,7 +390,8 @@ const entries: Entry[] = [
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_20.png',
     spDescription: '',
     iconAlt: '',
-    description: '',
+    description:
+      'そうだ、京都行こう・ｷｮｳﾉｵﾍﾞﾝﾄｰﾊｶﾜﾗｶｰ・東方原作といった\n渋い素材たちの雰囲気を十二分に活かすオシャレな動画を制作\nきめ細やかな作風の投稿者が永遠の修学旅行へと連れて行く！',
     niconicoLink: 'https://www.nicovideo.jp/user/57671569',
     youtubeLink: 'https://www.youtube.com/@Teine.',
     twitterLink: 'https://twitter.com/Inaho_Inadumi',
@@ -405,7 +409,8 @@ const entries: Entry[] = [
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_21.png',
     spDescription: '',
     iconAlt: '',
-    description: '',
+    description:
+      'デスノート素材を器用に調理した、ポピュラーな動画を多く制作\n「キルミーエンド・ダンスホール」での表現は新たな流れを確立\n技術に裏打ちされたテンポ感で、コンビ相手とも共鳴する！',
     niconicoLink: 'https://www.nicovideo.jp/user/21523375',
     youtubeLink: 'https://www.youtube.com/@tokachi9175',
     twitterLink: 'https://twitter.com/tokachi_12',
@@ -423,7 +428,8 @@ const entries: Entry[] = [
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_22.png',
     spDescription: '',
     iconAlt: '',
-    description: '',
+    description:
+      'ワンパンマン・ジョジョなどアニメMADで人気作を数多く輩出し\n原作を活かした映像構成と卓越したセリフ合わせが大きな魅力\n幅広い層に支持を得るセンスが、音MDMの舞台でも輝く！',
     niconicoLink: 'https://www.nicovideo.jp/user/46721826',
     youtubeLink: 'https://www.youtube.com/@tosochika705',
     twitterLink: 'https://twitter.com/tosochika',
@@ -441,7 +447,8 @@ const entries: Entry[] = [
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_23.png',
     spDescription: '',
     iconAlt: '',
-    description: '',
+    description:
+      '広範囲のテイストをカバーする画面作りのセンスは一級品\nあらゆる合作でもその実力を発揮し、常に印象を塗り替えてきた\n秘めた天井知らずのポテンシャル、決して舐めてはかかれない！',
     niconicoLink: 'https://www.nicovideo.jp/user/47562461',
     youtubeLink: 'https://www.youtube.com/@user-dj7ex4sh3c',
     twitterLink: 'https://twitter.com/napolythm',
@@ -590,7 +597,8 @@ const entries: Entry[] = [
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_31.png',
     spDescription: '',
     iconAlt: '',
-    description: '',
+    description:
+      'どんな素材においても作りこむ、広い技術を持ち合わせた実力派\nその力は留まらず、作曲・DJ・映像・メドレーでも実績を上げる\n多彩な武器から放たれる、作者の込められた一撃をくらえ！',
     niconicoLink: 'https://www.nicovideo.jp/user/25521306',
     youtubeLink: undefined,
     twitterLink: 'https://twitter.com/6June_',
