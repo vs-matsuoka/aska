@@ -1,4 +1,5 @@
 import Image, { ImageProps } from 'next/image';
+import Link from 'next/link';
 import { ReactElement, ReactNode, useCallback, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useMediaQuery } from 'react-responsive';
@@ -398,8 +399,12 @@ const About: NextPageWithLayout = () => {
                   gap: rpx(100)
                 }}
               >
-                <ResponsiveImage src="/Concept/41_Text_12_Link_A.png" alt="text" className="relative" width={700} height={250} />
-                <ResponsiveImage src="/Concept/41_Text_12_Link_B.png" alt="text" className="relative" width={700} height={250} />
+                <Link href="/entries">
+                  <ResponsiveImage src="/Concept/41_Text_12_Link_A.png" alt="text" className="relative" width={700} height={250} />
+                </Link>
+                <Link href="/pairs">
+                  <ResponsiveImage src="/Concept/41_Text_12_Link_B.png" alt="text" className="relative" width={700} height={250} />
+                </Link>
               </div>
             </FadeInTrigger>
           </div>
