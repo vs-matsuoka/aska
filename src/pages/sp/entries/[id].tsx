@@ -84,7 +84,7 @@ const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
             </div>
             {/* sp:top-[250px] sp:right-[40px] sp:text-[30px] */}
             <div
-              className="absolute top-[33.3333333vw] right-[5.3333333vw] skew-y-[-10deg] text-[4vw] tracking-[.07em] text-white"
+              className="absolute top-[33.3333333vw] left-[20.6666667vw] skew-y-[-10deg] text-[4vw] tracking-[.07em] text-white"
               style={{
                 fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
                 lineHeight: '1.3'
