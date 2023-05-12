@@ -34,7 +34,7 @@ const Movies: NextPageWithLayout = () => {
         className="w-screen overflow-y-scroll bg-[url('/Team/51_BG.png')] bg-cover bg-local"
         style={{
           // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
-          height: 'calc(100vh - 5rem)'
+          height: 'calc(100vh - 4rem)'
         }}
       >
         <div className="py-[13.4375vw] 4xl:py-[258px]">

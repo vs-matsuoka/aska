@@ -275,7 +275,7 @@ const Entries: NextPageWithLayout = () => {
           className="flex w-screen justify-center overflow-x-hidden"
           style={{
             // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
-            height: 'calc(100vh - 5rem)'
+            height: 'calc(100vh - 4rem)'
           }}
         >
           {/* <Head></Head> */}
