@@ -30,7 +30,7 @@ const entries: Entry[] = [
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_01.png',
     spInfoSrc: '',
     iconAlt: '',
-    description: '"丁寧なアニメ素材YTPMVから勢いのある松岡修造MADまで\n幅広い素材を独自のアイデアで面白く掘り下げる投稿者\nさまざまな作風を使いこなし、従来の音MADを切り開く！"',
+    description: '丁寧なアニメ素材YTPMVから勢いのある松岡修造MADまで\n幅広い素材を独自のアイデアで面白く掘り下げる投稿者\nさまざまな作風を使いこなし、従来の音MADを切り開く！',
     niconicoLink: 'https://www.nicovideo.jp/user/45185099',
     youtubeLink: 'https://www.youtube.com/c/ahokusa',
     twitterLink: 'https://twitter.com/leaf_62289',
