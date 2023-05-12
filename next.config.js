@@ -6,6 +6,9 @@ module.exports = withExportImages({
   images: {
     // unoptimized: true
   },
+  experimental: {
+    scrollRestoration: true
+  },
   trailingSlash: true,
   webpack: (config, { isServer }) => {
     if (!isServer) {
