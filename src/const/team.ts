@@ -322,6 +322,14 @@ const team: {
       twitterLink: 'https://twitter.com/pink_elephant_g'
     },
     {
+      name: 'ユビュちんちら',
+      role: '特番制作',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_ユビュちんちら.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/14090495',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/Ub2_chilla'
+    },
+    {
       name: 'Lixy',
       role: '特番制作',
       iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_Lixy.jpg',
