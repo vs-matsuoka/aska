@@ -1,4 +1,5 @@
 import { ReactElement, useEffect, useState } from 'react';
+import YouTube from 'react-youtube';
 import { NextPageWithLayout } from './_app';
 import Layout from 'components/Layout';
 import Movie from 'components/Movie';
@@ -14,7 +15,13 @@ function MovieModal({ isOpen, onClose, movie }: { isOpen: boolean; onClose: () =
   return (
     <div className={`fixed inset-0 ${isOpen ? 'opacity-100' : 'opacity-0'} transition-all duration-200 ${isOpen ? '' : 'pointer-events-none'}`}>
       <div className="flex h-full w-full items-center justify-center bg-black/50" onClick={onClose}>
-        <iframe id="ytplayer" width="1280" height="720" src={`https://www.youtube.com/embed/${movie.youtubeUrl.slice(17)}?origin=https://otomdm-ten.com`}></iframe>
+        <YouTube
+          videoId={movie.youtubeUrl.slice(17)}
+          opts={{
+            width: '1280',
+            height: '720'
+          }}
+        />
       </div>
     </div>
   );
@@ -25,7 +32,7 @@ const Movies: NextPageWithLayout = () => {
   const [selectedMovie, setSelectedMovie] = useState(movies.genericNotices[0]);
   useEffect(() => {
     // FUCK
-    window.FONTPLUS.reload();
+    // window.FONTPLUS.reload();
   }, []);
   return (
     <>
