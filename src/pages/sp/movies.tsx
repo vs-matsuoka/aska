@@ -123,6 +123,10 @@ export default function Movies() {
           <MovieCard item={item} key={index} />
         ))}
       </div>
+      {/* sp:mt-[15px] */}
+      <div className="mt-[2vw] flex justify-center">
+        <SpResponsiveImage className="relative" src="/SP/Movie/s61_Movie_Text_01.png" alt="comingsoon" width={600} height={105} />
+      </div>
 
       <div className="mt-[16.6666667vw]">&nbsp;</div>
       <SpMenu />
