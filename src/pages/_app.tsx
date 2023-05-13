@@ -2,8 +2,10 @@ import 'styles/globals.css';
 import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import { ReactElement, ReactNode } from 'react';
+import { useRouter } from 'next/router';
+import { ReactElement, ReactNode, useEffect } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import urlJoin from 'url-join';
 import entries from 'const/entries';
 import movies from 'const/movies';
 import pairs from 'const/pairs';
@@ -51,6 +53,33 @@ const UDKakugoLargePr6EStrings = getUniqueCharacters(
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
+  const router = useRouter();
+
+  useEffect(() => {
+    const updateOnSp = () => {
+      if (router) {
+        const isSp = window.innerWidth <= 750;
+        const onSp = router.pathname.includes('/sp');
+        console.log({ pathname: router.pathname, isSp, onSp });
+        if (!isSp && onSp) {
+          const path = router.pathname.replace('/sp', '');
+          console.log('to pc');
+          if (path === '') {
+            router.push('/');
+          } else {
+            router.push(path);
+          }
+        }
+        if (isSp && !onSp) {
+          console.log('to sp', router.pathname);
+          router.push(urlJoin('/sp', router.pathname));
+        }
+      }
+    };
+    window.addEventListener('resize', updateOnSp);
+    return () => window.removeEventListener('resize', updateOnSp);
+  }, [router]);
+
   return getLayout(
     <ParallaxProvider>
       <Head>
