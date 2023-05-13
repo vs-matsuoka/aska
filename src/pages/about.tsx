@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { ReactElement, ReactNode, useCallback, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
@@ -147,17 +148,17 @@ const About: NextPageWithLayout = () => {
     <>
       <SEO title="概要" />
       <div
-        className="w-full justify-center overflow-x-hidden overflow-y-scroll bg-[url('/Concept/41_Pic_BG.jpg')] bg-cover bg-local"
+        className="relative w-full justify-center overflow-x-hidden overflow-y-scroll bg-[url('/Concept/41_Pic_BG.jpg')] bg-cover bg-local"
         style={{
           // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
           height: 'calc(100vh - 4rem)'
         }}
       >
+        <div className="absolute w-full">
+          <Image src="/Concept/41_pic_Base_C.png" alt="logo" sizes="100vw" className="h-auto w-full" width={1920} height={750} />
+        </div>
         {/* ロゴ + 文言 */}
         <FadeInTrigger distance={rpx(200)} rootMargin="0px" triggerOnce>
-          <div className="absolute w-full">
-            <ResponsiveImage src="/Concept/41_pic_Base_C.png" alt="logo" width={1920} height={750} />
-          </div>
           <div
             className="flex w-full justify-center"
             style={{
