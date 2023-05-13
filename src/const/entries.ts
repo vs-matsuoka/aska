@@ -30,7 +30,8 @@ const entries: Entry[] = [
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_01.png',
     spDescription: 'アニメから実写、果ては正弦波まで\n幅広い素材を面白く掘り下げる投稿者\n豊富な作風で音MAD表現を開拓する！',
     iconAlt: '',
-    description: '丁寧なアニメ素材YTPMVから勢いのある松岡修造MADまで\n幅広い素材を独自のアイデアで面白く掘り下げる投稿者\nさまざまな作風を使いこなし、従来の音MADを切り開く！',
+    description:
+      '丁寧なアニメ素材YTPMVから勢いのある松岡修造MADまで\n幅広い素材を独自のアイデアで面白く掘り下げ続ける投稿者\nさまざまな作風を使いこなし、音MADの新境地を切り開く！',
     niconicoLink: 'https://www.nicovideo.jp/user/45185099',
     youtubeLink: 'https://www.youtube.com/c/ahokusa',
     twitterLink: 'https://twitter.com/leaf_62289',
@@ -103,7 +104,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_05.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_05.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_05.png',
-    spDescription: '今日はこの破壊的作者について説明！\n愉快な素材を過剰に演出しているぜ\n水地的の面白さ　ついに限界突破…',
+    spDescription: 'この破壊的作者について説明するぜ\n愉快な素材を過剰に演出しているぜ\n水地的の面白さ　ついに限界突破…',
     iconAlt: '',
     description:
       'ゆっくり魔理沙だぜ。今日はこの破壊的作者について説明するぜ\n蚊ルドやムキムキ誠之助など愉快な素材を過剰に演出しているぜ\n【朗報】エロう丸（水地的）の面白さ　ついに限界を突破…',
@@ -198,7 +199,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_10.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_10.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_10.png',
-    spDescription: '',
+    spDescription: '爽やかな鉄道MADを確かな技術で投稿\n音MADらしいギミックもお手のもの\n作者の線路はどこに向かっていくのか！',
     iconAlt: '',
     description:
       '郷愁を感じる爽やかな鉄道MADを確かな技術で送り出す投稿者\n同ジャンルで貴重な音MADらしい作りやギミックもお手のもの\n万物を流転させる作者が繋ぐ線路は、どこに向かっていくのか！',
@@ -236,7 +237,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_12.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_12.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_12.png',
-    spDescription: '',
+    spDescription: 'たくさんの素材を華麗に捌きながらも\nYouTuber音MADの活躍も周知の事実\nノンストップで作者の動画は進化する！',
     iconAlt: '',
     description:
       'テーマオールスター・数々の合作で様々な素材を華麗に捌きつつ\nYouTuber・恋愛サーキュレーションMADの活躍も周知の事実\nノンストップでオシャ連続投稿する作者の動画は進化し続ける！',
@@ -255,7 +256,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_13.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_13.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_13.png',
-    spDescription: '',
+    spDescription: 'KYM素材を隅から隅まで網羅する熟練者\n映像技術は実写撮影にまで拡張される\n泣く子も黙るビジュアルで突き進む！',
     iconAlt: '',
     description:
       'KYM素材を隅から隅まで網羅、同ジャンルを支え続ける熟練者\n映像技術は留まることなく、高水準な実写撮影も音MADへ吸収\n泣く子も黙る力強いビジュアルで圧倒しながら突き進む！',
@@ -274,7 +275,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_14.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_14.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_14.png',
-    spDescription: '',
+    spDescription: 'ヒロミとアメゲイを多用する兄貴は\nどんな糸口でも音MADの面白さへ昇華\n斉藤洋子式を生み出した着眼点が光る！',
     iconAlt: '',
     description:
       'レスリングシリーズ、中でもヒロミとアメゲイを多用する兄貴は\nどんな糸口も音MADの面白さへ昇華する歪みねえ発想の持ち主\n"斉藤洋子式"をも生み出した、誰も真似できない着眼点が光る！',
@@ -293,7 +294,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_15.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_15.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_15.png',
-    spDescription: '',
+    spDescription: 'アニメから芸人まで網羅的に扱う作者\n表現手法を使い分けるストイックな姿勢\n見逃すわけにはいかないじゃんよ！',
     iconAlt: '',
     description:
       'ディープなアニメから軽快な芸人ネタまで網羅的に扱う作者\n制作の雰囲気に合わせ表現手法も使い分けるストイックな姿勢が\nコンビでどう展開するのか、見逃すわけにはいかないじゃんよ！',
@@ -312,7 +313,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_16.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_16.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_16.png',
-    spDescription: '',
+    spDescription: '配信者をメインにMADを制作する作者\n曲が素材シリーズメイカーとしても有名\n罠カードが音MDM天を破壊する！',
     iconAlt: '',
     description:
       '配信者をメインに音MADを制作する作者だけどなんだアレ！？\n近年では「曲が素材シリーズ」や映像メイカーとしても有名に\n発想も技術も兼ね備えた罠カードが、音MDM天を破壊する！',
@@ -331,7 +332,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_17.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_17.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_17.png',
-    spDescription: '',
+    spDescription: '淫夢の定番素材から名作を連発する先輩\n近年は様々な素材で鮮やかな映像も披露\n活動範囲を広げる作者に目が離せない！',
     iconAlt: '',
     description:
       '淫夢素材の中でも定番の題材からめいさくを連発してきた先輩\n音声でも名を馳せるが、近年は様々な素材で鮮やかな映像を披露\n活動範囲をどんどん広げる作者の活躍に、全く目が離せない！',
@@ -350,7 +351,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_18.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_18.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_18.png',
-    spDescription: '',
+    spDescription: 'キレのある重厚な音声をくみ上げる作者\n往年のアニメ・実写素材に息を吹き込む\n投稿歴の新しい革命児が先陣を切る！',
     iconAlt: '',
     description:
       'ジャンルを問わずキレのある重厚な音声をくみ上げる作者\n往年のアニメ・実写素材へ新たに息を吹き込み、その技量を実証\n投稿歴の新しい音MAD革命児が先陣を切って走り抜ける！',
@@ -369,10 +370,10 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_19.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_19.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_19.png',
-    spDescription: '',
+    spDescription: '質感のある音色と流麗な映像で魅了\n柔軟に作風を適応できる対応力も一線級\n作曲活動も支持を集め、explosion！',
     iconAlt: '',
     description:
-      '質感のある音色と流麗な映像を構築し、視聴者を魅了する\nキャラクターに着目し柔軟に作風を適応できる対応力も第一級\n意欲的な作曲活動も支持を集める今、したたかに爆発していく！',
+      '質感のある音色と流麗な映像を構築し、視聴者を魅了する\nキャラクターに着目し柔軟に作風を適応できる対応力も一線級\n意欲的な作曲活動も支持を集める今、したたかに爆発していく！',
     niconicoLink: 'https://www.nicovideo.jp/user/24455542',
     youtubeLink: 'https://www.youtube.com/@Tsukiri',
     twitterLink: 'https://twitter.com/tsukiri_0112',
@@ -388,7 +389,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_20.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_20.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_20.png',
-    spDescription: '',
+    spDescription: '「そうだ、京都行こう」など渋い素材の\n雰囲気を活かすオシャレな動画を制作\n貴方を永遠の修学旅行へと連れて行く！',
     iconAlt: '',
     description:
       'そうだ、京都行こう・ｷｮｳﾉｵﾍﾞﾝﾄｰﾊｶﾜﾗｶｰ・東方原作といった\n渋い素材たちの雰囲気を十二分に活かすオシャレな動画を制作\nきめ細やかな作風の投稿者が永遠の修学旅行へと連れて行く！',
@@ -407,7 +408,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_21.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_21.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_21.png',
-    spDescription: '',
+    spDescription: 'デスノートを用いた動画を多く制作\nキルミーMADの表現は新たな流れを確立\n技術に裏打ちされたテンポ感で共鳴！',
     iconAlt: '',
     description:
       'デスノート素材を器用に調理した、ポピュラーな動画を多く制作\n「キルミーエンド・ダンスホール」での表現は新たな流れを確立\n技術に裏打ちされたテンポ感で、コンビ相手とも共鳴する！',
@@ -426,7 +427,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_22.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_22.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_22.png',
-    spDescription: '',
+    spDescription: 'アニメMADで人気作を数多く輩出し\n映像構成と卓越したセリフ合わせが魅力\n幅広い層に支持を得るセンスが輝く！',
     iconAlt: '',
     description:
       'ワンパンマン・ジョジョなどアニメMADで人気作を数多く輩出し\n原作を活かした映像構成と卓越したセリフ合わせが大きな魅力\n幅広い層に支持を得るセンスが、音MDMの舞台でも輝く！',
@@ -445,7 +446,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_23.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_23.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_23.png',
-    spDescription: '',
+    spDescription: '広範囲をカバーする画面作りは一級品\nあらゆる合作でも実力を発揮してきた\nそのポテンシャル舐めてはかかれない！',
     iconAlt: '',
     description:
       '広範囲のテイストをカバーする画面作りのセンスは一級品\nあらゆる合作でもその実力を発揮し、常に印象を塗り替えてきた\n秘めた天井知らずのポテンシャル、決して舐めてはかかれない！',
@@ -464,9 +465,10 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_24.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_24.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_24.png',
-    spDescription: '',
+    spDescription: 'エルシャダイMADの全盛期を支え、\nジョジョMADでもヒット作を多数輩出\n上質な構成力のラッシュをとくと見よ！',
     iconAlt: '',
-    description: 'エルシャダイMADの全盛期を支えた経歴もありつつ\n現在はジョジョMADにおいてヒット作を多数輩出\n最前線から魅せる、上質な構成力のラッシュをとくと見よ！',
+    description:
+      'エルシャダイMADの全盛期を支えてきた経歴もありながら\n現在はジョジョMADにおいてもヒット作を多数輩出する怪物\n最前線から魅せる、上質な構成力のラッシュをとくと見よ！',
     niconicoLink: 'https://www.nicovideo.jp/user/14666489',
     youtubeLink: 'https://www.youtube.com/@Nero_JOJO',
     twitterLink: 'https://twitter.com/Nero_JOJO',
@@ -482,10 +484,10 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_25.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_25.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_25.png',
-    spDescription: '',
+    spDescription: 'FF7のファンアート的音MADを筆頭に\n一曲で複数の動画を投稿する手数の多さ\n作者のアルテマウェポンが飛び出す！',
     iconAlt: '',
     description:
-      'FF7、特にセフィロスに注目したファンアート的音MADを筆頭に\nゆめにっきMADや私的オールスターでもクールな雰囲気が魅力\n"いろいろな素材で"奏でる作者のアルテマウェポンが飛び出す！',
+      'FF7、特にセフィロスに注目したファンアート的音MADを筆頭に\n一曲で複数の動画を投稿してきたことが作者の手数の多さを証明\n"いろいろな素材で"奏でる作者のアルテマウェポンが飛び出す！',
     niconicoLink: 'https://www.nicovideo.jp/user/42324428',
     youtubeLink: 'https://www.youtube.com/@Haiiro_Material',
     twitterLink: 'https://twitter.com/otomad2023',
@@ -501,7 +503,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_26.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_26.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_26.png',
-    spDescription: '',
+    spDescription: 'ディズニー関連の素材を中心に扱い\n心地よいセリフ合わせと空気感で演出\n"皆さんを素晴らしい旅にご案内します"',
     iconAlt: '',
     description:
       '名前に反してディズニー関連の実写・アニメ素材を中心に扱い\n心地よいセリフ合わせと独特の空気感を武器に夢の世界を演出\n"これから皆さんを神秘的な素晴らしい旅にご案内します。"',
@@ -520,7 +522,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_27.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_27.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_27.png',
-    spDescription: '',
+    spDescription: 'スタイリッシュなクッキー☆映像の達人\n「NYD2019」でのパートは影響を与えた\n幅広い映像表現を操る職人芸が唸る！',
     iconAlt: '',
     description:
       'カワイイ・カッコイイ・スタイリッシュなクッキー☆映像の達人\n「NYD2019」での『Big Brother』パートは後世に影響を与えた\n3Dからアニメーションまで幅広く表現を活かした職人芸が唸る！',
@@ -539,7 +541,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_28.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_28.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_28.png',
-    spDescription: '',
+    spDescription: 'ウ ン チ ー コ ン グ は大ヒットシリーズ\n引き出しの多さは私的でも大暴れ\nおびただしい量の情報が走ｒ…走る～！',
     iconAlt: '',
     description:
       'ウ ン チ ー コ ン グ は音MADファンに限らず人気の超ヒット\n素材の手広さと引き出しの多さは、私的オールスターでも大暴れ\n目も耳もいっぱいになるおびただしい量の情報が走ｒ…走る～！',
@@ -558,7 +560,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_29.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_29.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_29.png',
-    spDescription: '',
+    spDescription: '多くのジャンルを扱える、マルチな技術\n緻密に詰め込むオールスターMADを確立\n四方八方から体系的音MADで包み込む！',
     iconAlt: '',
     description: '多くのジャンルを扱える、マルチな技術を持ち合わせた作者\n知的アプローチで詰めこまれたオールスターMADを確立\n四方八方から繰り出される、体系的音MADネタで包み込む！',
     niconicoLink: 'https://www.nicovideo.jp/user/50136284',
@@ -576,7 +578,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_30.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_30.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_30.png',
-    spDescription: '',
+    spDescription: 'アグレッシブな作品を投稿する一方で\n人力やセリフ合わせなど高い技術も披露\n合作でも印象的な作者の宴の始まりだ！',
     iconAlt: '',
     description:
       'イーノックなどを素材にアグレッシブな作品を投稿する一方で\n心の籠もった人力や気持ち良いセリフ合わせなど高い技術も披露\n合作でも画期的なパートを多数制作する作者の、宴の始まりだ！',
@@ -595,10 +597,10 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_31.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_31.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_31.png',
-    spDescription: '',
+    spDescription: 'どんな素材においても作りこむ実力派\n作曲・DJなど諸方面で実績を上げている\n多彩な武器から放たれる一撃をくらえ！',
     iconAlt: '',
     description:
-      'どんな素材においても作りこむ、広い技術を持ち合わせた実力派\nその力は留まらず、作曲・DJ・映像・メドレーでも実績を上げる\n多彩な武器から放たれる、作者の込められた一撃をくらえ！',
+      'どんな素材においても作り込む、広い技術を持ち合わせた実力派\nその力は留まらず、作曲・DJ・映像・メドレーでも実績を上げる\n多彩な武器から放たれる、作者の渾身の一撃をくらえ！',
     niconicoLink: 'https://www.nicovideo.jp/user/25521306',
     youtubeLink: undefined,
     twitterLink: 'https://twitter.com/6June_',
@@ -614,7 +616,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_32.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_32.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_32.png',
-    spDescription: '',
+    spDescription: 'アイマス・ウマ娘・Vtuberなどを扱い\n公式MADのような作りでファンも納得\nヒット作を擁する作者が舞台に立つ！',
     iconAlt: '',
     description:
       'アイドルマスターをはじめ、ウマ娘・VTuberなどに想いを詰めて\n公式かと見紛う驚異の作り込みで人気コンテンツのファンも納得\n数多くのヒット作を擁する投稿者が、満を持して舞台に立つ！',
@@ -633,7 +635,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_33.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_33.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_33.png',
-    spDescription: '',
+    spDescription: 'アイマス人力＆替え歌といえばこの作者\n除夜m@sから絶えずヒット作を連発\n有名歌手にも感謝されるお家芸が炸裂！',
     iconAlt: '',
     description:
       'アイマスMADの歴史に名を残す人力＆替え歌といえばこの作者\n「除夜m@s」も有名だが、令和に入ってからもヒット作を連発\n有名歌手にもスペシャルサンクスされるお家芸が炸裂する！',
@@ -652,7 +654,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_34.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_34.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_34.png',
-    spDescription: '',
+    spDescription: 'ニコメドを日本一投稿している出力量\nアレンジや構成はMADにも発揮される\n多様な素材で新しい世界にいざなう！',
     iconAlt: '',
     description:
       'ニコニコメドレーを日本一投稿している圧倒的アウトプット量\nそこで培われたアレンジ・構成力が音MADにも発揮されている\n多種多様な素材を操り、視聴者を新しい世界にいざなう！',
@@ -673,7 +675,8 @@ const entries: Entry[] = [
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_35.png',
     spDescription: 'スパイダーマを中心に手を伸ばし\nどんな素材も物にする期待の新星\nフレッシュな旋風を巻き起こす！',
     iconAlt: '',
-    description: 'Vtuberからスパイダーマ、様々な素材に手を伸ばし\nそのどれもコントロールする技量を持つ期待の新星\n「わたくし」的センスでフレッシュな旋風を巻き起こす！',
+    description:
+      'Vtuberやスパイダーマなど、様々な素材に次々と手を伸ばし\nそのどれもを的確にコントロールする技量を持つ期待の新星\n「わたくし」的センスでフレッシュな旋風を巻き起こす！',
     niconicoLink: 'https://www.nicovideo.jp/user/93606868',
     youtubeLink: 'https://www.youtube.com/@user-gs9ru2nb8l',
     twitterLink: 'https://twitter.com/watakushiiiii',
