@@ -5,10 +5,8 @@ import Layout from 'components/Layout';
 import Movie from 'components/Movie';
 import ResponsiveImage from 'components/ResponsiveImage';
 import SEO from 'components/SEO';
-import TeamItem from 'components/TeamItem';
 import movies from 'const/movies';
 import { Movie as MovieType } from 'const/movies';
-import team from 'const/team';
 import useModal from 'hooks/useModal';
 
 function MovieModal({ isOpen, onClose, movie }: { isOpen: boolean; onClose: () => void; movie: MovieType }) {

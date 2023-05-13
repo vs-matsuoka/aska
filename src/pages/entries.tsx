@@ -1,7 +1,5 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { ReactElement, useCallback, useEffect, useState } from 'react';
-import { useMediaQuery } from 'react-responsive';
 import { useSpring, animated } from 'react-spring';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';

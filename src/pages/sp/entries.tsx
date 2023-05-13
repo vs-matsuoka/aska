@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import Background from 'components/Background';
 import SEO from 'components/SEO';
