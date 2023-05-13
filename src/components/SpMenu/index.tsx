@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useSpring, animated, easings } from 'react-spring';
 import Background from 'components/Background';
 import SpResponsiveImage from 'components/SpResponsiveImage';
 import useModal from 'hooks/useModal';
@@ -35,7 +36,33 @@ function SpMenuItem({ src, alt, path, onClose }: SpMenuItemProps) {
 }
 
 const SpMenu = () => {
-  const { isOpen, onOpen, onClose } = useModal();
+  const { isOpen, onOpen: onModalOpen, onClose: onModalClose } = useModal();
+  const [menuStyle, menuStyleApi] = useSpring(() => ({
+    from: {
+      transform: 'translate(-100vw)'
+    },
+    config: { duration: 250, easing: easings.easeOutCubic },
+    events: {
+      onResolve: () => {
+        onModalClose();
+      }
+    }
+  }));
+  const onOpen = () => {
+    menuStyleApi.start({
+      to: {
+        transform: 'translate(0vw)'
+      }
+    });
+    onModalOpen();
+  };
+  const onClose = () => {
+    menuStyleApi.start({
+      to: {
+        transform: 'translate(-100vw)'
+      }
+    });
+  };
 
   return (
     <>
@@ -58,7 +85,7 @@ const SpMenu = () => {
       </div>
 
       {/* メニューモーダル */}
-      <div className={`${isOpen ? 'fixed inset-0' : 'invisible fixed'}`}>
+      <animated.div className={`fixed inset-0 ${isOpen ? '' : 'invisible select-none'}`} style={menuStyle}>
         <Background src="/SP/Menu/s00_Menu_BG.png" />
         {/* sp:space-y-[16px] sp:pt-[32px] */}
         <div className="grid justify-items-center space-y-[2.133333333333333vw] pt-[4.26666667vw]">
@@ -77,7 +104,7 @@ const SpMenu = () => {
         <div className="fixed bottom-[4.266666666666667vw] right-[4.266666666666667vw]" onClick={onClose}>
           <SpResponsiveImage alt="close" src="/SP/Menu/s00_Button_21_Close.png" className="" width={95} height={95} />
         </div>
-      </div>
+      </animated.div>
     </>
   );
 };
