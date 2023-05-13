@@ -60,17 +60,17 @@ const team: {
       name: '埜村武',
       role: '放送ディレクター',
       iconSrc: '/Icon/運営/運営_icon_埜村武.jpg',
-      twitterLink: 'https://twitter.com/hayami5121',
+      twitterLink: 'https://twitter.com/nomuratakeshi2',
       youtubeLink: undefined,
-      niconicoLink: 'https://www.nicovideo.jp/user/93583784'
+      niconicoLink: 'https://www.nicovideo.jp/user/14019936'
     },
     {
       name: 'ゴムーン',
       role: '特番ディレクター',
       iconSrc: '/Icon/運営/運営_icon_ゴムーン.jpg',
-      twitterLink: 'https://twitter.com/gomuun',
+      twitterLink: 'https://twitter.com/hayami5121',
       youtubeLink: undefined,
-      niconicoLink: 'https://www.nicovideo.jp/user/14019936'
+      niconicoLink: 'https://www.nicovideo.jp/user/93583784'
     },
     {
       name: 'ふーふー',
@@ -241,7 +241,7 @@ const team: {
     },
     {
       name: '餡砂糖',
-      role: '汎用告知',
+      role: 'コンビ告知',
       iconSrc: '/Icon/実行委員会/告知/告知映像_icon_餡砂糖.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/56560368',
       youtubeLink: undefined,
@@ -249,7 +249,7 @@ const team: {
     },
     {
       name: 'ちょのゆし',
-      role: '汎用告知',
+      role: 'コンビ告知',
       iconSrc: '/Icon/実行委員会/告知/告知映像_icon_ちょのゆし.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/78688100',
       youtubeLink: undefined,
@@ -257,7 +257,7 @@ const team: {
     },
     {
       name: 'めがっちP',
-      role: '汎用告知',
+      role: 'コンビ告知',
       iconSrc: '/Icon/実行委員会/告知/告知映像_icon_めがっちP.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/32781937',
       youtubeLink: 'https://youtube.com/playlist?list=PLAPCxD_cd1F50vJit_nk3fuXOzpNgzHIc',
@@ -281,7 +281,7 @@ const team: {
     },
     {
       name: '零',
-      role: '特殊告知A',
+      role: '特殊告知「流行」',
       iconSrc: '/Icon/実行委員会/告知/告知映像_icon_零.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/8420196',
       youtubeLink: 'https://www.youtube.com/@zeromission2nd',
@@ -320,6 +320,14 @@ const team: {
       niconicoLink: 'https://www.nicovideo.jp/user/47463792',
       youtubeLink: undefined,
       twitterLink: 'https://twitter.com/pink_elephant_g'
+    },
+    {
+      name: 'ユビュちんちら',
+      role: '特番制作',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_ユビュちんちら.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/14090495',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/Ub2_chilla'
     },
     {
       name: 'Lixy',

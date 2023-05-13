@@ -68,7 +68,16 @@ function ContestantButton({ entry, onModalOpen }: { entry: Entry; onModalOpen: (
 }
 
 function ContestantRow({ contestants, offset, onModalOpen }: ContestantRowProps) {
-  const isNarrow = useMediaQuery({ query: '(min-width: 1920px)' });
+  const [isNarrow, setIsNarrow] = useState(false);
+  useEffect(() => {
+    setIsNarrow(window.innerWidth > 1920);
+    const updateWindowDimensions = () => {
+      setIsNarrow(window.innerWidth > 1920);
+    };
+
+    window.addEventListener('resize', updateWindowDimensions);
+    return () => window.removeEventListener('resize', updateWindowDimensions);
+  }, []);
 
   return (
     <div
@@ -92,8 +101,6 @@ function ToggleEntryButton() {
     }
   }));
 
-  const [shadowOn, setShadowOn] = useState(true);
-
   const trigger = useCallback(() => {
     const handler = setTimeout(() => {
       api.start({
@@ -101,23 +108,14 @@ function ToggleEntryButton() {
         to: { clipPath: 'polygon(-25% 0%, -15% 0%, -40% 100%, -50% 100%)' }
       });
     }, 150);
-    setShadowOn(false);
     return () => clearTimeout(handler);
   }, [api]);
 
-  const reset = useCallback(() => {
-    // const handler = setTimeout(() => {
-    setShadowOn(true);
-    // }, 150);
-    // return () => clearTimeout(handler);
-  }, []);
-
   return (
-    <div className="absolute right-[2.5vw] bottom-[-6.5vw] 4xl:right-[3rem] 4xl:bottom-[-8rem]">
+    <div className="absolute right-[2.5vw] bottom-[-6.6666666667vw] 4xl:right-[48px] 4xl:bottom-[-128px]">
       <ResponsiveImage alt="conbi" src="/Entry/21_Entry_text_02_base.png" width={480} height={105} />
-      <ResponsiveImage alt="conbi" className={'absolute top-0 left-0 ' + (shadowOn ? '' : 'hidden')} src="/Entry/21_Entry_text_02_shadow.png" width={480} height={105} />
       <Link href="/pairs" passHref>
-        <div className="absolute top-0 left-0 transition hover:scale-125" onMouseEnter={trigger} onMouseLeave={reset}>
+        <div className="absolute top-0 left-0 transition hover:scale-125" onMouseEnter={trigger}>
           <ResponsiveImage alt="conbi" src="/Entry/21_Entry_text_02.png" width={480} height={105} />
           <animated.div
             className="absolute top-0 left-0"
@@ -276,13 +274,13 @@ const Entries: NextPageWithLayout = () => {
           className="flex w-screen justify-center overflow-x-hidden"
           style={{
             // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
-            height: 'calc(100vh - 5rem)'
+            height: 'calc(100vh - 4rem)'
           }}
         >
           {/* <Head></Head> */}
           <div className="relative my-auto h-[46.875vw] w-[82.8125vw] 4xl:h-[900px] 4xl:w-[1590px]">
             <div className="absolute top-[8.8541666667vw] 4xl:top-[170px]">
-              <div className="absolute left-[1.9vw] top-[-10vw] 4xl:left-[36.48px] 4xl:top-[-211.2px]">
+              <div className="absolute left-[1.9vw] top-[-11vw] 4xl:left-[36.48px] 4xl:top-[-211.2px]">
                 <ResponsiveImage alt="entry" src="/Entry/21_Entry_text_01.png" width={500} height={250} />
               </div>
               {contestantRows.map((row, index) => (

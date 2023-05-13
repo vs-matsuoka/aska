@@ -1,4 +1,5 @@
 import Image, { ImageProps } from 'next/image';
+import Link from 'next/link';
 import { ReactElement, ReactNode, useCallback, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useMediaQuery } from 'react-responsive';
@@ -167,7 +168,7 @@ const About: NextPageWithLayout = () => {
         className="w-screen justify-center overflow-x-hidden overflow-y-scroll bg-[url('/Concept/41_Pic_BG.png')] bg-cover bg-local"
         style={{
           // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
-          height: 'calc(100vh - 5rem)'
+          height: 'calc(100vh - 4rem)'
         }}
       >
         {/* ロゴ + 文言 */}
@@ -398,8 +399,12 @@ const About: NextPageWithLayout = () => {
                   gap: rpx(100)
                 }}
               >
-                <ResponsiveImage src="/Concept/41_Text_12_Link_A.png" alt="text" className="relative" width={700} height={250} />
-                <ResponsiveImage src="/Concept/41_Text_12_Link_B.png" alt="text" className="relative" width={700} height={250} />
+                <Link href="/entries">
+                  <ResponsiveImage src="/Concept/41_Text_12_Link_A.png" alt="text" className="relative" width={700} height={250} />
+                </Link>
+                <Link href="/pairs">
+                  <ResponsiveImage src="/Concept/41_Text_12_Link_B.png" alt="text" className="relative" width={700} height={250} />
+                </Link>
               </div>
             </FadeInTrigger>
           </div>

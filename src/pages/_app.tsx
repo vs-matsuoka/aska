@@ -2,8 +2,10 @@ import 'styles/globals.css';
 import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import { ReactElement, ReactNode } from 'react';
+import { useRouter } from 'next/router';
+import { ReactElement, ReactNode, useEffect } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import urlJoin from 'url-join';
 import entries from 'const/entries';
 import movies from 'const/movies';
 import pairs from 'const/pairs';
@@ -42,14 +44,54 @@ const UDKakugoLargePr6EStrings = getUniqueCharacters(
     'コンビ告知',
     '事前番組',
     Object.entries(team).map(([, members]) => members.map((mem) => mem.name + mem.role)),
-    Object.entries(movies).map(([, movieArr]) => movieArr.map((mov) => mov.title))
+    Object.entries(movies).map(([, movieArr]) => movieArr.map((mov) => mov.title)),
+    entries.map((entry) => entry.spDescription)
   ]
     .flat(4)
     .join('')
 ).join('');
 
+const pcPathFromSpPath = (path: string) => {
+  const pcPath = path.replace('/sp', '');
+  if (pcPath === '') {
+    return '/';
+  }
+  if (pcPath.includes('/entries')) {
+    return '/entries';
+  }
+  if (pcPath.includes('/pairs')) {
+    return '/pairs';
+  }
+  return pcPath;
+};
+
+const spPathFromPcPath = (path: string) => {
+  return urlJoin('/sp', path);
+};
+
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
+  const router = useRouter();
+
+  useEffect(() => {
+    const updateOnSp = () => {
+      if (router) {
+        const isSpSize = window.innerWidth <= 750;
+        const onSpPage = router.pathname.includes('/sp');
+
+        if (!isSpSize && onSpPage) {
+          router.push(pcPathFromSpPath(router.pathname));
+        }
+        if (isSpSize && !onSpPage) {
+          router.push(spPathFromPcPath(router.pathname));
+        }
+      }
+    };
+    window.addEventListener('resize', updateOnSp);
+    updateOnSp();
+    return () => window.removeEventListener('resize', updateOnSp);
+  }, [router]);
+
   return getLayout(
     <ParallaxProvider>
       <Head>

@@ -38,14 +38,14 @@ exports[`<TeamItem /> should render correctly 1`] = `
           style="width: 5.416666666666667vw; height: 5.416666666666667vw; object-fit: cover;"
         >
           <img
-            alt="葉月味"
+            alt="那須ピーマン"
             class="max-w-none"
             data-nimg="fill"
             decoding="async"
             loading="lazy"
             sizes="104px"
-            src="/_next/image?url=%2FTeam%2Ftest.jpg&w=3840&q=75"
-            srcset="/_next/image?url=%2FTeam%2Ftest.jpg&w=16&q=75 16w, /_next/image?url=%2FTeam%2Ftest.jpg&w=32&q=75 32w, /_next/image?url=%2FTeam%2Ftest.jpg&w=48&q=75 48w, /_next/image?url=%2FTeam%2Ftest.jpg&w=64&q=75 64w, /_next/image?url=%2FTeam%2Ftest.jpg&w=96&q=75 96w, /_next/image?url=%2FTeam%2Ftest.jpg&w=128&q=75 128w, /_next/image?url=%2FTeam%2Ftest.jpg&w=256&q=75 256w, /_next/image?url=%2FTeam%2Ftest.jpg&w=384&q=75 384w, /_next/image?url=%2FTeam%2Ftest.jpg&w=640&q=75 640w, /_next/image?url=%2FTeam%2Ftest.jpg&w=750&q=75 750w, /_next/image?url=%2FTeam%2Ftest.jpg&w=828&q=75 828w, /_next/image?url=%2FTeam%2Ftest.jpg&w=1080&q=75 1080w, /_next/image?url=%2FTeam%2Ftest.jpg&w=1200&q=75 1200w, /_next/image?url=%2FTeam%2Ftest.jpg&w=1920&q=75 1920w, /_next/image?url=%2FTeam%2Ftest.jpg&w=2048&q=75 2048w, /_next/image?url=%2FTeam%2Ftest.jpg&w=3840&q=75 3840w"
+            src="/_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=3840&q=75"
+            srcset="/_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=16&q=75 16w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=32&q=75 32w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=48&q=75 48w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=64&q=75 64w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=96&q=75 96w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=128&q=75 128w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=256&q=75 256w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=384&q=75 384w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=640&q=75 640w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=750&q=75 750w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=828&q=75 828w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=1080&q=75 1080w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=1200&q=75 1200w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=1920&q=75 1920w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=2048&q=75 2048w, /_next/image?url=%2FIcon%2F%E9%81%8B%E5%96%B6%2F%E9%81%8B%E5%96%B6_icon_%E9%82%A3%E9%A0%88%E3%83%94%E3%83%BC%E3%83%9E%E3%83%B3.jpg&w=3840&q=75 3840w"
             style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
           />
         </div>
@@ -59,15 +59,63 @@ exports[`<TeamItem /> should render correctly 1`] = `
         class="text-[0.78125vw] text-white 4xl:text-[15px]"
         data-testid="role"
       >
-        特番制作
+        主催
       </p>
       <p
         class="mt-[0.4166666667vw] text-white 4xl:mt-[8px] text-[1.4583333333vw] 4xl:text-[28px]"
         data-testid="name"
       >
-        葉月味
+        那須ピーマン
       </p>
     </div>
+  </div>
+  <div
+    class="absolute bottom-[13px] right-[9px] flex gap-x-[0.4166666667vw] 4xl:gap-x-[8px]"
+  >
+    <a
+      href="https://www.nicovideo.jp/user/57979076"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        class="relative"
+        style="width: 2.083333333333333vw; height: 2.083333333333333vw; object-fit: cover;"
+      >
+        <img
+          alt="niconico"
+          class="max-w-none"
+          data-nimg="fill"
+          decoding="async"
+          loading="lazy"
+          sizes="40px"
+          src="/_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=3840&q=75"
+          srcset="/_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=16&q=75 16w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=32&q=75 32w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=48&q=75 48w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=64&q=75 64w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=96&q=75 96w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=128&q=75 128w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=256&q=75 256w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=384&q=75 384w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=640&q=75 640w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=750&q=75 750w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=828&q=75 828w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=1080&q=75 1080w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=1200&q=75 1200w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=1920&q=75 1920w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=2048&q=75 2048w, /_next/image?url=%2FTeam%2F51_Operation_SNS01_niconico.png&w=3840&q=75 3840w"
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+        />
+      </div>
+    </a>
+    <a
+      href="https://twitter.com/nasu_pmen"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        class="relative"
+        style="width: 2.083333333333333vw; height: 2.083333333333333vw; object-fit: cover;"
+      >
+        <img
+          alt="Twitter"
+          class="max-w-none"
+          data-nimg="fill"
+          decoding="async"
+          loading="lazy"
+          sizes="40px"
+          src="/_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=3840&q=75"
+          srcset="/_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=16&q=75 16w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=32&q=75 32w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=48&q=75 48w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=64&q=75 64w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=96&q=75 96w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=128&q=75 128w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=256&q=75 256w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=384&q=75 384w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=640&q=75 640w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=750&q=75 750w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=828&q=75 828w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=1080&q=75 1080w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=1200&q=75 1200w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=1920&q=75 1920w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=2048&q=75 2048w, /_next/image?url=%2FTeam%2F51_Operation_SNS03_Twitter.png&w=3840&q=75 3840w"
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+        />
+      </div>
+    </a>
   </div>
 </div>
 `;

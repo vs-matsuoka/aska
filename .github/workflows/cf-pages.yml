@@ -31,32 +31,31 @@ jobs:
         id: yarn-cache
         with:
           path: |
-            ${{ github.workspace }}/.next/cache
             ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - uses: actions/cache@v3
-        id: dot-next-cache
-        with:
-          path: |
-            ${{ github.workspace }}/.next
-          key: ${{ runner.os }}-dot-next-${{ hashFiles('.next/**/*.json') }}
-          restore-keys: |
-            ${{ runner.os }}-dot-next-
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
 
       - uses: actions/cache@v3
         id: next-export-optimize-images-cache
         with:
           path: |
             ${{ github.workspace }}/node_modules/.cache/next-export-optimize-images
-          key: ${{ runner.os }}-next-export-optimize-images-${{ hashFiles('src/**/*') }}-${{ hashFiles('public/**/*') }}
+          key: ${{ runner.os }}-next-export-optimize-images-cache-${{ hashFiles('src/**/*') }}-${{ hashFiles('public/**/*') }}
           restore-keys: |
-            ${{ runner.os }}-next-export-optimize-images-
+            ${{ runner.os }}-next-export-optimize-images-cache-
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+      - uses: actions/cache@v3
+        id: dot-next-cache
+        with:
+          path: |
+            ${{ github.workspace }}/.next
+          key: ${{ runner.os }}-next-dir-${{ hashFiles('src/**/*') }}-${{ hashFiles('public/**/*') }}
+          restore-keys: |
+            ${{ runner.os }}-next-dir-
 
       - name: Build
         run: yarn export

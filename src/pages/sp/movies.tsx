@@ -1,6 +1,7 @@
 import Image, { ImageProps } from 'next/image';
 import { useEffect } from 'react';
 import Background from 'components/Background';
+import SEO from 'components/SEO';
 import SpMenu from 'components/SpMenu';
 import SpResponsiveImage from 'components/SpResponsiveImage';
 import movies, { Movie } from 'const/movies';
@@ -67,6 +68,7 @@ export default function Movies() {
   });
   return (
     <>
+      <SEO title="ムービー" />
       <Background src="/SP/Movie/s51_BG.png" />
       {/* sp:pt-[27px] */}
       <div

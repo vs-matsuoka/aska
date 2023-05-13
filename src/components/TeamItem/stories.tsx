@@ -1,6 +1,7 @@
 import { Story, Meta } from '@storybook/react';
 import { useEffect } from 'react';
 import TeamItem from '.';
+import team from 'const/team';
 
 export default {
   title: 'TeamItem',
@@ -14,7 +15,7 @@ export const Default: Story = () => {
   });
   return (
     <>
-      <TeamItem imgSrc="/Team/test.jpg" role="特番制作" name="葉月味" />
+      <TeamItem member={team.unnei[0]} />
     </>
   );
 };

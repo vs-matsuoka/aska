@@ -27,9 +27,9 @@ function ResponsiveImage(
 
 const NullableButton = ({ href, children }: { href?: string; children: React.ReactNode }) => {
   return href ? (
-    <Link href={href} passHref>
+    <a href={href} target="_blank" rel="noopener noreferrer">
       {children}
-    </Link>
+    </a>
   ) : (
     <div className="opacity-50">{children}</div>
   );
