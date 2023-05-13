@@ -190,17 +190,17 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
               }}
             >
               <div>
-                <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="back" className="relative" width={70} height={690} />
+                <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="back" className="relative" width={70} height={690} quality={100} />
               </div>
             </a>
             <div className="flex">
               <div className="my-auto h-auto">
-                <ResponsiveImage src={pair.illustSrc} alt="pair" className="relative" width={600} height={600} priority />
+                <ResponsiveImage src={pair.illustSrc} alt="pair" className="relative" width={600} height={600} priority quality={100} />
               </div>
               <div className="my-auto h-auto">
                 <div className="absolute right-[5.8854166667vw] top-[2.2395833333vw] 4xl:right-[113px] 4xl:top-[43px]" onClick={onClose}>
                   <a href="#">
-                    <ResponsiveImage src="/Modal/22_Modal_Close.png" alt="close" className="relative" width={55} height={55} />
+                    <ResponsiveImage src="/Modal/22_Modal_Close.png" alt="close" className="relative" width={55} height={55} quality={100} />
                   </a>
                 </div>
                 <div className="mb-[0.4166666667vw] 4xl:mb-[8px]">
@@ -232,7 +232,7 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
               }}
             >
               <div>
-                <ResponsiveImage src="/Modal/22_Modal_Next.png" alt="next" className="relative" width={70} height={690} />
+                <ResponsiveImage src="/Modal/22_Modal_Next.png" alt="next" className="relative" width={70} height={690} quality={100} />
               </div>
             </a>
           </div>

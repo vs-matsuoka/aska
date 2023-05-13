@@ -44,18 +44,18 @@ jobs:
         with:
           path: |
             ${{ github.workspace }}/node_modules/.cache/next-export-optimize-images
-          key: ${{ runner.os }}-next-export-optimize-images-cache-${{ hashFiles('src/**/*') }}-${{ hashFiles('public/**/*') }}
+          key: ${{ runner.os }}-2-next-export-optimize-images-cache-${{ hashFiles('src/**/*') }}-${{ hashFiles('public/**/*') }}
           restore-keys: |
-            ${{ runner.os }}-next-export-optimize-images-cache-
+            ${{ runner.os }}-2-next-export-optimize-images-cache-
 
       - uses: actions/cache@v3
         id: dot-next-cache
         with:
           path: |
             ${{ github.workspace }}/.next
-          key: ${{ runner.os }}-next-dir-${{ hashFiles('src/**/*') }}-${{ hashFiles('public/**/*') }}
+          key: ${{ runner.os }}-2-next-dir-${{ hashFiles('src/**/*') }}-${{ hashFiles('public/**/*') }}
           restore-keys: |
-            ${{ runner.os }}-next-dir-
+            ${{ runner.os }}-2-next-dir-
 
       - name: Build
         run: yarn export

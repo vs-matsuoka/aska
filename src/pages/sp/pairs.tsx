@@ -7,11 +7,11 @@ import pairs, { Pair } from 'const/pairs';
 
 function getPairBanner(pair: Pair, index: number) {
   if (pair.spBannerSrc.includes('Secret')) {
-    return <SpResponsiveImage alt="banner" src={pair.spBannerSrc} className="relative" width={750} height={127} key={index} />;
+    return <SpResponsiveImage alt="banner" src={pair.spBannerSrc} className="relative" width={750} height={127} key={index} quality={90} />;
   } else {
     return (
       <Link href={'/sp/pairs/' + pair.index.toString()} key={index} passHref>
-        <SpResponsiveImage alt="banner" src={pair.spBannerSrc} className="relative" width={750} height={127} key={index} />
+        <SpResponsiveImage alt="banner" src={pair.spBannerSrc} className="relative" width={750} height={127} key={index} quality={90} />
       </Link>
     );
   }
@@ -30,10 +30,10 @@ export default function Pairs() {
 
       <div className="fixed top-0 left-0">
         <div className="relative">
-          <SpResponsiveImage alt="topBanner" src="/SP/Pair/s31_PairIndex_TopBanner.png" width={750} height={130} />
+          <SpResponsiveImage alt="topBanner" src="/SP/Pair/s31_PairIndex_TopBanner.png" width={750} height={130} quality={90} />
           <Link href="/sp/entries" passHref>
             <div className="absolute top-0 right-0">
-              <SpResponsiveImage alt="pairButton" src="/SP/Pair/s31_PairIndex_TopText.png" width={315} height={130} />
+              <SpResponsiveImage alt="pairButton" src="/SP/Pair/s31_PairIndex_TopText.png" width={315} height={130} quality={90} />
             </div>
           </Link>
         </div>

@@ -8,11 +8,11 @@ import entries, { Entry } from 'const/entries';
 
 function getEntryBanner(entry: Entry, index: number) {
   if (entry.spBannerSrc.includes('secret')) {
-    return <SpResponsiveImage alt="banner" src={entry.spBannerSrc} className="relative" width={750} height={127} key={index} />;
+    return <SpResponsiveImage alt="banner" src={entry.spBannerSrc} className="relative" width={750} height={127} key={index} quality={90} />;
   } else {
     return (
       <Link href={'/sp/entries/' + entry.index.toString()} key={index} passHref>
-        <SpResponsiveImage alt="banner" src={entry.spBannerSrc} className="relative" width={750} height={127} key={index} />
+        <SpResponsiveImage alt="banner" src={entry.spBannerSrc} className="relative" width={750} height={127} key={index} quality={90} />
       </Link>
     );
   }
@@ -31,10 +31,10 @@ export default function Entries() {
 
       <div className="fixed top-0 left-0">
         <div className="relative right-0">
-          <SpResponsiveImage alt="topBanner" src="/SP/Entry/s21_EntryIndex_TopBanner.png" className="" width={750} height={130} />
+          <SpResponsiveImage alt="topBanner" src="/SP/Entry/s21_EntryIndex_TopBanner.png" className="" width={750} height={130} quality={90} />
           <Link href="/sp/pairs" passHref>
             <div className="absolute top-0 right-0">
-              <SpResponsiveImage alt="combiButton" src="/SP/Entry/s21_EntryIndex_TopText.png" width={315} height={130} />
+              <SpResponsiveImage alt="combiButton" src="/SP/Entry/s21_EntryIndex_TopText.png" width={315} height={130} quality={90} />
             </div>
           </Link>
         </div>
