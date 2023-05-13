@@ -125,7 +125,7 @@ function ToggleEntriesButton() {
             <ResponsiveImage
               alt="conbi"
               src="/Pair/31_Pair_text_02.png"
-              width={480}
+              width={500}
               height={105}
               style={{
                 filter: 'brightness(0) invert(1)'
