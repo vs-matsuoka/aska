@@ -33,7 +33,7 @@ export default function Team() {
   return (
     <>
       <SEO title="運営" />
-      <div className="relative w-screen">
+      <div className="relative w-full">
         <Background src="/SP/Operation/s51_BG.png" />
 
         <div className="grid justify-items-center">

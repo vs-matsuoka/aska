@@ -24,13 +24,13 @@ const Top: NextPageWithLayout = () => {
       <SEO />
       <Background src="/Top/11_Top_pic_BG.png" />
       <div
-        className="relative w-screen overflow-x-hidden bg-cover bg-local"
+        className="relative w-full overflow-x-hidden bg-cover bg-local"
         style={{
           // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
           height: 'calc(100vh - 4rem)'
         }}
       >
-        <div className="absolute -top-6 -z-10 flex w-screen flex-row justify-center space-x-[0px]">
+        <div className="absolute -top-6 -z-10 flex w-full justify-center space-x-[0px] overflow-hidden">
           <div className="">
             <Image src="/Top/11_Top_pic_KeyVisual_Zeus.png" alt="zeus" className="max-w-none" width={1250} height={1250} />
           </div>

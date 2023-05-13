@@ -24,6 +24,10 @@ function ResponsiveImage(
   }, []);
   const isFixedWidth = alwaysResponsive ? false : isNarrow;
 
+  if (width === standard) {
+    return <Image src={src} alt={alt} width={width} height={height} {...imageProps} />;
+  }
+
   return (
     <div
       className={`${className ?? ''}`}

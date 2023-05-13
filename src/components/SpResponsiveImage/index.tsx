@@ -9,6 +9,10 @@ function SpResponsiveImage(
   const { width, height, src, alt, className, ...imageProps } = props;
   const standard = 750;
 
+  if (width === standard) {
+    return <Image src={src} alt={alt} width={width} height={height} {...imageProps} />;
+  }
+
   return (
     <div
       className={className}
@@ -17,7 +21,7 @@ function SpResponsiveImage(
         height: `${(height / standard) * 100}vw`
       }}
     >
-      <Image src={src} alt={alt} className="max-w-none" fill {...imageProps}></Image>
+      <Image src={src} alt={alt} className="max-w-none" fill {...imageProps} />
     </div>
   );
 }
