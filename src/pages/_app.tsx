@@ -2,8 +2,10 @@ import 'styles/globals.css';
 import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import { ReactElement, ReactNode } from 'react';
+import { useRouter } from 'next/router';
+import { ReactElement, ReactNode, useEffect } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import urlJoin from 'url-join';
 import entries from 'const/entries';
 import movies from 'const/movies';
 import pairs from 'const/pairs';
@@ -49,8 +51,46 @@ const UDKakugoLargePr6EStrings = getUniqueCharacters(
     .join('')
 ).join('');
 
+const pcPathFromSpPath = (path: string) => {
+  const pcPath = path.replace('/sp', '');
+  if (pcPath === '') {
+    return '/';
+  }
+  if (pcPath.includes('/entries')) {
+    return '/entries';
+  }
+  if (pcPath.includes('/pairs')) {
+    return '/pairs';
+  }
+  return pcPath;
+};
+
+const spPathFromPcPath = (path: string) => {
+  return urlJoin('/sp', path);
+};
+
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
+  const router = useRouter();
+
+  useEffect(() => {
+    const updateOnSp = () => {
+      if (router) {
+        const isSpSize = window.innerWidth <= 750;
+        const onSpPage = router.pathname.includes('/sp');
+
+        if (!isSpSize && onSpPage) {
+          router.push(pcPathFromSpPath(router.pathname));
+        }
+        if (isSpSize && !onSpPage) {
+          router.push(spPathFromPcPath(router.pathname));
+        }
+      }
+    };
+    window.addEventListener('resize', updateOnSp);
+    return () => window.removeEventListener('resize', updateOnSp);
+  }, [router]);
+
   return getLayout(
     <ParallaxProvider>
       <Head>
