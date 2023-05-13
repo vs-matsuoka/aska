@@ -98,8 +98,10 @@ const SpMenu = () => {
           <SpMenuItem src="/SP/Menu/s00_Button_05_Movie.png" alt="unei" path="/sp/team" onClose={onClose} />
           <SpMenuItem src="/SP/Menu/s00_Button_06_Secret.png" alt="movie" path="/sp/movies" onClose={onClose} />
         </div>
-        {/* sp:mt-[33px] sp:space-x-[33px] */}
-        <div className="mt-[4.4vw] flex justify-center space-x-[4.4vw]">{/* メニューの下に何か配置したい場合ここに */}</div>
+        {/* sp:mt-[20px] */}
+        <div className="mt-[2.6666667vw] flex justify-center">
+          <SpResponsiveImage alt="logo" src="/SP/Menu/s00_Menu_Logo.png" className="relative" width={250} height={130} />
+        </div>
         {/* sp:bottom-[32px] sp:right-[32px] */}
         <div className="fixed bottom-[4.266666666666667vw] right-[4.266666666666667vw]" onClick={onClose}>
           <SpResponsiveImage alt="close" src="/SP/Menu/s00_Button_21_Close.png" className="" width={95} height={95} />
