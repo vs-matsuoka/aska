@@ -65,7 +65,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_03.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_03_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_03_B.png',
-    description: '超・広範囲の視野と手腕を持つ二人の\nスペクタクルにあなたも没頭必至！？',
+    description: '超・広範囲の視野と手腕を持つ二人の\nスペクタクルにあなたも没頭する！？',
     isPublished: true
   },
   {
@@ -116,7 +116,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_06.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_06_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_06_B.png',
-    description: '計算高い目線から練られたアイデアでもって\n音MADの構造をどう組み立てるのか！？',
+    description: '計算高い目線から練られたアイデアを駆使し\n音MADの構造をどう組み立てるのか！？',
     isPublished: true
   },
   {
@@ -167,7 +167,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_09.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_09_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_09_B.png',
-    description: '素材にかけるアイデアも見識も深い作者が\n放送に懸ける熱、全身で浴びよ！',
+    description: '素材にかけるアイデアも見識も深い作者が\n遊びつくす動画に、視聴者も体感必至！',
     isPublished: true
   },
   {
@@ -184,7 +184,7 @@ const pairs: Pair[] = [
     spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_10.png',
     spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_10_A.png',
     spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_10_B.png',
-    description: '視聴者を魅了し続けてきた二人が織りなす\n音MADの究極形とは？見逃し厳禁！',
+    description: '視聴者を魅了し続けてきた二人が織りなす\n渾身の一作に懸ける熱、全身で浴びよ！',
     isPublished: true
   },
   {
