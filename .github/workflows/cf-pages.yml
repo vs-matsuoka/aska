@@ -41,7 +41,7 @@ jobs:
         with:
           path: |
             ${{ github.workspace }}/.next
-          key: ${{ runner.os }}-next-dir-${{ hashFiles('.next/**/*.json') }}
+          key: ${{ runner.os }}-next-dir-${{ hashFiles('src/**/*') }}-${{ hashFiles('public/**/*') }}
           restore-keys: |
             ${{ runner.os }}-next-dir-
 
