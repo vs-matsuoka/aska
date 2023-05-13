@@ -51,6 +51,24 @@ const UDKakugoLargePr6EStrings = getUniqueCharacters(
     .join('')
 ).join('');
 
+const pcPathFromSpPath = (path: string) => {
+  const pcPath = path.replace('/sp', '');
+  if (pcPath === '') {
+    return '/';
+  }
+  if (pcPath.includes('/entries')) {
+    return '/entries';
+  }
+  if (pcPath.includes('/pairs')) {
+    return '/pairs';
+  }
+  return pcPath;
+};
+
+const spPathFromPcPath = (path: string) => {
+  return urlJoin('/sp', path);
+};
+
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
   const router = useRouter();
@@ -58,21 +76,14 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   useEffect(() => {
     const updateOnSp = () => {
       if (router) {
-        const isSp = window.innerWidth <= 750;
-        const onSp = router.pathname.includes('/sp');
-        console.log({ pathname: router.pathname, isSp, onSp });
-        if (!isSp && onSp) {
-          const path = router.pathname.replace('/sp', '');
-          console.log('to pc');
-          if (path === '') {
-            router.push('/');
-          } else {
-            router.push(path);
-          }
+        const isSpSize = window.innerWidth <= 750;
+        const onSpPage = router.pathname.includes('/sp');
+
+        if (!isSpSize && onSpPage) {
+          router.push(pcPathFromSpPath(router.pathname));
         }
-        if (isSp && !onSp) {
-          console.log('to sp', router.pathname);
-          router.push(urlJoin('/sp', router.pathname));
+        if (isSpSize && !onSpPage) {
+          router.push(spPathFromPcPath(router.pathname));
         }
       }
     };
