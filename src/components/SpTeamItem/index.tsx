@@ -31,7 +31,7 @@ const NullableButton = ({ href, children }: { href?: string; children: React.Rea
       {children}
     </a>
   ) : (
-    <div className="opacity-50">{children}</div>
+    <div className="opacity-25">{children}</div>
   );
 };
 
