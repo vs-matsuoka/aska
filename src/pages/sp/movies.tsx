@@ -1,9 +1,9 @@
 import Image, { ImageProps } from 'next/image';
 import { useEffect } from 'react';
 import Background from 'components/Background';
+import SEO from 'components/SEO';
 import SpMenu from 'components/SpMenu';
 import SpResponsiveImage from 'components/SpResponsiveImage';
-import Title from 'components/Title';
 import movies, { Movie } from 'const/movies';
 
 function MovieThumbnailResponsiveImage(
@@ -68,7 +68,7 @@ export default function Movies() {
   });
   return (
     <>
-      <Title title="ムービー" />
+      <SEO title="ムービー" />
       <Background src="/SP/Movie/s51_BG.png" />
       {/* sp:pt-[27px] */}
       <div

@@ -4,8 +4,8 @@ import { ReactElement } from 'react';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
 import Layout from 'components/Layout';
+import SEO from 'components/SEO';
 import Timeline from 'components/Timeline';
-import Title from 'components/Title';
 import otomdmLink from 'const/otomdmLink';
 
 const Top: NextPageWithLayout = () => {
@@ -21,8 +21,7 @@ const Top: NextPageWithLayout = () => {
   }, [router]); */
   return (
     <>
-      <Title />
-
+      <SEO />
       <Background src="/Top/11_Top_pic_BG.png" />
       <div
         className="relative w-full overflow-x-hidden bg-cover bg-local"

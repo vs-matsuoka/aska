@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Background from 'components/Background';
+import SEO from 'components/SEO';
 import SpMenu from 'components/SpMenu';
 import SpResponsiveImage from 'components/SpResponsiveImage';
-import Title from 'components/Title';
 import entries, { Entry } from 'const/entries';
 
 function getEntryBanner(entry: Entry, index: number) {
@@ -21,7 +21,7 @@ function getEntryBanner(entry: Entry, index: number) {
 export default function Entries() {
   return (
     <>
-      <Title title="出場者" />
+      <SEO title="出場者" />
       <Background src="/SP/Entry/s21_Entry_BG.png" />
 
       {/* sp:space-y-[9px] sp:pt-[139px] */}

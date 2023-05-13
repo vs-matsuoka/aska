@@ -7,7 +7,7 @@ import { useSpring, animated, easings } from 'react-spring';
 import { NextPageWithLayout } from './_app';
 import Layout from 'components/Layout';
 import ResponsiveImage from 'components/ResponsiveImage';
-import Title from 'components/Title';
+import SEO from 'components/SEO';
 
 interface FadeInTriggerProps {
   children?: ReactNode;
@@ -163,7 +163,7 @@ const ppx = (px: number) => {
 const About: NextPageWithLayout = () => {
   return (
     <>
-      <Title title="概要" />
+      <SEO title="概要" />
       <div
         className="w-full justify-center overflow-x-hidden overflow-y-scroll bg-[url('/Concept/41_Pic_BG.png')] bg-cover bg-local"
         style={{

@@ -2,9 +2,9 @@ import Image, { ImageProps } from 'next/image';
 import { ReactNode, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import Background from 'components/Background';
+import SEO from 'components/SEO';
 import SpMenu from 'components/SpMenu';
 import SpTeamItem from 'components/SpTeamItem';
-import Title from 'components/Title';
 import team from 'const/team';
 
 function SpTeamHeader({ children }: { children: ReactNode }) {
@@ -32,7 +32,7 @@ export default function Team() {
   });
   return (
     <>
-      <Title title="運営" />
+      <SEO title="運営" />
       <div className="relative w-full">
         <Background src="/SP/Operation/s51_BG.png" />
 

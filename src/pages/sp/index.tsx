@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import Background from 'components/Background';
+import SEO from 'components/SEO';
 import SpResponsiveImage from 'components/SpResponsiveImage';
-import Title from 'components/Title';
 import otomdmLink from 'const/otomdmLink';
 
 export default function Top() {
   return (
     <>
-      <Title />
+      <SEO />
       <div className="relative w-screen overflow-hidden">
         <Background src="/SP/Top/s11_Top_BG.png" />
         <div className="">

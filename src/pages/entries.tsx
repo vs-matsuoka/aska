@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { ReactElement, useCallback, useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { useSpring, animated } from 'react-spring';
@@ -7,7 +8,7 @@ import Background from 'components/Background';
 import FireOnlyOnServerSide from 'components/FireOnlyOnServerSide';
 import Layout from 'components/Layout';
 import ResponsiveImage from 'components/ResponsiveImage';
-import Title from 'components/Title';
+import SEO from 'components/SEO';
 import entries, { Entry } from 'const/entries';
 import { EntryContextType, EntryProvider, useEntryContext } from 'contexts/EntryContext';
 import useModal from 'hooks/useModal';
@@ -265,7 +266,7 @@ const Entries: NextPageWithLayout = () => {
 
   return (
     <>
-      <Title title="出場者" />
+      <SEO title="出場者" />
       <Background src="/Entry/21_Entry_pic_BG.png" />
       <Background src="/Entry/21_Entry_pic_vignette.png" />
       <EntryProvider>

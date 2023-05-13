@@ -1,9 +1,9 @@
 import { GetStaticPaths, GetStaticPropsContext, InferGetStaticPropsType, NextPage } from 'next';
 import Link from 'next/link';
 import Background from 'components/Background';
+import SEO from 'components/SEO';
 import SpMenu from 'components/SpMenu';
 import SpResponsiveImage from 'components/SpResponsiveImage';
-import Title from 'components/Title';
 import entries, { Entry } from 'const/entries';
 
 function getEntryIcon(entry: Entry, index: number) {
@@ -55,7 +55,7 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
 const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
   return (
     <>
-      <Title title={props.name} />
+      <SEO title={props.name} />
       <Background src="/SP/Entry_Detail/s22_Entry_BG.png" />
       {/* sp:top-[78px] */}
       <div className="relative top-[10.4vw]">

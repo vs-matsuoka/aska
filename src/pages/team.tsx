@@ -2,8 +2,8 @@ import { ReactElement, useEffect } from 'react';
 import { NextPageWithLayout } from './_app';
 import Layout from 'components/Layout';
 import ResponsiveImage from 'components/ResponsiveImage';
+import SEO from 'components/SEO';
 import TeamItem from 'components/TeamItem';
-import Title from 'components/Title';
 import team from 'const/team';
 
 const Team: NextPageWithLayout = () => {
@@ -13,7 +13,7 @@ const Team: NextPageWithLayout = () => {
   });
   return (
     <>
-      <Title title="運営" />
+      <SEO title="運営" />
       <div
         className="w-full overflow-y-scroll bg-[url('/Team/51_BG.png')] bg-cover bg-local"
         style={{

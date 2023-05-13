@@ -4,8 +4,8 @@ import { NextPageWithLayout } from './_app';
 import Layout from 'components/Layout';
 import Movie from 'components/Movie';
 import ResponsiveImage from 'components/ResponsiveImage';
+import SEO from 'components/SEO';
 import TeamItem from 'components/TeamItem';
-import Title from 'components/Title';
 import movies from 'const/movies';
 import { Movie as MovieType } from 'const/movies';
 import team from 'const/team';
@@ -36,7 +36,7 @@ const Movies: NextPageWithLayout = () => {
   }, []);
   return (
     <>
-      <Title title="ムービー" />
+      <SEO title="ムービー" />
       <div
         className="w-full overflow-y-scroll bg-[url('/Team/51_BG.png')] bg-cover bg-local"
         style={{
