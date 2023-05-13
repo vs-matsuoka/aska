@@ -749,7 +749,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_39.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_39.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_39.png',
-    spDescription: '「曲が素材シリーズ」を得意とし\n森羅万象を素材にする守備範囲の広さ\n破竹の勢いで""勝利ですわ！""',
+    spDescription: '「曲が素材シリーズ」を得意とし\n森羅万象を素材にする守備範囲の広さ\n破竹の勢いで"勝利ですわ！"',
     iconAlt: '',
     description:
       'アニメ系や「曲が素材シリーズ」音MADを得意としながらも\n円周率、シャトルランなど森羅万象を素材にする守備範囲の広さ\n破竹の勢いで投稿する作者が"論理、拳、闘志　勝利ですわ！"',
