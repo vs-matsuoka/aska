@@ -30,7 +30,7 @@ function ResponsiveImage(
 
   return (
     <div
-      className={`${className ?? ''}`}
+      className={`${className ?? ''} relative`}
       style={{
         width: isFixedWidth ? `${width}px` : `${(width / standard) * 100}vw`,
         height: isFixedWidth ? `${height}px` : `${(height / standard) * 100}vw`,
