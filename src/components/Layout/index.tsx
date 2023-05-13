@@ -7,75 +7,113 @@ type LayoutProps = {
   children?: React.ReactNode;
   withVignette?: boolean;
   withOverflowHidden?: boolean;
+  withSplash?: boolean;
 };
 
-function Layout({ children, withOverflowHidden }: LayoutProps) {
+function Splash({ onSplashEnded }: { onSplashEnded: () => void }) {
+  return (
+    <div className="absolute h-screen w-full overflow-hidden bg-black">
+      <video
+        className="my-auto h-full w-full"
+        autoPlay
+        muted
+        src="/pre_SplashLogo.mp4"
+        onPlay={() => {
+          setTimeout(() => {
+            onSplashEnded();
+          }, 1400);
+        }}
+      ></video>
+    </div>
+  );
+}
+
+function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
+  const [onSplash, setOnSplash] = useState(!!withSplash);
+  const [hideSplashPaths, setHideSplashPaths] = useState(!onSplash);
+
   const upsideOffset = -40;
   const downsideOffset = -upsideOffset;
   const [redIsUpside, setRedIsUpside] = useState(true);
+
+  const rightOver = `polygon(${100 + 100}% ${0 + 100}%, ${200 + 100}% ${100 + 100}%, ${100 + 100}% ${200 + 100}%, ${0 + 100}% ${100 + 100}%)`;
+  const leftOver = `polygon(${0 - 100}% ${-100 - 100}%, ${100 - 100}% ${0 - 100}%, ${0 - 100}% ${100 - 100}%, ${-100 - 100}% ${0 - 100}%)`;
+
+  const leftHomePosition = `polygon(${0 + upsideOffset}% ${-100 + upsideOffset}%, ${100 + upsideOffset}% ${0 + upsideOffset}%, ${0 + upsideOffset}% ${100 + upsideOffset}%, ${
+    -100 + upsideOffset
+  }% ${0 + upsideOffset}%)`;
+  const rightHomePosition = `polygon(${100 + downsideOffset}% ${0 + downsideOffset}%, ${200 + downsideOffset}% ${100 + downsideOffset}%, ${100 + downsideOffset}% ${
+    200 + downsideOffset
+  }%, ${0 + downsideOffset}% ${100 + downsideOffset}%)`;
+
+  const leftClosePosition = `polygon(${100}% ${0}%, ${200}% ${100}%, ${100}% ${200}%, ${0}% ${100}%)`;
+  const rightClosePosition = `polygon(${0}% ${-100}%, ${100}% ${0}%, ${0}% ${100}%, ${-100}% ${0}%)`;
+
+  const [splashRedPath, splashRedApi] = useSpring(() => ({
+    from: {
+      clipPath: rightOver
+    }
+  }));
+  const [splashBluePath, splashBlueApi] = useSpring(() => ({
+    from: {
+      clipPath: leftOver
+    }
+  }));
+
   // TODO: どうにか画面の比率から角度を計算して、それを使ってパスを作るようにしたい
   const [redPath, redApi] = useSpring(() => ({
     from: {
-      clipPath: `polygon(${0 + upsideOffset}% ${-100 + upsideOffset}%, ${100 + upsideOffset}% ${0 + upsideOffset}%, ${0 + upsideOffset}% ${100 + upsideOffset}%, ${
-        -100 + upsideOffset
-      }% ${0 + upsideOffset}%)`
+      clipPath: leftHomePosition
     }
-    // to: { clipPath: `polygon(${100 + blueOffset}% ${0 + blueOffset}%, ${200 + blueOffset}% ${100 + blueOffset}%, ${100 + blueOffset}% ${200 + blueOffset}%, ${0 + blueOffset}% ${100 + blueOffset}%)` },
   }));
-
   const [bluePath, blueApi] = useSpring(() => ({
     from: {
-      clipPath: `polygon(${100 + downsideOffset}% ${0 + downsideOffset}%, ${200 + downsideOffset}% ${100 + downsideOffset}%, ${100 + downsideOffset}% ${200 + downsideOffset}%, ${
-        0 + downsideOffset
-      }% ${100 + downsideOffset}%)`
+      clipPath: rightHomePosition
     }
-    // to: { clipPath: `polygon(${0 + redOffset}% ${-100 + redOffset}%, ${100 + redOffset}% ${0 + redOffset}%, ${0 + redOffset}% ${100 + redOffset}%, ${-100 + redOffset}% ${0 + redOffset}%)` },
   }));
+
+  const fromSplash = async () => {
+    setTimeout(() => {
+      setOnSplash(false);
+    }, 200);
+    splashRedApi.start({
+      clipPath: leftHomePosition
+    });
+    await splashBlueApi.start({
+      clipPath: rightHomePosition
+    })[0];
+    console.log('done');
+    setHideSplashPaths(true);
+  };
 
   const router = useRouter();
 
   useEffect(() => {
     if (router) {
       const handleRouteChangeStart = (url: string, { shallow }: { shallow: boolean }) => {
-        // console.log(`App is changing to ${url} ${shallow ? 'with' : 'without'} shallow routing`);
         setRedIsUpside((r) => !r);
         redApi.start({
           to: {
-            clipPath: redIsUpside
-              ? `polygon(${100}% ${0}%, ${200}% ${100}%, ${100}% ${200}%, ${0}% ${100}%)`
-              : `polygon(${0}% ${-100}%, ${100}% ${0}%, ${0}% ${100}%, ${-100}% ${0}%)`
+            clipPath: redIsUpside ? leftClosePosition : rightClosePosition
           }
         });
         blueApi.start({
           to: {
-            clipPath: redIsUpside
-              ? `polygon(${0}% ${-100}%, ${100}% ${0}%, ${0}% ${100}%, ${-100}% ${0}%)`
-              : `polygon(${100}% ${0}%, ${200}% ${100}%, ${100}% ${200}%, ${0}% ${100}%)`
+            clipPath: redIsUpside ? rightClosePosition : leftClosePosition
           }
         });
       };
       const handleRouteChangeComplete = (url: string, { shallow }: { shallow: boolean }) => {
-        // console.log(`App is changing to ${url} ${shallow ? 'with' : 'without'} shallow routing`);
+        redApi.stop();
         redApi.start({
           to: {
-            clipPath: redIsUpside
-              ? `polygon(${100 + downsideOffset}% ${0 + downsideOffset}%, ${200 + downsideOffset}% ${100 + downsideOffset}%, ${100 + downsideOffset}% ${200 + downsideOffset}%, ${
-                  0 + downsideOffset
-                }% ${100 + downsideOffset}%)`
-              : `polygon(${0 + upsideOffset}% ${-100 + upsideOffset}%, ${100 + upsideOffset}% ${0 + upsideOffset}%, ${0 + upsideOffset}% ${100 + upsideOffset}%, ${
-                  -100 + upsideOffset
-                }% ${0 + upsideOffset}%)`
+            clipPath: redIsUpside ? rightHomePosition : leftHomePosition
           }
         });
+        blueApi.stop();
         blueApi.start({
           to: {
-            clipPath: redIsUpside
-              ? `polygon(${0 + upsideOffset}% ${-100 + upsideOffset}%, ${100 + upsideOffset}% ${0 + upsideOffset}%, ${0 + upsideOffset}% ${100 + upsideOffset}%, ${
-                  -100 + upsideOffset
-                }% ${0 + upsideOffset}%)`
-              : `polygon(${100 + downsideOffset}% ${0 + downsideOffset}%, ${200 + downsideOffset}% ${100 + downsideOffset}%, ${100 + downsideOffset}% ${200 + downsideOffset}%, ${
-                  0 + downsideOffset
-                }% ${100 + downsideOffset}%)`
+            clipPath: redIsUpside ? leftHomePosition : rightHomePosition
           }
         });
       };
@@ -89,48 +127,76 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [blueApi, downsideOffset, redApi, upsideOffset, router]);
 
+  useEffect(() => {
+    if (router) {
+      if (!hideSplashPaths && withSplash) {
+        document.querySelector('body')?.classList.add('no-scrollbar');
+      } else {
+        document.querySelector('body')?.classList.remove('no-scrollbar');
+      }
+    }
+  }, [router, hideSplashPaths, onSplash, withSplash]);
+
   return (
-    <div
-      className={`grid min-h-screen w-full justify-center ${withOverflowHidden ? 'overflow-hidden' : ''}`}
-      // <div className="relative flex h-screen w-full items-center justify-center overflow-hidden">
-      style={{
-        gridTemplateRows: 'auto 1fr',
-        gridTemplateColumns: '100%'
-      }}
-    >
-      <div className="pt-16"></div>
-      <div className="relative flex items-center justify-center" data-testid="children">
-        {children}
-      </div>
-      <div className="absolute"></div>
-      <div className="pointer-events-none absolute">
-        <div
-          className="pointer-events-none grid min-h-screen w-full justify-center"
-          style={{
-            gridTemplateRows: 'auto 1fr',
-            gridTemplateColumns: '100%'
+    <>
+      <div className={onSplash ? '' : 'hidden'}>
+        <Splash
+          onSplashEnded={() => {
+            setTimeout(async () => {
+              await fromSplash();
+            }, 100);
           }}
-        >
-          <div className="h-[74px]"></div>
-          <animated.div className="h-full w-screen bg-mdmBlue" style={{ ...bluePath }}></animated.div>
+        />
+      </div>
+      <div
+        className="grid min-h-screen w-full justify-center overflow-hidden"
+        // <div className="relative flex h-screen w-full items-center justify-center overflow-hidden">
+        style={{
+          gridTemplateRows: 'auto 1fr',
+          gridTemplateColumns: '100%'
+        }}
+      >
+        <div className="pt-16"></div>
+        <div className={`relative flex items-center justify-center ${onSplash ? 'invisible' : ''}`} data-testid="children">
+          {children}
+        </div>
+        <div className="absolute"></div>
+        <div className="pointer-events-none absolute">
+          <div
+            className="pointer-events-none grid min-h-screen w-full justify-center"
+            style={{
+              gridTemplateRows: 'auto 1fr',
+              gridTemplateColumns: '100%'
+            }}
+          >
+            {/* 0pxにすると一番上からやってくる */}
+            <div className={onSplash ? 'h-[0px]' : 'h-[74px]'}></div>
+            <div className="overflow-hidden">
+              <animated.div className={`absolute h-full w-screen bg-mdmBlue ${hideSplashPaths ? 'hidden' : ''}`} style={{ ...splashBluePath }}></animated.div>
+              <animated.div className={`h-full w-screen bg-mdmBlue ${onSplash ? 'invisible' : ''}`} style={{ ...bluePath }}></animated.div>
+            </div>
+          </div>
+        </div>
+        <div className="pointer-events-none absolute">
+          <div
+            className="pointer-events-none grid min-h-screen w-full justify-center"
+            style={{
+              gridTemplateRows: 'auto 1fr',
+              gridTemplateColumns: '100%'
+            }}
+          >
+            <div className={onSplash ? 'h-[0px]' : 'h-[74px]'}></div>
+            <div className="overflow-hidden">
+              <animated.div className={`absolute h-full w-screen bg-mdmRed ${hideSplashPaths ? 'hidden' : ''}`} style={{ ...splashRedPath }}></animated.div>
+              <animated.div className={`h-full w-screen bg-mdmRed ${onSplash ? 'invisible' : ''}`} style={{ ...redPath }}></animated.div>
+            </div>
+          </div>
+        </div>
+        <div className={`fixed w-full ${onSplash ? 'invisible' : ''}`}>
+          <MenuBar />
         </div>
       </div>
-      <div className="pointer-events-none absolute">
-        <div
-          className="pointer-events-none grid min-h-screen w-full justify-center"
-          style={{
-            gridTemplateRows: 'auto 1fr',
-            gridTemplateColumns: '100%'
-          }}
-        >
-          <div className="h-[74px]"></div>
-          <animated.div className="h-full w-screen bg-mdmRed" style={{ ...redPath }}></animated.div>
-        </div>
-      </div>
-      <div className="fixed w-full">
-        <MenuBar />
-      </div>
-    </div>
+    </>
   );
 }
 

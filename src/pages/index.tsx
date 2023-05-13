@@ -82,7 +82,7 @@ const Top: NextPageWithLayout = () => {
 };
 
 Top.getLayout = function getLayout(page: ReactElement) {
-  return <Layout>{page}</Layout>;
+  return <Layout withSplash>{page}</Layout>;
 };
 
 export default Top;
