@@ -17,11 +17,18 @@ function Splash({ onSplashEnded }: { onSplashEnded: () => void }) {
         className="my-auto h-full w-full"
         autoPlay
         muted
+        playsInline
         src="/pre_SplashLogo.mp4"
         onPlay={() => {
           setTimeout(() => {
             onSplashEnded();
           }, 1400);
+        }}
+        onClick={() => {
+          onSplashEnded();
+        }}
+        onError={() => {
+          onSplashEnded();
         }}
       ></video>
     </div>
