@@ -69,7 +69,7 @@ export default function Movies() {
   return (
     <>
       <SEO title="ムービー" />
-      <Background src="/SP/Movie/s51_BG.png" />
+      <Background src="/SP/Movie/s51_BG.jpg" />
       {/* sp:pt-[27px] */}
       <div
         className="flex justify-center pt-[3.6vw]"

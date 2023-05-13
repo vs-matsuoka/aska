@@ -22,7 +22,7 @@ const Top: NextPageWithLayout = () => {
   return (
     <>
       <SEO />
-      <Background src="/Top/11_Top_pic_BG.png" />
+      <Background src="/Top/11_Top_pic_BG.jpg" />
       <div
         className="relative w-full overflow-x-hidden bg-cover bg-local"
         style={{

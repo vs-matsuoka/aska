@@ -21,7 +21,7 @@ export default function Pairs() {
   return (
     <>
       <SEO title="コンビ" />
-      <Background src="/SP/Pair/s31_Pair_BG.png" />
+      <Background src="/SP/Pair/s31_Pair_BG.jpg" />
 
       {/* sp:space-y-[9px] sp:pt-[139px] */}
       <div className="grid justify-items-center space-y-[1.2vw] pt-[18.53333333vw]">{pairs.map((pair, index) => getPairBanner(pair, index))}</div>

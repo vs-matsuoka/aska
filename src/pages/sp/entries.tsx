@@ -22,7 +22,7 @@ export default function Entries() {
   return (
     <>
       <SEO title="出場者" />
-      <Background src="/SP/Entry/s21_Entry_BG.png" />
+      <Background src="/SP/Entry/s21_Entry_BG.jpg" />
 
       {/* sp:space-y-[9px] sp:pt-[139px] */}
       <div className="grid justify-items-center space-y-[1.2vw] pt-[18.53333333vw]">{entries.map((column, index) => getEntryBanner(column, index))}</div>

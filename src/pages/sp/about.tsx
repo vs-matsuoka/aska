@@ -8,7 +8,7 @@ export default function About() {
   return (
     <>
       <SEO title="概要" />
-      <Background src="/SP/Concept/s41_Concept_BG.png" />
+      <Background src="/SP/Concept/s41_Concept_BG.jpg" />
       <SpResponsiveImage alt="compo0" src="/SP/Concept/s41_Concept_Compo00.png" className="relative" width={750} height={700} />
       {/* sp:mt-[-91px] */}
       <div className="mt-[-12.1333333vw]">

@@ -53,7 +53,7 @@ const PairPage: NextPage<PairProps> = (props: PairProps) => {
   return (
     <>
       <SEO title={props.name} />
-      <Background src="/SP/Pair_Detail/s32_Entry_BG.png" />
+      <Background src="/SP/Pair_Detail/s32_Entry_BG.jpg" />
       {/* sp:top-[51px] */}
       <div className="relative top-[6.8vw]">
         <SpResponsiveImage alt="kirinuki" src={props.kirinukiSrc} className="" width={750} height={800} />

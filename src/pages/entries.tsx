@@ -267,7 +267,7 @@ const Entries: NextPageWithLayout = () => {
   return (
     <>
       <SEO title="出場者" />
-      <Background src="/Entry/21_Entry_pic_BG.png" />
+      <Background src="/Entry/21_Entry_pic_BG.jpg" />
       <Background src="/Entry/21_Entry_pic_vignette.png" />
       <EntryProvider>
         <div
