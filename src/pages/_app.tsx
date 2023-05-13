@@ -94,7 +94,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
   useEffect(() => {
     if (router) {
-      console.log('router.pathname', router.pathname);
+      // console.log('router.pathname', router.pathname);
       if (['/sp/pairs/[id]', '/sp/entries/[id]'].includes(router.pathname)) {
         document.querySelector('body')?.classList.add('no-scrollbar');
       } else {

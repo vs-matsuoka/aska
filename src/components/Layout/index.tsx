@@ -37,7 +37,7 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
   useEffect(() => {
     if (router) {
       const handleRouteChangeStart = (url: string, { shallow }: { shallow: boolean }) => {
-        console.log(`App is changing to ${url} ${shallow ? 'with' : 'without'} shallow routing`);
+        // console.log(`App is changing to ${url} ${shallow ? 'with' : 'without'} shallow routing`);
         redApi.start({
           to: {
             clipPath: redIsUpside
@@ -54,7 +54,7 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
         });
       };
       const handleRouteChangeComplete = (url: string, { shallow }: { shallow: boolean }) => {
-        console.log(`App is changing to ${url} ${shallow ? 'with' : 'without'} shallow routing`);
+        // console.log(`App is changing to ${url} ${shallow ? 'with' : 'without'} shallow routing`);
         redApi.start({
           to: {
             clipPath: redIsUpside

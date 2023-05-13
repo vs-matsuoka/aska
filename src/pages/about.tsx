@@ -87,7 +87,7 @@ const BaseImage = ({ src, rootMargin = rpx(100), duration = 300, triggerOnce = f
   useEffect(() => {
     if (inView) {
       setTimeout(() => {
-        console.log('TRIGGER!');
+        // console.log('TRIGGER!');
         trigger();
       }, delay);
     }
