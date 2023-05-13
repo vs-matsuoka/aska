@@ -166,8 +166,8 @@ const About: NextPageWithLayout = () => {
               gap: rpx(20)
             }}
           >
-            <ResponsiveImage src="/Concept/41_Pic_00_Logo.png" alt="logo" className="relative" width={750} height={450} loading="eager" />
-            <ResponsiveImage src="/Concept/41_Text_00.png" alt="text" className="relative" width={800} height={360} loading="eager" />
+            <ResponsiveImage src="/Concept/41_Pic_00_Logo.png" alt="logo" width={750} height={450} loading="eager" />
+            <ResponsiveImage src="/Concept/41_Text_00.png" alt="text" width={800} height={360} loading="eager" />
           </div>
         </FadeInTrigger>
         {/* 音MAD DREAM MATCHとは？ */}
@@ -178,7 +178,7 @@ const About: NextPageWithLayout = () => {
               marginTop: rpx(53)
             }}
           >
-            <ResponsiveImage src="/Concept/41_Pic_Arrow.png" alt="arrow" className="relative" width={1000} height={100} />
+            <ResponsiveImage src="/Concept/41_Pic_Arrow.png" alt="arrow" width={1000} height={100} />
           </div>
         </FadeInTrigger>
         {/* 1 */}
@@ -200,7 +200,7 @@ const About: NextPageWithLayout = () => {
             }}
           >
             <FadeInTrigger distance={rpx(200)} rootMargin={ppx(-500)} triggerOnce duration={333}>
-              <ResponsiveImage src="/Concept/41_Pic_Frame_01.png" alt="pic" className="relative" width={830} height={480} />
+              <ResponsiveImage src="/Concept/41_Pic_Frame_01.png" alt="pic" width={830} height={480} />
             </FadeInTrigger>
             <FadeInTrigger distance={rpx(200)} rootMargin={ppx(-500)} triggerOnce duration={333} delay={166}>
               <div>
@@ -209,7 +209,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(15)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_01_A.png" alt="text" className="relative" width={350} height={215} loading="eager" />
+                  <ResponsiveImage src="/Concept/41_Text_01_A.png" alt="text" width={350} height={215} loading="eager" />
                 </div>
                 <div
                   style={{
@@ -217,7 +217,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(11)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_01_B.png" alt="text" className="relative" width={625} height={170} loading="eager" />
+                  <ResponsiveImage src="/Concept/41_Text_01_B.png" alt="text" width={625} height={170} loading="eager" />
                 </div>
               </div>
             </FadeInTrigger>
@@ -247,7 +247,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(15)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_02_A.png" alt="text" className="relative" width={350} height={215} loading="eager" />
+                  <ResponsiveImage src="/Concept/41_Text_02_A.png" alt="text" width={350} height={215} loading="eager" />
                 </div>
                 <div
                   style={{
@@ -255,7 +255,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(11)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_02_B.png" alt="text" className="relative" width={625} height={170} loading="eager" />
+                  <ResponsiveImage src="/Concept/41_Text_02_B.png" alt="text" width={625} height={170} loading="eager" />
                 </div>
               </div>
             </FadeInTrigger>
@@ -266,7 +266,7 @@ const About: NextPageWithLayout = () => {
                   marginLeft: rpx(39)
                 }}
               >
-                <ResponsiveImage src="/Concept/41_Pic_Frame_02.png" alt="text" className="relative" width={830} height={480} />
+                <ResponsiveImage src="/Concept/41_Pic_Frame_02.png" alt="text" width={830} height={480} />
               </div>
             </FadeInTrigger>
           </div>
@@ -289,7 +289,7 @@ const About: NextPageWithLayout = () => {
             }}
           >
             <FadeInTrigger distance={rpx(200)} rootMargin={ppx(-500)} triggerOnce duration={333}>
-              <ResponsiveImage src="/Concept/41_Pic_Frame_03.png" alt="pic" className="relative" width={830} height={480} />
+              <ResponsiveImage src="/Concept/41_Pic_Frame_03.png" alt="pic" width={830} height={480} />
             </FadeInTrigger>
             <FadeInTrigger distance={rpx(200)} rootMargin={ppx(-500)} triggerOnce duration={333} delay={166}>
               <div>
@@ -298,7 +298,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(15)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_03_A.png" alt="text" className="relative" width={350} height={215} loading="eager" />
+                  <ResponsiveImage src="/Concept/41_Text_03_A.png" alt="text" width={350} height={215} loading="eager" />
                 </div>
                 <div
                   style={{
@@ -306,7 +306,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(12)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_03_B.png" alt="text" className="relative" width={625} height={170} loading="eager" />
+                  <ResponsiveImage src="/Concept/41_Text_03_B.png" alt="text" width={625} height={170} loading="eager" />
                 </div>
               </div>
             </FadeInTrigger>
@@ -339,7 +339,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(15)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_04_A.png" alt="text" className="relative" width={350} height={215} loading="eager" />
+                  <ResponsiveImage src="/Concept/41_Text_04_A.png" alt="text" width={350} height={215} loading="eager" />
                 </div>
                 <div
                   style={{
@@ -347,7 +347,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(11)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_04_B.png" alt="text" className="relative" width={625} height={170} loading="eager" />
+                  <ResponsiveImage src="/Concept/41_Text_04_B.png" alt="text" width={625} height={170} loading="eager" />
                 </div>
               </div>
             </FadeInTrigger>
@@ -358,7 +358,7 @@ const About: NextPageWithLayout = () => {
                   marginLeft: rpx(39)
                 }}
               >
-                <ResponsiveImage src="/Concept/41_Pic_Frame_04.png" alt="text" className="relative" width={830} height={480} />
+                <ResponsiveImage src="/Concept/41_Pic_Frame_04.png" alt="text" width={830} height={480} />
               </div>
             </FadeInTrigger>
           </div>
@@ -373,7 +373,7 @@ const About: NextPageWithLayout = () => {
         >
           <div className="justify-center">
             <FadeInTrigger distance={rpx(200)} rootMargin={ppx(-400)} triggerOnce duration={333}>
-              <ResponsiveImage src="/Concept/41_Text_11.png" alt="text" className="relative" width={1600} height={300} />
+              <ResponsiveImage src="/Concept/41_Text_11.png" alt="text" width={1600} height={300} />
             </FadeInTrigger>
             <FadeInTrigger distance={rpx(200)} rootMargin={ppx(-400)} triggerOnce duration={333} delay={166}>
               <div
@@ -383,10 +383,10 @@ const About: NextPageWithLayout = () => {
                 }}
               >
                 <Link href="/entries">
-                  <ResponsiveImage src="/Concept/41_Text_12_Link_A.png" alt="text" className="relative" width={700} height={250} />
+                  <ResponsiveImage src="/Concept/41_Text_12_Link_A.png" alt="text" width={700} height={250} />
                 </Link>
                 <Link href="/pairs">
-                  <ResponsiveImage src="/Concept/41_Text_12_Link_B.png" alt="text" className="relative" width={700} height={250} />
+                  <ResponsiveImage src="/Concept/41_Text_12_Link_B.png" alt="text" width={700} height={250} />
                 </Link>
               </div>
             </FadeInTrigger>

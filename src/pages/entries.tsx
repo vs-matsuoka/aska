@@ -157,8 +157,8 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
           .filter((entry) => entry.isPublished)
           .map((entry) => (
             <div key={entry.index}>
-              <ResponsiveImage src={entry.contestantSrc} alt="contestant" className="relative" width={600} height={700} priority />
-              <ResponsiveImage src={entry.iconSrc} alt="icon" className="relative" width={680} height={100} priority />
+              <ResponsiveImage src={entry.contestantSrc} alt="contestant" width={600} height={700} priority />
+              <ResponsiveImage src={entry.iconSrc} alt="icon" width={680} height={100} priority />
             </div>
           ))}
       </FireOnlyOnServerSide>
@@ -171,7 +171,7 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
             e.stopPropagation();
           }}
         >
-          <ResponsiveImage src="/Modal/22_Entry_Modal_pic_FudeBase.png" alt="FudeBase" className="relative" width={1500} height={850} />
+          <ResponsiveImage src="/Modal/22_Entry_Modal_pic_FudeBase.png" alt="FudeBase" width={1500} height={850} />
         </div>
         <div
           className="relative"
@@ -188,19 +188,19 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
               }}
             >
               <div>
-                <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="back" className="relative" width={70} height={690} quality={100} />
+                <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="back" width={70} height={690} quality={100} />
               </div>
             </a>
             <div className="flex">
-              <ResponsiveImage src={entry.contestantSrc} alt="contestant" className="relative" width={600} height={700} priority />
+              <ResponsiveImage src={entry.contestantSrc} alt="contestant" width={600} height={700} priority />
               <div className="my-auto h-auto">
                 <div className="absolute right-[5.8854166667vw] top-[2.2395833333vw] 4xl:right-[113px] 4xl:top-[43px]" onClick={onClose}>
                   <a href="#">
-                    <ResponsiveImage src="/Modal/22_Modal_Close.png" alt="close" className="relative" width={55} height={55} quality={100} />
+                    <ResponsiveImage src="/Modal/22_Modal_Close.png" alt="close" width={55} height={55} quality={100} />
                   </a>
                 </div>
-                <ResponsiveImage src={entry.iconSrc} alt="icon" className="relative" width={680} height={100} priority />
-                <ResponsiveImage src="/Modal/22_Entry_pic_Line.png" alt="line" className="relative" width={725} height={10} />
+                <ResponsiveImage src={entry.iconSrc} alt="icon" width={680} height={100} priority />
+                <ResponsiveImage src="/Modal/22_Entry_pic_Line.png" alt="line" width={725} height={10} />
                 {/* テキストサイズを決定する */}
                 <div
                   className="my-[0.5208333333vw] w-[37.7604166667vw] text-[1.3020833333vw] font-bold text-white 4xl:my-[10px] 4xl:w-[725px] 4xl:text-[25px]"
@@ -213,19 +213,19 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
                 <div className="flex">
                   <a target="_blank" href={entry.niconicoLink} rel="noopener noreferrer">
                     <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
-                      <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Nico.png" alt="niconico" className="relative" width={50} height={50} quality={100} />
+                      <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Nico.png" alt="niconico" width={50} height={50} quality={100} />
                     </div>
                   </a>
                   {entry.youtubeLink && (
                     <a target="_blank" href={entry.youtubeLink} rel="noopener noreferrer">
                       <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
-                        <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Youtube.png" alt="youtube" className="relative" width={50} height={50} quality={100} />
+                        <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Youtube.png" alt="youtube" width={50} height={50} quality={100} />
                       </div>
                     </a>
                   )}
                   <a target="_blank" href={entry.twitterLink} rel="noopener noreferrer">
                     <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
-                      <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Twitter.png" alt="twitter" className="relative" width={50} height={50} quality={100} />
+                      <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Twitter.png" alt="twitter" width={50} height={50} quality={100} />
                     </div>
                   </a>
                 </div>
@@ -239,7 +239,7 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
               }}
             >
               <div>
-                <ResponsiveImage src="/Modal/22_Modal_Next.png" alt="next" className="relative" width={70} height={690} quality={100} />
+                <ResponsiveImage src="/Modal/22_Modal_Next.png" alt="next" width={70} height={690} quality={100} />
               </div>
             </a>
           </div>
