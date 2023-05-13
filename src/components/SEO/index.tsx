@@ -5,7 +5,7 @@ import urlJoin from 'url-join';
 const SEO = ({ title: givenTitle, description }: { title?: string; description?: string }) => {
   const router = useRouter();
   const siteName = '音MAD DREAM MATCH -天-';
-  const url = urlJoin('https://otomdm-ten.com', router.pathname);
+  const url = urlJoin('https://otomdm-ten.com', router.asPath);
   const ogpImage = urlJoin('https://otomdm-ten.com', 'OGP.png');
   const title = (givenTitle ? `${givenTitle} | ` : '') + siteName;
   return (
