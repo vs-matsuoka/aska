@@ -258,7 +258,7 @@ const Pairs: NextPageWithLayout = () => {
   return (
     <>
       <SEO title="コンビ" />
-      <Background src="/Pair/31_Pair_pic_BG.png" />
+      <Background src="/Pair/31_Pair_pic_BG.jpg" />
       <Background src="/Pair/31_Pair_pic_vignette.png" />
       <PairProvider>
         <div

@@ -56,7 +56,7 @@ const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
   return (
     <>
       <SEO title={props.name} />
-      <Background src="/SP/Entry_Detail/s22_Entry_BG.png" />
+      <Background src="/SP/Entry_Detail/s22_Entry_BG.jpg" />
       {/* sp:top-[78px] */}
       <div className="relative top-[10.4vw]">
         <SpResponsiveImage alt="kirinuki" src={props.kirinukiSrc} className="" width={750} height={800} />

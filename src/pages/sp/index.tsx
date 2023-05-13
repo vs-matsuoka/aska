@@ -9,7 +9,7 @@ export default function Top() {
     <>
       <SEO />
       <div className="relative w-screen overflow-hidden">
-        <Background src="/SP/Top/s11_Top_BG.png" />
+        <Background src="/SP/Top/s11_Top_BG.jpg" />
         <div className="">
           {/* sp:top-[40px] sp:left-[-388px] */}
           <div className="absolute top-[5.3333333333vw] left-[-51.7333333333vw]">

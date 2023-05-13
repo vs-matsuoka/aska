@@ -34,7 +34,7 @@ export default function Team() {
     <>
       <SEO title="運営" />
       <div className="relative w-full">
-        <Background src="/SP/Operation/s51_BG.png" />
+        <Background src="/SP/Operation/s51_BG.jpg" />
 
         <div className="grid justify-items-center">
           <SpTeamHeader>運　営</SpTeamHeader>
