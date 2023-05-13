@@ -29,7 +29,7 @@ exports[`<Movie /> should render the heading 1`] = `
         class="absolute top-0"
       >
         <div
-          class="relative"
+          class="relative relative"
           style="width: 20vw; height: 11.25vw; object-fit: cover;"
         >
           <img

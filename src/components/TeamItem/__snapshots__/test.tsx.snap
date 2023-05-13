@@ -8,7 +8,7 @@ exports[`<TeamItem /> should render correctly 1`] = `
     class="absolute ml-[-0.2083333333vw] mt-[-0.2083333333vw] 4xl:ml-[-4px] 4xl:mt-[-4px]"
   >
     <div
-      class="relative"
+      class=" relative"
       style="width: 16.666666666666664vw; height: 7.291666666666667vw; object-fit: cover;"
     >
       <img
@@ -34,7 +34,7 @@ exports[`<TeamItem /> should render correctly 1`] = `
         class="flex"
       >
         <div
-          class="relative"
+          class=" relative"
           style="width: 5.416666666666667vw; height: 5.416666666666667vw; object-fit: cover;"
         >
           <img
@@ -78,7 +78,7 @@ exports[`<TeamItem /> should render correctly 1`] = `
       target="_blank"
     >
       <div
-        class="relative"
+        class=" relative"
         style="width: 2.083333333333333vw; height: 2.083333333333333vw; object-fit: cover;"
       >
         <img
@@ -100,7 +100,7 @@ exports[`<TeamItem /> should render correctly 1`] = `
       target="_blank"
     >
       <div
-        class="relative"
+        class=" relative"
         style="width: 2.083333333333333vw; height: 2.083333333333333vw; object-fit: cover;"
       >
         <img
