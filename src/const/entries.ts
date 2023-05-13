@@ -560,7 +560,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_29.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_29.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_29.png',
-    spDescription: '多くのジャンルを扱える、マルチな技術\n緻密に詰め込むオールスターMADを確立\n四方八方から体系的音MADで包み込む！',
+    spDescription: '多くのジャンルを扱える、マルチな技術\n知的で緻密なオールスターMADを確立\n四方八方から体系的にネタを繰り出す！',
     iconAlt: '',
     description: '多くのジャンルを扱える、マルチな技術を持ち合わせた作者\n知的アプローチで詰めこまれたオールスターMADを確立\n四方八方から繰り出される、体系的音MADネタで包み込む！',
     niconicoLink: 'https://www.nicovideo.jp/user/50136284',
@@ -600,7 +600,7 @@ const entries: Entry[] = [
     spDescription: 'どんな素材においても作りこむ実力派\n作曲・DJなど諸方面で実績を上げている\n多彩な武器から放たれる一撃をくらえ！',
     iconAlt: '',
     description:
-      'どんな素材においても作り込む、広い技術を持ち合わせた実力派\nその力は留まらず、作曲・DJ・映像・メドレーでも実績を上げる\n多彩な武器から放たれる、作者の渾身の一撃をくらえ！',
+      'どんな素材においても作り込む、広い技術を持ち合わせた実力派\n\nその力は留まらず、作曲・DJ・映像・メドレーでも実績を上げる\n多彩な武器から放たれる、作者の渾身の一撃をくらえ！',
     niconicoLink: 'https://www.nicovideo.jp/user/25521306',
     youtubeLink: undefined,
     twitterLink: 'https://twitter.com/6June_',
