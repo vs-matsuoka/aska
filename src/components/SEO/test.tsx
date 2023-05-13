@@ -11,7 +11,15 @@ jest.mock('next/head', () => {
   };
 });
 
-describe('<Title />', () => {
+jest.mock('next/router', () => ({
+  useRouter() {
+    return {
+      asPath: '/'
+    };
+  }
+}));
+
+describe('<SEO />', () => {
   it('should render default title', () => {
     render(<SEO />, {
       container: document.head

@@ -10,7 +10,7 @@ const SEO = ({ title: givenTitle, description }: { title?: string; description?:
   const title = (givenTitle ? `${givenTitle} | ` : '') + siteName;
   return (
     <Head>
-      <title>{givenTitle}</title>
+      <title>{title}</title>
       {description ?? <meta name="description" content={description} />}
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
