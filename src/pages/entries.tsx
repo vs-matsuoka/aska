@@ -190,7 +190,7 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
               }}
             >
               <div>
-                <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="back" className="relative" width={70} height={690} />
+                <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="back" className="relative" width={70} height={690} quality={100} />
               </div>
             </a>
             <div className="flex">
@@ -198,7 +198,7 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
               <div className="my-auto h-auto">
                 <div className="absolute right-[5.8854166667vw] top-[2.2395833333vw] 4xl:right-[113px] 4xl:top-[43px]" onClick={onClose}>
                   <a href="#">
-                    <ResponsiveImage src="/Modal/22_Modal_Close.png" alt="close" className="relative" width={55} height={55} />
+                    <ResponsiveImage src="/Modal/22_Modal_Close.png" alt="close" className="relative" width={55} height={55} quality={100} />
                   </a>
                 </div>
                 <ResponsiveImage src={entry.iconSrc} alt="icon" className="relative" width={680} height={100} priority />
@@ -215,19 +215,19 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
                 <div className="flex">
                   <a target="_blank" href={entry.niconicoLink} rel="noopener noreferrer">
                     <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
-                      <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Nico.png" alt="niconico" className="relative" width={50} height={50} />
+                      <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Nico.png" alt="niconico" className="relative" width={50} height={50} quality={100} />
                     </div>
                   </a>
                   {entry.youtubeLink && (
                     <a target="_blank" href={entry.youtubeLink} rel="noopener noreferrer">
                       <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
-                        <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Youtube.png" alt="youtube" className="relative" width={50} height={50} />
+                        <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Youtube.png" alt="youtube" className="relative" width={50} height={50} quality={100} />
                       </div>
                     </a>
                   )}
                   <a target="_blank" href={entry.twitterLink} rel="noopener noreferrer">
                     <div className="mr-[0.5208333333vw] 4xl:mr-[10px]">
-                      <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Twitter.png" alt="twitter" className="relative" width={50} height={50} />
+                      <ResponsiveImage src="/Modal/22_Modal_pic_SNS_Twitter.png" alt="twitter" className="relative" width={50} height={50} quality={100} />
                     </div>
                   </a>
                 </div>
@@ -241,7 +241,7 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
               }}
             >
               <div>
-                <ResponsiveImage src="/Modal/22_Modal_Next.png" alt="next" className="relative" width={70} height={690} />
+                <ResponsiveImage src="/Modal/22_Modal_Next.png" alt="next" className="relative" width={70} height={690} quality={100} />
               </div>
             </a>
           </div>
@@ -281,7 +281,7 @@ const Entries: NextPageWithLayout = () => {
           <div className="relative my-auto h-[46.875vw] w-[82.8125vw] 4xl:h-[900px] 4xl:w-[1590px]">
             <div className="absolute top-[8.8541666667vw] 4xl:top-[170px]">
               <div className="absolute left-[1.9vw] top-[-11vw] 4xl:left-[36.48px] 4xl:top-[-211.2px]">
-                <ResponsiveImage alt="entry" src="/Entry/21_Entry_text_01.png" width={500} height={250} />
+                <ResponsiveImage alt="entry" src="/Entry/21_Entry_text_01.png" width={500} height={250} quality={100} />
               </div>
               {contestantRows.map((row, index) => (
                 <ContestantRow key={index} contestants={row} offset={index * 46} onModalOpen={onOpen} />

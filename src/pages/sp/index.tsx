@@ -13,11 +13,11 @@ export default function Top() {
         <div className="">
           {/* sp:top-[40px] sp:left-[-388px] */}
           <div className="absolute top-[5.3333333333vw] left-[-51.7333333333vw]">
-            <SpResponsiveImage src="/SP/Top/s11_Top_KeyVisual_02.png" alt="zeus" className="relative" width={1050} height={1050} />
+            <SpResponsiveImage src="/SP/Top/s11_Top_KeyVisual_02.png" alt="zeus" className="relative" width={1050} height={1050} quality={90} />
           </div>
           {/* sp:top-[116px] sp:right-[470px] */}
           <div className="absolute top-[15.4666666667vw] right-[-62.6666666667vw]">
-            <SpResponsiveImage src="/SP/Top/s11_Top_KeyVisual_01.png" alt="amatelas" className="relative" width={1050} height={1050} />
+            <SpResponsiveImage src="/SP/Top/s11_Top_KeyVisual_01.png" alt="amatelas" className="relative" width={1050} height={1050} quality={90} />
           </div>
         </div>
         <Background src="/SP/Top/s11_Top_GradOverlay.png" />
