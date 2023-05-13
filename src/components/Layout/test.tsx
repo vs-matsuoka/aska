@@ -2,7 +2,17 @@ import { render, screen, waitFor, within } from '@testing-library/react';
 
 import Layout from '.';
 
-jest.mock('next/router', () => ({ useRouter: jest.fn() }));
+jest.mock('next/router', () => ({
+  useRouter() {
+    return {
+      pathname: '/',
+      events: {
+        on: jest.fn(),
+        off: jest.fn()
+      }
+    };
+  }
+}));
 
 describe('<Layout />', () => {
   it('正しくレンダリングされる', async () => {
