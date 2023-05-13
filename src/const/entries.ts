@@ -237,7 +237,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_12.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_12.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_12.png',
-    spDescription: 'たくさんの素材を華麗に捌きながらも\nYouTuber音MADの活躍も周知の事実\nノンストップで作者の動画は進化する！',
+    spDescription: 'たくさんの素材を華麗に捌きながらも\nYouTuberMADの活躍も周知の事実\nノンストップで作者の動画は進化する！',
     iconAlt: '',
     description:
       'テーマオールスター・数々の合作で様々な素材を華麗に捌きつつ\nYouTuber・恋愛サーキュレーションMADの活躍も周知の事実\nノンストップでオシャ連続投稿する作者の動画は進化し続ける！',
@@ -256,7 +256,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_13.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_13.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_13.png',
-    spDescription: 'KYM素材を隅から隅まで網羅する熟練者\n映像技術は実写撮影にまで拡張される\n泣く子も黙るビジュアルで突き進む！',
+    spDescription: 'KYM素材を隅々まで網羅する熟練者\n映像技術は実写撮影にまで拡張される\n泣く子も黙るビジュアルで突き進む！',
     iconAlt: '',
     description:
       'KYM素材を隅から隅まで網羅、同ジャンルを支え続ける熟練者\n映像技術は留まることなく、高水準な実写撮影も音MADへ吸収\n泣く子も黙る力強いビジュアルで圧倒しながら突き進む！',
@@ -408,7 +408,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_21.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_21.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_21.png',
-    spDescription: 'デスノートを用いた動画を多く制作\nキルミーMADの表現は新たな流れを確立\n技術に裏打ちされたテンポ感で共鳴！',
+    spDescription: 'デスノートを用いた動画を多く制作\nキルミーMADで新たな流れを確立\n技術に裏打ちされたテンポ感で共鳴！',
     iconAlt: '',
     description:
       'デスノート素材を器用に調理した、ポピュラーな動画を多く制作\n「キルミーエンド・ダンスホール」での表現は新たな流れを確立\n技術に裏打ちされたテンポ感で、コンビ相手とも共鳴する！',
@@ -522,7 +522,7 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_27.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_27.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_27.png',
-    spDescription: 'スタイリッシュなクッキー☆映像の達人\n「NYD2019」でのパートは影響を与えた\n幅広い映像表現を操る職人芸が唸る！',
+    spDescription: 'スタイリッシュなクッキー☆映像の達人\n「NYD2019」での参加は影響を与えた\n幅広い映像表現を操る職人芸が唸る！',
     iconAlt: '',
     description:
       'カワイイ・カッコイイ・スタイリッシュなクッキー☆映像の達人\n「NYD2019」での『Big Brother』パートは後世に影響を与えた\n3Dからアニメーションまで幅広く表現を活かした職人芸が唸る！',
