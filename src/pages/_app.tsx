@@ -88,6 +88,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       }
     };
     window.addEventListener('resize', updateOnSp);
+    updateOnSp();
     return () => window.removeEventListener('resize', updateOnSp);
   }, [router]);
 
