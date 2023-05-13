@@ -1,8 +1,7 @@
-import Image, { ImageProps } from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ReactElement, ReactNode, useCallback, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { useMediaQuery } from 'react-responsive';
 import { useSpring, animated, easings } from 'react-spring';
 import { NextPageWithLayout } from './_app';
 import Layout from 'components/Layout';
@@ -128,22 +127,6 @@ const useSlideIn = ({ duration = 500 }: SlideInProps) => {
   return [styles, trigger] as [typeof styles, typeof trigger];
 };
 
-const useSlideIn2 = ({ duration = 500, right = false }: SlideInProps) => {
-  const [styles, api] = useSpring(() => ({
-    from: { transform: right ? 'translateX(100%)' : 'translateX(-100%)' },
-    config: {
-      duration,
-      easing: easings.easeInOutSine
-    }
-  }));
-  const trigger = useCallback(() => {
-    api.start({
-      transform: 'translateX(0%)'
-    });
-  }, [api]);
-  return [styles, trigger] as [typeof styles, typeof trigger];
-};
-
 const rpx = (px: number) => {
   const standard = 1920;
   return `${(px / standard) * 100}vw`;
@@ -165,17 +148,17 @@ const About: NextPageWithLayout = () => {
     <>
       <SEO title="概要" />
       <div
-        className="w-full justify-center overflow-x-hidden overflow-y-scroll bg-[url('/Concept/41_Pic_BG.jpg')] bg-cover bg-local"
+        className="relative w-full justify-center overflow-x-hidden overflow-y-scroll bg-[url('/Concept/41_Pic_BG.jpg')] bg-cover bg-local"
         style={{
           // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
           height: 'calc(100vh - 4rem)'
         }}
       >
+        <div className="absolute w-full">
+          <Image src="/Concept/41_pic_Base_C.png" alt="logo" sizes="100vw" className="h-auto w-full" width={1920} height={750} />
+        </div>
         {/* ロゴ + 文言 */}
         <FadeInTrigger distance={rpx(200)} rootMargin="0px" triggerOnce>
-          <div className="absolute w-full">
-            <ResponsiveImage src="/Concept/41_pic_Base_C.png" alt="logo" width={1920} height={750} />
-          </div>
           <div
             className="flex w-full justify-center"
             style={{
@@ -183,8 +166,8 @@ const About: NextPageWithLayout = () => {
               gap: rpx(20)
             }}
           >
-            <ResponsiveImage src="/Concept/41_Pic_00_Logo.png" alt="logo" className="relative" width={750} height={450} />
-            <ResponsiveImage src="/Concept/41_Text_00.png" alt="text" className="relative" width={800} height={360} />
+            <ResponsiveImage src="/Concept/41_Pic_00_Logo.png" alt="logo" className="relative" width={750} height={450} loading="eager" />
+            <ResponsiveImage src="/Concept/41_Text_00.png" alt="text" className="relative" width={800} height={360} loading="eager" />
           </div>
         </FadeInTrigger>
         {/* 音MAD DREAM MATCHとは？ */}
@@ -226,7 +209,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(15)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_01_A.png" alt="text" className="relative" width={350} height={215} />
+                  <ResponsiveImage src="/Concept/41_Text_01_A.png" alt="text" className="relative" width={350} height={215} loading="eager" />
                 </div>
                 <div
                   style={{
@@ -234,7 +217,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(11)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_01_B.png" alt="text" className="relative" width={625} height={170} />
+                  <ResponsiveImage src="/Concept/41_Text_01_B.png" alt="text" className="relative" width={625} height={170} loading="eager" />
                 </div>
               </div>
             </FadeInTrigger>
@@ -264,7 +247,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(15)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_02_A.png" alt="text" className="relative" width={350} height={215} />
+                  <ResponsiveImage src="/Concept/41_Text_02_A.png" alt="text" className="relative" width={350} height={215} loading="eager" />
                 </div>
                 <div
                   style={{
@@ -272,7 +255,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(11)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_02_B.png" alt="text" className="relative" width={625} height={170} />
+                  <ResponsiveImage src="/Concept/41_Text_02_B.png" alt="text" className="relative" width={625} height={170} loading="eager" />
                 </div>
               </div>
             </FadeInTrigger>
@@ -315,7 +298,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(15)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_03_A.png" alt="text" className="relative" width={350} height={215} />
+                  <ResponsiveImage src="/Concept/41_Text_03_A.png" alt="text" className="relative" width={350} height={215} loading="eager" />
                 </div>
                 <div
                   style={{
@@ -323,7 +306,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(12)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_03_B.png" alt="text" className="relative" width={625} height={170} />
+                  <ResponsiveImage src="/Concept/41_Text_03_B.png" alt="text" className="relative" width={625} height={170} loading="eager" />
                 </div>
               </div>
             </FadeInTrigger>
@@ -356,7 +339,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(15)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_04_A.png" alt="text" className="relative" width={350} height={215} />
+                  <ResponsiveImage src="/Concept/41_Text_04_A.png" alt="text" className="relative" width={350} height={215} loading="eager" />
                 </div>
                 <div
                   style={{
@@ -364,7 +347,7 @@ const About: NextPageWithLayout = () => {
                     marginTop: rpx(11)
                   }}
                 >
-                  <ResponsiveImage src="/Concept/41_Text_04_B.png" alt="text" className="relative" width={625} height={170} />
+                  <ResponsiveImage src="/Concept/41_Text_04_B.png" alt="text" className="relative" width={625} height={170} loading="eager" />
                 </div>
               </div>
             </FadeInTrigger>

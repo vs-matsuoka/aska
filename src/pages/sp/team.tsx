@@ -1,6 +1,4 @@
-import Image, { ImageProps } from 'next/image';
 import { ReactNode, useEffect } from 'react';
-import { useMediaQuery } from 'react-responsive';
 import Background from 'components/Background';
 import SEO from 'components/SEO';
 import SpMenu from 'components/SpMenu';

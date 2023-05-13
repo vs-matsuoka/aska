@@ -1,5 +1,4 @@
 import Image, { ImageProps } from 'next/image';
-import Link from 'next/link';
 import SpResponsiveImage from 'components/SpResponsiveImage';
 import { TeamMember } from 'const/team';
 

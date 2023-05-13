@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import ResponsiveImage from 'components/ResponsiveImage';
 import { TeamMember } from 'const/team';
 
