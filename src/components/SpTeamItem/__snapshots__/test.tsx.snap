@@ -76,7 +76,7 @@ exports[`<SpTeamItem /> should render the heading 1`] = `
           </div>
         </a>
         <div
-          class="opacity-50"
+          class="opacity-25"
         >
           <div
             class="relative"
