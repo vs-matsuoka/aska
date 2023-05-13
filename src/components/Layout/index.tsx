@@ -38,6 +38,7 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
     if (router) {
       const handleRouteChangeStart = (url: string, { shallow }: { shallow: boolean }) => {
         // console.log(`App is changing to ${url} ${shallow ? 'with' : 'without'} shallow routing`);
+        setRedIsUpside((r) => !r);
         redApi.start({
           to: {
             clipPath: redIsUpside
@@ -81,7 +82,6 @@ function Layout({ children, withOverflowHidden }: LayoutProps) {
       router.events.on('routeChangeStart', handleRouteChangeStart);
       router.events.on('routeChangeComplete', handleRouteChangeComplete);
       return () => {
-        setRedIsUpside((r) => !r);
         router.events.off('routeChangeStart', handleRouteChangeStart);
         router.events.off('routeChangeComplete', handleRouteChangeComplete);
       };
