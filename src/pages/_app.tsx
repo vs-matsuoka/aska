@@ -92,6 +92,17 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
     return () => window.removeEventListener('resize', updateOnSp);
   }, [router]);
 
+  useEffect(() => {
+    if (router) {
+      console.log('router.pathname', router.pathname);
+      if (['/sp/pairs/[id]', '/sp/entries/[id]'].includes(router.pathname)) {
+        document.querySelector('body')?.classList.add('no-scrollbar');
+      } else {
+        document.querySelector('body')?.classList.remove('no-scrollbar');
+      }
+    }
+  }, [router]);
+
   return getLayout(
     <ParallaxProvider>
       <Head>
