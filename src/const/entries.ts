@@ -600,7 +600,7 @@ const entries: Entry[] = [
     spDescription: 'どんな素材においても作りこむ実力派\n作曲・DJなど諸方面で実績を上げている\n多彩な武器から放たれる一撃をくらえ！',
     iconAlt: '',
     description:
-      'どんな素材においても作り込む、広い技術を持ち合わせた実力派\n\nその力は留まらず、作曲・DJ・映像・メドレーでも実績を上げる\n多彩な武器から放たれる、作者の渾身の一撃をくらえ！',
+      'どんな素材においても作り込む、広い技術を持ち合わせた実力派\nその力は留まらず、作曲・DJ・映像・メドレーでも実績を上げる\n多彩な武器から放たれる、作者の渾身の一撃をくらえ！',
     niconicoLink: 'https://www.nicovideo.jp/user/25521306',
     youtubeLink: undefined,
     twitterLink: 'https://twitter.com/6June_',
