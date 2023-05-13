@@ -94,7 +94,7 @@ const BaseImage = ({ src, rootMargin = rpx(100), duration = 300, triggerOnce = f
   }, [delay, inView, trigger]);
   return (
     <>
-      <div className="invisible absolute w-screen" ref={ref}>
+      <div className="invisible absolute w-full" ref={ref}>
         &nbsp;
       </div>
       <div className="relative h-full" style={{ width: rpx(1920), height: rpx(1000) }}>
@@ -165,7 +165,7 @@ const About: NextPageWithLayout = () => {
     <>
       <Title title="概要" />
       <div
-        className="w-screen justify-center overflow-x-hidden overflow-y-scroll bg-[url('/Concept/41_Pic_BG.png')] bg-cover bg-local"
+        className="w-full justify-center overflow-x-hidden overflow-y-scroll bg-[url('/Concept/41_Pic_BG.png')] bg-cover bg-local"
         style={{
           // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
           height: 'calc(100vh - 4rem)'
@@ -177,7 +177,7 @@ const About: NextPageWithLayout = () => {
             <ResponsiveImage src="/Concept/41_pic_Base_C.png" alt="logo" width={1920} height={750} />
           </div>
           <div
-            className="flex w-screen justify-center"
+            className="flex w-full justify-center"
             style={{
               paddingTop: rpx(270),
               gap: rpx(20)
@@ -190,7 +190,7 @@ const About: NextPageWithLayout = () => {
         {/* 音MAD DREAM MATCHとは？ */}
         <FadeInTrigger distance={rpx(200)} rootMargin="0px" triggerOnce delay={500}>
           <div
-            className="flex w-screen justify-center"
+            className="flex w-full justify-center"
             style={{
               marginTop: rpx(53)
             }}
@@ -289,7 +289,7 @@ const About: NextPageWithLayout = () => {
           </div>
         </div>
         {/* 3 */}
-        <div className="relative flex w-screen justify-center">
+        <div className="relative flex w-full justify-center">
           <div
             className="absolute"
             style={{
@@ -330,7 +330,7 @@ const About: NextPageWithLayout = () => {
           </div>
         </div>
         {/* 4 */}
-        <div className="relative flex w-screen justify-center">
+        <div className="relative flex w-full justify-center">
           <div
             className="absolute"
             style={{
@@ -382,7 +382,7 @@ const About: NextPageWithLayout = () => {
         </div>
         {/* 最後 */}
         <div
-          className="relative flex w-screen justify-center"
+          className="relative flex w-full justify-center"
           style={{
             marginTop: rpx(210),
             marginBottom: rpx(235)

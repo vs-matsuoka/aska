@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import Background from 'components/Background';
 import SpMenu from 'components/SpMenu';
@@ -33,7 +34,7 @@ export default function Entries() {
           <SpResponsiveImage alt="topBanner" src="/SP/Entry/s21_EntryIndex_TopBanner.png" className="" width={750} height={130} />
           <Link href="/sp/pairs" passHref>
             <div className="absolute top-0 right-0">
-              <SpResponsiveImage alt="combiButton" src="/SP/Entry/s21_EntryIndex_TopText.png" className="" width={315} height={130} />
+              <SpResponsiveImage alt="combiButton" src="/SP/Entry/s21_EntryIndex_TopText.png" width={315} height={130} />
             </div>
           </Link>
         </div>
