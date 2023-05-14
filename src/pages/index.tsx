@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import Image from 'next/image';
-import { ReactElement } from 'react';
+import { ReactElement, useState } from 'react';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
 import Layout from 'components/Layout';
@@ -9,6 +9,9 @@ import Timeline from 'components/Timeline';
 import otomdmLink from 'const/otomdmLink';
 
 const Top: NextPageWithLayout = () => {
+  const [redZone, setRedZone] = useState(false);
+  const [evans, setEvans] = useState(false);
+
   return (
     <>
       <SEO />
@@ -20,13 +23,24 @@ const Top: NextPageWithLayout = () => {
           height: 'calc(100vh - 4rem)'
         }}
       >
-        <button className={classNames('absolute', 'left-0')}>???</button>
         <div className="absolute -top-6 -z-10 flex w-full justify-center space-x-[0px] overflow-hidden">
           <div className="">
-            <Image src="/Top/11_Top_pic_KeyVisual_Zeus.png" alt="zeus" className={classNames('max-w-none', 'animate-zeus-float')} width={1250} height={1250} />
+            <Image
+              src="/Top/11_Top_pic_KeyVisual_Zeus.png"
+              alt="zeus"
+              className={classNames('max-w-none', 'animate-zeus-float', { 'animate-redzone-left': redZone, 'animate-evans-left': evans })}
+              width={1250}
+              height={1250}
+            />
           </div>
           <div className="mt-24">
-            <Image src="/Top/11_Top_pic_KeyVisual_Amatelas.png" alt="amatelas" className={classNames('max-w-none', 'animate-amateras-float')} width={1250} height={1250} />
+            <Image
+              src="/Top/11_Top_pic_KeyVisual_Amatelas.png"
+              alt="amatelas"
+              className={classNames('max-w-none', 'animate-amateras-float', { 'animate-redzone-right': redZone, 'animate-evans-right': evans })}
+              width={1250}
+              height={1250}
+            />
           </div>
         </div>
         <Background src="/Top/11_Top_pic_Overlay.png" />
@@ -37,7 +51,17 @@ const Top: NextPageWithLayout = () => {
           </div>
           <div className="flex">
             <div className="flex">
-              <Image src="/Top/11_Top_Text_12_Tate.png" alt="left_text" className="mr-6 object-none" width={175} height={445} />
+              <Image
+                src="/Top/11_Top_Text_12_Tate.png"
+                alt="left_text"
+                className="mr-6 object-none"
+                width={175}
+                height={445}
+                onDoubleClick={() => {
+                  setRedZone(!redZone);
+                  setEvans(false);
+                }}
+              />
             </div>
             <div className="grid content-start justify-items-center">
               <Image src="/Top/11_Top_Text_01.png" alt="data" width={373} height={88} />
@@ -64,7 +88,17 @@ const Top: NextPageWithLayout = () => {
               </div>
             </div>
             <div className="flex">
-              <Image src="/Top/11_Top_Text_11_Tate.png" alt="right_text" className="ml-6 object-none" width={157} height={432} />
+              <Image
+                src="/Top/11_Top_Text_11_Tate.png"
+                alt="right_text"
+                className="ml-6 object-none"
+                width={157}
+                height={432}
+                onDoubleClick={() => {
+                  setEvans(!evans);
+                  setRedZone(false);
+                }}
+              />
             </div>
           </div>
         </div>
