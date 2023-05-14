@@ -6,6 +6,8 @@ import { useRouter } from 'next/router';
 import { ReactElement, ReactNode, useEffect } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import urlJoin from 'url-join';
+import * as gtag from '../utils/gtag';
+import GaScript from 'components/GaScript';
 import entries from 'const/entries';
 import movies from 'const/movies';
 import pairs from 'const/pairs';
@@ -114,8 +116,19 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
     return () => window.removeEventListener('load', insertComment);
   }, []);
 
+  useEffect(() => {
+    const handleRouteChange = (url: string) => {
+      gtag.pageview(url);
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+
   return getLayout(
     <ParallaxProvider>
+      <GaScript />
       <Head>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
