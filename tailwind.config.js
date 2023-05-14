@@ -83,6 +83,8 @@ module.exports = {
       },
       animation: {
         'fade-in-from-left': 'fade-in-from-left 0.2s ease-out',
+        'evans-left': 'spin 0.5s linear infinite',
+        'evans-right': 'spin 0.5s linear reverse infinite',
         'redzone-left': 'redzone-left 11.636s steps(1, jump-start) infinite',
         'redzone-right': 'redzone-right 11.636s steps(1, jump-start) infinite',
         'zeus-float': 'keyvisual-float 4s ease-in-out -1s infinite',

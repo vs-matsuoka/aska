@@ -9,6 +9,7 @@ import urlJoin from 'url-join';
 import entries from 'const/entries';
 import movies from 'const/movies';
 import pairs from 'const/pairs';
+import phrases, { otomdmTenCom } from 'const/phrases';
 import team from 'const/team';
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
@@ -102,6 +103,16 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       }
     }
   }, [router]);
+
+  useEffect(() => {
+    const insertComment = () => {
+      const comment = phrases[Math.floor(Math.random() * phrases.length)];
+      document.appendChild(document.createComment(`\n${comment}\n`));
+      document.prepend(document.createComment(`\n${otomdmTenCom}\n`));
+    };
+    window.addEventListener('load', insertComment);
+    return () => window.removeEventListener('load', insertComment);
+  }, []);
 
   return getLayout(
     <ParallaxProvider>
