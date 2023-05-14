@@ -222,9 +222,9 @@ const entries: Entry[] = [
     iconAlt: '',
     description:
       '抜群のセリフ合わせで、作品愛のあるMADを投稿する作者\n投稿初期はアルカプを、近年ではにじさんじをメイン素材に\n人気キャラクターたちを音MADの舞台で魅力的に輝かせる！',
-    niconicoLink: 'https://www.nicovideo.jp/user/13783788',
-    youtubeLink: 'https://www.youtube.com/@user-to1se6so8ll',
-    twitterLink: 'https://twitter.com/komugi_gkk',
+    niconicoLink: 'https://www.nicovideo.jp/user/1378378',
+    youtubeLink: 'https://www.youtube.com/@user-to1se6so8l',
+    twitterLink: 'https://twitter.com/komugi_gk',
     isPublished: true
   },
   {
