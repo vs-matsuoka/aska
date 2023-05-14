@@ -164,7 +164,7 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
         }}
       >
         <div className="pt-16"></div>
-        <div className={`relative flex items-center justify-center ${onSplash ? 'invisible' : ''}`} data-testid="children">
+        <div className={`relative flex items-center justify-center ${onSplash ? 'invisible -z-50' : ''}`} data-testid="children">
           {children}
         </div>
         <div className="absolute"></div>
