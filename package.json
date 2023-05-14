@@ -19,6 +19,7 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "@sentry/nextjs": "latest",
     "autoprefixer": "^10.4.2",
     "classnames": "^2.3.2",
     "cssnano": "^5.0.16",
