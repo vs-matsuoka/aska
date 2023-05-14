@@ -67,7 +67,7 @@ const SpMenu = () => {
   return (
     <>
       {/* sp:bottom-[32px] sp:right-[32px] */}
-      <div className="fixed bottom-[4.266666666666667vw] right-[4.266666666666667vw]" onClick={onOpen}>
+      <div className="fixed bottom-[4.266666666666667vw] right-[4.266666666666667vw] cursor-pointer" onClick={onOpen}>
         <SpResponsiveImage alt="menu" src="/SP/UnderMenu/s01_UnderMenu_CircleIcon.png" className="relative" width={95} height={95} quality={90} />
       </div>
       {/* sp:bottom-[-2px] sp:left-[-8px] */}
@@ -103,7 +103,7 @@ const SpMenu = () => {
           <SpResponsiveImage alt="logo" src="/SP/Menu/s00_Menu_Logo.png" className="relative" width={250} height={130} quality={90} />
         </div>
         {/* sp:bottom-[32px] sp:right-[32px] */}
-        <div className="fixed bottom-[4.266666666666667vw] right-[4.266666666666667vw]" onClick={onClose}>
+        <div className="fixed bottom-[4.266666666666667vw] right-[4.266666666666667vw] cursor-pointer" onClick={onClose}>
           <SpResponsiveImage alt="close" src="/SP/Menu/s00_Button_21_Close.png" className="" width={95} height={95} quality={90} />
         </div>
       </animated.div>
