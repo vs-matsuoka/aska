@@ -19,6 +19,7 @@ function MovieModal({ isOpen, onClose, movie }: { isOpen: boolean; onClose: () =
             width: '1280',
             height: '720'
           }}
+          key={movie.youtubeUrl}
         />
       </div>
     </div>
