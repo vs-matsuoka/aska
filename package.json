@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.2",
+    "classnames": "^2.3.2",
     "cssnano": "^5.0.16",
     "next": "latest",
     "postcss": "^8.4.5",

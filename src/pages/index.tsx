@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import Image from 'next/image';
 import { ReactElement } from 'react';
 import { NextPageWithLayout } from './_app';
@@ -8,16 +9,6 @@ import Timeline from 'components/Timeline';
 import otomdmLink from 'const/otomdmLink';
 
 const Top: NextPageWithLayout = () => {
-  /* useEffect(() => {
-    const isSp = window.innerWidth < 768;
-    const onSp = location.href.includes('/sp');
-    if (!isSp && onSp) {
-      router.push(location.href.replace('/sp', ''));
-    }
-    if (isSp && !onSp) {
-      router.push(`/sp${location.href}`);
-    }
-  }, [router]); */
   return (
     <>
       <SEO />
@@ -29,12 +20,13 @@ const Top: NextPageWithLayout = () => {
           height: 'calc(100vh - 4rem)'
         }}
       >
+        <button className={classNames('absolute', 'left-0')}>???</button>
         <div className="absolute -top-6 -z-10 flex w-full justify-center space-x-[0px] overflow-hidden">
           <div className="">
-            <Image src="/Top/11_Top_pic_KeyVisual_Zeus.png" alt="zeus" className="max-w-none" width={1250} height={1250} />
+            <Image src="/Top/11_Top_pic_KeyVisual_Zeus.png" alt="zeus" className={classNames('max-w-none', 'animate-zeus-float')} width={1250} height={1250} />
           </div>
           <div className="mt-24">
-            <Image src="/Top/11_Top_pic_KeyVisual_Amatelas.png" alt="amatelas" className="max-w-none" width={1250} height={1250} />
+            <Image src="/Top/11_Top_pic_KeyVisual_Amatelas.png" alt="amatelas" className={classNames('max-w-none', 'animate-amateras-float')} width={1250} height={1250} />
           </div>
         </div>
         <Background src="/Top/11_Top_pic_Overlay.png" />
