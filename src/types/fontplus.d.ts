@@ -1,8 +1,16 @@
 declare global {
   interface Window {
     FONTPLUS: FontPlus;
-    // 絶対に違う
-    gtag: import('gtag.js').gtag;
+    gtag(type: 'config', googleAnalyticsId: string, { page_path: string });
+    gtag(
+      type: 'event',
+      eventAction: string,
+      fieldObject: {
+        event_label: string;
+        event_category: string;
+        value?: string;
+      }
+    );
   }
 }
 

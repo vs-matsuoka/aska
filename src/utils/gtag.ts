@@ -15,7 +15,7 @@ type GaEventProps = {
   action: string;
   category: string;
   label: string;
-  value?: number;
+  value?: string;
 };
 
 // NOTE: 本記事内では使用してません。イベントを測定したいページやアクションなどでご利用ください。
