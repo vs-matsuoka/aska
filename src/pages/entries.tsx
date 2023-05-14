@@ -192,7 +192,7 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
               </div>
             </a>
             <div className="flex">
-              <ResponsiveImage src={entry.contestantSrc} alt="contestant" width={600} height={700} priority key={`${entry.name}-illust`} />
+              <ResponsiveImage src={entry.contestantSrc} className="animate-fade-in-from-left" alt="contestant" width={600} height={700} priority key={`${entry.name}-illust`} />
               <div className="my-auto h-auto">
                 <div className="absolute right-[5.8854166667vw] top-[2.2395833333vw] 4xl:right-[113px] 4xl:top-[43px]" onClick={onClose}>
                   <a href="#">

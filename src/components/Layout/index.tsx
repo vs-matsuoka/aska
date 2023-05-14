@@ -12,7 +12,7 @@ type LayoutProps = {
 
 function Splash({ onSplashEnded }: { onSplashEnded: () => void }) {
   return (
-    <div className="absolute h-screen w-full overflow-hidden bg-black">
+    <div className="absolute h-screen w-full select-none overflow-hidden bg-black">
       <video
         className="my-auto h-full w-full"
         autoPlay
@@ -89,7 +89,6 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
     await splashBlueApi.start({
       clipPath: rightHomePosition
     })[0];
-    console.log('done');
     setHideSplashPaths(true);
   };
 

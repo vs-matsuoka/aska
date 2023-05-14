@@ -194,7 +194,7 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
             </a>
             <div className="flex">
               <div className="my-auto h-auto">
-                <ResponsiveImage src={pair.illustSrc} alt="pair" width={600} height={600} priority key={`${pair.name}-illust`} />
+                <ResponsiveImage src={pair.illustSrc} alt="pair" className="animate-fade-in-from-left" width={600} height={600} priority key={`${pair.name}-illust`} />
               </div>
               <div className="my-auto h-auto">
                 <div className="absolute right-[5.8854166667vw] top-[2.2395833333vw] 4xl:right-[113px] 4xl:top-[43px]" onClick={onClose}>
