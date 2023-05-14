@@ -760,21 +760,22 @@ const entries: Entry[] = [
   },
   {
     index: 40,
-    name: '???',
-    frameSrc: '/Entry/Frame/21_Entry_Frame_40_Secret.png',
+    name: 'ハチェット',
+    frameSrc: '/Entry/Frame/21_Entry_Frame_40.png',
     contestantSrc: '/Modal/contestants/22_Modal_contestant_40.png',
     iconSrc: '/Modal/icon/22_Modal_icon_40.png',
-    spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_40_Secret.png',
-    spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_40_secret.png',
-    spKirinukiSrc: '',
-    spNameSrc: '',
-    spDescription: '',
+    spIconSrc: '/SP/Entry_Detail/Icon/s22_EntryIcon_40.png',
+    spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_40.png',
+    spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_40.png',
+    spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_40.png',
+    spDescription: '癖の強い素材を豊かな発想で捌き\nパワフルな動画へドバーっと昇華\nその活力とアイデアを武器に暴れ回る！',
     iconAlt: '',
-    description: '',
+    description:
+      '例のアレやレジギガスなど、癖の強い素材を豊かな発想で捌き\n一発ネタで収まらないパワフルな動画に昇華してドバーっと投稿\n合作に多数参加する活力の権化が手斧とアイデアを武器に戦う！',
     niconicoLink: 'https://www.nicovideo.jp/user/47566407',
     youtubeLink: 'https://www.youtube.com/@user-ox8wz7xm2y',
     twitterLink: 'https://twitter.com/ono_natchet',
-    isPublished: false
+    isPublished: true
   }
 ];
 
