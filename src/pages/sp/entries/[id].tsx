@@ -59,7 +59,7 @@ const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
       <Background src="/SP/Entry_Detail/s22_Entry_BG.jpg" />
       {/* sp:top-[78px] */}
       <div className="relative top-[10.4vw]">
-        <SpResponsiveImage alt="kirinuki" src={props.kirinukiSrc} className="" width={750} height={800} />
+        <SpResponsiveImage alt="kirinuki" src={props.kirinukiSrc} width={750} height={800} key={props.name} />
         {/* sp:top-[39px] sp:right-[31px] sp:gap-[14px] */}
         <div className="absolute top-[5.2vw] right-[4.13333333vw] flex justify-center gap-[1.86666667vw]">
           <a target="_blank" href={props.niconicoLink} rel="noopener noreferrer">
@@ -77,10 +77,10 @@ const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
         {/* sp:top-[671px] */}
         <div className="absolute top-[89.46666667vw]">
           <div className="relative">
-            <SpResponsiveImage alt="base" src="/SP/Entry_Detail/s22_Entry_Base.png" className="" width={750} height={500} />
+            <SpResponsiveImage alt="base" src="/SP/Entry_Detail/s22_Entry_Base.png" width={750} height={500} />
             {/* sp:top-[32px] */}
             <div className="absolute top-[4.26666667vw]">
-              <SpResponsiveImage alt="name" src={props.nameSrc} className="relative" width={750} height={250} />
+              <SpResponsiveImage alt="name" src={props.nameSrc} className="relative" width={750} height={250} key={props.name} />
             </div>
             {/* sp:top-[250px] sp:right-[40px] sp:text-[30px] */}
             <div
