@@ -56,22 +56,22 @@ const PairPage: NextPage<PairProps> = (props: PairProps) => {
       <Background src="/SP/Pair_Detail/s32_Entry_BG.jpg" />
       {/* sp:top-[51px] */}
       <div className="relative top-[6.8vw]">
-        <SpResponsiveImage alt="kirinuki" src={props.kirinukiSrc} className="" width={750} height={800} />
+        <SpResponsiveImage alt="kirinuki" src={props.kirinukiSrc} width={750} height={800} key={props.name} />
         {/* sp:top-[670px] */}
         <div className="absolute top-[89.3333333vw]">
           <div className="relative">
             <SpResponsiveImage alt="base" src="/SP/Pair_Detail/s32_Entry_Base.png" className="" width={750} height={500} />
             {/* sp:top-[50px] */}
             <div className="absolute top-[6.66666667vw]">
-              <SpResponsiveImage alt="name" src={props.nameSrc} className="relative" width={750} height={250} />
+              <SpResponsiveImage alt="name" src={props.nameSrc} className="relative" width={750} height={250} key={props.name} />
             </div>
             {/* sp:top-[254px] sp:left-[32px] */}
             <div className="absolute top-[33.86666667vw] left-[4.26666667vw]">
-              <SpResponsiveImage alt="baseA" src={props.baseASrc} className="relative" width={335} height={200} />
+              <SpResponsiveImage alt="baseA" src={props.baseASrc} className="relative" width={335} height={200} key={props.name} />
             </div>
             {/* sp:top-[192px] sp:right-[32px] */}
             <div className="absolute top-[25.6vw] right-[4.26666667vw]">
-              <SpResponsiveImage alt="baseB" src={props.baseBSrc} className="relative" width={335} height={200} />
+              <SpResponsiveImage alt="baseB" src={props.baseBSrc} className="relative" width={335} height={200} key={props.name} />
             </div>
             {/* sp:top-[298px] sp:left-[350px] */}
             <div className="absolute top-[39.73333333vw] left-[46.6666667vw]">

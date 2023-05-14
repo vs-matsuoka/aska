@@ -157,10 +157,10 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
           .filter((pair) => pair.isPublished)
           .map((pair) => (
             <div key={pair.index}>
-              <ResponsiveImage src={pair.illustSrc} alt="pair" width={600} height={600} priority />
-              <ResponsiveImage src={pair.nameSrc} alt="icon" width={690} height={90} priority />
-              <ResponsiveImage src={pair.hnASrc} alt="name" width={325} height={50} />
-              <ResponsiveImage src={pair.hnBSrc} alt="name" width={325} height={50} />
+              <ResponsiveImage src={pair.illustSrc} alt="pair" width={600} height={600} priority key={`${pair.name}-illust`} />
+              <ResponsiveImage src={pair.nameSrc} alt="icon" width={690} height={90} priority key={`${pair.name}-icon`} />
+              <ResponsiveImage src={pair.hnASrc} alt="name" width={325} height={50} key={`${pair.name}-hnA`} />
+              <ResponsiveImage src={pair.hnBSrc} alt="name" width={325} height={50} key={`${pair.name}-hnB`} />
             </div>
           ))}
       </FireOnlyOnServerSide>
@@ -194,7 +194,7 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
             </a>
             <div className="flex">
               <div className="my-auto h-auto">
-                <ResponsiveImage src={pair.illustSrc} alt="pair" width={600} height={600} priority />
+                <ResponsiveImage src={pair.illustSrc} alt="pair" width={600} height={600} priority key={`${pair.name}-illust`} />
               </div>
               <div className="my-auto h-auto">
                 <div className="absolute right-[5.8854166667vw] top-[2.2395833333vw] 4xl:right-[113px] 4xl:top-[43px]" onClick={onClose}>
@@ -204,11 +204,11 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
                 </div>
                 <div className="mb-[0.4166666667vw] 4xl:mb-[8px]">
                   <div className="mb-[0.3125vw] 4xl:mb-[6px]">
-                    <ResponsiveImage src={pair.nameSrc} alt="icon" width={690} height={90} priority />
+                    <ResponsiveImage src={pair.nameSrc} alt="icon" width={690} height={90} priority key={`${pair.name}-icon`} />
                   </div>
                   <div className="ml-[0.3645833333vw] flex gap-[0.7291666667vw] 4xl:ml-[7px] 4xl:gap-[14px]">
-                    <ResponsiveImage src={pair.hnASrc} alt="name" width={325} height={50} priority />
-                    <ResponsiveImage src={pair.hnBSrc} alt="name" width={325} height={50} priority />
+                    <ResponsiveImage src={pair.hnASrc} alt="name" width={325} height={50} priority key={`${pair.name}-hnA`} />
+                    <ResponsiveImage src={pair.hnBSrc} alt="name" width={325} height={50} priority key={`${pair.name}-hnB`} />
                   </div>
                 </div>
                 <ResponsiveImage src="/Pair_Modal/32_Pair_Modal_pic_Line.png" alt="line" width={685} height={10} />

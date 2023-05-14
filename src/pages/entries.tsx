@@ -157,8 +157,8 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
           .filter((entry) => entry.isPublished)
           .map((entry) => (
             <div key={entry.index}>
-              <ResponsiveImage src={entry.contestantSrc} alt="contestant" width={600} height={700} priority />
-              <ResponsiveImage src={entry.iconSrc} alt="icon" width={680} height={100} priority />
+              <ResponsiveImage src={entry.contestantSrc} alt="contestant" width={600} height={700} priority key={`${entry.name}-illust`} />
+              <ResponsiveImage src={entry.iconSrc} alt="icon" width={680} height={100} priority key={`${entry.name}-icon`} />
             </div>
           ))}
       </FireOnlyOnServerSide>
@@ -192,14 +192,14 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
               </div>
             </a>
             <div className="flex">
-              <ResponsiveImage src={entry.contestantSrc} alt="contestant" width={600} height={700} priority />
+              <ResponsiveImage src={entry.contestantSrc} alt="contestant" width={600} height={700} priority key={`${entry.name}-illust`} />
               <div className="my-auto h-auto">
                 <div className="absolute right-[5.8854166667vw] top-[2.2395833333vw] 4xl:right-[113px] 4xl:top-[43px]" onClick={onClose}>
                   <a href="#">
                     <ResponsiveImage src="/Modal/22_Modal_Close.png" alt="close" width={55} height={55} quality={100} />
                   </a>
                 </div>
-                <ResponsiveImage src={entry.iconSrc} alt="icon" width={680} height={100} priority />
+                <ResponsiveImage src={entry.iconSrc} alt="icon" width={680} height={100} priority key={`${entry.name}-icon`} />
                 <ResponsiveImage src="/Modal/22_Entry_pic_Line.png" alt="line" width={725} height={10} />
                 {/* テキストサイズを決定する */}
                 <div
