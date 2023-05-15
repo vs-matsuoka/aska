@@ -125,9 +125,11 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
       };
       router.events.on('routeChangeStart', handleRouteChangeStart);
       router.events.on('routeChangeComplete', handleRouteChangeComplete);
+      router.events.on('routeChangeError', handleRouteChangeComplete);
       return () => {
         router.events.off('routeChangeStart', handleRouteChangeStart);
         router.events.off('routeChangeComplete', handleRouteChangeComplete);
+        router.events.off('routeChangeError', handleRouteChangeComplete);
       };
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
