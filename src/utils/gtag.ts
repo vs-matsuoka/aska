@@ -15,10 +15,9 @@ type GaEventProps = {
   action: string;
   category: string;
   label: string;
-  value?: string;
+  value?: number;
 };
 
-// NOTE: 本記事内では使用してません。イベントを測定したいページやアクションなどでご利用ください。
 export const event = ({ action, category, label, value }: GaEventProps): void => {
   if (!GA_TRACKING_ID) return;
 

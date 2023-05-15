@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import Image from 'next/image';
 import { ReactElement, useState } from 'react';
+import * as gtag from '../utils/gtag';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
 import Layout from 'components/Layout';
@@ -60,6 +61,13 @@ const Top: NextPageWithLayout = () => {
                 onDoubleClick={() => {
                   setRedZone(!redZone);
                   setEvans(false);
+                  if (!redZone) {
+                    gtag.event({
+                      action: 'redzone',
+                      category: 'redzone',
+                      label: 'redzone'
+                    });
+                  }
                 }}
               />
             </div>
@@ -97,6 +105,13 @@ const Top: NextPageWithLayout = () => {
                 onDoubleClick={() => {
                   setEvans(!evans);
                   setRedZone(false);
+                  if (!evans) {
+                    gtag.event({
+                      action: 'evans',
+                      category: 'evans',
+                      label: 'evans'
+                    });
+                  }
                 }}
               />
             </div>
