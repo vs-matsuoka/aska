@@ -389,10 +389,10 @@ const entries: Entry[] = [
     spBannerSrc: '/SP/Entry/Banner/s21_EntryIndex_Banner_20.png',
     spKirinukiSrc: '/SP/Entry_Detail/Kirinuki/s22_Entry_Kirinuki_20.png',
     spNameSrc: '/SP/Entry_Detail/Name/s22_Entry_name_20.png',
-    spDescription: '「そうだ、京都行こう」など渋い素材の\n雰囲気を活かすオシャレな動画を制作\n貴方を永遠の修学旅行へと連れて行く！',
+    spDescription: '「そうだ京都、行こう。」など渋い素材の\n雰囲気を活かすオシャレな動画を制作\n貴方を永遠の修学旅行へと連れて行く！',
     iconAlt: '',
     description:
-      'そうだ、京都行こう・ｷｮｳﾉｵﾍﾞﾝﾄｰﾊｶﾜﾗｶｰ・東方原作といった\n渋い素材たちの雰囲気を十二分に活かすオシャレな動画を制作\nきめ細やかな作風の投稿者が永遠の修学旅行へと連れて行く！',
+      'そうだ京都、行こう。・ﾜｰ ｷｮｰﾉｵﾍﾞﾝﾄｰﾜ ｶﾜﾗｶｰ・東方原作といった\n渋い素材たちの雰囲気を十二分に活かすオシャレな動画を制作\nきめ細やかな作風の投稿者が永遠の修学旅行へと連れて行く！',
     niconicoLink: 'https://www.nicovideo.jp/user/57671569',
     youtubeLink: 'https://www.youtube.com/@Teine.',
     twitterLink: 'https://twitter.com/Inaho_Inadumi',
