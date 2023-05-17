@@ -77,7 +77,7 @@ const team: {
       role: '特番ディレクター',
       iconSrc: '/Icon/運営/運営_icon_ふーふー.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/20600830',
-      youtubeLink: undefined,
+      youtubeLink: 'https://www.youtube.com/channel/UCapOg6vYOn4WVlwyetUPrMw',
       twitterLink: 'https://twitter.com/nanana555'
     },
     {
