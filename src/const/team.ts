@@ -61,7 +61,7 @@ const team: {
       role: '放送ディレクター',
       iconSrc: '/Icon/運営/運営_icon_埜村武.jpg',
       twitterLink: 'https://twitter.com/nomuratakeshi2',
-      youtubeLink: undefined,
+      youtubeLink: 'https://www.youtube.com/@nomuratakeshi',
       niconicoLink: 'https://www.nicovideo.jp/user/14019936'
     },
     {
