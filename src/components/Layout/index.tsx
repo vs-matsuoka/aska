@@ -97,15 +97,16 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
   useEffect(() => {
     if (router) {
       const handleRouteChangeStart = (url: string, { shallow }: { shallow: boolean }) => {
-        setRedIsUpside((r) => !r);
+        const newState = !redIsUpside;
+        setRedIsUpside(newState);
         redApi.start({
           to: {
-            clipPath: redIsUpside ? leftClosePosition : rightClosePosition
+            clipPath: newState ? leftClosePosition : rightClosePosition
           }
         });
         blueApi.start({
           to: {
-            clipPath: redIsUpside ? rightClosePosition : leftClosePosition
+            clipPath: newState ? rightClosePosition : leftClosePosition
           }
         });
       };
@@ -132,8 +133,7 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
         router.events.off('routeChangeError', handleRouteChangeComplete);
       };
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [blueApi, downsideOffset, redApi, upsideOffset, router]);
+  }, [blueApi, downsideOffset, redApi, upsideOffset, router, redIsUpside, leftClosePosition, rightClosePosition, rightHomePosition, leftHomePosition]);
 
   useEffect(() => {
     if (router) {
