@@ -6,7 +6,7 @@
   "timezone": "Asia/Tokyo",
   "schedule": ["every weekend"],
   "labels": ["renovate"],
-  "rangeStrategy": "pin",
+  "rangeStrategy": "auto",
   "reviewersSampleSize": 1,
   "prConcurrentLimit": 5,
   "packageRules": [
