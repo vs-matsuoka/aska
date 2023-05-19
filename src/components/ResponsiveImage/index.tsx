@@ -1,14 +1,17 @@
+import classNames from 'classnames';
 import Image, { ImageProps } from 'next/image';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Key } from 'react';
 
 function ResponsiveImage(
   props: Omit<ImageProps, 'fill' | 'width' | 'height'> & {
     width: number;
     height: number;
     alwaysResponsive?: boolean;
+    innerKey?: Key | null;
+    innerClassName?: string;
   }
 ) {
-  const { alwaysResponsive, width, height, src, alt, className, ...imageProps } = props;
+  const { alwaysResponsive, width, height, src, alt, className, innerKey, innerClassName, ...imageProps } = props;
   const standard = 1920;
   // useMediaQuery だとクライアントサイドでのレンダリング時に
   // const isNarrow = useMediaQuery({ query: '(min-width: 1920px)' });
@@ -25,19 +28,19 @@ function ResponsiveImage(
   const isFixedWidth = alwaysResponsive ? false : isNarrow;
 
   if (width === standard) {
-    return <Image src={src} alt={alt} width={width} height={height} {...imageProps} />;
+    return <Image src={src} alt={alt} width={width} height={height} className={classNames(innerClassName)} {...imageProps} {...(innerKey ? { key: innerKey } : {})} />;
   }
 
   return (
     <div
-      className={`${className ?? ''} relative`}
+      className={classNames('relative', className)}
       style={{
         width: isFixedWidth ? `${width}px` : `${(width / standard) * 100}vw`,
         height: isFixedWidth ? `${height}px` : `${(height / standard) * 100}vw`,
         objectFit: 'cover'
       }}
     >
-      <Image src={src} alt={alt} className="max-w-none" fill sizes={`${width}px`} {...imageProps}></Image>
+      <Image src={src} alt={alt} className={classNames('max-w-none', innerClassName)} fill sizes={`${width}px`} {...imageProps} {...(innerKey ? { key: innerKey } : {})}></Image>
     </div>
   );
 }

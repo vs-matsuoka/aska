@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import Link from 'next/link';
 import { ReactElement, useCallback, useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
@@ -30,14 +31,14 @@ function ContestantButton({ entry, onModalOpen }: { entry: Entry; onModalOpen: (
   return (
     <div key={entry.index} className="relative h-[7.8125vw] w-[4.6875vw] skew-y-[10deg] 4xl:h-[150px] 4xl:w-[90px]">
       <div className="h-[7.2916666667vw] w-[6.3541666667vw] skew-x-[-20deg] skew-y-[-11deg] bg-transparent 4xl:h-[140px] 4xl:w-[122px]"></div>
-      <a {...(entry.frameSrc.includes('Secret') ? {} : { href: '#' })}>
+      <a {...(entry.isPublished ? { href: '#' } : {})}>
         <div
           className="absolute left-[-3.28125vw] top-[-2.9687557vw] max-w-none 4xl:left-[-63px] 4xl:top-[-57px]"
           style={{
             clipPath: 'polygon(34% 25%, 88% 15%, 66% 75%, 12% 85%)'
           }}
           onClick={() => {
-            if (entry.frameSrc.includes('Secret')) {
+            if (!entry.isPublished) {
               return;
             }
             setEntry(entry);
@@ -49,7 +50,7 @@ function ContestantButton({ entry, onModalOpen }: { entry: Entry; onModalOpen: (
             className="absolute left-[3.125vw] top-[2.65625vw] h-[7.8125vw] w-[6.7708333333vw] skew-x-[-20deg] skew-y-[-11deg] bg-white 4xl:left-[60px] 4xl:top-[51px] 4xl:h-[150px] 4xl:w-[130px]"
             style={styles}
             onMouseEnter={() => {
-              if (entry.frameSrc.includes('Secret')) {
+              if (!entry.isPublished) {
                 return;
               }
               setEntry(entry);
@@ -110,13 +111,13 @@ function ToggleEntryButton() {
   }, [api]);
 
   return (
-    <div className="absolute right-[2.5vw] bottom-[-6.6666666667vw] 4xl:right-[48px] 4xl:bottom-[-128px]">
+    <div className="absolute bottom-[-6.6666666667vw] right-[2.5vw] 4xl:bottom-[-128px] 4xl:right-[48px]">
       <ResponsiveImage alt="conbi" src="/Entry/21_Entry_text_02_base.png" width={480} height={105} />
       <Link href="/pairs" passHref>
-        <div className="absolute top-0 left-0 transition hover:scale-125" onMouseEnter={trigger}>
+        <div className="absolute left-0 top-0 transition hover:scale-125" onMouseEnter={trigger}>
           <ResponsiveImage alt="conbi" src="/Entry/21_Entry_text_02.png" width={480} height={105} />
           <animated.div
-            className="absolute top-0 left-0"
+            className="absolute left-0 top-0"
             style={{
               filter: 'brightness(0) invert(1)',
               ...styles
@@ -146,6 +147,7 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
   }, [entry]);
   const nextEntry = searchNextPublished(entries, entry);
   const prevEntry = searchPrevPublished(entries, entry);
+  const [effect, setEffect] = useState(false);
   return (
     <div className={`fixed inset-0 ${isOpen ? 'opacity-100' : 'opacity-0'} transition-all duration-200 ${isOpen ? '' : 'pointer-events-none'}`}>
       {/*
@@ -157,8 +159,8 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
           .filter((entry) => entry.isPublished)
           .map((entry) => (
             <div key={entry.index}>
-              <ResponsiveImage src={entry.contestantSrc} alt="contestant" width={600} height={700} priority key={`${entry.name}-illust`} />
-              <ResponsiveImage src={entry.iconSrc} alt="icon" width={680} height={100} priority key={`${entry.name}-icon`} />
+              <ResponsiveImage src={entry.contestantSrc} alt="contestant" width={600} height={700} priority innerKey={`${entry.name}-illust`} />
+              <ResponsiveImage src={entry.iconSrc} alt="icon" width={680} height={100} priority innerKey={`${entry.name}-icon`} />
             </div>
           ))}
       </FireOnlyOnServerSide>
@@ -192,14 +194,22 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
               </div>
             </a>
             <div className="flex">
-              <ResponsiveImage src={entry.contestantSrc} className="animate-fade-in-from-left" alt="contestant" width={600} height={700} priority key={`${entry.name}-illust`} />
+              <ResponsiveImage
+                src={entry.contestantSrc}
+                innerClassName={classNames('animate-fade-in-from-left')}
+                alt="contestant"
+                width={600}
+                height={700}
+                priority
+                innerKey={`${entry.name}-illust`}
+              />
               <div className="my-auto h-auto">
                 <div className="absolute right-[5.8854166667vw] top-[2.2395833333vw] 4xl:right-[113px] 4xl:top-[43px]" onClick={onClose}>
                   <a href="#">
                     <ResponsiveImage src="/Modal/22_Modal_Close.png" alt="close" width={55} height={55} quality={100} />
                   </a>
                 </div>
-                <ResponsiveImage src={entry.iconSrc} alt="icon" width={680} height={100} priority key={`${entry.name}-icon`} />
+                <ResponsiveImage src={entry.iconSrc} alt="icon" width={680} height={100} priority innerKey={`${entry.name}-icon`} />
                 <ResponsiveImage src="/Modal/22_Entry_pic_Line.png" alt="line" width={725} height={10} />
                 {/* テキストサイズを決定する */}
                 <div

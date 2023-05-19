@@ -2,7 +2,7 @@
 
 exports[`<ResponsiveImage /> should render the heading 1`] = `
 <div
-  class=" relative"
+  class="relative"
   style="width: 25vw; height: 5.46875vw; object-fit: cover;"
 >
   <img
