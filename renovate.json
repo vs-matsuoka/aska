@@ -1,6 +1,34 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
+  "semanticCommits": "enabled",
+  "extends": ["config:base"],
+  "baseBranches": ["main"],
+  "timezone": "Asia/Tokyo",
+  "schedule": ["every weekend"],
+  "labels": ["renovate"],
+  "rangeStrategy": "pin",
+  "reviewersSampleSize": 1,
+  "prConcurrentLimit": 5,
+  "packageRules": [
+    {
+      "packageNames": ["node"],
+      "enabled": false
+    },
+    {
+      "groupName": "Next.js families",
+      "matchPackagePatterns": ["next"]
+    },
+    {
+      "groupName": "Linter families",
+      "matchPackagePatterns": ["eslint", "prettier"]
+    },
+    {
+      "groupName": "React families",
+      "matchPackagePatterns": ["react", "emotion"]
+    },
+    {
+      "groupName": "Typescript families",
+      "matchPackageNames": ["typescript", "tsconfig-paths", "ts-loader"]
+    }
   ]
 }
