@@ -23,7 +23,17 @@ module.exports = {
     builder: 'webpack5'
   },
   webpackFinal: (config) => {
-    config.resolve.modules.push(`${process.cwd()}/src`)
-    return config
+    config.resolve.modules.push(`${process.cwd()}/src`);
+    config.resolve = {
+      ...config.resolve,
+      fallback: {
+        ...config.resolve.fallback,
+        fs: false,
+        stream: false,
+        os: false,
+        zlib: false
+      }
+    };
+    return config;
   }
-}
+};
