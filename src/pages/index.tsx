@@ -55,7 +55,7 @@ const Top: NextPageWithLayout = () => {
               <Image
                 src="/Top/11_Top_Text_12_Tate.png"
                 alt="left_text"
-                className="mr-6 object-none"
+                className="mr-6 max-w-none"
                 width={175}
                 height={445}
                 onDoubleClick={() => {
@@ -72,23 +72,23 @@ const Top: NextPageWithLayout = () => {
               />
             </div>
             <div className="grid content-start justify-items-center">
-              <Image src="/Top/11_Top_Text_01.png" alt="data" width={373} height={88} />
+              <Image src="/Top/11_Top_Text_01.png" className="max-w-none" alt="data" width={373} height={88} />
               <div className="flex">
                 <a href={otomdmLink.niconico} target="_blank">
-                  <Image src="/Top/11_Top_Text_02_niconico.png" alt="niconico" className="object-none" width={180} height={50} />
+                  <Image src="/Top/11_Top_Text_02_niconico.png" alt="niconico" className="max-w-none" width={180} height={50} />
                 </a>
                 <a href={otomdmLink.youtube} target="_blank">
-                  <Image src="/Top/11_Top_Text_03_youtube.png" alt="youtube" className="object-none" width={180} height={50} />
+                  <Image src="/Top/11_Top_Text_03_youtube.png" alt="youtube" className="max-w-none" width={180} height={50} />
                 </a>
               </div>
               <div className="mt-4 grid justify-items-center">
                 <div className="relative top-[-2px] grid justify-items-center">
                   <div className="">
-                    <Image src="/Top/11_Top_Twitter_Timeline.png" alt="twitter_timeline" className="object-none" width={412} height={404} />
+                    <Image src="/Top/11_Top_Twitter_Timeline.png" alt="twitter_timeline" className="max-w-none" width={412} height={404} />
                   </div>
                   <div className="absolute top-0 grid justify-items-center">
                     <a href={otomdmLink.twitter} target="_blank">
-                      <Image src="/Top/11_Top_Text_04_Twitter.png" alt="twitter" width={140} height={40} />
+                      <Image src="/Top/11_Top_Text_04_Twitter.png" className="max-w-none" alt="twitter" width={140} height={40} />
                     </a>
                     <Timeline />
                   </div>
@@ -99,7 +99,7 @@ const Top: NextPageWithLayout = () => {
               <Image
                 src="/Top/11_Top_Text_11_Tate.png"
                 alt="right_text"
-                className="ml-6 object-none"
+                className="ml-6 max-w-none"
                 width={157}
                 height={432}
                 onDoubleClick={() => {
