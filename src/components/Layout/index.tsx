@@ -41,7 +41,7 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
 
   const upsideOffset = -40;
   const downsideOffset = -upsideOffset;
-  const [redIsUpside, setRedIsUpside] = useState(true);
+  const [nextRedIsUpside, setNextRedIsUpside] = useState(false);
 
   const rightOver = `polygon(${100 + 100}% ${0 + 100}%, ${200 + 100}% ${100 + 100}%, ${100 + 100}% ${200 + 100}%, ${0 + 100}% ${100 + 100}%)`;
   const leftOver = `polygon(${0 - 100}% ${-100 - 100}%, ${100 - 100}% ${0 - 100}%, ${0 - 100}% ${100 - 100}%, ${-100 - 100}% ${0 - 100}%)`;
@@ -97,8 +97,8 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
   useEffect(() => {
     if (router) {
       const handleRouteChangeStart = (url: string, { shallow }: { shallow: boolean }) => {
-        const newState = !redIsUpside;
-        setRedIsUpside(newState);
+        const newState = !nextRedIsUpside;
+        setNextRedIsUpside(newState);
         redApi.start({
           to: {
             clipPath: newState ? leftClosePosition : rightClosePosition
@@ -114,13 +114,13 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
         redApi.stop();
         redApi.start({
           to: {
-            clipPath: redIsUpside ? rightHomePosition : leftHomePosition
+            clipPath: nextRedIsUpside ? rightHomePosition : leftHomePosition
           }
         });
         blueApi.stop();
         blueApi.start({
           to: {
-            clipPath: redIsUpside ? leftHomePosition : rightHomePosition
+            clipPath: nextRedIsUpside ? leftHomePosition : rightHomePosition
           }
         });
       };
@@ -133,7 +133,7 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
         router.events.off('routeChangeError', handleRouteChangeComplete);
       };
     }
-  }, [blueApi, downsideOffset, redApi, upsideOffset, router, redIsUpside, leftClosePosition, rightClosePosition, rightHomePosition, leftHomePosition]);
+  }, [blueApi, downsideOffset, redApi, upsideOffset, router, nextRedIsUpside, leftClosePosition, rightClosePosition, rightHomePosition, leftHomePosition]);
 
   useEffect(() => {
     if (router) {
