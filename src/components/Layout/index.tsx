@@ -41,7 +41,7 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
 
   const upsideOffset = -40;
   const downsideOffset = -upsideOffset;
-  const [redIsUpside, setRedIsUpside] = useState(true);
+  const [nextRedIsUpside, setNextRedIsUpside] = useState(false);
 
   const rightOver = `polygon(${100 + 100}% ${0 + 100}%, ${200 + 100}% ${100 + 100}%, ${100 + 100}% ${200 + 100}%, ${0 + 100}% ${100 + 100}%)`;
   const leftOver = `polygon(${0 - 100}% ${-100 - 100}%, ${100 - 100}% ${0 - 100}%, ${0 - 100}% ${100 - 100}%, ${-100 - 100}% ${0 - 100}%)`;
@@ -97,15 +97,16 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
   useEffect(() => {
     if (router) {
       const handleRouteChangeStart = (url: string, { shallow }: { shallow: boolean }) => {
-        setRedIsUpside((r) => !r);
+        const newState = !nextRedIsUpside;
+        setNextRedIsUpside(newState);
         redApi.start({
           to: {
-            clipPath: redIsUpside ? leftClosePosition : rightClosePosition
+            clipPath: newState ? leftClosePosition : rightClosePosition
           }
         });
         blueApi.start({
           to: {
-            clipPath: redIsUpside ? rightClosePosition : leftClosePosition
+            clipPath: newState ? rightClosePosition : leftClosePosition
           }
         });
       };
@@ -113,13 +114,13 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
         redApi.stop();
         redApi.start({
           to: {
-            clipPath: redIsUpside ? rightHomePosition : leftHomePosition
+            clipPath: nextRedIsUpside ? rightHomePosition : leftHomePosition
           }
         });
         blueApi.stop();
         blueApi.start({
           to: {
-            clipPath: redIsUpside ? leftHomePosition : rightHomePosition
+            clipPath: nextRedIsUpside ? leftHomePosition : rightHomePosition
           }
         });
       };
@@ -132,8 +133,7 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
         router.events.off('routeChangeError', handleRouteChangeComplete);
       };
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [blueApi, downsideOffset, redApi, upsideOffset, router]);
+  }, [blueApi, downsideOffset, redApi, upsideOffset, router, nextRedIsUpside, leftClosePosition, rightClosePosition, rightHomePosition, leftHomePosition]);
 
   useEffect(() => {
     if (router) {
