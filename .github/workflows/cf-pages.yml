@@ -78,8 +78,8 @@ jobs:
           echo "::set-output name=retry_count::$(git log --format=%B -n 1 | grep -oP 'ci: run \K\d+')"
 
       - name: Empty commit
-        if: steps.cloudflare_pages_deploy.outcome == 'failure' && github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: ./.github/actions/commit-empty.yml
+        if: steps.cloudflare_pages_deploy.outcome == 'failure' && github.event_name == 'push' && github.ref == 'refs/heads/main' && steps.get_last_commit_retry_count.outputs.retry_count < 10
+        uses: ./.github/workflows/commit-empty.yml
         with:
           count: ${{ (steps.get_last_commit_retry_count.outputs.retry_count != '' && steps.get_last_commit_retry_count.outputs.retry_count ) || 1 }}
 
