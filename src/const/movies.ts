@@ -88,6 +88,11 @@ const movies: {
       index: 12,
       title: '第12弾告知',
       youtubeUrl: 'https://youtu.be/Bs_T5RL0vaI'
+    },
+    {
+      index: 13,
+      title: '第13弾告知',
+      youtubeUrl: 'https://youtu.be/qEfHogQDrjQ'
     }
   ],
   // 事前番組
