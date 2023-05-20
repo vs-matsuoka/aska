@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "yarn build && next export && next-export-optimize-images",
+    "export": "yarn build && next-export-optimize-images",
     "serve": "serve ./out",
     "start": "next start",
     "lint": "next lint",
