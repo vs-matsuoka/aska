@@ -55,7 +55,7 @@ const Top: NextPageWithLayout = () => {
               <Image
                 src="/Top/11_Top_Text_12_Tate.png"
                 alt="left_text"
-                className="mr-6 mt-14"
+                className="mr-6 mt-14 max-w-none"
                 width={175}
                 height={445}
                 onDoubleClick={() => {
@@ -99,7 +99,7 @@ const Top: NextPageWithLayout = () => {
               <Image
                 src="/Top/11_Top_Text_11_Tate.png"
                 alt="right_text"
-                className="ml-6 mt-16"
+                className="ml-6 mt-16 max-w-none"
                 width={157}
                 height={432}
                 onDoubleClick={() => {
