@@ -6,12 +6,14 @@ on:
       count:
         description: 'Number of retries'
         required: true
+        type: number
         default: 1
   workflow_dispatch:
     inputs:
       count:
         description: 'Number of retries'
         required: true
+        type: number
         default: 1
 
 jobs:
