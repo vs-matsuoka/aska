@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import MenuBar from 'components/MenuBar';
 
@@ -11,24 +11,30 @@ type LayoutProps = {
 };
 
 function Splash({ onSplashEnded }: { onSplashEnded: () => void }) {
+  const videoElement = useRef<HTMLVideoElement>(null);
+  // onPlay と onEnded では対応しない
+  // 今回のサイトの本番環境はSSGしたものが公開される想定なので、jsが読み込まれる(hydrateされる)前の段階で既に動画が読み込まれ、かつ動画が終了している可能性がある
+  // かわりに、refから動画が終了したかどうか定期的に確認するように変更する
+  // これによって、jsのロード完了時に既に動画の再生が終了していたとしても適切に onSplashEnded を発火することができるようになる
+  useEffect(() => {
+    setInterval(() => {
+      if (videoElement.current?.ended) {
+        setTimeout(() => {
+          onSplashEnded();
+        }, 900);
+      }
+    }, 100);
+  }, [onSplashEnded]);
+
   return (
     <div className="absolute h-screen w-full select-none overflow-hidden bg-black">
       <video
+        ref={videoElement}
         className="my-auto h-full w-full"
         autoPlay
         muted
         playsInline
         src="/pre_SplashLogo.mp4"
-        onPlay={() => {
-          setTimeout(() => {
-            onSplashEnded();
-          }, 1400);
-        }}
-        onEnded={() => {
-          setTimeout(() => {
-            onSplashEnded();
-          }, 900);
-        }}
         onClick={() => {
           onSplashEnded();
         }}
