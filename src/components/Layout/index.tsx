@@ -24,6 +24,11 @@ function Splash({ onSplashEnded }: { onSplashEnded: () => void }) {
             onSplashEnded();
           }, 1400);
         }}
+        onEnded={() => {
+          setTimeout(() => {
+            onSplashEnded();
+          }, 900);
+        }}
         onClick={() => {
           onSplashEnded();
         }}
