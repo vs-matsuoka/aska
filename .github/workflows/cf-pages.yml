@@ -71,6 +71,18 @@ jobs:
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.head_ref || github.ref_name }}
 
+      - name: Get retry count from last commit
+        if: steps.cloudflare_pages_deploy.outcome == 'failure'
+        id: get_last_commit_retry_count
+        run: |
+          echo "::set-output name=retry_count::$(git log --format=%B -n 1 | grep -oP 'ci: run \K\d+')"
+
+      - name: Empty commit
+        if: steps.cloudflare_pages_deploy.outcome == 'failure' && github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: ./.github/actions/commit-empty.yml
+        with:
+          count: ${{ (steps.get_last_commit_retry_count.outputs.retry_count != '' && steps.get_last_commit_retry_count.outputs.retry_count ) || 1 }}
+
       - name: Outputs
         run: |
           echo "ID: ${{ steps.cloudflare_pages_deploy.outputs.id }}"
