@@ -29,7 +29,7 @@ const Top: NextPageWithLayout = () => {
             <Image
               src="/Top/11_Top_pic_KeyVisual_Zeus.png"
               alt="zeus"
-              className={classNames('max-w-none', 'animate-zeus-float', { 'animate-redzone-left': redZone, 'animate-evans-left': evans })}
+              className={classNames('max-w-none', { 'animate-zeus-float': !redZone && !evans, 'animate-redzone-left': redZone, 'animate-evans-left': evans })}
               width={1250}
               height={1250}
             />
@@ -38,7 +38,7 @@ const Top: NextPageWithLayout = () => {
             <Image
               src="/Top/11_Top_pic_KeyVisual_Amatelas.png"
               alt="amatelas"
-              className={classNames('max-w-none', 'animate-amateras-float', { 'animate-redzone-right': redZone, 'animate-evans-right': evans })}
+              className={classNames('max-w-none', { 'animate-amateras-float': !redZone && !evans, 'animate-redzone-right': redZone, 'animate-evans-right': evans })}
               width={1250}
               height={1250}
             />
