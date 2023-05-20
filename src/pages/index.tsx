@@ -51,11 +51,11 @@ const Top: NextPageWithLayout = () => {
             <Image src="/Top/11_Top_pic_Logo.png" alt="logo" width={677} height={386} />
           </div>
           <div className="flex">
-            <div className="flex">
+            <div className="">
               <Image
                 src="/Top/11_Top_Text_12_Tate.png"
                 alt="left_text"
-                className="mr-6 max-w-none"
+                className="mr-6 mt-14 max-w-none"
                 width={175}
                 height={445}
                 onDoubleClick={() => {
@@ -95,11 +95,11 @@ const Top: NextPageWithLayout = () => {
                 </div>
               </div>
             </div>
-            <div className="flex">
+            <div className="">
               <Image
                 src="/Top/11_Top_Text_11_Tate.png"
                 alt="right_text"
-                className="ml-6 max-w-none"
+                className="ml-6 mt-16 max-w-none"
                 width={157}
                 height={432}
                 onDoubleClick={() => {
