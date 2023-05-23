@@ -7,14 +7,14 @@ import SpResponsiveImage from 'components/SpResponsiveImage';
 import entries, { Entry } from 'const/entries';
 
 function getEntryIcon(entry: Entry, index: number) {
-  if (entry.spIconSrc.includes('Secret')) {
-    return <SpResponsiveImage alt="icon" src={entry.spIconSrc} className="relative" width={125} height={125} key={index} />;
-  } else {
+  if (entry.isPublished) {
     return (
-      <Link href={'/sp/entries/' + entry.index.toString()} key={index} passHref>
-        <SpResponsiveImage alt="icon" src={entry.spIconSrc} className="relative" width={125} height={125} key={index} />
+      <Link href={`/sp/entries/${entry.index}`} key={index} passHref>
+        <SpResponsiveImage alt={entry.name} src={entry.spIconSrc} className="relative" width={125} height={125} key={index} />
       </Link>
     );
+  } else {
+    return <SpResponsiveImage alt={entry.name} src={entry.spIconSrc} className="relative" width={125} height={125} key={index} />;
   }
 }
 
@@ -59,19 +59,19 @@ const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
       <Background src="/SP/Entry_Detail/s22_Entry_BG.jpg" />
       {/* sp:top-[78px] */}
       <div className="relative top-[10.4vw]">
-        <SpResponsiveImage alt="kirinuki" src={props.kirinukiSrc} width={750} height={800} key={props.name} />
+        <SpResponsiveImage alt={props.name} src={props.kirinukiSrc} width={750} height={800} key={props.name} />
         {/* sp:top-[39px] sp:right-[31px] sp:gap-[14px] */}
-        <div className="absolute top-[5.2vw] right-[4.13333333vw] flex justify-center gap-[1.86666667vw]">
+        <div className="absolute right-[4.13333333vw] top-[5.2vw] flex justify-center gap-[1.86666667vw]">
           <a target="_blank" href={props.niconicoLink} rel="noopener noreferrer">
-            <SpResponsiveImage alt="niconico" src="/SP/Entry_Detail/s22_Button_11_SNS_NicoNico.png" className="relative" width={66} height={66} />
+            <SpResponsiveImage alt="ニコニコ動画" src="/SP/Entry_Detail/s22_Button_11_SNS_NicoNico.png" className="relative" width={66} height={66} />
           </a>
           {props.youtubeLink && (
             <a target="_blank" href={props.youtubeLink} rel="noopener noreferrer">
-              <SpResponsiveImage alt="youtube" src="/SP/Entry_Detail/s22_Button_12_SNS_Youtube.png" className="relative" width={66} height={66} />
+              <SpResponsiveImage alt="YouTube" src="/SP/Entry_Detail/s22_Button_12_SNS_Youtube.png" className="relative" width={66} height={66} />
             </a>
           )}
           <a target="_blank" href={props.twitterLink} rel="noopener noreferrer">
-            <SpResponsiveImage alt="twitter" src="/SP/Entry_Detail/s22_Button_13_SNS_Twitter.png" className="relative" width={66} height={66} />
+            <SpResponsiveImage alt="Twitter" src="/SP/Entry_Detail/s22_Button_13_SNS_Twitter.png" className="relative" width={66} height={66} />
           </a>
         </div>
         {/* sp:top-[671px] */}
@@ -80,11 +80,11 @@ const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
             <SpResponsiveImage alt="base" src="/SP/Entry_Detail/s22_Entry_Base.png" width={750} height={500} />
             {/* sp:top-[32px] */}
             <div className="absolute top-[4.26666667vw]">
-              <SpResponsiveImage alt="name" src={props.nameSrc} className="relative" width={750} height={250} key={props.name} />
+              <SpResponsiveImage alt={props.name} src={props.nameSrc} className="relative" width={750} height={250} key={props.name} />
             </div>
             {/* sp:top-[250px] sp:right-[40px] sp:text-[30px] */}
             <div
-              className="absolute top-[33.3333333vw] left-[20.6666667vw] skew-y-[-10deg] text-[4vw] tracking-[.07em] text-white"
+              className="absolute left-[20.6666667vw] top-[33.3333333vw] skew-y-[-10deg] text-[4vw] tracking-[.07em] text-white"
               style={{
                 fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
                 lineHeight: '1.3'

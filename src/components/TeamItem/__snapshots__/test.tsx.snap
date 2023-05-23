@@ -82,7 +82,7 @@ exports[`<TeamItem /> should render correctly 1`] = `
         style="width: 2.083333333333333vw; height: 2.083333333333333vw; object-fit: cover;"
       >
         <img
-          alt="niconico"
+          alt="ニコニコ動画"
           class="max-w-none"
           data-nimg="fill"
           decoding="async"

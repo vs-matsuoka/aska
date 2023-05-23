@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { useRouter } from 'next/router';
 import { useEffect, useRef, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
@@ -158,7 +159,7 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
 
   return (
     <>
-      <div className={onSplash ? '' : 'hidden'}>
+      <div className={classNames({ hidden: !onSplash })}>
         <Splash
           onSplashEnded={() => {
             setTimeout(async () => {
@@ -176,9 +177,9 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
         }}
       >
         <div className="pt-16"></div>
-        <div className={`relative flex items-center justify-center ${onSplash ? 'invisible -z-50' : ''}`} data-testid="children">
+        <main className={classNames(['relative', 'flex', 'items-center', 'justify-center', { invisible: onSplash, ['-z-50']: onSplash }])} data-testid="children">
           {children}
-        </div>
+        </main>
         <div className="absolute"></div>
         <div className="pointer-events-none absolute">
           <div
@@ -191,8 +192,8 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
             {/* 0pxにすると一番上からやってくる */}
             <div className={onSplash ? 'h-[0px]' : 'h-[74px]'}></div>
             <div className="overflow-hidden">
-              <animated.div className={`absolute h-full w-screen bg-mdmBlue ${hideSplashPaths ? 'hidden' : ''}`} style={{ ...splashBluePath }}></animated.div>
-              <animated.div className={`h-full w-screen bg-mdmBlue ${onSplash ? 'invisible' : ''}`} style={{ ...bluePath }}></animated.div>
+              <animated.div className={classNames('absolute', 'h-full', 'w-screen', 'bg-mdmBlue', { hidden: hideSplashPaths })} style={{ ...splashBluePath }}></animated.div>
+              <animated.div className={classNames('h-full', 'w-screen', 'bg-mdmBlue', { invisible: onSplash })} style={{ ...bluePath }}></animated.div>
             </div>
           </div>
         </div>
@@ -206,14 +207,14 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
           >
             <div className={onSplash ? 'h-[0px]' : 'h-[74px]'}></div>
             <div className="overflow-hidden">
-              <animated.div className={`absolute h-full w-screen bg-mdmRed ${hideSplashPaths ? 'hidden' : ''}`} style={{ ...splashRedPath }}></animated.div>
-              <animated.div className={`h-full w-screen bg-mdmRed ${onSplash ? 'invisible' : ''}`} style={{ ...redPath }}></animated.div>
+              <animated.div className={classNames('absolute', 'h-full', 'w-screen', 'bg-mdmRed', { hidden: hideSplashPaths })} style={{ ...splashRedPath }}></animated.div>
+              <animated.div className={classNames('h-full', 'w-screen', 'bg-mdmRed', { invisible: onSplash })} style={{ ...redPath }}></animated.div>
             </div>
           </div>
         </div>
-        <div className={`fixed w-full ${onSplash ? 'invisible' : ''}`}>
+        <header className={classNames('fixed', 'w-full', { invisible: onSplash })}>
           <MenuBar />
-        </div>
+        </header>
       </div>
     </>
   );

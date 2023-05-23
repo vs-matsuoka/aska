@@ -37,7 +37,7 @@ const TeamItem = ({ member }: TeamItemProps) => (
     <div className="absolute bottom-[13px] right-[9px] flex gap-x-[0.4166666667vw] 4xl:gap-x-[8px]">
       {member.niconicoLink ? (
         <a href={member.niconicoLink} target="_blank" rel="noopener noreferrer">
-          <ResponsiveImage src="/Team/51_Operation_SNS01_niconico.png" alt="niconico" width={40} height={40} />
+          <ResponsiveImage src="/Team/51_Operation_SNS01_niconico.png" alt="ニコニコ動画" width={40} height={40} />
         </a>
       ) : null}
       {member.youtubeLink ? (

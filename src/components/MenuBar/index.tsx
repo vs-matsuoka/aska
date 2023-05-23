@@ -80,17 +80,17 @@ const MenuBar = () => {
         />
       </div>
       <div className="absolute inset-1/2 top-[36px] flex flex-row items-center justify-center space-x-[37px]">
-        <MenuButton href="/" src="/MenuBar/00_Menu_Text_01.png" overlaySrc="/MenuBar/00_Menu_Text_Overlay_01.png" alt="top" alwaysOn={router.pathname === '/'} />
-        <MenuButton href="/about" src="/MenuBar/00_Menu_Text_02.png" overlaySrc="/MenuBar/00_Menu_Text_Overlay_02.png" alt="top" alwaysOn={router.pathname === '/about'} />
+        <MenuButton href="/" src="/MenuBar/00_Menu_Text_01.png" overlaySrc="/MenuBar/00_Menu_Text_Overlay_01.png" alt="トップ" alwaysOn={router.pathname === '/'} />
+        <MenuButton href="/about" src="/MenuBar/00_Menu_Text_02.png" overlaySrc="/MenuBar/00_Menu_Text_Overlay_02.png" alt="概要" alwaysOn={router.pathname === '/about'} />
         <MenuButton
           href="/entries"
           src="/MenuBar/00_Menu_Text_03.png"
           overlaySrc="/MenuBar/00_Menu_Text_Overlay_03.png"
-          alt="top"
+          alt="出場者"
           alwaysOn={router.pathname === '/entries' || router.pathname === '/pairs'}
         />
-        <MenuButton href="/movies" src="/MenuBar/00_Menu_Text_04.png" overlaySrc="/MenuBar/00_Menu_Text_Overlay_04.png" alt="top" alwaysOn={router.pathname === '/movies'} />
-        <MenuButton href="/team" src="/MenuBar/00_Menu_Text_05.png" overlaySrc="/MenuBar/00_Menu_Text_Overlay_05.png" alt="top" alwaysOn={router.pathname === '/team'} />
+        <MenuButton href="/movies" src="/MenuBar/00_Menu_Text_04.png" overlaySrc="/MenuBar/00_Menu_Text_Overlay_04.png" alt="ムービー" alwaysOn={router.pathname === '/movies'} />
+        <MenuButton href="/team" src="/MenuBar/00_Menu_Text_05.png" overlaySrc="/MenuBar/00_Menu_Text_Overlay_05.png" alt="運営" alwaysOn={router.pathname === '/team'} />
       </div>
     </div>
   );

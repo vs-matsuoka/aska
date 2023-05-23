@@ -44,7 +44,7 @@ function PairButton({ pair, onModalOpen }: { pair: Pair; onModalOpen: () => void
             onModalOpen();
           }}
         >
-          <ResponsiveImage src={pair.frameSrc} alt="pair" width={330} height={200} priority />
+          <ResponsiveImage src={pair.frameSrc} alt={pair.name} width={330} height={200} priority />
           <animated.div
             className="absolute left-[1.8229166667vw] top-[1.5104166667vw] h-[7.8125vw] w-[13.5416666666vw] skew-x-[-20deg] skew-y-[-11deg] bg-white 4xl:left-[35px] 4xl:top-[29px] 4xl:h-[150px] 4xl:w-[260px]"
             style={styles}
@@ -114,7 +114,7 @@ function ToggleEntriesButton() {
       <ResponsiveImage alt="conbi" src="/Pair/31_Pair_text_02_base.png" width={500} height={105} />
       <Link href="/entries" passHref>
         <div className="absolute left-0 top-0 transition hover:scale-125" onMouseEnter={trigger}>
-          <ResponsiveImage alt="conbi" src="/Pair/31_Pair_text_02.png" width={500} height={105} />
+          <ResponsiveImage alt="出場者紹介へ" src="/Pair/31_Pair_text_02.png" width={500} height={105} />
           <animated.div
             className="absolute left-0 top-0"
             style={{
@@ -123,7 +123,7 @@ function ToggleEntriesButton() {
             }}
           >
             <ResponsiveImage
-              alt="conbi"
+              alt="出場者紹介へ"
               src="/Pair/31_Pair_text_02.png"
               width={500}
               height={105}
@@ -157,8 +157,8 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
           .filter((pair) => pair.isPublished)
           .map((pair) => (
             <div key={pair.index}>
-              <ResponsiveImage src={pair.illustSrc} alt="pair" width={600} height={600} priority innerKey={`${pair.name}-illust`} />
-              <ResponsiveImage src={pair.nameSrc} alt="icon" width={690} height={90} priority innerKey={`${pair.name}-icon`} />
+              <ResponsiveImage src={pair.illustSrc} alt={pair.name} width={600} height={600} priority innerKey={`${pair.name}-illust`} />
+              <ResponsiveImage src={pair.nameSrc} alt={`${pair.name} アイコン`} width={690} height={90} priority innerKey={`${pair.name}-icon`} />
               <ResponsiveImage src={pair.hnASrc} alt="name" width={325} height={50} innerKey={`${pair.name}-hnA`} />
               <ResponsiveImage src={pair.hnBSrc} alt="name" width={325} height={50} innerKey={`${pair.name}-hnB`} />
             </div>
@@ -189,22 +189,30 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
               }}
             >
               <div>
-                <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="back" width={70} height={690} quality={100} />
+                <ResponsiveImage src="/Modal/22_Modal_Back.png" alt="前のコンビ" width={70} height={690} quality={100} />
               </div>
             </a>
             <div className="flex">
               <div className="my-auto h-auto">
-                <ResponsiveImage src={pair.illustSrc} alt="pair" innerClassName="animate-fade-in-from-left" width={600} height={600} priority innerKey={`${pair.name}-illust`} />
+                <ResponsiveImage
+                  src={pair.illustSrc}
+                  alt={pair.name}
+                  innerClassName="animate-fade-in-from-left"
+                  width={600}
+                  height={600}
+                  priority
+                  innerKey={`${pair.name}-illust`}
+                />
               </div>
               <div className="my-auto h-auto">
                 <div className="absolute right-[5.8854166667vw] top-[2.2395833333vw] 4xl:right-[113px] 4xl:top-[43px]" onClick={onClose}>
                   <a href="#">
-                    <ResponsiveImage src="/Modal/22_Modal_Close.png" alt="close" width={55} height={55} quality={100} />
+                    <ResponsiveImage src="/Modal/22_Modal_Close.png" alt="閉じる" width={55} height={55} quality={100} />
                   </a>
                 </div>
                 <div className="mb-[0.4166666667vw] 4xl:mb-[8px]">
                   <div className="mb-[0.3125vw] 4xl:mb-[6px]">
-                    <ResponsiveImage src={pair.nameSrc} alt="icon" width={690} height={90} priority innerKey={`${pair.name}-icon`} />
+                    <ResponsiveImage src={pair.nameSrc} alt={`${pair.name} アイコン`} width={690} height={90} priority innerKey={`${pair.name}-icon`} />
                   </div>
                   <div className="ml-[0.3645833333vw] flex gap-[0.7291666667vw] 4xl:ml-[7px] 4xl:gap-[14px]">
                     <ResponsiveImage src={pair.hnASrc} alt="name" width={325} height={50} priority innerKey={`${pair.name}-hnA`} />
@@ -231,7 +239,7 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
               }}
             >
               <div>
-                <ResponsiveImage src="/Modal/22_Modal_Next.png" alt="next" width={70} height={690} quality={100} />
+                <ResponsiveImage src="/Modal/22_Modal_Next.png" alt="次のコンビ" width={70} height={690} quality={100} />
               </div>
             </a>
           </div>
@@ -272,7 +280,7 @@ const Pairs: NextPageWithLayout = () => {
             <div className="relative">
               <div className="absolute left-[1.6666666667vw] top-[10vw] 4xl:left-[32px] 4xl:top-[192px]">
                 <div className="absolute left-[0.2604166667vw] top-[-12.1354166667vw] 4xl:left-[5px] 4xl:top-[-233px]">
-                  <ResponsiveImage alt="pair" src="/Pair/31_Pair_text_01.png" width={500} height={250} />
+                  <ResponsiveImage alt="コンビ" src="/Pair/31_Pair_text_01.png" width={500} height={250} />
                 </div>
                 {pairRows.map((row, index) => (
                   <PairRow key={index} pairs={row} offset={index * 46} onModalOpen={onOpen} />
