@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { ReactElement, useEffect, useState } from 'react';
 import YouTube from 'react-youtube';
 import { NextPageWithLayout } from './_app';
@@ -9,30 +10,34 @@ import movies from 'const/movies';
 import { Movie as MovieType } from 'const/movies';
 import useModal from 'hooks/useModal';
 
-function MovieModal({ isOpen, onClose, movie }: { isOpen: boolean; onClose: () => void; movie: MovieType }) {
+function MovieModal({ isOpen, onClose, movie }: { isOpen: boolean; onClose: () => void; movie?: MovieType }) {
   return (
-    <div className={`fixed inset-0 ${isOpen ? 'opacity-100' : 'opacity-0'} transition-all duration-200 ${isOpen ? '' : 'pointer-events-none'}`}>
+    <div className={classNames('fixed', 'inset-0', 'transition-all', 'duration-200', { ['opacity-100']: isOpen, ['opacity-0']: !isOpen, ['pointer-events-none']: !isOpen })}>
       <div className="flex h-full w-full items-center justify-center bg-black/50" onClick={onClose}>
-        <YouTube
-          videoId={movie.youtubeUrl.slice(17)}
-          opts={{
-            width: '1280',
-            height: '720'
-          }}
-          key={movie.youtubeUrl}
-        />
+        {movie ? (
+          <YouTube
+            videoId={movie.youtubeUrl.slice(17)}
+            opts={{
+              width: '1280',
+              height: '720'
+            }}
+            key={movie.youtubeUrl}
+          />
+        ) : (
+          ''
+        )}
       </div>
     </div>
   );
 }
 
 const Movies: NextPageWithLayout = () => {
-  const { isOpen, onOpen, onClose } = useModal();
-  const [selectedMovie, setSelectedMovie] = useState(movies.genericNotices[0]);
-  useEffect(() => {
-    // FUCK
-    // window.FONTPLUS.reload();
-  }, []);
+  const { isOpen, onOpen, onClose: onModalClose } = useModal();
+  const [selectedMovie, setSelectedMovie] = useState<MovieType | undefined>(undefined);
+  const onClose = () => {
+    setSelectedMovie(undefined);
+    onModalClose();
+  };
   return (
     <>
       <SEO title="ムービー" />
