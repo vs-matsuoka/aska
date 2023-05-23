@@ -45,9 +45,9 @@ const Movies: NextPageWithLayout = () => {
       >
         <div className="py-[13.4375vw] 4xl:py-[258px]">
           {/* 特別告知 */}
-          <div className="grid place-items-center">
-            <ResponsiveImage src="/Movie/61_Movie_Line_01.png" alt="grad" width={1050} height={140} />
-          </div>
+          <h1 className="grid place-items-center">
+            <ResponsiveImage src="/Movie/61_Movie_Line_01.png" alt="特別告知" width={1050} height={140} />
+          </h1>
           <div className="mt-[0.5208333333vw] 4xl:mt-[10px]">
             <div className="mx-auto grid w-[85.15625vw] grid-cols-[repeat(4,1fr)] justify-center gap-x-[1.71875vw] gap-y-[1.0416666667vw] 4xl:w-[1635px] 4xl:gap-x-[33px] 4xl:gap-y-[20px]">
               {movies.specialNotices.map((item) => (
@@ -66,9 +66,9 @@ const Movies: NextPageWithLayout = () => {
             </div>
           </div>
           {/* コンビ告知 */}
-          <div className="mt-[1.25vw] grid place-items-center 4xl:mt-[24px]">
-            <ResponsiveImage src="/Movie/61_Movie_Line_02.png" alt="grad" width={1050} height={140} />
-          </div>
+          <h1 className="mt-[1.25vw] grid place-items-center 4xl:mt-[24px]">
+            <ResponsiveImage src="/Movie/61_Movie_Line_02.png" alt="コンビ告知" width={1050} height={140} />
+          </h1>
           <div className="mt-[0.5208333333vw] 4xl:mt-[10px]">
             <div className="mx-auto grid w-[85.15625vw] grid-cols-[repeat(4,1fr)] justify-center gap-x-[1.71875vw] gap-y-[1.0416666667vw] 4xl:w-[1635px] 4xl:gap-x-[33px] 4xl:gap-y-[20px]">
               {movies.genericNotices.map((item) => (
@@ -87,9 +87,9 @@ const Movies: NextPageWithLayout = () => {
             </div>
           </div>
           {/* 事前番組 */}
-          <div className="mt-[1.25vw] grid place-items-center 4xl:mt-[24px]">
-            <ResponsiveImage src="/Movie/61_Movie_Line_03.png" alt="grad" width={1050} height={140} />
-          </div>
+          <h1 className="mt-[1.25vw] grid place-items-center 4xl:mt-[24px]">
+            <ResponsiveImage src="/Movie/61_Movie_Line_03.png" alt="事前番組" width={1050} height={140} />
+          </h1>
           <div className="mt-[0.5208333333vw] 4xl:mt-[10px]">
             <div className="mx-auto grid w-[85.15625vw] grid-cols-[repeat(4,1fr)] justify-center gap-x-[1.71875vw] gap-y-[1.0416666667vw] 4xl:w-[1635px] 4xl:gap-x-[33px] 4xl:gap-y-[20px]">
               {movies.specialPrograms.map((item) => (
@@ -107,9 +107,9 @@ const Movies: NextPageWithLayout = () => {
               ))}
             </div>
           </div>
-          {/* 制作メンバーは随時更新! */}
+          {/* 最新映像は随時更新! */}
           <div className="my-[0.5208333333vw] grid place-items-center 4xl:my-[10px]">
-            <ResponsiveImage src="/Movie/61_Movie_Text_01.png" alt="grad" width={800} height={140} />
+            <ResponsiveImage src="/Movie/61_Movie_Text_01.png" alt="最新映像は随時更新!" width={800} height={140} />
           </div>
         </div>
       </div>

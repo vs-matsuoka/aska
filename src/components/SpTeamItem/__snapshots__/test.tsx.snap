@@ -63,7 +63,7 @@ exports[`<SpTeamItem /> should render the heading 1`] = `
             style="width: 7.333333333333333vw; height: 7.333333333333333vw;"
           >
             <img
-              alt="niconico"
+              alt="ニコニコ動画"
               class="max-w-none"
               data-nimg="fill"
               decoding="async"
@@ -83,7 +83,7 @@ exports[`<SpTeamItem /> should render the heading 1`] = `
             style="width: 7.333333333333333vw; height: 7.333333333333333vw;"
           >
             <img
-              alt="youtube"
+              alt="YouTube"
               class="max-w-none"
               data-nimg="fill"
               decoding="async"
@@ -105,7 +105,7 @@ exports[`<SpTeamItem /> should render the heading 1`] = `
             style="width: 7.333333333333333vw; height: 7.333333333333333vw;"
           >
             <img
-              alt="twitter"
+              alt="Twitter"
               class="max-w-none"
               data-nimg="fill"
               decoding="async"

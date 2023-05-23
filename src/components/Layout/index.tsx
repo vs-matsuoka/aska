@@ -211,9 +211,9 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
             </div>
           </div>
         </div>
-        <div className={`fixed w-full ${onSplash ? 'invisible' : ''}`}>
+        <header className={`fixed w-full ${onSplash ? 'invisible' : ''}`}>
           <MenuBar />
-        </div>
+        </header>
       </div>
     </>
   );
