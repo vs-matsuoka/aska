@@ -2,16 +2,17 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import urlJoin from 'url-join';
 
-const SEO = ({ title: givenTitle, description }: { title?: string; description?: string }) => {
+const SEO = ({ title: givenTitle, description: givenDescription }: { title?: string; description?: string }) => {
   const router = useRouter();
   const siteName = '音MAD DREAM MATCH -天-';
   const url = urlJoin('https://otomdm-ten.com', router.asPath);
   const ogpImage = urlJoin('https://otomdm-ten.com', 'OGP.png');
   const title = (givenTitle ? `${givenTitle} | ` : '') + siteName;
+  const description = givenDescription ?? '2023年9月17日、究極の音MADマッチングバラエティが再び幕を開ける！';
   return (
     <Head>
       <title>{title}</title>
-      {description ?? <meta name="description" content={description} />}
+      <meta name="description" content={description} />
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
       <meta property="og:site_name" content={siteName} />
