@@ -34,7 +34,7 @@ const MovieCard = ({ item, key }: { item: Movie; key: number }) => {
       <a href={item.youtubeUrl} target="_blank">
         <MovieThumbnailResponsiveImage
           className="relative"
-          src={'https://img.youtube.com/vi/' + item.youtubeUrl.slice(17) + '/sddefault.jpg'}
+          src={item.thumbnail ? item.thumbnail : 'https://img.youtube.com/vi/' + item.youtubeUrl.slice(17) + '/sddefault.jpg'}
           alt={item.title}
           width={222}
           height={125}
