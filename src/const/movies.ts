@@ -115,7 +115,7 @@ const movies: {
       index: 14,
       title: '第14弾告知',
       youtubeUrl: '',
-      thumbnail: '/Movie/thumbnail.png'
+      thumbnail: '/Movie/thumbnail/thumbnail.png'
     }
   ],
   // 事前番組
