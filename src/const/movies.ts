@@ -115,7 +115,7 @@ const movies: {
       index: 14,
       title: '第14弾告知',
       youtubeUrl: 'https://youtu.be/PGISH8019XM',
-      thumbnail: '/Movie/thumbnail/pair14.png'
+      thumbnail: '/Movie/thumbnails/pair14.png'
     }
   ],
   // 事前番組
