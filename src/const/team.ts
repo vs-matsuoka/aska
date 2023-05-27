@@ -336,6 +336,14 @@ const team: {
       niconicoLink: 'https://www.nicovideo.jp/user/90820019',
       youtubeLink: 'https://www.youtube.com/@Lixy2item',
       twitterLink: 'https://twitter.com/YesoftenmeansNo'
+    },
+    {
+      name: '大内乙打',
+      role: '特番制作',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_大内乙打.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/6641990',
+      youtubeLink: 'https://www.youtube.com/@user-gk6gv2bq4x',
+      twitterLink: 'https://twitter.com/OZd_oouc2'
     }
   ]
 };
