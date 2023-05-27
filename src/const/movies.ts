@@ -114,7 +114,7 @@ const movies: {
     {
       index: 14,
       title: '第14弾告知',
-      youtubeUrl: '',
+      youtubeUrl: 'https://youtu.be/PGISH8019XM',
       thumbnail: '/Movie/thumbnail/pair14.png'
     }
   ],
