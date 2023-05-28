@@ -7,14 +7,14 @@ import SpResponsiveImage from 'components/SpResponsiveImage';
 import pairs, { Pair } from 'const/pairs';
 
 function getPairIcon(pair: Pair, index: number) {
-  if (pair.spIconSrc.includes('secret')) {
-    return <SpResponsiveImage alt="icon" src={pair.spIconSrc} className="relative" width={335} height={125} key={index} />;
-  } else {
+  if (pair.isPublished) {
     return (
-      <Link href={'/sp/pairs/' + pair.index.toString()} key={index} passHref>
-        <SpResponsiveImage alt="icon" src={pair.spIconSrc} className="relative" width={335} height={125} key={index} />
+      <Link href={`/sp/pairs/${pair.index}`} key={index} passHref>
+        <SpResponsiveImage alt={pair.name} src={pair.spIconSrc} className="relative" width={335} height={125} key={index} />
       </Link>
     );
+  } else {
+    return <SpResponsiveImage alt={pair.name} src={pair.spIconSrc} className="relative" width={335} height={125} key={index} />;
   }
 }
 
@@ -63,19 +63,19 @@ const PairPage: NextPage<PairProps> = (props: PairProps) => {
             <SpResponsiveImage alt="base" src="/SP/Pair_Detail/s32_Entry_Base.png" className="" width={750} height={500} />
             {/* sp:top-[50px] */}
             <div className="absolute top-[6.66666667vw]">
-              <SpResponsiveImage alt="name" src={props.nameSrc} className="relative" width={750} height={250} key={props.name} />
+              <SpResponsiveImage alt={props.name} src={props.nameSrc} className="relative" width={750} height={250} key={props.name} />
             </div>
             {/* sp:top-[254px] sp:left-[32px] */}
-            <div className="absolute top-[33.86666667vw] left-[4.26666667vw]">
+            <div className="absolute left-[4.26666667vw] top-[33.86666667vw]">
               <SpResponsiveImage alt="baseA" src={props.baseASrc} className="relative" width={335} height={200} key={props.name} />
             </div>
             {/* sp:top-[192px] sp:right-[32px] */}
-            <div className="absolute top-[25.6vw] right-[4.26666667vw]">
+            <div className="absolute right-[4.26666667vw] top-[25.6vw]">
               <SpResponsiveImage alt="baseB" src={props.baseBSrc} className="relative" width={335} height={200} key={props.name} />
             </div>
             {/* sp:top-[298px] sp:left-[350px] */}
-            <div className="absolute top-[39.73333333vw] left-[46.6666667vw]">
-              <SpResponsiveImage alt="and" src="/SP/Pair_Detail/s32_Pair_And.png" className="relative" width={50} height={50} />
+            <div className="absolute left-[46.6666667vw] top-[39.73333333vw]">
+              <SpResponsiveImage alt="✕" src="/SP/Pair_Detail/s32_Pair_And.png" className="relative" width={50} height={50} />
             </div>
           </div>
         </div>

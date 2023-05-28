@@ -1,0 +1,40 @@
+name: Commit Empty
+
+on:
+  workflow_call:
+    inputs:
+      count:
+        description: 'Number of retries'
+        required: true
+        type: number
+        default: 1
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Number of retries'
+        required: true
+        type: number
+        default: 1
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate GitHub Apps token
+        id: generate
+        uses: tibdex/github-app-token@v1
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ steps.generate.outputs.token }}
+
+      - name: Commit Empty
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "ci: run ${{ github.event.inputs.count }} time(s)"
+          git push

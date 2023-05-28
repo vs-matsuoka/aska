@@ -50,7 +50,7 @@ const Movie = ({ movie, onClick, onMouseEnter }: { movie: MovieType; onClick: ()
       <div className="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]">
         <MovieThumbnailResponsiveImage
           className="relative"
-          src={'https://img.youtube.com/vi/' + movie.youtubeUrl.slice(17) + '/sddefault.jpg'}
+          src={movie.thumbnail ? movie.thumbnail : 'https://img.youtube.com/vi/' + movie.youtubeUrl.slice(17) + '/sddefault.jpg'}
           alt="thumbnail"
           width={384}
           height={216}

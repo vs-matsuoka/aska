@@ -61,7 +61,7 @@ const team: {
       role: '放送ディレクター',
       iconSrc: '/Icon/運営/運営_icon_埜村武.jpg',
       twitterLink: 'https://twitter.com/nomuratakeshi2',
-      youtubeLink: undefined,
+      youtubeLink: 'https://www.youtube.com/@nomuratakeshi',
       niconicoLink: 'https://www.nicovideo.jp/user/14019936'
     },
     {
@@ -77,7 +77,7 @@ const team: {
       role: '特番ディレクター',
       iconSrc: '/Icon/運営/運営_icon_ふーふー.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/20600830',
-      youtubeLink: undefined,
+      youtubeLink: 'https://www.youtube.com/channel/UCapOg6vYOn4WVlwyetUPrMw',
       twitterLink: 'https://twitter.com/nanana555'
     },
     {
@@ -336,6 +336,14 @@ const team: {
       niconicoLink: 'https://www.nicovideo.jp/user/90820019',
       youtubeLink: 'https://www.youtube.com/@Lixy2item',
       twitterLink: 'https://twitter.com/YesoftenmeansNo'
+    },
+    {
+      name: '大内乙打',
+      role: '特番制作',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_大内乙打.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/6641990',
+      youtubeLink: 'https://www.youtube.com/@user-gk6gv2bq4x',
+      twitterLink: 'https://twitter.com/OZd_oouc2'
     }
   ]
 };

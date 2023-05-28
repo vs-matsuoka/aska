@@ -34,8 +34,8 @@ const MovieCard = ({ item, key }: { item: Movie; key: number }) => {
       <a href={item.youtubeUrl} target="_blank">
         <MovieThumbnailResponsiveImage
           className="relative"
-          src={'https://img.youtube.com/vi/' + item.youtubeUrl.slice(17) + '/sddefault.jpg'}
-          alt="thumbnail"
+          src={item.thumbnail ? item.thumbnail : 'https://img.youtube.com/vi/' + item.youtubeUrl.slice(17) + '/sddefault.jpg'}
+          alt={item.title}
           width={222}
           height={125}
           key={key}
@@ -71,61 +71,68 @@ export default function Movies() {
       <SEO title="ムービー" />
       <Background src="/SP/Movie/s51_BG.jpg" />
       {/* sp:pt-[27px] */}
-      <div
-        className="flex justify-center pt-[3.6vw]"
-        style={{
-          fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
-          lineHeight: '1'
-        }}
-      >
-        {/* sp:w-[75px] sp:h-[700px] sp:text-[40px] */}
-        <div className="relative flex h-[10vw] w-[93.3333333vw] items-center justify-center bg-gradient-to-t from-[#CCAD70] to-[#B99855] text-[5.3333333vw]">特別告知</div>
-      </div>
-      {/* sp:mx-[25px] sp:mt-[15px] sp-gap[15px] sp:text-[40px] */}
-      <div className="relative mx-[3.3333333vw] mt-[2vw] grid grid-cols-3 justify-items-center gap-[2vw]">
-        {movies.specialNotices.map((item, index) => (
-          <MovieCard item={item} key={index} />
-        ))}
-      </div>
+      <section>
+        <h1
+          className="flex justify-center pt-[3.6vw]"
+          style={{
+            fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
+            lineHeight: '1'
+          }}
+        >
+          {/* sp:w-[75px] sp:h-[700px] sp:text-[40px] */}
+          <div className="relative flex h-[10vw] w-[93.3333333vw] items-center justify-center bg-gradient-to-t from-[#CCAD70] to-[#B99855] text-[5.3333333vw]">特別告知</div>
+        </h1>
+        {/* sp:mx-[25px] sp:mt-[15px] sp-gap[15px] sp:text-[40px] */}
+        <div className="relative mx-[3.3333333vw] mt-[2vw] grid grid-cols-3 justify-items-center gap-[2vw]">
+          {movies.specialNotices.map((item, index) => (
+            <MovieCard item={item} key={index} />
+          ))}
+        </div>
+      </section>
 
       {/* sp:pt-[25px] */}
-      <div
-        className="flex justify-center pt-[3.3333333vw]"
-        style={{
-          fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
-          lineHeight: '1'
-        }}
-      >
-        {/* sp:w-[75px] sp:h-[700px] sp:text-[40px] */}
-        <div className="relative flex h-[10vw] w-[93.3333333vw] items-center justify-center bg-gradient-to-t from-[#CCAD70] to-[#B99855] text-[5.3333333vw]">コンビ告知</div>
-      </div>
-      {/* sp:mx-[25px] sp:mt-[15px] sp-gap[15px] sp:text-[40px] */}
-      <div className="relative mx-[3.3333333vw] mt-[2vw] grid grid-cols-3 justify-items-center gap-[2vw]">
-        {movies.genericNotices.map((item, index) => (
-          <MovieCard item={item} key={index} />
-        ))}
-      </div>
+      <section>
+        <h1
+          className="flex justify-center pt-[3.3333333vw]"
+          style={{
+            fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
+            lineHeight: '1'
+          }}
+        >
+          {/* sp:w-[75px] sp:h-[700px] sp:text-[40px] */}
+          <div className="relative flex h-[10vw] w-[93.3333333vw] items-center justify-center bg-gradient-to-t from-[#CCAD70] to-[#B99855] text-[5.3333333vw]">コンビ告知</div>
+        </h1>
+        {/* sp:mx-[25px] sp:mt-[15px] sp-gap[15px] sp:text-[40px] */}
+        <div className="relative mx-[3.3333333vw] mt-[2vw] grid grid-cols-3 justify-items-center gap-[2vw]">
+          {movies.genericNotices.map((item, index) => (
+            <MovieCard item={item} key={index} />
+          ))}
+        </div>
+      </section>
 
       {/* sp:pt-[25px] */}
-      <div
-        className="flex justify-center pt-[3.3333333vw]"
-        style={{
-          fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
-          lineHeight: '1'
-        }}
-      >
-        {/* sp:w-[75px] sp:h-[700px] sp:text-[40px] */}
-        <div className="relative flex h-[10vw] w-[93.3333333vw] items-center justify-center bg-gradient-to-t from-[#CCAD70] to-[#B99855] text-[5.3333333vw]">事前番組</div>
-      </div>
-      {/* sp:mx-[25px] sp:mt-[15px] sp-gap[15px] sp:text-[40px] */}
-      <div className="relative mx-[3.3333333vw] mt-[2vw] grid grid-cols-3 justify-items-center gap-[2vw]">
-        {movies.specialPrograms.map((item, index) => (
-          <MovieCard item={item} key={index} />
-        ))}
-      </div>
+      <section>
+        <h1
+          className="flex justify-center pt-[3.3333333vw]"
+          style={{
+            fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
+            lineHeight: '1'
+          }}
+        >
+          {/* sp:w-[75px] sp:h-[700px] sp:text-[40px] */}
+          <div className="relative flex h-[10vw] w-[93.3333333vw] items-center justify-center bg-gradient-to-t from-[#CCAD70] to-[#B99855] text-[5.3333333vw]">事前番組</div>
+        </h1>
+        {/* sp:mx-[25px] sp:mt-[15px] sp-gap[15px] sp:text-[40px] */}
+        <div className="relative mx-[3.3333333vw] mt-[2vw] grid grid-cols-3 justify-items-center gap-[2vw]">
+          {movies.specialPrograms.map((item, index) => (
+            <MovieCard item={item} key={index} />
+          ))}
+        </div>
+      </section>
+
       {/* sp:mt-[15px] */}
       <div className="mt-[2vw] flex justify-center">
-        <SpResponsiveImage className="relative" src="/SP/Movie/s61_Movie_Text_01.png" alt="comingsoon" width={600} height={105} />
+        <SpResponsiveImage className="relative" src="/SP/Movie/s61_Movie_Text_01.png" alt="最新映像は随時更新!" width={600} height={105} />
       </div>
 
       <div className="mt-[16.6666667vw]">&nbsp;</div>
