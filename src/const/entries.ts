@@ -88,7 +88,7 @@ const entries: Entry[] = [
     spDescription: '話題作の一方で、マイナー素材も駆使\n卓越した技術と豪快な仕掛けで魅了する\n計算された要素の洪水が押し寄せる！',
     iconAlt: '',
     description:
-      'デレマスやダメ万で話題作を輩出しながら、マイナー素材も駆使\n卓越した映像技術に裏打ちされた豪快な仕掛けで魅了する作者\n計算された要素の洪水がぽいすぽぽいすぽすぽすぽいぽいすすぽ',
+      'デレマスやダメ万で話題作を出しながら、マイナー素材も駆使\n卓越した映像技術に裏打ちされた豪快な仕掛けで魅了する作者\n計算された要素の洪水がぽいすぽぽいすぽすぽすぽいぽいすすぽ',
     niconicoLink: 'https://www.nicovideo.jp/user/64703247',
     youtubeLink: 'https://www.youtube.com/@user-sg9do6xx8b',
     twitterLink: 'https://twitter.com/immortalt_',
@@ -676,7 +676,7 @@ const entries: Entry[] = [
     spDescription: 'スパイダーマを中心に手を伸ばし\nどんな素材も物にする期待の新星\nフレッシュな旋風を巻き起こす！',
     iconAlt: '',
     description:
-      'Vtuberやスパイダーマなど、様々な素材に次々と手を伸ばし\nそのどれもを的確にコントロールする技量を持つ期待の新星\n「わたくし」的センスでフレッシュな旋風を巻き起こす！',
+      'VTuberやスパイダーマなど、様々な素材に次々と手を伸ばし\nそのどれもを的確にコントロールする技量を持つ期待の新星\n「わたくし」的センスでフレッシュな旋風を巻き起こす！',
     niconicoLink: 'https://www.nicovideo.jp/user/93606868',
     youtubeLink: 'https://www.youtube.com/@user-gs9ru2nb8l',
     twitterLink: 'https://twitter.com/watakushiiiii',
