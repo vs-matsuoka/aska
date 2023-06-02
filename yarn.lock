@@ -4747,23 +4747,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:*":
-  version: 29.0.3
-  resolution: "@types/jest@npm:29.0.3"
+"@types/jest@npm:*, @types/jest@npm:^29.5.1":
+  version: 29.5.2
+  resolution: "@types/jest@npm:29.5.2"
   dependencies:
     expect: ^29.0.0
     pretty-format: ^29.0.0
-  checksum: 14a8ec1954540ec59f4072c3c4dbc6b5d5ff616556c98671aca26606bdf9d49616a3f269f3e488c80cd481ee19880351575c1f6895827628818e193600c121e0
-  languageName: node
-  linkType: hard
-
-"@types/jest@npm:^29.5.1":
-  version: 29.5.1
-  resolution: "@types/jest@npm:29.5.1"
-  dependencies:
-    expect: ^29.0.0
-    pretty-format: ^29.0.0
-  checksum: 0a22491dec86333c0e92b897be2c809c922a7b2b0aa5604ac369810d6b2360908b4a3f2c6892e8a237a54fa1f10ecefe0e823ec5fcb7915195af4dfe88d2197e
+  checksum: 7d205599ea3cccc262bad5cc173d3242d6bf8138c99458509230e4ecef07a52d6ddcde5a1dbd49ace655c0af51d2dbadef3748697292ea4d86da19d9e03e19c0
   languageName: node
   linkType: hard
 
