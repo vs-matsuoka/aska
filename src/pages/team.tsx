@@ -14,13 +14,7 @@ const Team: NextPageWithLayout = () => {
   return (
     <>
       <SEO title="運営" />
-      <div
-        className="w-full overflow-y-scroll bg-[url('/Team/51_BG.jpg')] bg-cover bg-local"
-        style={{
-          // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
-          height: 'calc(100vh - 4rem)'
-        }}
-      >
+      <div className="bg-[url('/Team/51_BG.jpg')] bg-cover bg-local">
         <div className="py-[13.4375vw] 4xl:py-[258px]">
           {/* 運営 */}
           <section>
