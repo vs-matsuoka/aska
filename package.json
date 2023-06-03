@@ -76,7 +76,8 @@
     "util": "^0.12.5"
   },
   "resolutions": {
-    "webpack": "^5"
+    "webpack": "^5",
+    "@types/react": "17.0.40"
   },
   "packageManager": "yarn@3.6.0"
 }
