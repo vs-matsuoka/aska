@@ -147,13 +147,7 @@ const About: NextPageWithLayout = () => {
   return (
     <>
       <SEO title="概要" />
-      <div
-        className="relative w-full justify-center overflow-x-hidden overflow-y-scroll bg-[url('/Concept/41_Pic_BG.jpg')] bg-cover bg-local"
-        style={{
-          // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
-          height: 'calc(100vh - 4rem)'
-        }}
-      >
+      <div className="overflow-x-hidden bg-[url('/Concept/41_Pic_BG.jpg')] bg-cover bg-local">
         <section>
           <div className="absolute w-full">
             <Image src="/Concept/41_pic_Base_C.png" alt="logo" sizes="100vw" className="h-auto w-full" width={1920} height={750} />

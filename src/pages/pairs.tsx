@@ -268,14 +268,7 @@ const Pairs: NextPageWithLayout = () => {
       <Background src="/Pair/31_Pair_pic_BG.jpg" />
       <Background src="/Pair/31_Pair_pic_vignette.png" />
       <PairProvider>
-        <div
-          className="flex w-full justify-center overflow-x-hidden"
-          style={{
-            // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
-            height: 'calc(100vh - 4rem)'
-          }}
-        >
-          {/* <Head></Head> */}
+        <div className="flex h-full items-center justify-center">
           <div className="relative my-auto h-[46.875vw] w-[82.8125vw] 4xl:h-[900px] 4xl:w-[1590px]">
             <div className="relative">
               <div className="absolute left-[1.6666666667vw] top-[10vw] 4xl:left-[32px] 4xl:top-[192px]">
