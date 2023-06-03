@@ -169,52 +169,50 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
         />
       </div>
       <div
-        className="grid min-h-screen w-full justify-center overflow-hidden"
-        // <div className="relative flex h-screen w-full items-center justify-center overflow-hidden">
+        className="grid min-h-screen w-full"
         style={{
-          gridTemplateRows: 'auto 1fr',
+          gridTemplateRows: 'auto auto 1fr',
           gridTemplateColumns: '100%'
         }}
       >
-        <div className="pt-16"></div>
-        <main className={classNames(['relative', 'flex', 'items-center', 'justify-center', { invisible: onSplash, ['-z-50']: onSplash }])} data-testid="children">
-          {children}
-        </main>
-        <div className="absolute"></div>
-        <div className="pointer-events-none absolute">
-          <div
-            className="pointer-events-none grid min-h-screen w-full justify-center"
-            style={{
-              gridTemplateRows: 'auto 1fr',
-              gridTemplateColumns: '100%'
-            }}
-          >
-            {/* 0pxにすると一番上からやってくる */}
-            <div className={onSplash ? 'h-[0px]' : 'h-[74px]'}></div>
-            <div className="overflow-hidden">
-              <animated.div className={classNames('absolute', 'h-full', 'w-screen', 'bg-mdmBlue', { hidden: hideSplashPaths })} style={{ ...splashBluePath }}></animated.div>
-              <animated.div className={classNames('h-full', 'w-screen', 'bg-mdmBlue', { invisible: onSplash })} style={{ ...bluePath }}></animated.div>
-            </div>
-          </div>
-        </div>
-        <div className="pointer-events-none absolute">
-          <div
-            className="pointer-events-none grid min-h-screen w-full justify-center"
-            style={{
-              gridTemplateRows: 'auto 1fr',
-              gridTemplateColumns: '100%'
-            }}
-          >
-            <div className={onSplash ? 'h-[0px]' : 'h-[74px]'}></div>
-            <div className="overflow-hidden">
-              <animated.div className={classNames('absolute', 'h-full', 'w-screen', 'bg-mdmRed', { hidden: hideSplashPaths })} style={{ ...splashRedPath }}></animated.div>
-              <animated.div className={classNames('h-full', 'w-screen', 'bg-mdmRed', { invisible: onSplash })} style={{ ...redPath }}></animated.div>
-            </div>
-          </div>
-        </div>
-        <header className={classNames('fixed', 'w-full', { invisible: onSplash })}>
+        <header className={classNames('sticky', 'top-0', 'z-50', { invisible: onSplash })}>
           <MenuBar />
         </header>
+        <div className="pt-16"></div>
+        <main className={classNames(['w-full', 'h-full', { invisible: onSplash, ['-z-50']: onSplash }])} data-testid="children">
+          {children}
+        </main>
+      </div>
+      <div className="pointer-events-none fixed inset-0">
+        <div
+          className="grid min-h-screen w-full justify-center"
+          style={{
+            gridTemplateRows: 'auto 1fr',
+            gridTemplateColumns: '100%'
+          }}
+        >
+          {/* 0pxにすると一番上からやってくる */}
+          <div className={onSplash ? 'h-[0px]' : 'h-[74px]'}></div>
+          <div className="overflow-hidden">
+            <animated.div className={classNames('absolute', 'h-full', 'w-full', 'bg-mdmBlue', { hidden: hideSplashPaths })} style={{ ...splashBluePath }}></animated.div>
+            <animated.div className={classNames('h-full', 'w-full', 'bg-mdmBlue', { invisible: onSplash })} style={{ ...bluePath }}></animated.div>
+          </div>
+        </div>
+      </div>
+      <div className="pointer-events-none fixed inset-0">
+        <div
+          className="grid min-h-screen w-full justify-center"
+          style={{
+            gridTemplateRows: 'auto 1fr',
+            gridTemplateColumns: '100%'
+          }}
+        >
+          <div className={onSplash ? 'h-[0px]' : 'h-[74px]'}></div>
+          <div className="overflow-hidden">
+            <animated.div className={classNames('absolute', 'h-full', 'w-full', 'bg-mdmRed', { hidden: hideSplashPaths })} style={{ ...splashRedPath }}></animated.div>
+            <animated.div className={classNames('h-full', 'w-full', 'bg-mdmRed', { invisible: onSplash })} style={{ ...redPath }}></animated.div>
+          </div>
+        </div>
       </div>
     </>
   );
