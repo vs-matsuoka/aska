@@ -168,11 +168,18 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
           }}
         />
       </div>
-      <div className="h-full w-full">
+      <div
+        className="grid min-h-screen w-full"
+        style={{
+          gridTemplateRows: 'auto auto 1fr',
+          gridTemplateColumns: '100%'
+        }}
+      >
         <header className={classNames('sticky', 'top-0', 'z-50', { invisible: onSplash })}>
           <MenuBar />
         </header>
-        <main className={classNames(['pt-16', 'w-full', 'h-full', { invisible: onSplash, ['-z-50']: onSplash }])} data-testid="children">
+        <div className="pt-16"></div>
+        <main className={classNames(['w-full', 'h-full', { invisible: onSplash, ['-z-50']: onSplash }])} data-testid="children">
           {children}
         </main>
       </div>
