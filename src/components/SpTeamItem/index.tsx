@@ -36,7 +36,7 @@ const NullableButton = ({ href, children }: { href?: string; children: React.Rea
 
 const SpTeamItem = ({ member }: { member: TeamMember }) => (
   // sp:h-[75px] sp:w-[700px] sp:border-[2px]
-  <div className="h-[10vw] w-[93.3333333333vw] border-[0.2666666667vw] border-[#ccad70] bg-gradient-to-t from-[#262426] to-[#3a393a]">
+  <div className="h-[10vw] w-[93.3333333333vw] border-[0.2666666667vw] border-mdmGold bg-gradient-to-t from-[#262426] to-[#3a393a]">
     {/* sp:gap-[6px] */}
     <div className="flex gap-[0.8vw]">
       {/* sp:my-[8px] sp:ml-[9px] */}
@@ -58,7 +58,7 @@ const SpTeamItem = ({ member }: { member: TeamMember }) => (
           {member.role}
         </p>
         {/* sp:ml-[15px] sp:mt-[3px] sp:text-[36px] */}
-        <p className="ml-[2vw] mt-[0.5333333333vw] text-[4.8vw] text-[#CCAD70]" data-testid="name">
+        <p className="ml-[2vw] mt-[0.5333333333vw] text-[4.8vw] text-mdmGold" data-testid="name">
           {member.name}
         </p>
       </div>

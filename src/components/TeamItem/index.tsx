@@ -6,7 +6,7 @@ type TeamItemProps = {
 };
 
 const TeamItem = ({ member }: TeamItemProps) => (
-  <div className="relative h-[7.2916666667vw] w-[16.6666666667vw] border-[0.2083333333vw] border-[#ccad70] bg-gradient-to-t from-[#262426] via-[#262426] to-[#3a393a] 4xl:h-[140px] 4xl:w-[320px] 4xl:border-[4px]">
+  <div className="relative h-[7.2916666667vw] w-[16.6666666667vw] border-[0.2083333333vw] border-mdmGold bg-gradient-to-t from-[#262426] via-[#262426] to-[#3a393a] 4xl:h-[140px] 4xl:w-[320px] 4xl:border-[4px]">
     <div className="absolute ml-[-0.2083333333vw] mt-[-0.2083333333vw] 4xl:ml-[-4px] 4xl:mt-[-4px]">
       <ResponsiveImage src="/Team/grad_long.png" alt="grad" width={320} height={140} />
     </div>

@@ -50,7 +50,8 @@ module.exports = {
     extend: {
       colors: {
         mdmRed: '#b32d38',
-        mdmBlue: '#1247b3'
+        mdmBlue: '#1247b3',
+        mdmGold: '#ccad70'
       },
       screens: {
         '4xl': '1920px',

@@ -8,7 +8,7 @@ import team from 'const/team';
 function SpTeamHeader({ children }: { children: ReactNode }) {
   return (
     // {/* sp:h-[75px] sp:w-[700px] */}
-    <h1 className="flex h-[10vw] w-[93.3333333333vw] bg-gradient-to-t from-[#CCAD70] to-[#BA9856]">
+    <h1 className="flex h-[10vw] w-[93.3333333333vw] bg-gradient-to-t from-mdmGold to-[#BA9856]">
       {/* sp:text-[36px] */}
       <div
         className="m-auto text-center align-middle text-[4.8vw]"
