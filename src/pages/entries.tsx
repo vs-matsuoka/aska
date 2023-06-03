@@ -278,13 +278,7 @@ const Entries: NextPageWithLayout = () => {
       <Background src="/Entry/21_Entry_pic_BG.jpg" />
       <Background src="/Entry/21_Entry_pic_vignette.png" />
       <EntryProvider>
-        <div
-          className="flex w-full justify-center overflow-x-hidden"
-          style={{
-            // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
-            height: 'calc(100vh - 4rem)'
-          }}
-        >
+        <div className="flex h-full items-center justify-center">
           {/* <Head></Head> */}
           <div className="relative my-auto h-[46.875vw] w-[82.8125vw] 4xl:h-[900px] 4xl:w-[1590px]">
             <div className="absolute top-[8.8541666667vw] 4xl:top-[170px]">

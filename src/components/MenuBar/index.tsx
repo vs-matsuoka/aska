@@ -67,8 +67,8 @@ const MenuButton = ({ href, src, overlaySrc, alt, alwaysOn }: { href: string; sr
 const MenuBar = () => {
   const router = useRouter();
   return (
-    <div className="relative">
-      <div className="absolute top-[-113px] h-[190px] w-screen">
+    <div>
+      <div className="absolute top-[-113px] h-[190px] w-full">
         <Image
           src="/MenuBar/00_Menu_Base.png"
           alt="MenuBar Base"

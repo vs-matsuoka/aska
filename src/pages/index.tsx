@@ -17,13 +17,7 @@ const Top: NextPageWithLayout = () => {
     <>
       <SEO />
       <Background src="/Top/11_Top_pic_BG.jpg" />
-      <div
-        className="relative w-full overflow-x-hidden bg-cover bg-local"
-        style={{
-          // TODO: 5remはヘッダーの高さだが、少なくともハードコードは避けたい
-          height: 'calc(100vh - 4rem)'
-        }}
-      >
+      <div className="relative bg-cover bg-local">
         <div className="absolute -top-6 -z-10 flex w-full justify-center space-x-[0px] overflow-hidden">
           <div className="">
             <Image

@@ -145,6 +145,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
           fontFamily: 'UDKakugo_LargePr6-HV',
           lineHeight: '1.7'
         }}
+        data-nosnippet
       >
         {UDKakugoLargePr6HVStrings}
       </div>
@@ -154,6 +155,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
           fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
           lineHeight: '1.7'
         }}
+        data-nosnippet
       >
         {UDKakugoLargePr6EStrings}
       </div>
