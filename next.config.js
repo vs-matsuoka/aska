@@ -9,6 +9,9 @@ const nextConfig = withExportImages({
   experimental: {
     scrollRestoration: true
   },
+  compiler: {
+    emotion: true
+  },
   output: 'export',
   trailingSlash: true,
   webpack: (config, { isServer }) => {

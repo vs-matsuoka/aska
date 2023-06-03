@@ -19,6 +19,7 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
     "@sentry/nextjs": "latest",
     "autoprefixer": "^10.4.14",
     "classnames": "^2.3.2",
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.8",
+    "@emotion/jest": "^11.11.0",
     "@storybook/addon-actions": "^7.0.12",
     "@storybook/addon-essentials": "^7.0.12",
     "@storybook/addon-links": "^7.0.12",
@@ -74,7 +76,8 @@
     "util": "^0.12.5"
   },
   "resolutions": {
-    "webpack": "^5"
+    "webpack": "^5",
+    "@types/react": "17.0.40"
   },
   "packageManager": "yarn@3.6.0"
 }
