@@ -1,6 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Movie /> should render the heading 1`] = `
+.emotion-0 {
+  width: 20vw;
+  height: 11.25vw;
+}
+
+@media (min-width: 1920px) {
+  .emotion-0 {
+    width: 384px;
+    height: 216px;
+  }
+}
+
+.emotion-1 {
+  width: 20vw;
+  height: 11.25vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-1 {
+    width: 384px;
+    height: 216px;
+  }
+}
+
 <div>
   <a
     href="https://youtu.be/D5l2cW4pDk0"
@@ -10,8 +35,7 @@ exports[`<Movie /> should render the heading 1`] = `
       class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
     >
       <div
-        class="relative"
-        style="width: 20vw; height: 11.25vw;"
+        class="relative emotion-0"
       >
         <img
           alt="thumbnail"
@@ -29,8 +53,7 @@ exports[`<Movie /> should render the heading 1`] = `
         class="absolute top-0"
       >
         <div
-          class="relative relative"
-          style="width: 20vw; height: 11.25vw; object-fit: cover;"
+          class="relative relative emotion-1"
         >
           <img
             alt="thumbnail"

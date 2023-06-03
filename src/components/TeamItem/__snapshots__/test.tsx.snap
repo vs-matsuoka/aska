@@ -1,6 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TeamItem /> should render correctly 1`] = `
+.emotion-0 {
+  width: 16.666666666666664vw;
+  height: 7.291666666666667vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-0 {
+    width: 320px;
+    height: 140px;
+  }
+}
+
+.emotion-1 {
+  width: 5.416666666666667vw;
+  height: 5.416666666666667vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-1 {
+    width: 104px;
+    height: 104px;
+  }
+}
+
+.emotion-2 {
+  width: 2.083333333333333vw;
+  height: 2.083333333333333vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-2 {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 <div
   class="relative h-[7.2916666667vw] w-[16.6666666667vw] border-[0.2083333333vw] border-[#ccad70] bg-gradient-to-t from-[#262426] via-[#262426] to-[#3a393a] 4xl:h-[140px] 4xl:w-[320px] 4xl:border-[4px]"
 >
@@ -8,8 +47,7 @@ exports[`<TeamItem /> should render correctly 1`] = `
     class="absolute ml-[-0.2083333333vw] mt-[-0.2083333333vw] 4xl:ml-[-4px] 4xl:mt-[-4px]"
   >
     <div
-      class="relative"
-      style="width: 16.666666666666664vw; height: 7.291666666666667vw; object-fit: cover;"
+      class="relative emotion-0"
     >
       <img
         alt="grad"
@@ -34,8 +72,7 @@ exports[`<TeamItem /> should render correctly 1`] = `
         class="flex"
       >
         <div
-          class="relative"
-          style="width: 5.416666666666667vw; height: 5.416666666666667vw; object-fit: cover;"
+          class="relative emotion-1"
         >
           <img
             alt="那須ピーマン"
@@ -78,8 +115,7 @@ exports[`<TeamItem /> should render correctly 1`] = `
       target="_blank"
     >
       <div
-        class="relative"
-        style="width: 2.083333333333333vw; height: 2.083333333333333vw; object-fit: cover;"
+        class="relative emotion-2"
       >
         <img
           alt="ニコニコ動画"
@@ -100,8 +136,7 @@ exports[`<TeamItem /> should render correctly 1`] = `
       target="_blank"
     >
       <div
-        class="relative"
-        style="width: 2.083333333333333vw; height: 2.083333333333333vw; object-fit: cover;"
+        class="relative emotion-2"
       >
         <img
           alt="Twitter"

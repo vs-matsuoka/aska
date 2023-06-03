@@ -1,9 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ResponsiveImage /> should render the heading 1`] = `
+.emotion-0 {
+  width: 25vw;
+  height: 5.46875vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-0 {
+    width: 480px;
+    height: 105px;
+  }
+}
+
 <div
-  class="relative"
-  style="width: 25vw; height: 5.46875vw; object-fit: cover;"
+  class="relative emotion-0"
 >
   <img
     alt="a"
