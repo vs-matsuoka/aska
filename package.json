@@ -53,7 +53,7 @@
     "@types/gtag.js": "^0.0.12",
     "@types/jest": "^29.5.1",
     "@types/node": "^18.0.0",
-    "@types/react": "^18.2.0",
+    "@types/react": "^18.2.8",
     "assert": "^2.0.0",
     "babel-loader": "^9.0.0",
     "eslint": "8.42.0",
@@ -76,8 +76,7 @@
     "util": "^0.12.5"
   },
   "resolutions": {
-    "webpack": "^5",
-    "@types/react": "17.0.60"
+    "webpack": "^5"
   },
   "packageManager": "yarn@3.6.0"
 }
