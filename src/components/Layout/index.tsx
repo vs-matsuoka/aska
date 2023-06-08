@@ -147,16 +147,6 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
     }
   }, [blueApi, downsideOffset, redApi, upsideOffset, router, nextRedIsUpside, leftClosePosition, rightClosePosition, rightHomePosition, leftHomePosition]);
 
-  useEffect(() => {
-    if (router) {
-      if (!hideSplashPaths && withSplash) {
-        document.querySelector('body')?.classList.add('no-scrollbar');
-      } else {
-        document.querySelector('body')?.classList.remove('no-scrollbar');
-      }
-    }
-  }, [router, hideSplashPaths, onSplash, withSplash]);
-
   return (
     <>
       <div className={classNames({ hidden: !onSplash })}>
@@ -169,7 +159,7 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
         />
       </div>
       <div
-        className="grid min-h-screen w-full"
+        className={classNames('grid', 'w-full', { 'overflow-hidden': onSplash })}
         style={{
           gridTemplateRows: 'auto auto 1fr',
           gridTemplateColumns: '100%'
