@@ -159,7 +159,7 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
         />
       </div>
       <div
-        className={classNames('grid', 'w-full', { 'overflow-hidden': onSplash })}
+        className={classNames('grid', 'w-full', 'h-full', { 'overflow-hidden': onSplash })}
         style={{
           gridTemplateRows: 'auto auto 1fr',
           gridTemplateColumns: '100%'
@@ -169,7 +169,7 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
           <MenuBar />
         </header>
         <div className="pt-16"></div>
-        <main className={classNames(['w-full', 'h-full', { invisible: onSplash, ['-z-50']: onSplash }])} data-testid="children">
+        <main className={classNames(['w-full', 'h-full', { 'h-0': onSplash, invisible: onSplash }])} data-testid="children">
           {children}
         </main>
       </div>
