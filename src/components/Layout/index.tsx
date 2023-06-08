@@ -169,6 +169,7 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
           <MenuBar />
         </header>
         <div className="pt-16"></div>
+        {/* h-0 について: 想定としては overflow-hidden ですべての要素が隠れていて欲しいが、なぜかちゃんとクリップされない様子だったので、直接 h-0 を指定する */}
         <main className={classNames(['w-full', 'h-full', { 'h-0': onSplash, invisible: onSplash }])} data-testid="children">
           {children}
         </main>
