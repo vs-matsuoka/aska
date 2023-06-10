@@ -159,7 +159,7 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
         />
       </div>
       <div
-        className={classNames('grid', 'w-full', 'h-full', { 'overflow-hidden': onSplash })}
+        className={classNames('grid', 'w-full', 'min-h-screen', { 'overflow-hidden': onSplash })}
         style={{
           gridTemplateRows: 'auto auto 1fr',
           gridTemplateColumns: '100%'
