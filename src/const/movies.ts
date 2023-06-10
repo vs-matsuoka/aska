@@ -122,6 +122,12 @@ const movies: {
       title: '第15弾告知',
       youtubeUrl: 'https://youtu.be/khfXQCZoDHo',
       thumbnail: '/Movie/thumbnails/pair15.png'
+    },
+    {
+      index: 16,
+      title: '第16弾告知',
+      youtubeUrl: 'https://youtu.be/O5R79zTKgfI',
+      thumbnail: '/Movie/thumbnails/pair16.png'
     }
   ],
   // 事前番組
