@@ -1,3 +1,4 @@
+import { css } from '@emotion/react';
 import Link from 'next/link';
 import { ReactElement, useCallback, useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
@@ -66,24 +67,15 @@ function PairButton({ pair, onModalOpen }: { pair: Pair; onModalOpen: () => void
 }
 
 function PairRow({ pairs, offset, onModalOpen }: PairRowProps) {
-  const [isNarrow, setIsNarrow] = useState(false);
-  useEffect(() => {
-    setIsNarrow(window.innerWidth > 1920);
-    const updateWindowDimensions = () => {
-      setIsNarrow(window.innerWidth > 1920);
-    };
-
-    window.addEventListener('resize', updateWindowDimensions);
-    return () => window.removeEventListener('resize', updateWindowDimensions);
-  }, []);
+  const paddingLeft = css({
+    paddingLeft: `${(offset / 1920) * 100}vw`,
+    '@media (min-width: 1920px)': {
+      paddingLeft: `${offset}px`
+    }
+  });
 
   return (
-    <div
-      className="grid skew-y-[-10deg] grid-cols-[repeat(5,14.8958333334vw)] 4xl:grid-cols-[repeat(5,286px)]"
-      style={{
-        paddingLeft: isNarrow ? `${offset}px` : `${(offset / 1920) * 100}vw`
-      }}
-    >
+    <div className="grid skew-y-[-10deg] grid-cols-[repeat(5,14.8958333334vw)] 4xl:grid-cols-[repeat(5,286px)]" css={paddingLeft}>
       {pairs.map((pair, i) => (
         <PairButton pair={pair} onModalOpen={onModalOpen} key={i} />
       ))}

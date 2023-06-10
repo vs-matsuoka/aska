@@ -2,7 +2,7 @@
 
 exports[`<Background /> should render the heading 1`] = `
 <div
-  class="fixed -z-50"
+  class="fixed emotion-0"
 >
   <div
     class="h-screen w-screen"

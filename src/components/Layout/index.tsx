@@ -147,16 +147,6 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
     }
   }, [blueApi, downsideOffset, redApi, upsideOffset, router, nextRedIsUpside, leftClosePosition, rightClosePosition, rightHomePosition, leftHomePosition]);
 
-  useEffect(() => {
-    if (router) {
-      if (!hideSplashPaths && withSplash) {
-        document.querySelector('body')?.classList.add('no-scrollbar');
-      } else {
-        document.querySelector('body')?.classList.remove('no-scrollbar');
-      }
-    }
-  }, [router, hideSplashPaths, onSplash, withSplash]);
-
   return (
     <>
       <div className={classNames({ hidden: !onSplash })}>
@@ -169,7 +159,7 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
         />
       </div>
       <div
-        className="grid min-h-screen w-full"
+        className={classNames('grid', 'w-full', 'h-full', { 'overflow-hidden': onSplash })}
         style={{
           gridTemplateRows: 'auto auto 1fr',
           gridTemplateColumns: '100%'
@@ -179,7 +169,8 @@ function Layout({ children, withOverflowHidden, withSplash }: LayoutProps) {
           <MenuBar />
         </header>
         <div className="pt-16"></div>
-        <main className={classNames(['w-full', 'h-full', { invisible: onSplash, ['-z-50']: onSplash }])} data-testid="children">
+        {/* h-0 について: 想定としては overflow-hidden ですべての要素が隠れていて欲しいが、なぜかちゃんとクリップされない様子だったので、直接 h-0 を指定する */}
+        <main className={classNames(['w-full', { 'h-full': !onSplash, 'h-0': onSplash, invisible: onSplash, ['-z-50']: onSplash }])} data-testid="children">
           {children}
         </main>
       </div>

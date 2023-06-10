@@ -1,3 +1,4 @@
+import { css } from '@emotion/react';
 import Image, { ImageProps } from 'next/image';
 import { useEffect, useState } from 'react';
 import ResponsiveImage from 'components/ResponsiveImage';
@@ -12,23 +13,17 @@ function MovieThumbnailResponsiveImage(
   const { width, height, src, alt, className, ...imageProps } = props;
   const standard = 1920;
 
-  const [isNarrow, setIsNarrow] = useState(false);
-  useEffect(() => {
-    setIsNarrow(window.innerWidth > 1920);
-    const updateWindowDimensions = () => {
-      setIsNarrow(window.innerWidth > 1920);
-    };
-
-    window.addEventListener('resize', updateWindowDimensions);
-    return () => window.removeEventListener('resize', updateWindowDimensions);
-  }, []);
-  const isFixedWidth = isNarrow;
+  const responsiveImage = css({
+    width: `${(width / standard) * 100}vw`,
+    height: `${(height / standard) * 100}vw`,
+    '@media (min-width: 1920px)': {
+      width: `${width}px`,
+      height: `${height}px`
+    }
+  });
 
   return (
-    <div
-      className={className}
-      style={{ width: isFixedWidth ? `${width}px` : `${(width / standard) * 100}vw`, height: isFixedWidth ? `${height}px` : `${(height / standard) * 100}vw` }}
-    >
+    <div className={className} css={responsiveImage}>
       <Image src={src} alt={alt} className="object-cover" fill {...imageProps}></Image>
     </div>
   );

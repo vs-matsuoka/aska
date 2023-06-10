@@ -19,6 +19,7 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
     "@sentry/nextjs": "latest",
     "autoprefixer": "^10.4.14",
     "classnames": "^2.3.2",
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.8",
+    "@emotion/jest": "^11.11.0",
     "@storybook/addon-actions": "^7.0.12",
     "@storybook/addon-essentials": "^7.0.12",
     "@storybook/addon-links": "^7.0.12",
@@ -51,7 +53,7 @@
     "@types/gtag.js": "^0.0.12",
     "@types/jest": "^29.5.1",
     "@types/node": "^18.0.0",
-    "@types/react": "^18.2.0",
+    "@types/react": "^18.2.8",
     "assert": "^2.0.0",
     "babel-loader": "^9.0.0",
     "eslint": "8.42.0",
