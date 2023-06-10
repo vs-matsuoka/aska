@@ -4096,16 +4096,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-client@npm:7.0.18":
-  version: 7.0.18
-  resolution: "@storybook/core-client@npm:7.0.18"
-  dependencies:
-    "@storybook/client-logger": 7.0.18
-    "@storybook/preview-api": 7.0.18
-  checksum: 1ce0a7e2a3f4b640d9303de1ce2f95d49aa735292cffdad34aa83c7933b239e54d11e802e5d6d1f068c6cd97eafdd8202caa7440f5aaf1f9efbc8c947b11ebcd
-  languageName: node
-  linkType: hard
-
 "@storybook/core-client@npm:7.0.20":
   version: 7.0.20
   resolution: "@storybook/core-client@npm:7.0.20"
@@ -4701,7 +4691,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:7.0.20":
+"@storybook/react@npm:7.0.20, @storybook/react@npm:^7.0.12":
   version: 7.0.20
   resolution: "@storybook/react@npm:7.0.20"
   dependencies:
@@ -4733,41 +4723,6 @@ __metadata:
     typescript:
       optional: true
   checksum: 2fb9a0fa800066f48ea1bc3d92bb23bcf35029258af68933e70d2253abc60be59fbce998bdf04782f1660ed64b7e359f1218597a66e3b66cc1235a6595a7646c
-  languageName: node
-  linkType: hard
-
-"@storybook/react@npm:^7.0.12":
-  version: 7.0.18
-  resolution: "@storybook/react@npm:7.0.18"
-  dependencies:
-    "@storybook/client-logger": 7.0.18
-    "@storybook/core-client": 7.0.18
-    "@storybook/docs-tools": 7.0.18
-    "@storybook/global": ^5.0.0
-    "@storybook/preview-api": 7.0.18
-    "@storybook/react-dom-shim": 7.0.18
-    "@storybook/types": 7.0.18
-    "@types/escodegen": ^0.0.6
-    "@types/estree": ^0.0.51
-    "@types/node": ^16.0.0
-    acorn: ^7.4.1
-    acorn-jsx: ^5.3.1
-    acorn-walk: ^7.2.0
-    escodegen: ^2.0.0
-    html-tags: ^3.1.0
-    lodash: ^4.17.21
-    prop-types: ^15.7.2
-    react-element-to-jsx-string: ^15.0.0
-    ts-dedent: ^2.0.0
-    type-fest: ^2.19.0
-    util-deprecate: ^1.0.2
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: a6bd267f01b49e937330ae97f770216e2ba2d706b999f558dea2780c342a2f789943a1e7c92c62fcf81904d221cb70730d119d6e8b347e9b9d9ff1a68fe6b8a4
   languageName: node
   linkType: hard
 
@@ -5462,13 +5417,13 @@ __metadata:
   linkType: hard
 
 "@types/react@npm:*, @types/react@npm:>=16, @types/react@npm:^18.2.8":
-  version: 18.2.8
-  resolution: "@types/react@npm:18.2.8"
+  version: 18.2.9
+  resolution: "@types/react@npm:18.2.9"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 351fe2450d30bff2ceb6aa84788e948317555e5ea22cb44f6778e08c977aab1878a0119bd94bc3d1bec5f5af4a75ffaa2ce111df5cd9d4ce26bfd719e4d971c2
+  checksum: f155256171a2d701eb962a1d3aa2a1c9ee36d9dd4a4aecb911d29e50717aab1a76914aef25242665147c455b9e8d081d1a60275d13ca81075c148ebd6607414a
   languageName: node
   linkType: hard
 
