@@ -308,7 +308,7 @@ const pairs: Pair[] = [
   },
   {
     index: 18,
-    name: '',
+    name: 'Aquarius',
     frameSrc: '/Pair/Frame/31_Pair_Frame_Secret_18.png',
     hnASrc: '',
     hnBSrc: '',
@@ -320,7 +320,7 @@ const pairs: Pair[] = [
     spNameSrc: '',
     spBaseASrc: '',
     spBaseBSrc: '',
-    description: '',
+    description: '多くの活動を経験した二人の作り上げる構成\nきっと、どんな視聴者も目を奪われる！',
     isPublished: false
   },
   {
