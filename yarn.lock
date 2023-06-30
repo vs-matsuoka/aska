@@ -3585,8 +3585,8 @@ __metadata:
   linkType: hard
 
 "@storybook/addon-styling@npm:^1.0.8":
-  version: 1.3.0
-  resolution: "@storybook/addon-styling@npm:1.3.0"
+  version: 1.3.2
+  resolution: "@storybook/addon-styling@npm:1.3.2"
   dependencies:
     "@babel/template": ^7.20.7
     "@babel/types": ^7.21.5
@@ -3594,7 +3594,6 @@ __metadata:
     "@storybook/components": ^7.0.12
     "@storybook/core-common": ^7.0.12
     "@storybook/core-events": ^7.0.12
-    "@storybook/csf-tools": ^7.0.12
     "@storybook/manager-api": ^7.0.12
     "@storybook/node-logger": ^7.0.12
     "@storybook/preview-api": ^7.0.12
@@ -3603,7 +3602,6 @@ __metadata:
     css-loader: ^6.7.3
     less-loader: ^11.1.0
     postcss-loader: ^7.2.4
-    recast: ^0.23.2
     resolve-url-loader: ^5.0.0
     sass-loader: ^13.2.2
     style-loader: ^3.3.2
@@ -3615,7 +3613,9 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: ec65d621c5721d368bf3fe6c0f77fe32e38644ae4956c04c85d349934e9276867070aa310ce6349b1a2d9022e0a68306699e3dadcae11d98f734d002e86eb64b
+  bin:
+    addon-styling-setup: postinstall.js
+  checksum: d0e7db8cae396f5e602986b5154c535b3a6403380ec2c9968113ed39e583e3a06344cae19c014a34e8bbaa2d1d8bea123fea6e042998fee384390fed37883d90
   languageName: node
   linkType: hard
 
@@ -4259,23 +4259,6 @@ __metadata:
     recast: ^0.23.1
     ts-dedent: ^2.0.0
   checksum: a403ff0b0a4c4f9aab89fe28bde7305733e9548c5076222973ff21c910edee421f73d3fc091f8376a9e7b0623524373ae15edbd35955e727440a42ecfa907bb4
-  languageName: node
-  linkType: hard
-
-"@storybook/csf-tools@npm:^7.0.12":
-  version: 7.0.20
-  resolution: "@storybook/csf-tools@npm:7.0.20"
-  dependencies:
-    "@babel/generator": ~7.21.1
-    "@babel/parser": ~7.21.2
-    "@babel/traverse": ~7.21.2
-    "@babel/types": ~7.21.2
-    "@storybook/csf": ^0.1.0
-    "@storybook/types": 7.0.20
-    fs-extra: ^11.1.0
-    recast: ^0.23.1
-    ts-dedent: ^2.0.0
-  checksum: c5c33f5c5114ec1d5402cbbe1ae1a16544869066d90ec0befb76e482e3b525e309f76861cfdd5c14433d88cfbe3b9be69d519ca39714ac477555e7901a17b7e4
   languageName: node
   linkType: hard
 
@@ -15864,7 +15847,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"recast@npm:^0.23.1, recast@npm:^0.23.2":
+"recast@npm:^0.23.1":
   version: 0.23.2
   resolution: "recast@npm:0.23.2"
   dependencies:
