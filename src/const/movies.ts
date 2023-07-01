@@ -144,7 +144,7 @@ const movies: {
     {
       index: 19,
       title: '第19弾告知',
-      youtubeUrl: 'https://youtu.be/zMDb9lUScfU',
+      youtubeUrl: 'https://youtu.be/jJ9KwC-NeQw',
       thumbnail: '/Movie/thumbnails/pair19.png'
     }
   ],
