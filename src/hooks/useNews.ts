@@ -9,7 +9,7 @@ export const useNews = () => {
   const getNewsList = useCallback(() => {
     client
       .getList<News>({
-        endpoint: 'news-dev'
+        endpoint: process.env.NEXT_PUBLIC_MICROCMS_ENDPOINT || ''
       })
       .then((res) => {
         setNewsList(res.contents);

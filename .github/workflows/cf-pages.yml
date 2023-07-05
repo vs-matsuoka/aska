@@ -13,6 +13,10 @@ jobs:
       contents: read
       deployments: write
       statuses: write
+    # mainブランチのときは"aska (Production)"、それ以外のときは"aska (Preview)"
+    environment: ${{ github.ref == 'refs/heads/main' && 'aska (Production)' || 'aska (Preview)' }}
+    env:
+      NEXT_PUBLIC_MICROCMS_ENDPOINT: ${{ var.NEXT_PUBLIC_MICROCMS_ENDPOINT }}
     # もしmainブランチから別環境へのブランチを作成する場合、このjobは走らせない
     if: ${{ !(github.event_name == 'pull_request' && github.head_ref == 'main') }}
     steps:
