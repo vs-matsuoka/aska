@@ -5,8 +5,9 @@ import * as gtag from '../utils/gtag';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
 import Layout from 'components/Layout';
+import NewsList from 'components/NewsList';
 import SEO from 'components/SEO';
-import Timeline from 'components/Timeline';
+// import Timeline from 'components/Timeline';
 import otomdmLink from 'const/otomdmLink';
 
 const Top: NextPageWithLayout = () => {
@@ -84,7 +85,8 @@ const Top: NextPageWithLayout = () => {
                     <a href={otomdmLink.twitter} target="_blank">
                       <Image src="/Top/11_Top_Text_04_Twitter.png" className="max-w-none" alt="Twitter" width={140} height={40} />
                     </a>
-                    <Timeline />
+                    {/* <Timeline /> */}
+                    <NewsList />
                   </div>
                 </div>
               </div>
