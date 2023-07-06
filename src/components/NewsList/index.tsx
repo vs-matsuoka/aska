@@ -1,18 +1,17 @@
 import cls from 'classnames';
+import Image from 'next/image';
 import { useEffect } from 'react';
 import { useNews } from 'hooks/useNews';
 import { News } from 'types/cms-types';
-import {} from '@emotion/react';
 
 const StyledNews = ({ news }: { news: News }) => (
   <div
-    className={cls('text-white')}
+    className={cls('text-white', 'text-[14px]')}
     css={{
       '& ul': {
         listStyleType: 'disc',
         listStylePosition: 'inside'
       },
-
       '& ol': {
         listStyleType: 'decimal',
         listStylePosition: 'inside'
@@ -41,7 +40,8 @@ const StyledNews = ({ news }: { news: News }) => (
         marginBottom: '0.25rem'
       },
       '& hr': {
-        marginBottom: '0.25rem'
+        marginBottom: '0.25rem',
+        borderTop: '1px solid #ccad70'
       },
       '& p': {
         marginBottom: '0.25rem'
@@ -53,8 +53,11 @@ const StyledNews = ({ news }: { news: News }) => (
 );
 
 const News = ({ news }: { news: News }) => (
-  <div className={cls('m-4', 'py-4', 'border-b-2')}>
-    <h4 className={cls('text-white', 'text-lg', 'font-bold', 'mb-1')}>{news.title}</h4>
+  <div className={cls('m-4', 'py-4', 'border-b-2', 'border-[#CCAD70]')}>
+    <h4 className={cls('text-white', 'text-lg', 'font-bold', 'mb-2')}>
+      <Image className={cls('inline', 'mr-1', 'mb-1')} src="/Top/Ornament_Point_01.png" alt="icon" width={20} height={20} />
+      {news.title}
+    </h4>
     <StyledNews news={news} />
   </div>
 );
