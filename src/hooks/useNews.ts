@@ -5,7 +5,7 @@ import { client } from 'libs/client';
 import { News } from 'types/cms-types';
 
 export const useNews = () => {
-  const [newsList, setNewsList] = useState<Array<News>>();
+  const [newsList, setNewsList] = useState<Array<News>>([{ title: '', content: '', id: '', publishedAt: '' }]);
   const getNewsList = useCallback(() => {
     client
       .getList<News>({
