@@ -18,10 +18,10 @@ const StyledNews = ({ news }: { news: News }) => (
       },
       '& li': {
         '> ul': {
-          marginLeft: '20px'
+          marginLeft: '15px'
         },
         '> ol': {
-          marginLeft: '20px'
+          marginLeft: '15px'
         }
       },
       '& a': {
