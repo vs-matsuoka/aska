@@ -342,20 +342,20 @@ const pairs: Pair[] = [
   },
   {
     index: 20,
-    name: '',
-    frameSrc: '/Pair/Frame/31_Pair_Frame_Secret_20.png',
-    hnASrc: '',
-    hnBSrc: '',
-    illustSrc: '',
-    nameSrc: '',
-    spIconSrc: '/SP/Pair_Detail/Icon/s32_PairIcon_secret_20.png',
-    spBannerSrc: '/SP/Pair/Banner/s21_PairIndex_Banner_Secret_20.png',
-    spKirinukiSrc: '',
-    spNameSrc: '',
-    spBaseASrc: '',
-    spBaseBSrc: '',
-    description: '',
-    isPublished: false
+    name: '月夜、路上の灯',
+    frameSrc: '/Pair/Frame/31_Pair_Frame_20.png',
+    hnASrc: '/Pair_Modal/HN/32_Pair_Modal_HN_20A.png',
+    hnBSrc: '/Pair_Modal/HN/32_Pair_Modal_HN_20B.png',
+    illustSrc: '/Pair_Modal/Illust/32_Pair_Modal_Illust_20.png',
+    nameSrc: '/Pair_Modal/Name/32_Pair_Modal_Name_20.png',
+    spIconSrc: '/SP/Pair_Detail/Icon/s32_PairIcon_20.png',
+    spBannerSrc: '/SP/Pair/Banner/s21_PairIndex_Banner_20.png',
+    spKirinukiSrc: '/SP/Pair_Detail/Kirinuki/s32_Entry_Kirinuki_20.png',
+    spNameSrc: '/SP/Pair_Detail/Name/s32_Pair_name_20.png',
+    spBaseASrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_20_A.png',
+    spBaseBSrc: '/SP/Pair_Detail/HNBase/s32_Pair_HNBase_20_B.png',
+    description: 'キャラクターへ思慮深い作風が結びつく時\nさらに綿密な音MAD領域へ爆発していく！',
+    isPublished: true
   }
 ];
 
