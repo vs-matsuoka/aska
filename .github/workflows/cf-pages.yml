@@ -14,7 +14,9 @@ jobs:
       deployments: write
       statuses: write
     # mainブランチのときは"aska (Production)"、それ以外のときは"aska (Preview)"
-    environment: ${{ github.ref == 'refs/heads/main' && 'aska (Production)' || 'aska (Preview)' }}
+    # environment: ${{ github.ref == 'refs/heads/main' && 'aska (Production)' || 'aska (Preview)' }}
+    # 確認のため本番用のAPIを使用する
+    environment: 'aska (Production)'
     env:
       NEXT_PUBLIC_MICROCMS_ENDPOINT: ${{ vars.NEXT_PUBLIC_MICROCMS_ENDPOINT }}
     # もしmainブランチから別環境へのブランチを作成する場合、このjobは走らせない
