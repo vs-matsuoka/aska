@@ -5,8 +5,9 @@ import * as gtag from '../utils/gtag';
 import { NextPageWithLayout } from './_app';
 import Background from 'components/Background';
 import Layout from 'components/Layout';
+import NewsList from 'components/NewsList';
 import SEO from 'components/SEO';
-import Timeline from 'components/Timeline';
+// import Timeline from 'components/Timeline';
 import otomdmLink from 'const/otomdmLink';
 
 const Top: NextPageWithLayout = () => {
@@ -49,7 +50,7 @@ const Top: NextPageWithLayout = () => {
               <Image
                 src="/Top/11_Top_Text_12_Tate.png"
                 alt="音MADマッチングバラエティ"
-                className="mr-6 mt-14 max-w-none"
+                className="mr-[3px] mt-14 max-w-none"
                 width={175}
                 height={445}
                 onDoubleClick={() => {
@@ -67,24 +68,26 @@ const Top: NextPageWithLayout = () => {
             </div>
             <div className="grid content-start justify-items-center">
               <Image src="/Top/11_Top_Text_01.png" className="max-w-none" alt="2023年9月17日 開幕" width={373} height={88} />
-              <div className="flex">
+              <div className="flex gap-x-[7px]">
                 <a href={otomdmLink.niconico} target="_blank">
-                  <Image src="/Top/11_Top_Text_02_niconico.png" alt="ニコニコ動画" className="max-w-none" width={180} height={50} />
+                  <Image src="/Top/11_Top_Text_02_niconico.png" alt="ニコニコ動画" className="max-w-none" width={140} height={40} />
                 </a>
                 <a href={otomdmLink.youtube} target="_blank">
-                  <Image src="/Top/11_Top_Text_03_youtube.png" alt="YouTube" className="max-w-none" width={180} height={50} />
+                  <Image src="/Top/11_Top_Text_03_youtube.png" alt="YouTube" className="max-w-none" width={140} height={40} />
+                </a>
+                <a href={otomdmLink.twitter} target="_blank">
+                  <Image src="/Top/11_Top_Text_04_Twitter.png" alt="Twitter" className="max-w-none" width={140} height={40} />
                 </a>
               </div>
-              <div className="mt-4 grid justify-items-center">
+              <div className="mt-[10px] grid justify-items-center">
                 <div className="relative top-[-2px] grid justify-items-center">
                   <div className="">
                     <Image src="/Top/11_Top_Twitter_Timeline.png" alt="Twitter" className="max-w-none" width={412} height={404} />
                   </div>
                   <div className="absolute top-0 grid justify-items-center">
-                    <a href={otomdmLink.twitter} target="_blank">
-                      <Image src="/Top/11_Top_Text_04_Twitter.png" className="max-w-none" alt="Twitter" width={140} height={40} />
-                    </a>
-                    <Timeline />
+                    <Image src="/Top/11_Top_Text_05_Saisin.png" className="max-w-none" alt="最新情報" width={140} height={40} />
+                    {/* <Timeline /> */}
+                    <NewsList />
                   </div>
                 </div>
               </div>
@@ -93,7 +96,7 @@ const Top: NextPageWithLayout = () => {
               <Image
                 src="/Top/11_Top_Text_11_Tate.png"
                 alt="史上空前 挑むは頂点!!"
-                className="ml-6 mt-16 max-w-none"
+                className="ml-[3px] mt-16 max-w-none"
                 width={157}
                 height={432}
                 onDoubleClick={() => {
