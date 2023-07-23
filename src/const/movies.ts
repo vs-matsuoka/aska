@@ -29,6 +29,12 @@ const movies: {
       title: '前半中間告知',
       youtubeUrl: 'https://youtu.be/oWVHp--jqaU',
       thumbnail: undefined
+    },
+    {
+      index: 4,
+      title: '後半中間告知',
+      youtubeUrl: 'https://youtu.be/TRY8NvI4MFo',
+      thumbnail: '/Movie/thumbnails/interimNoticeB.png'
     }
   ],
   // コンビ告知
