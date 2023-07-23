@@ -286,6 +286,22 @@ const team: {
       niconicoLink: 'https://www.nicovideo.jp/user/8420196',
       youtubeLink: 'https://www.youtube.com/@zeromission2nd',
       twitterLink: 'https://twitter.com/zeromission'
+    },
+    {
+      name: 'コベルト',
+      role: '中間告知B',
+      iconSrc: '/Icon/実行委員会/告知/告知映像_icon_コベルト.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/44120556',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/covelto'
+    },
+    {
+      name: 'miル',
+      role: '中間告知B サポート',
+      iconSrc: '/Icon/実行委員会/告知/告知映像_icon_miル.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/40378416',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/mirukudesuno'
     }
   ],
   housou: [
