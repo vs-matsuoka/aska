@@ -451,7 +451,7 @@ const entries: Entry[] = [
     description:
       '広範囲のテイストをカバーする画面作りのセンスは一級品\nあらゆる合作でもその実力を発揮し、常に印象を塗り替えてきた\n秘めた天井知らずのポテンシャル、決して舐めてはかかれない！',
     niconicoLink: 'https://www.nicovideo.jp/user/47562461',
-    youtubeLink: 'https://www.youtube.com/@user-dj7ex4sh3c',
+    youtubeLink: 'https://www.youtube.com/@Napolythm',
     twitterLink: 'https://twitter.com/napolythm',
     isPublished: true
   },
