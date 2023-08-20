@@ -302,6 +302,14 @@ const team: {
       niconicoLink: 'https://www.nicovideo.jp/user/40378416',
       youtubeLink: undefined,
       twitterLink: 'https://twitter.com/mirukudesuno'
+    },
+    {
+      name: '紅ばめ',
+      role: '特殊告知「アナログ」',
+      iconSrc: '/Icon/実行委員会/告知/告知映像_icon_紅ばめ.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/10016012',
+      youtubeLink: 'https://www.youtube.com/channel/UCW7DN3dNgpU2x3yW6H8l9XQ',
+      twitterLink: 'https://twitter.com/benibame10'
     }
   ],
   housou: [
