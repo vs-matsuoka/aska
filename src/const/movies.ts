@@ -35,6 +35,12 @@ const movies: {
       title: '後半中間告知',
       youtubeUrl: 'https://youtu.be/TRY8NvI4MFo',
       thumbnail: '/Movie/thumbnails/interimNoticeB.png'
+    },
+    {
+      index: 5,
+      title: '特殊告知「アナログ」',
+      youtubeUrl: 'https://youtu.be/inL40npy7oA',
+      thumbnail: '/Movie/thumbnails/specialNoticeAnalog.png'
     }
   ],
   // コンビ告知
