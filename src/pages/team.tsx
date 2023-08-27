@@ -63,7 +63,18 @@ const Team: NextPageWithLayout = () => {
           {/* 放送 */}
           <section>
             <h1 className="my-[0.5208333333vw] grid place-items-center 4xl:my-[10px]">
-              <ResponsiveImage src="/Team/51_Operation_Line_05.png" alt="放送" width={1050} height={140} />
+              <ResponsiveImage src="/Team/51_Operation_Line_05.png" alt="特番" width={1050} height={140} />
+            </h1>
+            <div className="grid grid-cols-[repeat(5,min-content)] justify-center gap-[0.46875vw] 4xl:gap-[9px]">
+              {team.tokuban.map((item) => (
+                <TeamItem key={item.name} member={item} />
+              ))}
+            </div>
+          </section>
+          {/* 放送 */}
+          <section>
+            <h1 className="my-[0.5208333333vw] grid place-items-center 4xl:my-[10px]">
+              <ResponsiveImage src="/Team/51_Operation_Line_06.png" alt="放送" width={1050} height={140} />
             </h1>
             <div className="grid grid-cols-[repeat(5,min-content)] justify-center gap-[0.46875vw] 4xl:gap-[9px]">
               {team.housou.map((item) => (

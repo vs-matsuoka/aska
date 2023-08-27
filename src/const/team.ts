@@ -13,6 +13,7 @@ const team: {
   seisaku: TeamMember[];
   tachie: TeamMember[];
   kokuchi: TeamMember[];
+  tokuban: TeamMember[];
   housou: TeamMember[];
 } = {
   unnei: [
@@ -312,7 +313,7 @@ const team: {
       twitterLink: 'https://twitter.com/benibame10'
     }
   ],
-  housou: [
+  tokuban: [
     {
       name: '仲邑飛鳥',
       role: '特番制作',
@@ -368,6 +369,144 @@ const team: {
       niconicoLink: 'https://www.nicovideo.jp/user/6641990',
       youtubeLink: 'https://www.youtube.com/@user-gk6gv2bq4x',
       twitterLink: 'https://twitter.com/OZd_oouc2'
+    }
+  ],
+  housou: [
+    {
+      name: '大内乙打',
+      role: '出演者',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_大内乙打.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/6641990',
+      youtubeLink: 'https://www.youtube.com/@user-gk6gv2bq4x',
+      twitterLink: 'https://twitter.com/OZd_oouc2'
+    },
+    {
+      name: 'かっぱ',
+      role: '出演者',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_かっぱ.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/28794844',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/Klunakapa'
+    },
+    {
+      name: 'BaN長',
+      role: '出演者',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_BaN長.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/39234097',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/banfuture'
+    },
+    {
+      name: '26K',
+      role: 'BGMディレクター',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_26K.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/23542987',
+      youtubeLink: 'https://www.youtube.com/channel/UCa0NaAtqVJu7yVqHobWkV9Q',
+      twitterLink: 'https://twitter.com/26K_'
+    },
+    {
+      name: 'うせ',
+      role: 'BGM',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_うせ.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/58228001',
+      youtubeLink: 'https://www.youtube.com/@UCEch777/videos',
+      twitterLink: 'https://twitter.com/UCEch777/media'
+    },
+    {
+      name: 'owatax',
+      role: 'BGM',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_owatax.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/1033213',
+      youtubeLink: 'https://www.youtube.com/channel/UCzNTlDGQUjsmzeiTYSOmguQ',
+      twitterLink: 'https://twitter.com/owatax00'
+    },
+    {
+      name: 'おちんぽきまじめ',
+      role: 'BGM',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_おちんぽきまじめ.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/30846190',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/Sr20detNissan'
+    },
+    {
+      name: 'ご学友',
+      role: 'BGM',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_ご学友.jpg',
+      niconicoLink: undefined,
+      youtubeLink: undefined,
+      twitterLink: undefined
+    },
+    {
+      name: '権太夫',
+      role: 'BGM',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_権太夫.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/1571412',
+      youtubeLink: 'https://www.youtube.com/channel/UCf-ZOn9_psQ-kvRb1EavcTQ',
+      twitterLink: 'https://twitter.com/gondayu'
+    },
+    {
+      name: '2÷す',
+      role: 'BGM',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_2÷す.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/21133029',
+      youtubeLink: undefined,
+      twitterLink: undefined
+    },
+    {
+      name: 'ふるの',
+      role: 'BGM',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_ふるの.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/42060207',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/furuno_2'
+    },
+    {
+      name: '麻痺',
+      role: 'BGM',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_麻痺.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/320294',
+      youtubeLink: undefined,
+      twitterLink: undefined
+    },
+    {
+      name: 'りゅん',
+      role: 'BGM',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_りゅん.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/44819558',
+      youtubeLink: 'https://www.youtube.com/@28ryn',
+      twitterLink: 'https://twitter.com/rynryn1203'
+    },
+    {
+      name: 'ジャカス',
+      role: '出演者立ち絵',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_ジャカス.png',
+      niconicoLink: 'http://nicovideo.jp/user/42145641',
+      youtubeLink: 'https://www.youtube.com/@kawaiijacchus',
+      twitterLink: 'https://twitter.com/kawaiijacchus'
+    },
+    {
+      name: '地他',
+      role: '出演者立ち絵',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_地他.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/128351566',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/chitatihc'
+    },
+    {
+      name: 'オンモコスブ',
+      role: 'トランジション',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_オンモコスブ.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/97199955',
+      youtubeLink: 'https://www.youtube.com/channel/UCZvm0JcwBEOG9qeJ2leuk9A',
+      twitterLink: 'https://twitter.com/onmokosub'
+    },
+    {
+      name: 'リイゴカワイラ',
+      role: 'トランジション',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_リイゴカワイラ.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/118622321',
+      youtubeLink: 'https://www.youtube.com/@riigokawaira7071',
+      twitterLink: 'https://twitter.com/riigorira_mad'
     }
   ]
 };
