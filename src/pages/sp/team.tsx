@@ -60,14 +60,14 @@ export default function Team() {
             ))}
           </section>
           <section>
-            <SpTeamHeader>特　番</SpTeamHeader>
-            {team.tokuban.map((member, i) => (
+            <SpTeamHeader>放　送</SpTeamHeader>
+            {team.housou.map((member, i) => (
               <SpTeamItem member={member} key={i} />
             ))}
           </section>
           <section>
-            <SpTeamHeader>放　送</SpTeamHeader>
-            {team.housou.map((member, i) => (
+            <SpTeamHeader>特　番</SpTeamHeader>
+            {team.tokuban.map((member, i) => (
               <SpTeamItem member={member} key={i} />
             ))}
           </section>
