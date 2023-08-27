@@ -65,6 +65,12 @@ export default function Team() {
               <SpTeamItem member={member} key={i} />
             ))}
           </section>
+          <section>
+            <SpTeamHeader>特　番</SpTeamHeader>
+            {team.tokuban.map((member, i) => (
+              <SpTeamItem member={member} key={i} />
+            ))}
+          </section>
         </div>
         <div className="mt-[16.6666667vw] sp:mt-[125px]">&nbsp;</div>
         <SpMenu />
