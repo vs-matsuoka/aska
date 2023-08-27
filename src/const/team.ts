@@ -413,20 +413,20 @@ const team: {
       twitterLink: 'https://twitter.com/UCEch777/media'
     },
     {
-      name: 'owatax',
-      role: 'BGM',
-      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_owatax.jpg',
-      niconicoLink: 'https://www.nicovideo.jp/user/1033213',
-      youtubeLink: 'https://www.youtube.com/channel/UCzNTlDGQUjsmzeiTYSOmguQ',
-      twitterLink: 'https://twitter.com/owatax00'
-    },
-    {
       name: 'おちんぽきまじめ',
       role: 'BGM',
       iconSrc: '/Icon/実行委員会/本放送/本放送_icon_おちんぽきまじめ.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/30846190',
       youtubeLink: undefined,
       twitterLink: 'https://twitter.com/Sr20detNissan'
+    },
+    {
+      name: 'owatax',
+      role: 'BGM',
+      iconSrc: '/Icon/実行委員会/本放送/本放送_icon_owatax.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/1033213',
+      youtubeLink: 'https://www.youtube.com/channel/UCzNTlDGQUjsmzeiTYSOmguQ',
+      twitterLink: 'https://twitter.com/owatax00'
     },
     {
       name: 'ご学友',
