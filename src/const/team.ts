@@ -418,7 +418,8 @@ const team: {
       iconSrc: '/Icon/実行委員会/本放送/本放送_icon_おちんぽきまじめ.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/30846190',
       youtubeLink: undefined,
-      twitterLink: 'https://twitter.com/Sr20detNissan'
+      twitterLink: 'https://twitter.com/Sr20detNissan',
+      hasLongName: true
     },
     {
       name: 'owatax',
