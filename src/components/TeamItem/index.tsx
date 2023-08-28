@@ -27,7 +27,7 @@ const TeamItem = ({ member }: TeamItemProps) => (
           {member.role}
         </p>
         <p
-          className={'mt-[0.4166666667vw] text-white 4xl:mt-[8px] ' + (member.hasLongName ? 'text-[1.4583333333vw] 4xl:text-[16px]' : 'text-[1.4583333333vw] 4xl:text-[28px]')}
+          className={'mt-[0.4166666667vw] text-white 4xl:mt-[8px] ' + (member.hasLongName ? 'text-[0.8333333333vw] 4xl:text-[16px]' : 'text-[1.4583333333vw] 4xl:text-[28px]')}
           data-testid="name"
         >
           {member.name}
