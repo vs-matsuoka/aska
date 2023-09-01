@@ -95,7 +95,7 @@ const team: {
       iconSrc: '/Icon/運営/運営_icon_こまり.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/2064123',
       youtubeLink: 'https://www.youtube.com/channel/UCF7VYxdjeqFCr83BS97NNVw',
-      twitterLink: 'https://twitter.com/Crabgot_'
+      twitterLink: 'https://twitter.com/co_ma41'
     },
     {
       name: '咲崎(♂)',
