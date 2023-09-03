@@ -5,7 +5,8 @@ export type TeamMember = {
   twitterLink?: string;
   youtubeLink?: string;
   niconicoLink?: string;
-  hasLongName?: boolean;
+  hasLongName?: boolean; // PC版で使用する
+  hasTooLongName?: boolean; // SP版で使用する
 };
 
 const team: {
@@ -450,7 +451,8 @@ const team: {
       niconicoLink: 'https://www.nicovideo.jp/user/39376970',
       youtubeLink: 'https://www.youtube.com/@TakafujiKakoHaOrenoYome',
       twitterLink: 'https://twitter.com/EColiDelvSvc',
-      hasLongName: true
+      hasLongName: true,
+      hasTooLongName: true
     },
     {
       name: 'とじーら',

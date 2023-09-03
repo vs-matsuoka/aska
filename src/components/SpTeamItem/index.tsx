@@ -1,3 +1,4 @@
+import cls from 'classnames';
 import Image, { ImageProps } from 'next/image';
 import SpResponsiveImage from 'components/SpResponsiveImage';
 import { TeamMember } from 'const/team';
@@ -58,7 +59,7 @@ const SpTeamItem = ({ member }: { member: TeamMember }) => (
           {member.role}
         </p>
         {/* sp:ml-[15px] sp:mt-[3px] sp:text-[36px] */}
-        <p className="ml-[2vw] mt-[0.5333333333vw] text-[4.8vw] text-[#CCAD70]" data-testid="name">
+        <p className={cls('ml-[2vw]', 'mt-[0.5333333333vw]', member.hasTooLongName ? 'text-[4.4vw]' : 'text-[4.8vw]', 'text-[#CCAD70]')} data-testid="name">
           {member.name}
         </p>
       </div>
