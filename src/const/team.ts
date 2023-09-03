@@ -323,8 +323,16 @@ const team: {
       twitterLink: 'https://twitter.com/N_Asuka'
     },
     {
-      name: 'namacream_',
+      name: '大内乙打',
       role: '特番制作',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_大内乙打.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/6641990',
+      youtubeLink: 'https://www.youtube.com/@user-gk6gv2bq4x',
+      twitterLink: 'https://twitter.com/OZd_oouc2'
+    },
+    {
+      name: 'namacream_',
+      role: '音MAD史 制作',
       iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_namacream_.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/23328012',
       youtubeLink: undefined,
@@ -332,7 +340,7 @@ const team: {
     },
     {
       name: '葉月味',
-      role: '特番制作',
+      role: '音MAD史 制作',
       iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_葉月味.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/96226560',
       youtubeLink: 'https://www.youtube.com/@hadkimi',
@@ -340,7 +348,7 @@ const team: {
     },
     {
       name: 'ピンクの象',
-      role: '特番制作',
+      role: '音MAD史 制作',
       iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_ピンクの象.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/47463792',
       youtubeLink: undefined,
@@ -348,7 +356,7 @@ const team: {
     },
     {
       name: 'ユビュちんちら',
-      role: '特番制作',
+      role: '音MAD史 制作',
       iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_ユビュちんちら.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/14090495',
       youtubeLink: undefined,
@@ -356,19 +364,216 @@ const team: {
     },
     {
       name: 'Lixy',
-      role: '特番制作',
+      role: '音MAD史 制作',
       iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_Lixy.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/90820019',
       youtubeLink: 'https://www.youtube.com/@Lixy2item',
       twitterLink: 'https://twitter.com/YesoftenmeansNo'
     },
     {
-      name: '大内乙打',
-      role: '特番制作',
-      iconSrc: '/Icon/実行委員会/放送_特番/特番01_icon_大内乙打.jpg',
-      niconicoLink: 'https://www.nicovideo.jp/user/6641990',
-      youtubeLink: 'https://www.youtube.com/@user-gk6gv2bq4x',
-      twitterLink: 'https://twitter.com/OZd_oouc2'
+      name: 'ゴムーン',
+      role: '音リビア 出演者',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_出演者_icon_ゴムーン.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/93583784',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/hayami5121'
+    },
+    {
+      name: 'ゆうしゃアシスタント',
+      role: '音リビア 出演者',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_出演者_icon_ゆうしゃアシスタント.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/38502114',
+      youtubeLink: 'https://www.youtube.com/@yuusyaasisutanto',
+      twitterLink: 'https://twitter.com/yuusyaasisutant',
+      hasLongName: true
+    },
+    {
+      name: 'bobineKS',
+      role: '音リビア 出演者',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_出演者_icon_bobineKS.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/2751542',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/bobine_ks'
+    },
+    {
+      name: 'こち横',
+      role: '音リビア 出演者',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_出演者_icon_こち横.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/89667233',
+      youtubeLink: 'https://www.youtube.com/@kochi_z',
+      twitterLink: 'https://twitter.com/tatetatenaname'
+    },
+    {
+      name: 'パペロン',
+      role: '音リビア 出演者',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_出演者_icon_パペロン.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/60786626',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/_PPLN'
+    },
+    {
+      name: 'ムノ',
+      role: '音リビア 出演者',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_出演者_icon_ムノ.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/33843024',
+      youtubeLink: 'https://www.youtube.com/muno3',
+      twitterLink: 'https://twitter.com/3n2nd'
+    },
+    {
+      name: 'モツ',
+      role: '音リビア 出演者',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_出演者_icon_モツ.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/69602427',
+      youtubeLink: 'https://www.youtube.com/@dmp_motsunabe',
+      twitterLink: 'https://twitter.com/dmp_motsunabe'
+    },
+    {
+      name: 'OmegaZero',
+      role: '音リビア 検証班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_検証班_icon_OmegaZero.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/38506640',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/omz14658248'
+    },
+    {
+      name: '片知',
+      role: '音リビア 検証班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_検証班_icon_片知.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/118353037',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/shorthair_hutao'
+    },
+    {
+      name: '大腸菌デリバリーサービス',
+      role: '音リビア 検証班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_検証班_icon_大腸菌デリバリーサービス.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/39376970',
+      youtubeLink: 'https://www.youtube.com/@TakafujiKakoHaOrenoYome',
+      twitterLink: 'https://twitter.com/EColiDelvSvc',
+      hasLongName: true
+    },
+    {
+      name: 'とじーら',
+      role: '音リビア 検証班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_検証班_icon_とじーら.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/95061946',
+      youtubeLink: 'https://www.youtube.com/@Tojirra',
+      twitterLink: 'https://twitter.com/ToJiRuclose'
+    },
+    {
+      name: 'はっきー',
+      role: '音リビア 検証班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_検証班_icon_はっきー.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/50591080',
+      youtubeLink: 'https://www.youtube.com/@hakky2391',
+      twitterLink: 'https://twitter.com/hakky_kai_z'
+    },
+    {
+      name: 'ばなならーめん',
+      role: '音リビア 検証班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_検証班_icon_ばなならーめん.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/33255780',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/BananaRamenYuno',
+      hasLongName: true
+    },
+    {
+      name: 'HYOUTAN',
+      role: '音リビア 検証班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_検証班_icon_HYOUTAN.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/1389685',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/hyoutan250'
+    },
+    {
+      name: 'FEAR',
+      role: '音リビア 検証班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_検証班_icon_FEAR_ЯAR.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/1509143',
+      youtubeLink: 'https://www.youtube.com/@archannel8442',
+      twitterLink: 'https://twitter.com/FEAR443'
+    },
+    {
+      name: 'ホーリィ',
+      role: '音リビア 検証班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_検証班_icon_ホーリィ.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/71900220',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/HORY_nico'
+    },
+    {
+      name: 'やりぎりみかん',
+      role: '音リビア 検証班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_検証班_icon_やりぎりみかん.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/3310989',
+      youtubeLink: 'https://www.youtube.com/@user-os9xm3mx7e',
+      twitterLink: 'https://twitter.com/nakimirigiray'
+    },
+    {
+      name: 'ガ病',
+      role: '音リビア 美術班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_美術班_icon_ガ病.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/58970902',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/negitoro_soba'
+    },
+    {
+      name: 'カンザキリョウマ',
+      role: '音リビア 美術班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_美術班_icon_カンザキリョウマ.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/35044611',
+      youtubeLink: 'https://www.youtube.com/@user-hq2mb9us3q',
+      twitterLink: 'https://twitter.com/Yume_Utsu2',
+      hasLongName: true
+    },
+    {
+      name: '岩鉄ハガネール',
+      role: '音リビア 美術班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_美術班_icon_岩鉄ハガネール.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/45111275',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/gantetuiwaku',
+      hasLongName: true
+    },
+    {
+      name: '絹松',
+      role: '音リビア 美術班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_美術班_icon_絹松.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/33251257',
+      youtubeLink: 'https://www.youtube.com/@KinuMatsu',
+      twitterLink: 'https://twitter.com/SilkPine_movie'
+    },
+    {
+      name: '鮭醤油',
+      role: '音リビア 美術班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_美術班_icon_鮭醤油.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/67503481',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/osakana_max'
+    },
+    {
+      name: 'ちん',
+      role: '音リビア 美術班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_美術班_icon_ちん.png',
+      niconicoLink: 'https://www.nicovideo.jp/user/31837529',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/Sn50Tin'
+    },
+    {
+      name: '猫背',
+      role: '音リビア 美術班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_美術班_icon_猫背.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/64420321',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/nekoze_xxxx'
+    },
+    {
+      name: '谷幽零',
+      role: '音リビア 美術班',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_美術班_icon_谷幽零.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/116138056',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/ya_yu_rei'
     }
   ],
   housou: [
