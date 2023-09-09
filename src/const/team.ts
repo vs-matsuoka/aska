@@ -79,7 +79,7 @@ const team: {
       role: '特番ディレクター',
       iconSrc: '/Icon/運営/運営_icon_ふーふー.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/20600830',
-      youtubeLink: 'https://www.youtube.com/channel/UCapOg6vYOn4WVlwyetUPrMw',
+      youtubeLink: 'https://www.youtube.com/@nanana_555',
       twitterLink: 'https://twitter.com/nanana555'
     },
     {
@@ -638,7 +638,7 @@ const team: {
       role: '音リビア 制作協力',
       iconSrc: '/Icon/実行委員会/放送_特番/特番02_制作協力_icon_ふーふー.jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/20600830',
-      youtubeLink: 'https://www.youtube.com/@jiisan555',
+      youtubeLink: 'https://www.youtube.com/@nanana_555',
       twitterLink: 'https://twitter.com/nanana555'
     }
   ],
