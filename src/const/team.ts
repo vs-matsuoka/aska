@@ -576,6 +576,70 @@ const team: {
       niconicoLink: 'https://www.nicovideo.jp/user/116138056',
       youtubeLink: undefined,
       twitterLink: 'https://twitter.com/ya_yu_rei'
+    },
+    {
+      name: 'エルフィン',
+      role: '音リビア 制作協力',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_制作協力_icon_エルフィン.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/27176777',
+      youtubeLink: 'https://www.youtube.com/@Lfin_Mad',
+      twitterLink: 'https://twitter.com/Lfin_Mad'
+    },
+    {
+      name: 'キャベツ',
+      role: '音リビア 制作協力',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_制作協力_icon_キャベツ.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/11862287',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/kyabetsu23'
+    },
+    {
+      name: 'コツ連打ら',
+      role: '音リビア 制作協力',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_制作協力_icon_コツ連打ら.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/13089286',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/noikanatira'
+    },
+    {
+      name: '零～ゼロ～',
+      role: '音リビア 制作協力',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_制作協力_icon_零～ゼロ～.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/8420196',
+      youtubeLink: 'https://www.youtube.com/@zeromission2nd',
+      twitterLink: 'https://twitter.com/zeromission'
+    },
+    {
+      name: 'youtt6',
+      role: '音リビア 制作協力',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_制作協力_icon_youtt6.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/26209564',
+      youtubeLink: 'https://www.youtube.com/@youtt6450',
+      twitterLink: 'https://twitter.com/OngakuYoutt6'
+    },
+    {
+      name: 'きっかん',
+      role: '音リビア 制作協力',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_制作協力_icon_きっかん.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/12224942',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/ktzkn_'
+    },
+    {
+      name: 'とととと',
+      role: '音リビア 制作協力',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_制作協力_icon_とととと.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/44355080',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/totototo0507'
+    },
+    {
+      name: 'ふーふー',
+      role: '音リビア 制作協力',
+      iconSrc: '/Icon/実行委員会/放送_特番/特番02_制作協力_icon_ふーふー.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/20600830',
+      youtubeLink: 'https://www.youtube.com/@jiisan555',
+      twitterLink: 'https://twitter.com/nanana555'
     }
   ],
   housou: [
