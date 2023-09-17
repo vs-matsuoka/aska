@@ -148,14 +148,6 @@ const team: {
       youtubeLink: 'https://www.youtube.com/@Bymnet1845',
       twitterLink: 'https://twitter.com/komeijiikeda'
     },
-    // ,{
-    //   name: 'R.M.',
-    //   role: '作曲',
-    //   iconSrc: '/Icon/実行委員会/制作/作曲_icon_R.M..jpg',
-    //   niconicoLink: 'https://www.nicovideo.jp/user/24971920',
-    //   youtubeLink: 'https://www.youtube.com/@R_M___',
-    //   twitterLink: 'https://twitter.com/R_M___'
-    // },
     {
       name: 'dedeen',
       role: '集合絵',
@@ -163,6 +155,14 @@ const team: {
       niconicoLink: 'https://www.nicovideo.jp/user/124361135',
       youtubeLink: undefined,
       twitterLink: 'https://twitter.com/DE_DE_EN'
+    },
+    {
+      name: 'R.M.',
+      role: 'メインテーマ制作',
+      iconSrc: '/Icon/実行委員会/制作/作曲_icon_R.M..jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/24971920',
+      youtubeLink: 'https://www.youtube.com/@R_M___',
+      twitterLink: 'https://twitter.com/R_M___'
     }
   ],
   tachie: [
@@ -779,6 +779,86 @@ const team: {
       niconicoLink: 'https://www.nicovideo.jp/user/118622321',
       youtubeLink: 'https://www.youtube.com/@riigokawaira7071',
       twitterLink: 'https://twitter.com/riigorira_mad'
+    },
+    {
+      name: 'さはら',
+      role: 'OPディレクター',
+      iconSrc: '/Icon/実行委員会/本放送/本放送OP_icon_さはら.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/25683331',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/yattawane'
+    },
+    {
+      name: 'いけがみ',
+      role: 'OP',
+      iconSrc: '/Icon/実行委員会/本放送/本放送OP_icon_いけがみ.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/16344169',
+      youtubeLink: undefined,
+      twitterLink: undefined
+    },
+    {
+      name: '咲崎(♂)',
+      role: 'OP',
+      iconSrc: '/Icon/実行委員会/本放送/本放送OP_icon_咲崎(♂).jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/4560337',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/5k2k3'
+    },
+    {
+      name: '鮭醤油',
+      role: 'OP',
+      iconSrc: '/Icon/実行委員会/本放送/本放送OP_icon_鮭醤油.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/67503481',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/osakana_max'
+    },
+    {
+      name: 'ちょのゆし',
+      role: 'OP',
+      iconSrc: '/Icon/実行委員会/本放送/本放送OP_icon_ちょのゆし.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/78688100',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/chonoyushi'
+    },
+    {
+      name: '冬眠します',
+      role: 'OP',
+      iconSrc: '/Icon/実行委員会/本放送/本放送OP_icon_冬眠します.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/1018080/',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/toumin_z'
+    },
+    {
+      name: 'とりのえさ',
+      role: 'OP',
+      iconSrc: '/Icon/実行委員会/本放送/本放送OP_icon_とりのえさ.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/88221441',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/torinoesa36'
+    },
+    {
+      name: '埜村武',
+      role: 'OP',
+      iconSrc: '/Icon/実行委員会/本放送/本放送OP_icon_埜村武.jpg',
+      twitterLink: 'https://twitter.com/nomuratakeshi2',
+      youtubeLink: 'https://www.youtube.com/@nomuratakeshi',
+      niconicoLink: 'https://www.nicovideo.jp/user/14019936'
+    },
+    {
+      name: 'MizkoKT',
+      role: 'OP',
+      iconSrc: '/Icon/実行委員会/本放送/本放送OP_icon_MizkoKT.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/12686166',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/KT_Madko'
+    },
+    {
+      name: 'miyota',
+      role: 'OP',
+      iconSrc: '/Icon/実行委員会/本放送/本放送OP_icon_miyota.jpg',
+      niconicoLink: 'https://www.nicovideo.jp/user/17678878',
+      youtubeLink: undefined,
+      twitterLink: 'https://twitter.com/miyota_wt'
     }
   ]
 };
