@@ -158,7 +158,7 @@ const team: {
     },
     {
       name: 'R.M.',
-      role: 'メインテーマ作曲',
+      role: 'メインテーマ制作',
       iconSrc: '/Icon/実行委員会/制作/作曲_icon_R.M..jpg',
       niconicoLink: 'https://www.nicovideo.jp/user/24971920',
       youtubeLink: 'https://www.youtube.com/@R_M___',
