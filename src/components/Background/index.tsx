@@ -13,7 +13,6 @@ function Background({ src }: BackgroundProps) {
         alt="background"
         className="select-none"
         fill
-        quality={100}
         style={{
           objectFit: 'cover'
         }}

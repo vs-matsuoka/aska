@@ -9,11 +9,11 @@ function getEntryBanner(entry: Entry, index: number) {
   if (entry.isPublished) {
     return (
       <Link href={'/sp/entries/' + entry.index.toString()} key={index} passHref>
-        <SpResponsiveImage alt="banner" src={entry.spBannerSrc} className="relative" width={750} height={127} key={index} quality={90} />
+        <SpResponsiveImage alt="banner" src={entry.spBannerSrc} className="relative" width={750} height={127} key={index} />
       </Link>
     );
   } else {
-    return <SpResponsiveImage alt="banner" src={entry.spBannerSrc} className="relative" width={750} height={127} key={index} quality={90} />;
+    return <SpResponsiveImage alt="banner" src={entry.spBannerSrc} className="relative" width={750} height={127} key={index} />;
   }
 }
 
@@ -30,10 +30,10 @@ export default function Entries() {
 
       <div className="fixed left-0 top-0">
         <div className="relative right-0">
-          <SpResponsiveImage alt="出場者紹介" src="/SP/Entry/s21_EntryIndex_TopBanner.png" width={750} height={130} quality={90} />
+          <SpResponsiveImage alt="出場者紹介" src="/SP/Entry/s21_EntryIndex_TopBanner.png" width={750} height={130} />
           <Link href="/sp/pairs" passHref>
             <div className="absolute right-0 top-0">
-              <SpResponsiveImage alt="コンビ紹介へ" src="/SP/Entry/s21_EntryIndex_TopText.png" width={315} height={130} quality={90} />
+              <SpResponsiveImage alt="コンビ紹介へ" src="/SP/Entry/s21_EntryIndex_TopText.png" width={315} height={130} />
             </div>
           </Link>
         </div>

@@ -9,11 +9,11 @@ function getPairBanner(pair: Pair, index: number) {
   if (pair.isPublished) {
     return (
       <Link href={'/sp/pairs/' + pair.index.toString()} key={index} passHref>
-        <SpResponsiveImage alt={pair.name} src={pair.spBannerSrc} className="relative" width={750} height={127} key={index} quality={90} />
+        <SpResponsiveImage alt={pair.name} src={pair.spBannerSrc} className="relative" width={750} height={127} key={index} />
       </Link>
     );
   } else {
-    return <SpResponsiveImage alt="banner" src={pair.spBannerSrc} className="relative" width={750} height={127} key={index} quality={90} />;
+    return <SpResponsiveImage alt="banner" src={pair.spBannerSrc} className="relative" width={750} height={127} key={index} />;
   }
 }
 
@@ -30,10 +30,10 @@ export default function Pairs() {
 
       <div className="fixed left-0 top-0">
         <div className="relative">
-          <SpResponsiveImage alt="コンビ紹介" src="/SP/Pair/s31_PairIndex_TopBanner.png" width={750} height={130} quality={90} />
+          <SpResponsiveImage alt="コンビ紹介" src="/SP/Pair/s31_PairIndex_TopBanner.png" width={750} height={130} />
           <Link href="/sp/entries" passHref>
             <div className="absolute right-0 top-0">
-              <SpResponsiveImage alt="出場者紹介へ" src="/SP/Pair/s31_PairIndex_TopText.png" width={315} height={130} quality={90} />
+              <SpResponsiveImage alt="出場者紹介へ" src="/SP/Pair/s31_PairIndex_TopText.png" width={315} height={130} />
             </div>
           </Link>
         </div>

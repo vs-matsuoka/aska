@@ -67,13 +67,13 @@ const SpTeamItem = ({ member }: { member: TeamMember }) => (
         {/* sp:mr-[17px] sp:gap-[18px] */}
         <div className="my-auto mr-[2.2666666667vw] flex gap-[2.4vw]">
           <NullableButton href={member.niconicoLink}>
-            <SpResponsiveImage src="/Modal/22_Modal_pic_SNS_Nico.png" width={55} height={55} quality={90} alt="ニコニコ動画" className="relative" />
+            <SpResponsiveImage src="/Modal/22_Modal_pic_SNS_Nico.png" width={55} height={55} alt="ニコニコ動画" className="relative" />
           </NullableButton>
           <NullableButton href={member.youtubeLink}>
-            <SpResponsiveImage src="/Modal/22_Modal_pic_SNS_Youtube.png" width={55} height={55} quality={90} alt="YouTube" className="relative" />
+            <SpResponsiveImage src="/Modal/22_Modal_pic_SNS_Youtube.png" width={55} height={55} alt="YouTube" className="relative" />
           </NullableButton>
           <NullableButton href={member.twitterLink}>
-            <SpResponsiveImage src="/Modal/22_Modal_pic_SNS_Twitter.png" width={55} height={55} quality={90} alt="Twitter" className="relative" />
+            <SpResponsiveImage src="/Modal/22_Modal_pic_SNS_Twitter.png" width={55} height={55} alt="Twitter" className="relative" />
           </NullableButton>
         </div>
       </div>
