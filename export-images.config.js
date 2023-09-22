@@ -14,7 +14,7 @@ const config = {
     ['png', 'webp'],
     ['jpg', 'webp']
   ],
-  // quality: 95,
+  quality: 90,
   remoteImages
 };
 
