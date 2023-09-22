@@ -58,13 +58,13 @@ export default function About() {
       <section>
         <Link href="/sp/entries" passHref>
           <div className="ml-[2.4vw] mt-[4.66666667vw]">
-            <SpResponsiveImage alt="どんな音MAD作者が出場する? 出場者紹介へ" src="/SP/Concept/s41_Concept_Link01.png" className="relative" width={600} height={225} quality={90} />
+            <SpResponsiveImage alt="どんな音MAD作者が出場する? 出場者紹介へ" src="/SP/Concept/s41_Concept_Link01.png" className="relative" width={600} height={225} />
           </div>
         </Link>
         {/* sp:mt-[3px] ml-[172x] */}
         <Link href="/sp/pairs" passHref>
           <div className="ml-[22.933333333vw] mt-[0.4vw] overflow-hidden">
-            <SpResponsiveImage alt="夢のコンビ、続々結成! コンビ紹介へ" src="/SP/Concept/s41_Concept_Link02.png" className="relative" width={600} height={225} quality={90} />
+            <SpResponsiveImage alt="夢のコンビ、続々結成! コンビ紹介へ" src="/SP/Concept/s41_Concept_Link02.png" className="relative" width={600} height={225} />
           </div>
         </Link>
         {/* sp:mt-[125px] */}

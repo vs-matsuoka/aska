@@ -69,8 +69,8 @@ exports[`<SpTeamItem /> should render the heading 1`] = `
               decoding="async"
               loading="lazy"
               sizes="100vw"
-              src="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=3840&q=90"
-              srcset="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=640&q=90 640w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=750&q=90 750w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=828&q=90 828w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=1080&q=90 1080w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=1200&q=90 1200w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=1920&q=90 1920w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=2048&q=90 2048w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=3840&q=90 3840w"
+              src="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=3840&q=75"
+              srcset="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=640&q=75 640w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=750&q=75 750w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=828&q=75 828w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=1080&q=75 1080w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=1200&q=75 1200w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=1920&q=75 1920w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=2048&q=75 2048w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Nico.png&w=3840&q=75 3840w"
               style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
             />
           </div>
@@ -89,8 +89,8 @@ exports[`<SpTeamItem /> should render the heading 1`] = `
               decoding="async"
               loading="lazy"
               sizes="100vw"
-              src="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=3840&q=90"
-              srcset="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=640&q=90 640w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=750&q=90 750w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=828&q=90 828w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=1080&q=90 1080w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=1200&q=90 1200w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=1920&q=90 1920w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=2048&q=90 2048w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=3840&q=90 3840w"
+              src="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=3840&q=75"
+              srcset="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=640&q=75 640w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=750&q=75 750w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=828&q=75 828w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=1080&q=75 1080w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=1200&q=75 1200w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=1920&q=75 1920w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=2048&q=75 2048w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Youtube.png&w=3840&q=75 3840w"
               style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
             />
           </div>
@@ -111,8 +111,8 @@ exports[`<SpTeamItem /> should render the heading 1`] = `
               decoding="async"
               loading="lazy"
               sizes="100vw"
-              src="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=3840&q=90"
-              srcset="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=640&q=90 640w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=750&q=90 750w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=828&q=90 828w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=1080&q=90 1080w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=1200&q=90 1200w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=1920&q=90 1920w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=2048&q=90 2048w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=3840&q=90 3840w"
+              src="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=3840&q=75"
+              srcset="/_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=640&q=75 640w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=750&q=75 750w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=828&q=75 828w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=1080&q=75 1080w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=1200&q=75 1200w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=1920&q=75 1920w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=2048&q=75 2048w, /_next/image?url=%2FModal%2F22_Modal_pic_SNS_Twitter.png&w=3840&q=75 3840w"
               style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
             />
           </div>

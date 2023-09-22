@@ -70,13 +70,7 @@ const NewsList = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return (
-    <div className={cls('w-[320px]', 'h-[335px]', 'overflow-y-scroll')}>
-      {newsList?.map((item) => (
-        <News key={item.id} news={item} />
-      ))}
-    </div>
-  );
+  return <div className={cls('w-[320px]', 'h-[335px]', 'overflow-y-scroll')}>{newsList?.map((item) => <News key={item.id} news={item} />)}</div>;
 };
 
 export default NewsList;
