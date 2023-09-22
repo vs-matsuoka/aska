@@ -74,7 +74,7 @@
     "serve": "^14.2.0",
     "storybook": "^7.0.12",
     "tailwindcss": "^3.3.2",
-    "ts-import": "^4.0.0-beta.10",
+    "ts-import": "^5.0.0-beta.0",
     "typescript": "5.1.6",
     "util": "^0.12.5"
   },
