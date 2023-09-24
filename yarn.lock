@@ -6706,10 +6706,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/gtag.js@npm:^0.0.13":
-  version: 0.0.13
-  resolution: "@types/gtag.js@npm:0.0.13"
-  checksum: 9c56c961579cc7c0b5bb4d8b01ba59baffe91a47893ed9d0be8161c6d74e04cebdcee4bc5762704ba72be0c40cb9d5fc88844df52b990545d6982cf9f8a6d6a7
+"@types/gtag.js@npm:^0.0.14":
+  version: 0.0.14
+  resolution: "@types/gtag.js@npm:0.0.14"
+  checksum: fb269d2da04f83999502683f3f80a9245b7f0a7f71a76d6404649c3214130505d2c93fa27858b400ea94484cba50a0d1494dbce4fbcf1215f0800af5b04d7fe7
   languageName: node
   linkType: hard
 
@@ -7943,7 +7943,7 @@ __metadata:
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^14.0.0
     "@testing-library/user-event": ^14.4.3
-    "@types/gtag.js": ^0.0.13
+    "@types/gtag.js": ^0.0.14
     "@types/jest": ^29.5.1
     "@types/node": ^18.0.0
     "@types/react": ^18.2.8
