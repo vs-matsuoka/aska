@@ -15156,14 +15156,14 @@ __metadata:
   linkType: hard
 
 "microcms-js-sdk@npm:^2.5.0":
-  version: 2.5.0
-  resolution: "microcms-js-sdk@npm:2.5.0"
+  version: 2.6.1
+  resolution: "microcms-js-sdk@npm:2.6.1"
   dependencies:
     async-retry: ^1.3.3
     cross-fetch: ^3.1.5
     encoding: ^0.1.13
     qs: ^6.10.1
-  checksum: 1246995862dcacdc91711227b73705de2473e419fd628badbc094ad71e2977441cdbb919c7135265a28c5878eecd0fe39dcfd39314d3f4c1b9226c52e8181a1a
+  checksum: 338336c408c6ca424692078540f80aed04eae5245e5e7db2c5da33892d1be997b8f658173f662d1e1356de83636fd354ec01c7d4f464e0078ddc50cb35b1f359
   languageName: node
   linkType: hard
 
