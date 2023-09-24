@@ -7980,7 +7980,6 @@ __metadata:
     serve: ^14.2.0
     storybook: ^7.0.12
     tailwindcss: ^3.3.2
-    ts-import: ^4.0.0-beta.10
     typescript: 5.1.6
     url-join: ^5.0.0
     util: ^0.12.5
@@ -9329,13 +9328,6 @@ __metadata:
   version: 8.3.0
   resolution: "commander@npm:8.3.0"
   checksum: 0f82321821fc27b83bd409510bb9deeebcfa799ff0bf5d102128b500b7af22872c0c92cb6a0ebc5a4cf19c6b550fba9cedfa7329d18c6442a625f851377bacf0
-  languageName: node
-  linkType: hard
-
-"comment-parser@npm:1.3.1":
-  version: 1.3.1
-  resolution: "comment-parser@npm:1.3.1"
-  checksum: 421e6a113a3afd548500e7174ab46a2049dccf92e82bbaa3b209031b1bdf97552aabfa1ae2a120c0b62df17e1ba70e0d8b05d68504fee78e1ef974c59bcfe718
   languageName: node
   linkType: hard
 
@@ -16071,13 +16063,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"options-defaults@npm:2.0.40":
-  version: 2.0.40
-  resolution: "options-defaults@npm:2.0.40"
-  checksum: 2bb3697a1aabecee4b76ee68857bd857957f664b78b419306a05e9c36182305092b0fca39035f287c75d24568326e06a0234d168290a9e9c88f1f2ce6e6dd977
-  languageName: node
-  linkType: hard
-
 "ora@npm:^5.4.1":
   version: 5.4.1
   resolution: "ora@npm:5.4.1"
@@ -20019,19 +20004,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-import@npm:^4.0.0-beta.10":
-  version: 4.0.0-beta.10
-  resolution: "ts-import@npm:4.0.0-beta.10"
-  dependencies:
-    comment-parser: 1.3.1
-    options-defaults: 2.0.40
-    tslib: 2.4.1
-  peerDependencies:
-    typescript: 4
-  checksum: d45e5bb674f803c9defd94a9d62c26d0bfaba7df6fddb0def6ba3d94f1534cef93db03863c504fde08d036657c317e7603124f830201b738037d8ae69bb8b346
-  languageName: node
-  linkType: hard
-
 "ts-interface-checker@npm:^0.1.9":
   version: 0.1.13
   resolution: "ts-interface-checker@npm:0.1.13"
@@ -20080,13 +20052,6 @@ __metadata:
     minimist: ^1.2.6
     strip-bom: ^3.0.0
   checksum: 28c5f7bbbcabc9dabd4117e8fdc61483f6872a1c6b02a4b1c4d68c5b79d06896c3cc9547610c4c3ba64658531caa2de13ead1ea1bf321c7b53e969c4752b98c7
-  languageName: node
-  linkType: hard
-
-"tslib@npm:2.4.1":
-  version: 2.4.1
-  resolution: "tslib@npm:2.4.1"
-  checksum: 19480d6e0313292bd6505d4efe096a6b31c70e21cf08b5febf4da62e95c265c8f571f7b36fcc3d1a17e068032f59c269fab3459d6cd3ed6949eafecf64315fca
   languageName: node
   linkType: hard
 
