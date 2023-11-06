@@ -1,0 +1,1521 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MoviesPage /> should render the heading 1`] = `
+.emotion-0 {
+  width: 54.6875vw;
+  height: 7.291666666666667vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-0 {
+    width: 1050px;
+    height: 140px;
+  }
+}
+
+.emotion-1 {
+  width: 20vw;
+  height: 11.25vw;
+}
+
+@media (min-width: 1920px) {
+  .emotion-1 {
+    width: 384px;
+    height: 216px;
+  }
+}
+
+.emotion-2 {
+  width: 20vw;
+  height: 11.25vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-2 {
+    width: 384px;
+    height: 216px;
+  }
+}
+
+.emotion-55 {
+  width: 41.66666666666667vw;
+  height: 7.291666666666667vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-55 {
+    width: 800px;
+    height: 140px;
+  }
+}
+
+<div
+  class="bg-[url('/Team/51_BG.jpg')] bg-cover bg-local"
+>
+  <div
+    class="py-[13.4375vw] 4xl:py-[258px]"
+  >
+    <section>
+      <h1
+        class="grid place-items-center"
+      >
+        <div
+          class="relative emotion-0"
+        >
+          <img
+            alt="特別告知"
+            class="max-w-none"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="1050px"
+            src="/_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=3840&q=75"
+            srcset="/_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Line_01.png&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+          />
+        </div>
+      </h1>
+      <div
+        class="mt-[0.5208333333vw] 4xl:mt-[10px]"
+      >
+        <div
+          class="mx-auto grid w-[85.15625vw] grid-cols-[repeat(4,1fr)] justify-center gap-x-[1.71875vw] gap-y-[1.0416666667vw] 4xl:w-[1635px] 4xl:gap-x-[33px] 4xl:gap-y-[20px]"
+        >
+          <div>
+            <a
+              href="https://youtu.be/jb2cFj3wCIA"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fjb2cFj3wCIA%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fjb2cFj3wCIA%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fjb2cFj3wCIA%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fjb2cFj3wCIA%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fjb2cFj3wCIA%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fjb2cFj3wCIA%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fjb2cFj3wCIA%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fjb2cFj3wCIA%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fjb2cFj3wCIA%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              出場者告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/p1cAUzCboN4"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fp1cAUzCboN4%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fp1cAUzCboN4%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fp1cAUzCboN4%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fp1cAUzCboN4%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fp1cAUzCboN4%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fp1cAUzCboN4%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fp1cAUzCboN4%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fp1cAUzCboN4%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fp1cAUzCboN4%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              特殊告知「流行」
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/oWVHp--jqaU"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FoWVHp--jqaU%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FoWVHp--jqaU%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FoWVHp--jqaU%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FoWVHp--jqaU%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FoWVHp--jqaU%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FoWVHp--jqaU%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FoWVHp--jqaU%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FoWVHp--jqaU%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FoWVHp--jqaU%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              前半中間告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/TRY8NvI4MFo"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=%2FMovie%2Fthumbnails%2FinterimNoticeB.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FMovie%2Fthumbnails%2FinterimNoticeB.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2Fthumbnails%2FinterimNoticeB.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2Fthumbnails%2FinterimNoticeB.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2Fthumbnails%2FinterimNoticeB.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2Fthumbnails%2FinterimNoticeB.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2Fthumbnails%2FinterimNoticeB.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2Fthumbnails%2FinterimNoticeB.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2Fthumbnails%2FinterimNoticeB.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              後半中間告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/inL40npy7oA"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=%2FMovie%2Fthumbnails%2FspecialNoticeAnalog.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FMovie%2Fthumbnails%2FspecialNoticeAnalog.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2Fthumbnails%2FspecialNoticeAnalog.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2Fthumbnails%2FspecialNoticeAnalog.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2Fthumbnails%2FspecialNoticeAnalog.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2Fthumbnails%2FspecialNoticeAnalog.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2Fthumbnails%2FspecialNoticeAnalog.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2Fthumbnails%2FspecialNoticeAnalog.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2Fthumbnails%2FspecialNoticeAnalog.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              特殊告知「アナログ」
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1
+        class="mt-[1.25vw] grid place-items-center 4xl:mt-[24px]"
+      >
+        <div
+          class="relative emotion-0"
+        >
+          <img
+            alt="コンビ告知"
+            class="max-w-none"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="1050px"
+            src="/_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=3840&q=75"
+            srcset="/_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Line_02.png&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+          />
+        </div>
+      </h1>
+      <div
+        class="mt-[0.5208333333vw] 4xl:mt-[10px]"
+      >
+        <div
+          class="mx-auto grid w-[85.15625vw] grid-cols-[repeat(4,1fr)] justify-center gap-x-[1.71875vw] gap-y-[1.0416666667vw] 4xl:w-[1635px] 4xl:gap-x-[33px] 4xl:gap-y-[20px]"
+        >
+          <div>
+            <a
+              href="https://youtu.be/D5l2cW4pDk0"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FD5l2cW4pDk0%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FD5l2cW4pDk0%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FD5l2cW4pDk0%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FD5l2cW4pDk0%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FD5l2cW4pDk0%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FD5l2cW4pDk0%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FD5l2cW4pDk0%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FD5l2cW4pDk0%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FD5l2cW4pDk0%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第1弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/fc8YRrj6SNk"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Ffc8YRrj6SNk%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Ffc8YRrj6SNk%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Ffc8YRrj6SNk%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Ffc8YRrj6SNk%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Ffc8YRrj6SNk%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Ffc8YRrj6SNk%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Ffc8YRrj6SNk%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Ffc8YRrj6SNk%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Ffc8YRrj6SNk%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第2弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/5KuExLMwxUo"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F5KuExLMwxUo%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F5KuExLMwxUo%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F5KuExLMwxUo%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F5KuExLMwxUo%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F5KuExLMwxUo%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F5KuExLMwxUo%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F5KuExLMwxUo%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F5KuExLMwxUo%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F5KuExLMwxUo%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第3弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/y8e8RUs2GJs"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fy8e8RUs2GJs%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fy8e8RUs2GJs%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fy8e8RUs2GJs%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fy8e8RUs2GJs%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fy8e8RUs2GJs%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fy8e8RUs2GJs%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fy8e8RUs2GJs%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fy8e8RUs2GJs%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fy8e8RUs2GJs%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第4弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/--3dGlwlGT4"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F--3dGlwlGT4%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F--3dGlwlGT4%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F--3dGlwlGT4%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F--3dGlwlGT4%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F--3dGlwlGT4%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F--3dGlwlGT4%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F--3dGlwlGT4%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F--3dGlwlGT4%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F--3dGlwlGT4%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第5弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/DP57HMEp5TE"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDP57HMEp5TE%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDP57HMEp5TE%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDP57HMEp5TE%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDP57HMEp5TE%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDP57HMEp5TE%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDP57HMEp5TE%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDP57HMEp5TE%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDP57HMEp5TE%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDP57HMEp5TE%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第6弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/ZSrPxxw_m6M"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FZSrPxxw_m6M%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FZSrPxxw_m6M%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FZSrPxxw_m6M%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FZSrPxxw_m6M%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FZSrPxxw_m6M%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FZSrPxxw_m6M%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FZSrPxxw_m6M%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FZSrPxxw_m6M%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FZSrPxxw_m6M%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第7弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/O1iZ01-9K4s"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FO1iZ01-9K4s%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FO1iZ01-9K4s%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FO1iZ01-9K4s%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FO1iZ01-9K4s%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FO1iZ01-9K4s%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FO1iZ01-9K4s%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FO1iZ01-9K4s%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FO1iZ01-9K4s%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FO1iZ01-9K4s%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第8弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/Dkr0JMeGtqA"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDkr0JMeGtqA%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDkr0JMeGtqA%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDkr0JMeGtqA%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDkr0JMeGtqA%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDkr0JMeGtqA%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDkr0JMeGtqA%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDkr0JMeGtqA%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDkr0JMeGtqA%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FDkr0JMeGtqA%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第9弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/hAT73Oi3ZXE"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FhAT73Oi3ZXE%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FhAT73Oi3ZXE%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FhAT73Oi3ZXE%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FhAT73Oi3ZXE%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FhAT73Oi3ZXE%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FhAT73Oi3ZXE%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FhAT73Oi3ZXE%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FhAT73Oi3ZXE%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FhAT73Oi3ZXE%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第10弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/Ma7zHBKMPB4"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FMa7zHBKMPB4%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FMa7zHBKMPB4%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FMa7zHBKMPB4%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FMa7zHBKMPB4%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FMa7zHBKMPB4%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FMa7zHBKMPB4%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FMa7zHBKMPB4%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FMa7zHBKMPB4%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FMa7zHBKMPB4%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第11弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/Bs_T5RL0vaI"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FBs_T5RL0vaI%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FBs_T5RL0vaI%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FBs_T5RL0vaI%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FBs_T5RL0vaI%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FBs_T5RL0vaI%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FBs_T5RL0vaI%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FBs_T5RL0vaI%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FBs_T5RL0vaI%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FBs_T5RL0vaI%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第12弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/qEfHogQDrjQ"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FqEfHogQDrjQ%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FqEfHogQDrjQ%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FqEfHogQDrjQ%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FqEfHogQDrjQ%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FqEfHogQDrjQ%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FqEfHogQDrjQ%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FqEfHogQDrjQ%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FqEfHogQDrjQ%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FqEfHogQDrjQ%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第13弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/PGISH8019XM"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=%2FMovie%2Fthumbnails%2Fpair14.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FMovie%2Fthumbnails%2Fpair14.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair14.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair14.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair14.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair14.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair14.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair14.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair14.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第14弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/khfXQCZoDHo"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=%2FMovie%2Fthumbnails%2Fpair15.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FMovie%2Fthumbnails%2Fpair15.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair15.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair15.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair15.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair15.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair15.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair15.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair15.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第15弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/O5R79zTKgfI"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=%2FMovie%2Fthumbnails%2Fpair16.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FMovie%2Fthumbnails%2Fpair16.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair16.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair16.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair16.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair16.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair16.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair16.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair16.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第16弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/6uZ6hL7J8DE"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=%2FMovie%2Fthumbnails%2Fpair17.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FMovie%2Fthumbnails%2Fpair17.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair17.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair17.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair17.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair17.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair17.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair17.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair17.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第17弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/zMDb9lUScfU"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=%2FMovie%2Fthumbnails%2Fpair18.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FMovie%2Fthumbnails%2Fpair18.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair18.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair18.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair18.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair18.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair18.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair18.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair18.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第18弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/jJ9KwC-NeQw"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=%2FMovie%2Fthumbnails%2Fpair19.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FMovie%2Fthumbnails%2Fpair19.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair19.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair19.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair19.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair19.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair19.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair19.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair19.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第19弾告知
+            </h1>
+          </div>
+          <div>
+            <a
+              href="https://youtu.be/GR3V88L_2LU"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=%2FMovie%2Fthumbnails%2Fpair20.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FMovie%2Fthumbnails%2Fpair20.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair20.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair20.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair20.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair20.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair20.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair20.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2Fthumbnails%2Fpair20.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              第20弾告知
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1
+        class="mt-[1.25vw] grid place-items-center 4xl:mt-[24px]"
+      >
+        <div
+          class="relative emotion-0"
+        >
+          <img
+            alt="事前番組"
+            class="max-w-none"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="1050px"
+            src="/_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=3840&q=75"
+            srcset="/_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Line_03.png&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+          />
+        </div>
+      </h1>
+      <div
+        class="mt-[0.5208333333vw] 4xl:mt-[10px]"
+      >
+        <div
+          class="mx-auto grid w-[85.15625vw] grid-cols-[repeat(4,1fr)] justify-center gap-x-[1.71875vw] gap-y-[1.0416666667vw] 4xl:w-[1635px] 4xl:gap-x-[33px] 4xl:gap-y-[20px]"
+        >
+          <div>
+            <a
+              href="https://youtu.be/q65tyDWSCgw"
+              target="_blank"
+            >
+              <div
+                class="relative h-[11.25vw] w-[20vw] 4xl:h-[216px] 4xl:w-[384px]"
+              >
+                <div
+                  class="relative emotion-1"
+                >
+                  <img
+                    alt="thumbnail"
+                    class="object-cover"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fq65tyDWSCgw%2Fsddefault.jpg&w=3840&q=75"
+                    srcset="/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fq65tyDWSCgw%2Fsddefault.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fq65tyDWSCgw%2Fsddefault.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fq65tyDWSCgw%2Fsddefault.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fq65tyDWSCgw%2Fsddefault.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fq65tyDWSCgw%2Fsddefault.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fq65tyDWSCgw%2Fsddefault.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fq65tyDWSCgw%2Fsddefault.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Fq65tyDWSCgw%2Fsddefault.jpg&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+                <div
+                  class="absolute top-0"
+                >
+                  <div
+                    class="relative relative emotion-2"
+                  >
+                    <img
+                      alt="thumbnail"
+                      class="max-w-none"
+                      data-nimg="fill"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="384px"
+                      src="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75"
+                      srcset="/_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Thumbnail.png&w=3840&q=75 3840w"
+                      style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h1
+              class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
+              data-testid="title"
+              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            >
+              音MDM Direct 01
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      class="my-[0.5208333333vw] grid place-items-center 4xl:my-[10px]"
+    >
+      <div
+        class="relative emotion-55"
+      >
+        <img
+          alt="最新映像は随時更新!"
+          class="max-w-none"
+          data-nimg="fill"
+          decoding="async"
+          loading="lazy"
+          sizes="800px"
+          src="/_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=3840&q=75"
+          srcset="/_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=16&q=75 16w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=32&q=75 32w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=48&q=75 48w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=64&q=75 64w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=96&q=75 96w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=128&q=75 128w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=256&q=75 256w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=384&q=75 384w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=640&q=75 640w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=750&q=75 750w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=828&q=75 828w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=1080&q=75 1080w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=1200&q=75 1200w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=1920&q=75 1920w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=2048&q=75 2048w, /_next/image?url=%2FMovie%2F61_Movie_Text_01.png&w=3840&q=75 3840w"
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
