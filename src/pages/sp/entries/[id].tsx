@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticPropsContext, NextPage } from 'next';
 import SEO from 'components/SEO';
-import { EntryProps } from 'components/pages/sp/EntryPage';
+import EntryPage, { EntryProps } from 'components/pages/sp/EntryPage';
 import entries from 'const/entries';
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -35,7 +35,7 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
   };
 };
 
-const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
+const Entry: NextPage<EntryProps> = (props: EntryProps) => {
   return (
     <>
       <SEO title={props.name} />
@@ -44,4 +44,4 @@ const EntryPage: NextPage<EntryProps> = (props: EntryProps) => {
   );
 };
 
-export default EntryPage;
+export default Entry;

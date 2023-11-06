@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticPropsContext, NextPage } from 'next';
 import SEO from 'components/SEO';
-import { PairProps } from 'components/pages/sp/PairPage';
+import PairPage, { PairProps } from 'components/pages/sp/PairPage';
 import pairs from 'const/pairs';
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -32,7 +32,7 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
   };
 };
 
-const PairPage: NextPage<PairProps> = (props: PairProps) => {
+const Pair: NextPage<PairProps> = (props: PairProps) => {
   return (
     <>
       <SEO title={props.name} />
@@ -41,4 +41,4 @@ const PairPage: NextPage<PairProps> = (props: PairProps) => {
   );
 };
 
-export default PairPage;
+export default Pair;
