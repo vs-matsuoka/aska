@@ -5296,16 +5296,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-client@npm:7.4.5":
-  version: 7.4.5
-  resolution: "@storybook/core-client@npm:7.4.5"
-  dependencies:
-    "@storybook/client-logger": 7.4.5
-    "@storybook/preview-api": 7.4.5
-  checksum: 4fc5aabad164cad9f5964010169d55ddb669f7c22a5c6a1bd40647e419147507476e88db134dc7ecf19731168374d8e321f21a40d634a94e6c239f74a448e74f
-  languageName: node
-  linkType: hard
-
 "@storybook/core-client@npm:7.5.3":
   version: 7.5.3
   resolution: "@storybook/core-client@npm:7.5.3"
@@ -5925,7 +5915,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:7.5.3":
+"@storybook/react@npm:7.5.3, @storybook/react@npm:^7.0.12":
   version: 7.5.3
   resolution: "@storybook/react@npm:7.5.3"
   dependencies:
@@ -5958,42 +5948,6 @@ __metadata:
     typescript:
       optional: true
   checksum: 0b931d4feb424bea501bd4977f9b61479d0bbe550998d4537e2c0370b39bc66e604f0408a063477641f9d65fde1e88702154b94ca16e00b9d023c44bc72925bf
-  languageName: node
-  linkType: hard
-
-"@storybook/react@npm:^7.0.12":
-  version: 7.4.5
-  resolution: "@storybook/react@npm:7.4.5"
-  dependencies:
-    "@storybook/client-logger": 7.4.5
-    "@storybook/core-client": 7.4.5
-    "@storybook/docs-tools": 7.4.5
-    "@storybook/global": ^5.0.0
-    "@storybook/preview-api": 7.4.5
-    "@storybook/react-dom-shim": 7.4.5
-    "@storybook/types": 7.4.5
-    "@types/escodegen": ^0.0.6
-    "@types/estree": ^0.0.51
-    "@types/node": ^16.0.0
-    acorn: ^7.4.1
-    acorn-jsx: ^5.3.1
-    acorn-walk: ^7.2.0
-    escodegen: ^2.1.0
-    html-tags: ^3.1.0
-    lodash: ^4.17.21
-    prop-types: ^15.7.2
-    react-element-to-jsx-string: ^15.0.0
-    ts-dedent: ^2.0.0
-    type-fest: ~2.19
-    util-deprecate: ^1.0.2
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-    typescript: "*"
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: 84c0e31b5c7a9ced05a432932a391c9c0396f3d6162f4506afc08d6df660d4114eed14c92428c06f013e70069f2c18e134f1be0700a1841ecf177f6decd8cc90
   languageName: node
   linkType: hard
 
@@ -6331,8 +6285,8 @@ __metadata:
   linkType: hard
 
 "@testing-library/react@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "@testing-library/react@npm:14.0.0"
+  version: 14.1.0
+  resolution: "@testing-library/react@npm:14.1.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     "@testing-library/dom": ^9.0.0
@@ -6340,7 +6294,7 @@ __metadata:
   peerDependencies:
     react: ^18.0.0
     react-dom: ^18.0.0
-  checksum: 4a54c8f56cc4a39b50803205f84f06280bb76521d6d5d4b3b36651d760c7c7752ef142d857d52aaf4fad4848ed7a8be49afc793a5dda105955d2f8bef24901ac
+  checksum: e76681911947f0981a1a72802ea01abeacdc4973c62deaf19c206cb9ff8d23eff5e3888c572303614686f029ee8a2a2dad6d0f0a9fb222944dbd9e0ea573b248
   languageName: node
   linkType: hard
 
@@ -6830,13 +6784,13 @@ __metadata:
   linkType: hard
 
 "@types/react@npm:*, @types/react@npm:>=16, @types/react@npm:^18.2.8":
-  version: 18.2.22
-  resolution: "@types/react@npm:18.2.22"
+  version: 18.2.37
+  resolution: "@types/react@npm:18.2.37"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 44289523dabaadcd3fd85689abb98f9ebcc8492d7e978348d1c986138acef4801030b279e89a19e38a6319e294bcea77559e37e0c803e4bacf2b8ae3a56ba587
+  checksum: 2d2599f1a09e4f678509161fea8baeaf76d21deee460f4f3ccc1ca431ebe85f896d7d0b906127de17e97ed57240cec61955eb97d0b5d9cbf4e97fd6620b1acdb
   languageName: node
   linkType: hard
 
@@ -17993,11 +17947,11 @@ __metadata:
   linkType: hard
 
 "react-intersection-observer@npm:^9.4.3":
-  version: 9.5.2
-  resolution: "react-intersection-observer@npm:9.5.2"
+  version: 9.5.3
+  resolution: "react-intersection-observer@npm:9.5.3"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: cdbe40544930d59fc3820bce017fb688910cbecd7baaf382387a3d60d98a36e1d1e4bc27a876775e99b2a9f86762286a29d7bca21f3345f653cff29850c2641d
+  checksum: 2281912a9fe7a52bb1237c1b5299873beee358f79325eb9ba80fc0e4b7640963c1b27528f873453746e93981c503f880fdea9f786ebeae2e6a4216b50d180941
   languageName: node
   linkType: hard
 
@@ -18086,20 +18040,20 @@ __metadata:
   linkType: hard
 
 "react-scroll-parallax@npm:^3.4.2":
-  version: 3.4.2
-  resolution: "react-scroll-parallax@npm:3.4.2"
+  version: 3.4.3
+  resolution: "react-scroll-parallax@npm:3.4.3"
   dependencies:
     parallax-controller: ^1.7.0
   peerDependencies:
     react: ^16.8.0-0 || >=17.0.1 || ^18.0.0
     react-dom: ^16.8.0-0 || >=17.0.1 || ^18.0.0
-  checksum: c59514be1ae566a6b48218f854b5b6d8eb0bb90d31732f6bd27d05dec131421ec55b750f5cff3f38c4395623607ceb7dfb12b807a3791e636554c70f29a2eadd
+  checksum: 3d1a56badde61bb8fb49d359e8dd2e572ecff25c53544f7d5d212728dcddc856177b63746a36d748762fc1c0e6c7b41340a7a9ae1cf799c2af43f20ab0a7b2b7
   languageName: node
   linkType: hard
 
 "react-spring@npm:^9.7.1":
-  version: 9.7.2
-  resolution: "react-spring@npm:9.7.2"
+  version: 9.7.3
+  resolution: "react-spring@npm:9.7.3"
   dependencies:
     "@react-spring/core": ~9.7.3
     "@react-spring/konva": ~9.7.3
@@ -18110,7 +18064,7 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: c3cfe2091d1d0dcce34f5a400c379603664821be5a72f6f9815131c6777dd47aea5b6bccbd3ad2cb8e0194489349202e9592cd49595ef768a22c6eb69262c352
+  checksum: f763fb64b16b59b7b98816b88898d1697906aebd0d9067bdb2af61d2522b3a313d1117e139e75e39f0cd438e1d110956cfb3573bdefb5516ffba3e7aa618d87e
   languageName: node
   linkType: hard
 
