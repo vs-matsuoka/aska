@@ -4,7 +4,7 @@
   "extends": ["config:base"],
   "baseBranches": ["main"],
   "timezone": "Asia/Tokyo",
-  "schedule": ["every weekend"],
+  "schedule": ["at any time"],
   "labels": ["renovate"],
   "rangeStrategy": "auto",
   "prConcurrentLimit": 5,
