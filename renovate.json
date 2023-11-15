@@ -7,8 +7,11 @@
   "schedule": ["every weekend"],
   "labels": ["renovate"],
   "rangeStrategy": "auto",
-  "reviewersSampleSize": 1,
   "prConcurrentLimit": 5,
+  "automerge": true,
+  "autoApprove": true,
+  "prHourlyLimit": 0,
+  "reviewersSampleSize": 1,
   "packageRules": [
     {
       "packageNames": ["node"],
