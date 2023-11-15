@@ -97,7 +97,7 @@ jobs:
           echo "Alias: ${{ steps.cloudflare_pages_deploy.outputs.alias }}"
 
       - name: Add publish URL as commit status
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           script: |
             const target_url = "${{ steps.cloudflare_pages_deploy.outputs.url }}";
