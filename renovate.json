@@ -12,6 +12,7 @@
   "autoApprove": true,
   "prHourlyLimit": 0,
   "reviewersSampleSize": 1,
+  "branchConcurrentLimit": 0,
   "packageRules": [
     {
       "packageNames": ["node"],
