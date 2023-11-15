@@ -1,0 +1,705 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AboutPage /> should render the heading 1`] = `
+.emotion-0 {
+  width: 39.0625vw;
+  height: 23.4375vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-0 {
+    width: 750px;
+    height: 450px;
+  }
+}
+
+.emotion-1 {
+  width: 41.66666666666667vw;
+  height: 18.75vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-1 {
+    width: 800px;
+    height: 360px;
+  }
+}
+
+.emotion-2 {
+  width: 52.083333333333336vw;
+  height: 5.208333333333334vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-2 {
+    width: 1000px;
+    height: 100px;
+  }
+}
+
+.emotion-3 {
+  width: 43.22916666666667vw;
+  height: 25vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-3 {
+    width: 830px;
+    height: 480px;
+  }
+}
+
+.emotion-4 {
+  width: 18.229166666666664vw;
+  height: 11.197916666666668vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-4 {
+    width: 350px;
+    height: 215px;
+  }
+}
+
+.emotion-5 {
+  width: 32.55208333333333vw;
+  height: 8.854166666666668vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-5 {
+    width: 625px;
+    height: 170px;
+  }
+}
+
+.emotion-15 {
+  width: 83.33333333333334vw;
+  height: 15.625vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-15 {
+    width: 1600px;
+    height: 300px;
+  }
+}
+
+.emotion-16 {
+  width: 36.45833333333333vw;
+  height: 13.020833333333334vw;
+  object-fit: cover;
+}
+
+@media (min-width: 1920px) {
+  .emotion-16 {
+    width: 700px;
+    height: 250px;
+  }
+}
+
+<div
+  class="overflow-x-hidden bg-[url('/Concept/41_Pic_BG.jpg')] bg-cover bg-local"
+>
+  <section>
+    <div
+      class="absolute w-full"
+    >
+      <img
+        alt="logo"
+        class="h-auto w-full"
+        data-nimg="1"
+        decoding="async"
+        height="750"
+        loading="lazy"
+        sizes="100vw"
+        src="/_next/image?url=%2FConcept%2F41_pic_Base_C.png&w=3840&q=75"
+        srcset="/_next/image?url=%2FConcept%2F41_pic_Base_C.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_pic_Base_C.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_pic_Base_C.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_pic_Base_C.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_pic_Base_C.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_pic_Base_C.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_pic_Base_C.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_pic_Base_C.png&w=3840&q=75 3840w"
+        style="color: transparent;"
+        width="1920"
+      />
+    </div>
+    <div>
+      <div
+        style="opacity: 0; transform: translateY(10.416666666666668vw);"
+      >
+        <div
+          class="flex w-full justify-center"
+          style="padding-top: 14.0625vw; gap: 1.0416666666666665vw;"
+        >
+          <div
+            class="relative emotion-0"
+          >
+            <img
+              alt="音MAD DREAM MATCH -天-"
+              class="max-w-none"
+              data-nimg="fill"
+              decoding="async"
+              loading="eager"
+              sizes="750px"
+              src="/_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=3840&q=75"
+              srcset="/_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Pic_00_Logo.png&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            />
+          </div>
+          <div
+            class="relative emotion-1"
+          >
+            <img
+              alt="2018年開催 音MAD生放送バラエティ「音MAD DREAM MATCH」が5年の時を経て「天」として再臨！ 多彩なフィールドから音MAD作者が勢揃い 今だからこそ実現できる「夢のコンビ」が音MADのさらなる可能性を切り開く!"
+              class="max-w-none"
+              data-nimg="fill"
+              decoding="async"
+              loading="eager"
+              sizes="800px"
+              src="/_next/image?url=%2FConcept%2F41_Text_00.png&w=3840&q=75"
+              srcset="/_next/image?url=%2FConcept%2F41_Text_00.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Text_00.png&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        style="opacity: 0; transform: translateY(10.416666666666668vw);"
+      >
+        <div
+          class="flex w-full justify-center"
+          style="margin-top: 2.7604166666666665vw;"
+        >
+          <div
+            class="relative emotion-2"
+          >
+            <img
+              alt="音MAD DREAM MATCHとは?"
+              class="max-w-none"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="1000px"
+              src="/_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=3840&q=75"
+              srcset="/_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Pic_Arrow.png&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div
+      class="relative flex justify-center"
+    >
+      <div
+        class="absolute"
+        style="top: -4.166666666666666vw; left: 0px;"
+      >
+        <div
+          class="invisible absolute w-full"
+        >
+           
+        </div>
+        <div
+          class="relative h-full"
+          style="width: 100vw; height: 52.083333333333336vw;"
+        >
+          <div
+            class="absolute h-full overflow-hidden"
+            style="width: 0vw;"
+          >
+            <img
+              alt="base"
+              class="absolute max-w-none"
+              src="/Concept/41_Pic_Base_A.png"
+              style="height: 52.083333333333336vw;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex"
+        style="margin-top: 8.854166666666668vw; gap: 1.7708333333333333vw;"
+      >
+        <div>
+          <div
+            style="opacity: 0; transform: translateY(10.416666666666668vw);"
+          >
+            <div
+              class="relative emotion-3"
+            >
+              <img
+                alt="指名"
+                class="max-w-none"
+                data-nimg="fill"
+                decoding="async"
+                loading="lazy"
+                sizes="830px"
+                src="/_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=3840&q=75"
+                srcset="/_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Pic_Frame_01.png&w=3840&q=75 3840w"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            style="opacity: 0; transform: translateY(10.416666666666668vw);"
+          >
+            <div>
+              <div
+                style="margin-top: 0.78125vw;"
+              >
+                <div
+                  class="relative emotion-4"
+                >
+                  <img
+                    alt="①指名"
+                    class="max-w-none"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="eager"
+                    sizes="350px"
+                    src="/_next/image?url=%2FConcept%2F41_Text_01_A.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FConcept%2F41_Text_01_A.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Text_01_A.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+              </div>
+              <div
+                style="margin-left: 2.03125vw; margin-top: 0.5729166666666666vw;"
+              >
+                <div
+                  class="relative emotion-5"
+                >
+                  <img
+                    alt="組みたい相手を指名!各々の指名を一斉公開"
+                    class="max-w-none"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="eager"
+                    sizes="625px"
+                    src="/_next/image?url=%2FConcept%2F41_Text_01_B.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FConcept%2F41_Text_01_B.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Text_01_B.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div
+      class="relative flex justify-center"
+    >
+      <div
+        class="absolute"
+        style="top: -1.5104166666666667vw;"
+      >
+        <div
+          class="invisible absolute w-full"
+        >
+           
+        </div>
+        <div
+          class="relative h-full"
+          style="width: 100vw; height: 52.083333333333336vw;"
+        >
+          <div
+            class="absolute h-full overflow-hidden"
+            style="width: 0vw; right: 0px;"
+          >
+            <img
+              alt="base"
+              class="absolute max-w-none"
+              src="/Concept/41_Pic_Base_B.png"
+              style="height: 52.083333333333336vw; right: 0px;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex"
+        style="margin-top: 15.625vw; gap: 0.20833333333333334vw;"
+      >
+        <div>
+          <div
+            style="opacity: 0; transform: translateY(10.416666666666668vw);"
+          >
+            <div>
+              <div
+                style="margin-top: 0.78125vw;"
+              >
+                <div
+                  class="relative emotion-4"
+                >
+                  <img
+                    alt="②結成"
+                    class="max-w-none"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="eager"
+                    sizes="350px"
+                    src="/_next/image?url=%2FConcept%2F41_Text_02_A.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FConcept%2F41_Text_02_A.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Text_02_A.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+              </div>
+              <div
+                style="margin-left: 2.2395833333333335vw; margin-top: 0.5729166666666666vw;"
+              >
+                <div
+                  class="relative emotion-5"
+                >
+                  <img
+                    alt="指名のマッチした作者でコンビを結成!"
+                    class="max-w-none"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="eager"
+                    sizes="625px"
+                    src="/_next/image?url=%2FConcept%2F41_Text_02_B.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FConcept%2F41_Text_02_B.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Text_02_B.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            style="opacity: 0; transform: translateY(10.416666666666668vw);"
+          >
+            <div
+              style="margin-top: 0.5729166666666666vw; margin-left: 2.03125vw;"
+            >
+              <div
+                class="relative emotion-3"
+              >
+                <img
+                  alt="結成"
+                  class="max-w-none"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  sizes="830px"
+                  src="/_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=3840&q=75"
+                  srcset="/_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Pic_Frame_02.png&w=3840&q=75 3840w"
+                  style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div
+      class="relative flex w-full justify-center"
+    >
+      <div
+        class="absolute"
+        style="top: 1.5625vw;"
+      >
+        <div
+          class="invisible absolute w-full"
+        >
+           
+        </div>
+        <div
+          class="relative h-full"
+          style="width: 100vw; height: 52.083333333333336vw;"
+        >
+          <div
+            class="absolute h-full overflow-hidden"
+            style="width: 0vw;"
+          >
+            <img
+              alt="base"
+              class="absolute max-w-none"
+              src="/Concept/41_Pic_Base_A.png"
+              style="height: 52.083333333333336vw;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex"
+        style="margin-top: 15.156249999999998vw; gap: 1.7708333333333333vw;"
+      >
+        <div>
+          <div
+            style="opacity: 0; transform: translateY(10.416666666666668vw);"
+          >
+            <div
+              class="relative emotion-3"
+            >
+              <img
+                alt="放送"
+                class="max-w-none"
+                data-nimg="fill"
+                decoding="async"
+                loading="lazy"
+                sizes="830px"
+                src="/_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=3840&q=75"
+                srcset="/_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Pic_Frame_03.png&w=3840&q=75 3840w"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            style="opacity: 0; transform: translateY(10.416666666666668vw);"
+          >
+            <div>
+              <div
+                style="margin-top: 0.78125vw;"
+              >
+                <div
+                  class="relative emotion-4"
+                >
+                  <img
+                    alt="③放送"
+                    class="max-w-none"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="eager"
+                    sizes="350px"
+                    src="/_next/image?url=%2FConcept%2F41_Text_03_A.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FConcept%2F41_Text_03_A.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Text_03_A.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+              </div>
+              <div
+                style="margin-left: 2.3958333333333335vw; margin-top: 0.625vw;"
+              >
+                <div
+                  class="relative emotion-5"
+                >
+                  <img
+                    alt="コンビで作成した動画を生放送で初披露!"
+                    class="max-w-none"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="eager"
+                    sizes="625px"
+                    src="/_next/image?url=%2FConcept%2F41_Text_03_B.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FConcept%2F41_Text_03_B.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Text_03_B.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div
+      class="relative flex w-full justify-center"
+    >
+      <div
+        class="absolute"
+        style="top: -2.083333333333333vw;"
+      >
+        <div
+          class="invisible absolute w-full"
+        >
+           
+        </div>
+        <div
+          class="relative h-full"
+          style="width: 100vw; height: 52.083333333333336vw;"
+        >
+          <div
+            class="absolute h-full overflow-hidden"
+            style="width: 0vw;"
+          >
+            <img
+              alt="base"
+              class="absolute max-w-none"
+              src="/Concept/41_Pic_Base_B.png"
+              style="height: 52.083333333333336vw;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex"
+        style="margin-top: 15.625vw;"
+      >
+        <div>
+          <div
+            style="opacity: 0; transform: translateY(10.416666666666668vw);"
+          >
+            <div
+              style="margin-right: -3.6458333333333335vw;"
+            >
+              <div
+                style="margin-top: 0.78125vw;"
+              >
+                <div
+                  class="relative emotion-4"
+                >
+                  <img
+                    alt="④投票"
+                    class="max-w-none"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="eager"
+                    sizes="350px"
+                    src="/_next/image?url=%2FConcept%2F41_Text_04_A.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FConcept%2F41_Text_04_A.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Text_04_A.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+              </div>
+              <div
+                style="margin-left: 2.03125vw; margin-top: 0.5729166666666666vw;"
+              >
+                <div
+                  class="relative emotion-5"
+                >
+                  <img
+                    alt="生放送で動画に投票!優勝作品を競う"
+                    class="max-w-none"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="eager"
+                    sizes="625px"
+                    src="/_next/image?url=%2FConcept%2F41_Text_04_B.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FConcept%2F41_Text_04_B.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Text_04_B.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            style="opacity: 0; transform: translateY(10.416666666666668vw);"
+          >
+            <div
+              style="margin-top: 0.5729166666666666vw; margin-left: 2.03125vw;"
+            >
+              <div
+                class="relative emotion-3"
+              >
+                <img
+                  alt="投票"
+                  class="max-w-none"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  sizes="830px"
+                  src="/_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=3840&q=75"
+                  srcset="/_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Pic_Frame_04.png&w=3840&q=75 3840w"
+                  style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div
+      class="relative flex w-full justify-center"
+      style="margin-top: 10.9375vw; margin-bottom: 12.239583333333332vw;"
+    >
+      <div
+        class="justify-center"
+      >
+        <div>
+          <div
+            style="opacity: 0; transform: translateY(10.416666666666668vw);"
+          >
+            <div
+              class="relative emotion-15"
+            >
+              <img
+                alt="史上最大規模で開催される音MADバラエティ 2023年9月17日 開幕!!"
+                class="max-w-none"
+                data-nimg="fill"
+                decoding="async"
+                loading="lazy"
+                sizes="1600px"
+                src="/_next/image?url=%2FConcept%2F41_Text_11.png&w=3840&q=75"
+                srcset="/_next/image?url=%2FConcept%2F41_Text_11.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Text_11.png&w=3840&q=75 3840w"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            style="opacity: 0; transform: translateY(10.416666666666668vw);"
+          >
+            <div
+              class="flex justify-center"
+              style="gap: 5.208333333333334vw;"
+            >
+              <a
+                href="/entries"
+              >
+                <div
+                  class="relative emotion-16"
+                >
+                  <img
+                    alt="挑む音MAD作者! 出場者紹介へ"
+                    class="max-w-none"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="700px"
+                    src="/_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Text_12_Link_A.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+              </a>
+              <a
+                href="/pairs"
+              >
+                <div
+                  class="relative emotion-16"
+                >
+                  <img
+                    alt="夢のコンビ 結成! コンビ紹介へ"
+                    class="max-w-none"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="700px"
+                    src="/_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=3840&q=75"
+                    srcset="/_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=16&q=75 16w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=32&q=75 32w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=48&q=75 48w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=64&q=75 64w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=96&q=75 96w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=128&q=75 128w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=256&q=75 256w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=384&q=75 384w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=640&q=75 640w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=750&q=75 750w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=828&q=75 828w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=1080&q=75 1080w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=1200&q=75 1200w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=1920&q=75 1920w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=2048&q=75 2048w, /_next/image?url=%2FConcept%2F41_Text_12_Link_B.png&w=3840&q=75 3840w"
+                    style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
