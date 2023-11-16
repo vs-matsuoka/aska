@@ -6,8 +6,9 @@
 
 ### Prerequisites
 
-- Node.js v18.10.0
-  - どの手段で導入しても良いですが [nodenv](https://github.com/nodenv/nodenv) を使うことをおすすめします
+- Node.js [.node-version](./.node-version) と同じバージョン
+  - どの手段で導入しても良いですが、このチームでは [nodenv](https://github.com/nodenv/nodenv) を使うことをおすすめします
+    - `nodenv install` でインストール可能
 
 ### Run
 
