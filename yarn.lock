@@ -6551,13 +6551,13 @@ __metadata:
   linkType: hard
 
 "@types/react@npm:*, @types/react@npm:>=16, @types/react@npm:^18.2.8":
-  version: 18.2.37
-  resolution: "@types/react@npm:18.2.37"
+  version: 18.2.38
+  resolution: "@types/react@npm:18.2.38"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 79dd5d23da05bec54e7423ca17096e345eb8fd80a3bf8dd916bb5cdd60677d27c298523aa5b245d090fcc4ec100cfd58c1af4631fbac709d0a9d8be75f9d78a9
+  checksum: 56edd4756081b677e38ee23ad6d340658c5e2468785cb20968318cec357e1ea7ccf3ecd9534981741192dd1b894200acfaf0f1551b4795c6077668f6afc19345
   languageName: node
   linkType: hard
 
@@ -17818,14 +17818,14 @@ __metadata:
   linkType: hard
 
 "react-scroll-parallax@npm:^3.4.2":
-  version: 3.4.3
-  resolution: "react-scroll-parallax@npm:3.4.3"
+  version: 3.4.4
+  resolution: "react-scroll-parallax@npm:3.4.4"
   dependencies:
     parallax-controller: "npm:^1.7.0"
   peerDependencies:
     react: ^16.8.0-0 || >=17.0.1 || ^18.0.0
     react-dom: ^16.8.0-0 || >=17.0.1 || ^18.0.0
-  checksum: 7ab840c60d2c8e4a53f83dc6f4641f652d225ca943159f2029da7f61fd07f114a35d002aa3f3233dc1326df42c4c89c4929ec9658811e0a2973c207e2616189b
+  checksum: f1058c36e8646a237f98f2e5a6f2b67bb51a921b06a6d373275c5f0b252016dcdbcc218784d38636b262bea06b57b9742d0cf3369361d7da99bfaf08913774dd
   languageName: node
   linkType: hard
 
