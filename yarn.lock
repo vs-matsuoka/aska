@@ -16262,12 +16262,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parallax-controller@npm:^1.7.0":
-  version: 1.7.0
-  resolution: "parallax-controller@npm:1.7.0"
+"parallax-controller@npm:^1.7.1":
+  version: 1.7.1
+  resolution: "parallax-controller@npm:1.7.1"
   dependencies:
     bezier-easing: "npm:^2.1.0"
-  checksum: 6a9770694c463a629133412a3812b928ef8093e62e48e34df3d0d1e7d03fade458bf4f5523f3d88c1c66aa2e043ecef9f76df308f117068a88a1fd55315d03c3
+  checksum: 065fbb49de5dbaf513e210c54bd2a3a2e2b978db2d38d6dad2dcd7d309cb7036e2cd7d2555bf37bc3a565d72e6fb842ccbc55938eb30b1a38bffb750a8862f7f
   languageName: node
   linkType: hard
 
@@ -17818,14 +17818,14 @@ __metadata:
   linkType: hard
 
 "react-scroll-parallax@npm:^3.4.2":
-  version: 3.4.4
-  resolution: "react-scroll-parallax@npm:3.4.4"
+  version: 3.4.5
+  resolution: "react-scroll-parallax@npm:3.4.5"
   dependencies:
-    parallax-controller: "npm:^1.7.0"
+    parallax-controller: "npm:^1.7.1"
   peerDependencies:
     react: ^16.8.0-0 || >=17.0.1 || ^18.0.0
     react-dom: ^16.8.0-0 || >=17.0.1 || ^18.0.0
-  checksum: f1058c36e8646a237f98f2e5a6f2b67bb51a921b06a6d373275c5f0b252016dcdbcc218784d38636b262bea06b57b9742d0cf3369361d7da99bfaf08913774dd
+  checksum: 6db8556d94ed22aefcf08c6e1758e24bdcf0dfb68c7f57265ae69b25696cfbaa478af4b569d8a28e55fa304cdfc39ce6b1229aa54a40a8358b8ece52c4d03031
   languageName: node
   linkType: hard
 
