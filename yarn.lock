@@ -4937,16 +4937,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-client@npm:7.6.7":
-  version: 7.6.7
-  resolution: "@storybook/core-client@npm:7.6.7"
-  dependencies:
-    "@storybook/client-logger": "npm:7.6.7"
-    "@storybook/preview-api": "npm:7.6.7"
-  checksum: bdd3a4bc5ac4accceff08ad00a70b3599040025abb4a88319c1745d47b5849ec3d5352b6688b21c4897ed6c1590bc0616f5a3ba3f568f7be42c0c5a48bab92b4
-  languageName: node
-  linkType: hard
-
 "@storybook/core-client@npm:7.6.8":
   version: 7.6.8
   resolution: "@storybook/core-client@npm:7.6.8"
@@ -5547,7 +5537,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:7.6.8":
+"@storybook/react@npm:7.6.8, @storybook/react@npm:^7.0.12":
   version: 7.6.8
   resolution: "@storybook/react@npm:7.6.8"
   dependencies:
@@ -5580,42 +5570,6 @@ __metadata:
     typescript:
       optional: true
   checksum: 584fbe9032d99b7a9407917c673e68a75de384af7dbc6778cbb3ea34e9c75dff457e4af70acc681c893f2da71219f52c56cc4e073e099dc957091dbf7116e794
-  languageName: node
-  linkType: hard
-
-"@storybook/react@npm:^7.0.12":
-  version: 7.6.7
-  resolution: "@storybook/react@npm:7.6.7"
-  dependencies:
-    "@storybook/client-logger": "npm:7.6.7"
-    "@storybook/core-client": "npm:7.6.7"
-    "@storybook/docs-tools": "npm:7.6.7"
-    "@storybook/global": "npm:^5.0.0"
-    "@storybook/preview-api": "npm:7.6.7"
-    "@storybook/react-dom-shim": "npm:7.6.7"
-    "@storybook/types": "npm:7.6.7"
-    "@types/escodegen": "npm:^0.0.6"
-    "@types/estree": "npm:^0.0.51"
-    "@types/node": "npm:^18.0.0"
-    acorn: "npm:^7.4.1"
-    acorn-jsx: "npm:^5.3.1"
-    acorn-walk: "npm:^7.2.0"
-    escodegen: "npm:^2.1.0"
-    html-tags: "npm:^3.1.0"
-    lodash: "npm:^4.17.21"
-    prop-types: "npm:^15.7.2"
-    react-element-to-jsx-string: "npm:^15.0.0"
-    ts-dedent: "npm:^2.0.0"
-    type-fest: "npm:~2.19"
-    util-deprecate: "npm:^1.0.2"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-    typescript: "*"
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: 00aaf41a3bf6755320ca5ead5792ba6fce5194212586a7804c4fbcab255d299e730fae7d747f08484d9a072c8a0273aababdf1e65fb34285e1aab96b700fc31c
   languageName: node
   linkType: hard
 
