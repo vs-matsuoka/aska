@@ -33,7 +33,7 @@ jobs:
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         id: yarn-cache
         with:
           path: |
@@ -45,7 +45,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         id: next-export-optimize-images-cache
         with:
           path: |
@@ -54,7 +54,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-2-next-export-optimize-images-cache-
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         id: dot-next-cache
         with:
           path: |
