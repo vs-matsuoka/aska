@@ -5702,8 +5702,8 @@ __metadata:
   linkType: hard
 
 "@testing-library/jest-dom@npm:^6.0.0":
-  version: 6.2.0
-  resolution: "@testing-library/jest-dom@npm:6.2.0"
+  version: 6.2.1
+  resolution: "@testing-library/jest-dom@npm:6.2.1"
   dependencies:
     "@adobe/css-tools": "npm:^4.3.2"
     "@babel/runtime": "npm:^7.9.2"
@@ -5715,11 +5715,14 @@ __metadata:
     redent: "npm:^3.0.0"
   peerDependencies:
     "@jest/globals": ">= 28"
+    "@types/bun": "*"
     "@types/jest": ">= 28"
     jest: ">= 28"
     vitest: ">= 0.32"
   peerDependenciesMeta:
     "@jest/globals":
+      optional: true
+    "@types/bun":
       optional: true
     "@types/jest":
       optional: true
@@ -5727,7 +5730,7 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: 71421693e0ad6a46be7d16f00b58a45725c238693972b8b5b1fd9ab797902ccf1209cf259afe8da1bf59d7c958762c46ee85d1aa5b164a5ec330981ea2376b08
+  checksum: ade94aa06af3910e471f4728f300518f662fc745e95d158a6edf51223ad75b64e7a92714976bd8ab75ddc8b4b733dc53ece7f709a5ceeb365844b00ee1c4ff68
   languageName: node
   linkType: hard
 
