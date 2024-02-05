@@ -17580,15 +17580,15 @@ __metadata:
   linkType: hard
 
 "react-intersection-observer@npm:^9.4.3":
-  version: 9.6.0
-  resolution: "react-intersection-observer@npm:9.6.0"
+  version: 9.7.0
+  resolution: "react-intersection-observer@npm:9.7.0"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
     react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 10c0/200ca442022028de6a609601d64ecfac7cf0fc92412ca5eea48c679402cb0af2202ffd61fb9b85e1d97635896dd45d81a2a1b48af5ec8552eed7ac0488c570b5
+  checksum: 10c0/cfc5b7e4ca6987ece322928f9862efda6333a2254de85d6053d3536744c83d0aa72472ad4d8f1dafac3731c67d12310b922afdb7a21aad3180f87f65a45addac
   languageName: node
   linkType: hard
 
