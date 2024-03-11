@@ -46,7 +46,7 @@
     "@storybook/addon-links": "^7.0.12",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/addon-styling": "^1.0.8",
-    "@storybook/nextjs": "^7.0.12",
+    "@storybook/nextjs": "^8.0.0",
     "@storybook/react": "^7.0.12",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
