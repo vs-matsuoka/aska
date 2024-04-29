@@ -17343,15 +17343,15 @@ __metadata:
   linkType: hard
 
 "react-intersection-observer@npm:^9.4.3":
-  version: 9.10.0
-  resolution: "react-intersection-observer@npm:9.10.0"
+  version: 9.10.1
+  resolution: "react-intersection-observer@npm:9.10.1"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 10c0/514869647f91cad82e5a406785f577180b571cd687e694b78df3de88cf24ecd7ccd198844b24a9f01df1bcfd8ab19ebd75f16cd831132887b0af59c18a985601
+  checksum: 10c0/8ac2a9a226adbfd8dbe08ab52e34570befd87cc37527e09f040fc212786ce2404112ec2c2c1aa6bad130c48c7be6cb5cd5656a923e8dccbe5c5a3f78b7fa405b
   languageName: node
   linkType: hard
 
