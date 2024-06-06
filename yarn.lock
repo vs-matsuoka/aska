@@ -11563,14 +11563,14 @@ __metadata:
   linkType: hard
 
 "eslint-plugin-tailwindcss@npm:^3.12.0":
-  version: 3.17.1
-  resolution: "eslint-plugin-tailwindcss@npm:3.17.1"
+  version: 3.17.2
+  resolution: "eslint-plugin-tailwindcss@npm:3.17.2"
   dependencies:
     fast-glob: "npm:^3.2.5"
     postcss: "npm:^8.4.4"
   peerDependencies:
     tailwindcss: ^3.4.0
-  checksum: 10c0/ad89f9b445a544a511abab7080c0936b6f6c7350ad8001f44a112f98a248ec61ebc7be4c25e42c0c0ae51193c1c94da2142af7e0468bbe1521f7532f723cb83c
+  checksum: 10c0/33333cbe0968a2c37bac914da0e908c1b3286466185c4de69d46912d84d94d51dcce5dbb75a179e6b08930add8841278fd54ea9888b42a2b67f82904c94b7e2a
   languageName: node
   linkType: hard
 
