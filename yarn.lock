@@ -2586,13 +2586,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/css-prettifier@npm:^1.1.3":
-  version: 1.1.3
-  resolution: "@emotion/css-prettifier@npm:1.1.3"
+"@emotion/css-prettifier@npm:^1.1.4":
+  version: 1.1.4
+  resolution: "@emotion/css-prettifier@npm:1.1.4"
   dependencies:
-    "@emotion/memoize": "npm:^0.8.1"
+    "@emotion/memoize": "npm:^0.9.0"
     stylis: "npm:4.2.0"
-  checksum: 10c0/9ce3d7e5851054a24ca68cca4f6973de47d64567d03b6be730aa83f1cf9ae15e4da8c4611e68620e7b972f7a9fb7c36099fdf7e26b78589eb64f094fce46ce1b
+  checksum: 10c0/6e77721314bb3ac2e418d463f4e6ce51947680aa992522aaad1d513590819a18750659e6e1a7e6943f907b689027257679300af9dbe1a151df542297bd11eafc
   languageName: node
   linkType: hard
 
@@ -2604,11 +2604,11 @@ __metadata:
   linkType: hard
 
 "@emotion/jest@npm:^11.11.0":
-  version: 11.11.0
-  resolution: "@emotion/jest@npm:11.11.0"
+  version: 11.13.0
+  resolution: "@emotion/jest@npm:11.13.0"
   dependencies:
     "@babel/runtime": "npm:^7.18.3"
-    "@emotion/css-prettifier": "npm:^1.1.3"
+    "@emotion/css-prettifier": "npm:^1.1.4"
     chalk: "npm:^4.1.0"
     specificity: "npm:^0.4.1"
     stylis: "npm:4.2.0"
@@ -2620,14 +2620,7 @@ __metadata:
       optional: true
     enzyme-to-json:
       optional: true
-  checksum: 10c0/919def636000234c4af8447a6cdf7f9675146bb020074fd06cf3c6eb42c365e727354ae79b2a7cdccb472d38da8ed8d6fd57f4235cab2e1b7605a2c6672a0fc5
-  languageName: node
-  linkType: hard
-
-"@emotion/memoize@npm:^0.8.1":
-  version: 0.8.1
-  resolution: "@emotion/memoize@npm:0.8.1"
-  checksum: 10c0/dffed372fc3b9fa2ba411e76af22b6bb686fb0cb07694fdfaa6dd2baeb0d5e4968c1a7caa472bfcf06a5997d5e7c7d16b90e993f9a6ffae79a2c3dbdc76dfe78
+  checksum: 10c0/cd91ad01001e9fff443d33fe9321de91d7b415da466707ee7786d5e5a785d48f6d2917d6deeef8f1f796617d805a2a705d053b6b7bbf67ef7ccf691384f0517c
   languageName: node
   linkType: hard
 
