@@ -7070,15 +7070,15 @@ __metadata:
   linkType: hard
 
 "babel-loader@npm:^9.0.0, babel-loader@npm:^9.1.3":
-  version: 9.2.0
-  resolution: "babel-loader@npm:9.2.0"
+  version: 9.2.1
+  resolution: "babel-loader@npm:9.2.1"
   dependencies:
     find-cache-dir: "npm:^4.0.0"
     schema-utils: "npm:^4.0.0"
   peerDependencies:
     "@babel/core": ^7.12.0
     webpack: ">=5"
-  checksum: 10c0/6cff76f6e3b92eb879c9288ed8be8268c901a3c08589b5f4daa8440dba9dd07091ed99bffaa675678c09221c72ea8570341ac5f88ac7457ded18712640dd3d82
+  checksum: 10c0/efb82faff4c7c27e9c15bb28bf11c73200e61cf365118a9514e8d74dd489d0afc2a0d5aaa62cb4254eefc2ab631579224d95a03fd245410f28ea75e24de54ba4
   languageName: node
   linkType: hard
 
