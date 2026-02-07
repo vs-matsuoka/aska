@@ -5848,7 +5848,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.0.0":
+"@types/node@npm:*":
   version: 22.12.0
   resolution: "@types/node@npm:22.12.0"
   dependencies:
@@ -5870,6 +5870,15 @@ __metadata:
   dependencies:
     undici-types: "npm:~5.26.4"
   checksum: 10c0/365d9cc2af934965aa6a8471e24ae80add815c15dc094e42a320c57c1ea5416032f0b7ef6f23e32174c34811fbb8d89ea8eaa1396548610fbb8ba317b6e93fbf
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^24.0.0":
+  version: 24.10.11
+  resolution: "@types/node@npm:24.10.11"
+  dependencies:
+    undici-types: "npm:~7.16.0"
+  checksum: 10c0/2578baa9443d62b0f13444b7965790912eca6d25c205e594cfa96689fa9bc6a676d2d4d7024a95a92e42e4be52133e5608ece2ef86edb12ee110c8b52f603a35
   languageName: node
   linkType: hard
 
@@ -6994,7 +7003,7 @@ __metadata:
     "@testing-library/user-event": "npm:^14.4.3"
     "@types/gtag.js": "npm:^0.0.20"
     "@types/jest": "npm:^29.5.1"
-    "@types/node": "npm:^22.0.0"
+    "@types/node": "npm:^24.0.0"
     "@types/react": "npm:^18.2.8"
     assert: "npm:^2.0.0"
     autoprefixer: "npm:^10.4.14"
@@ -19323,6 +19332,13 @@ __metadata:
   version: 6.20.0
   resolution: "undici-types@npm:6.20.0"
   checksum: 10c0/68e659a98898d6a836a9a59e6adf14a5d799707f5ea629433e025ac90d239f75e408e2e5ff086afc3cace26f8b26ee52155293564593fbb4a2f666af57fc59bf
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~7.16.0":
+  version: 7.16.0
+  resolution: "undici-types@npm:7.16.0"
+  checksum: 10c0/3033e2f2b5c9f1504bdc5934646cb54e37ecaca0f9249c983f7b1fc2e87c6d18399ebb05dc7fd5419e02b2e915f734d872a65da2e3eeed1813951c427d33cc9a
   languageName: node
   linkType: hard
 
