@@ -6533,6 +6533,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"acorn@npm:^8.16.0":
+  version: 8.16.0
+  resolution: "acorn@npm:8.16.0"
+  bin:
+    acorn: bin/acorn
+  checksum: 10c0/c9c52697227661b68d0debaf972222d4f622aa06b185824164e153438afa7b08273432ca43ea792cadb24dada1d46f6f6bb1ef8de9956979288cc1b96bf9914e
+  languageName: node
+  linkType: hard
+
 "acorn@npm:^8.5.0":
   version: 8.8.0
   resolution: "acorn@npm:8.8.0"
@@ -9534,13 +9543,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.19.0":
-  version: 5.19.0
-  resolution: "enhanced-resolve@npm:5.19.0"
+"enhanced-resolve@npm:^5.20.0":
+  version: 5.21.0
+  resolution: "enhanced-resolve@npm:5.21.0"
   dependencies:
     graceful-fs: "npm:^4.2.4"
-    tapable: "npm:^2.3.0"
-  checksum: 10c0/966b1dffb82d5f6a4d6a86e904e812104a999066aa29f9223040aaa751e7c453b462a3f5ef91f8bd4408131ff6f7f90651dd1c804bdcb7944e2099a9c2e45ee2
+    tapable: "npm:^2.3.3"
+  checksum: 10c0/8d25b9eb7cbaaf6bac7ca52cefb6aa8a723a3cea754aa3c52f269bdae3b6d5f3219fadbaf4362ed7d53f027e0b83bfbeb4c646640123cf62e6dbe52f28604c77
   languageName: node
   linkType: hard
 
@@ -13451,7 +13460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json-parse-even-better-errors@npm:^2.3.0, json-parse-even-better-errors@npm:^2.3.1":
+"json-parse-even-better-errors@npm:^2.3.0":
   version: 2.3.1
   resolution: "json-parse-even-better-errors@npm:2.3.1"
   checksum: 10c0/140932564c8f0b88455432e0f33c4cb4086b8868e37524e07e723f4eaedb9425bdc2bafd71bd1d9765bd15fd1e2d126972bc83990f55c467168c228c24d665f3
@@ -14229,6 +14238,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mime-db@npm:^1.54.0":
+  version: 1.54.0
+  resolution: "mime-db@npm:1.54.0"
+  checksum: 10c0/8d907917bc2a90fa2df842cdf5dfeaf509adc15fe0531e07bb2f6ab15992416479015828d6a74200041c492e42cce3ebf78e5ce714388a0a538ea9c53eece284
+  languageName: node
+  linkType: hard
+
 "mime-db@npm:~1.33.0":
   version: 1.33.0
   resolution: "mime-db@npm:1.33.0"
@@ -14245,7 +14261,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mime-types@npm:^2.1.12, mime-types@npm:^2.1.27, mime-types@npm:^2.1.31, mime-types@npm:~2.1.34":
+"mime-types@npm:^2.1.12, mime-types@npm:^2.1.31, mime-types@npm:~2.1.34":
   version: 2.1.35
   resolution: "mime-types@npm:2.1.35"
   dependencies:
@@ -17680,15 +17696,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serialize-javascript@npm:^6.0.2":
-  version: 6.0.2
-  resolution: "serialize-javascript@npm:6.0.2"
-  dependencies:
-    randombytes: "npm:^2.1.0"
-  checksum: 10c0/2dd09ef4b65a1289ba24a788b1423a035581bef60817bea1f01eda8e3bda623f86357665fe7ac1b50f6d4f583f97db9615b3f07b2a2e8cbcb75033965f771dd2
-  languageName: node
-  linkType: hard
-
 "serve-handler@npm:6.1.6":
   version: 6.1.6
   resolution: "serve-handler@npm:6.1.6"
@@ -18725,6 +18732,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tapable@npm:^2.3.3":
+  version: 2.3.3
+  resolution: "tapable@npm:2.3.3"
+  checksum: 10c0/47992e861053f861154e92fb4a98ac4ab47b6463717e60792dd1e8c755da0c4964cd8bb68c308a9066d6da89000b6310457b4d5d985c30de4ccc29066068cc17
+  languageName: node
+  linkType: hard
+
 "tar-fs@npm:^2.0.0":
   version: 2.1.1
   resolution: "tar-fs@npm:2.1.1"
@@ -18826,14 +18840,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"terser-webpack-plugin@npm:^5.3.16":
-  version: 5.3.16
-  resolution: "terser-webpack-plugin@npm:5.3.16"
+"terser-webpack-plugin@npm:^5.3.17":
+  version: 5.5.0
+  resolution: "terser-webpack-plugin@npm:5.5.0"
   dependencies:
     "@jridgewell/trace-mapping": "npm:^0.3.25"
     jest-worker: "npm:^27.4.5"
     schema-utils: "npm:^4.3.0"
-    serialize-javascript: "npm:^6.0.2"
     terser: "npm:^5.31.1"
   peerDependencies:
     webpack: ^5.1.0
@@ -18844,7 +18857,7 @@ __metadata:
       optional: true
     uglify-js:
       optional: true
-  checksum: 10c0/39e37c5b3015c1a5354a3633f77235677bfa06eac2608ce26d258b1d1a74070a99910319a6f2f2c437eb61dc321f66434febe01d78e73fa96b4d4393b813f4cf
+  checksum: 10c0/ea2277cc6c80981fd8ce170016b1cd92d33cdf89d50e81ad387218dd46db55b8d69c8f736a35d7deb238962dbe003dd084f0a2494cbbd55f46a9c9d3e90e583a
   languageName: node
   linkType: hard
 
@@ -19716,10 +19729,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-sources@npm:^3.3.3":
-  version: 3.3.3
-  resolution: "webpack-sources@npm:3.3.3"
-  checksum: 10c0/ab732f6933b513ba4d505130418995ddef6df988421fccf3289e53583c6a39e205c4a0739cee98950964552d3006604912679c736031337fb4a9d78d8576ed40
+"webpack-sources@npm:^3.3.4":
+  version: 3.4.0
+  resolution: "webpack-sources@npm:3.4.0"
+  checksum: 10c0/a37214f85e9b81897b46b27063f12ddb80adeef3249d10502f7e8279357d1fc812d40429df7a726e26ac21a6f5e22448e1d00d53aa15c1b2827a5929ba261969
   languageName: node
   linkType: hard
 
@@ -19738,8 +19751,8 @@ __metadata:
   linkType: hard
 
 "webpack@npm:^5":
-  version: 5.105.0
-  resolution: "webpack@npm:5.105.0"
+  version: 5.106.2
+  resolution: "webpack@npm:5.106.2"
   dependencies:
     "@types/eslint-scope": "npm:^3.7.7"
     "@types/estree": "npm:^1.0.8"
@@ -19747,31 +19760,30 @@ __metadata:
     "@webassemblyjs/ast": "npm:^1.14.1"
     "@webassemblyjs/wasm-edit": "npm:^1.14.1"
     "@webassemblyjs/wasm-parser": "npm:^1.14.1"
-    acorn: "npm:^8.15.0"
+    acorn: "npm:^8.16.0"
     acorn-import-phases: "npm:^1.0.3"
     browserslist: "npm:^4.28.1"
     chrome-trace-event: "npm:^1.0.2"
-    enhanced-resolve: "npm:^5.19.0"
+    enhanced-resolve: "npm:^5.20.0"
     es-module-lexer: "npm:^2.0.0"
     eslint-scope: "npm:5.1.1"
     events: "npm:^3.2.0"
     glob-to-regexp: "npm:^0.4.1"
     graceful-fs: "npm:^4.2.11"
-    json-parse-even-better-errors: "npm:^2.3.1"
     loader-runner: "npm:^4.3.1"
-    mime-types: "npm:^2.1.27"
+    mime-db: "npm:^1.54.0"
     neo-async: "npm:^2.6.2"
     schema-utils: "npm:^4.3.3"
     tapable: "npm:^2.3.0"
-    terser-webpack-plugin: "npm:^5.3.16"
+    terser-webpack-plugin: "npm:^5.3.17"
     watchpack: "npm:^2.5.1"
-    webpack-sources: "npm:^3.3.3"
+    webpack-sources: "npm:^3.3.4"
   peerDependenciesMeta:
     webpack-cli:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 10c0/4aea6b976485b5364e122f301c08f48efa84ddb2c0cb5d09f27445d1f2da0b9875cd889e41b58cac3ff05618a9c965be716df52586d151b5f52a7bbed7662174
+  checksum: 10c0/933293ae94b7f3405147aebd824d978696693a7fbd85cfbf4d05b517329c93f69e634400ad70a27f4ba4148e14e2fd502e335cd8d30d75282091ab3c72a1ac01
   languageName: node
   linkType: hard
 
