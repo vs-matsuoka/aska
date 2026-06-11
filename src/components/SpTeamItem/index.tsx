@@ -2,6 +2,7 @@ import cls from 'classnames';
 import Image, { ImageProps } from 'next/image';
 import SpResponsiveImage from 'components/SpResponsiveImage';
 import { TeamMember } from 'const/team';
+import { udKakugoLargeE } from 'libs/fonts';
 
 function ResponsiveImage(
   props: Omit<ImageProps, 'fill' | 'width' | 'height'> & {
@@ -50,7 +51,7 @@ const SpTeamItem = ({ member }: { member: TeamMember }) => (
         // sp:mt-[5px]
         className="mt-[0.6666666667vw]"
         style={{
-          fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
+          ...udKakugoLargeE,
           lineHeight: '1'
         }}
       >

@@ -9,6 +9,7 @@ import ResponsiveImage from 'components/ResponsiveImage';
 import entries, { Entry } from 'const/entries';
 import { EntryContextType, EntryProvider, useEntryContext } from 'contexts/EntryContext';
 import useModal from 'hooks/useModal';
+import { udKakugoLargeHV } from 'libs/fonts';
 import { searchNextPublished, searchPrevPublished } from 'utils/nextPrev';
 
 type ContestantRowProps = {
@@ -202,9 +203,9 @@ function ContestantModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => 
                 <ResponsiveImage src="/Modal/22_Entry_pic_Line.png" alt="line" width={725} height={10} />
                 {/* テキストサイズを決定する */}
                 <div
-                  className="my-[0.5208333333vw] w-[37.7604166667vw] text-[1.3020833333vw] font-bold text-white 4xl:my-[10px] 4xl:w-[725px] 4xl:text-[25px]"
+                  className="my-[0.5208333333vw] w-[37.7604166667vw] text-[1.328125vw] font-bold text-white 4xl:my-[10px] 4xl:w-[725px] 4xl:text-[25.5px]"
                   style={{
-                    fontFamily: 'UDKakugo_LargePr6-HV',
+                    ...udKakugoLargeHV,
                     lineHeight: '1.7'
                   }}
                   dangerouslySetInnerHTML={{ __html: entry.description.replaceAll('\n', '<br />') }}

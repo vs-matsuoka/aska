@@ -3,6 +3,7 @@ import Background from 'components/Background';
 import SpMenu from 'components/SpMenu';
 import SpResponsiveImage from 'components/SpResponsiveImage';
 import entries, { Entry } from 'const/entries';
+import { udKakugoLargeE } from 'libs/fonts';
 
 function getEntryIcon(entry: Entry, index: number) {
   if (entry.isPublished) {
@@ -60,7 +61,7 @@ const EntryPage = (props: EntryProps) => {
             <div
               className="absolute left-[20.6666667vw] top-[33.3333333vw] skew-y-[-10deg] text-[4vw] tracking-[.07em] text-white"
               style={{
-                fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
+                ...udKakugoLargeE,
                 lineHeight: '1.3'
               }}
               dangerouslySetInnerHTML={{ __html: props.description.replaceAll('\n', '<br />') }}

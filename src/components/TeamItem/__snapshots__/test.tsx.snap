@@ -90,7 +90,7 @@ exports[`<TeamItem /> should render correctly 1`] = `
     </div>
     <div
       class="mt-[0.7291666667vw] drop-shadow-[0_0_0.15625vw_#000000] 4xl:mt-[14px] 4xl:drop-shadow-[0_0_3px_#000000]"
-      style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+      style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
     >
       <p
         class="text-[0.78125vw] text-white 4xl:text-[15px]"

@@ -73,7 +73,7 @@ exports[`<Movie /> should render the heading 1`] = `
   <h1
     class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
     data-testid="title"
-    style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+    style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
   >
     第1弾告知
   </h1>

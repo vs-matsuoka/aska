@@ -3,6 +3,7 @@ import Background from 'components/Background';
 import SpMenu from 'components/SpMenu';
 import SpTeamItem from 'components/SpTeamItem';
 import team from 'const/team';
+import { udKakugoLargeE } from 'libs/fonts';
 
 function SpTeamHeader({ children }: { children: ReactNode }) {
   return (
@@ -12,7 +13,7 @@ function SpTeamHeader({ children }: { children: ReactNode }) {
       <div
         className="m-auto text-center align-middle text-[4.8vw]"
         style={{
-          fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
+          ...udKakugoLargeE,
           lineHeight: '1'
         }}
       >

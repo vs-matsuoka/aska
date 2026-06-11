@@ -8,6 +8,7 @@ import ResponsiveImage from 'components/ResponsiveImage';
 import pairs, { Pair as Pair } from 'const/pairs';
 import { PairContextType, PairProvider, usePairContext } from 'contexts/PairContext';
 import useModal from 'hooks/useModal';
+import { udKakugoLargeHV } from 'libs/fonts';
 import { searchNextPublished, searchPrevPublished } from 'utils/nextPrev';
 
 type PairRowProps = {
@@ -213,7 +214,7 @@ function PairModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
                 <div
                   className="my-[0.5208333333vw] w-[37.7604166667vw] text-[1.9270833333vw] font-bold text-white 4xl:my-[10px] 4xl:w-[725px] 4xl:text-[37px]"
                   style={{
-                    fontFamily: 'UDKakugo_LargePr6-HV',
+                    ...udKakugoLargeHV,
                     lineHeight: '1.7'
                   }}
                   dangerouslySetInnerHTML={{ __html: pair.description.replaceAll('\n', '<br />') }}

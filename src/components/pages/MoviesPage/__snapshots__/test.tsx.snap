@@ -131,7 +131,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               出場者告知
             </h1>
@@ -183,7 +183,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               特殊告知「流行」
             </h1>
@@ -235,7 +235,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               前半中間告知
             </h1>
@@ -287,7 +287,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               後半中間告知
             </h1>
@@ -339,7 +339,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               特殊告知「アナログ」
             </h1>
@@ -420,7 +420,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第1弾告知
             </h1>
@@ -472,7 +472,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第2弾告知
             </h1>
@@ -524,7 +524,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第3弾告知
             </h1>
@@ -576,7 +576,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第4弾告知
             </h1>
@@ -628,7 +628,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第5弾告知
             </h1>
@@ -680,7 +680,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第6弾告知
             </h1>
@@ -732,7 +732,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第7弾告知
             </h1>
@@ -784,7 +784,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第8弾告知
             </h1>
@@ -836,7 +836,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第9弾告知
             </h1>
@@ -888,7 +888,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第10弾告知
             </h1>
@@ -940,7 +940,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第11弾告知
             </h1>
@@ -992,7 +992,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第12弾告知
             </h1>
@@ -1044,7 +1044,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第13弾告知
             </h1>
@@ -1096,7 +1096,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第14弾告知
             </h1>
@@ -1148,7 +1148,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第15弾告知
             </h1>
@@ -1200,7 +1200,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第16弾告知
             </h1>
@@ -1252,7 +1252,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第17弾告知
             </h1>
@@ -1304,7 +1304,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第18弾告知
             </h1>
@@ -1356,7 +1356,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第19弾告知
             </h1>
@@ -1408,7 +1408,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               第20弾告知
             </h1>
@@ -1489,7 +1489,7 @@ exports[`<MoviesPage /> should render the heading 1`] = `
             <h1
               class="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
               data-testid="title"
-              style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+              style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
             >
               音MDM Direct 01
             </h1>
