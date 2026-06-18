@@ -32,7 +32,7 @@ exports[`<SpTeamItem /> should render the heading 1`] = `
     </div>
     <div
       class="mt-[0.6666666667vw]"
-      style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+      style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
     >
       <p
         class="text-[2.6666666667vw] text-white"

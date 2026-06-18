@@ -4,6 +4,7 @@ import Background from 'components/Background';
 import SpMenu from 'components/SpMenu';
 import SpResponsiveImage from 'components/SpResponsiveImage';
 import movies, { Movie } from 'const/movies';
+import { udKakugoLargeE } from 'libs/fonts';
 
 function MovieThumbnailResponsiveImage(
   props: Omit<ImageProps, 'fill' | 'width' | 'height'> & {
@@ -47,7 +48,7 @@ const MovieCard = ({ item, index }: { item: Movie; index: number }) => {
       <div
         className="mt-[1.3333333vw] grid justify-items-center"
         style={{
-          fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
+          ...udKakugoLargeE,
           lineHeight: '1'
         }}
       >
@@ -73,7 +74,7 @@ export default function MoviesPage() {
         <h1
           className="flex justify-center pt-[3.6vw]"
           style={{
-            fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
+            ...udKakugoLargeE,
             lineHeight: '1'
           }}
         >
@@ -93,7 +94,7 @@ export default function MoviesPage() {
         <h1
           className="flex justify-center pt-[3.3333333vw]"
           style={{
-            fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
+            ...udKakugoLargeE,
             lineHeight: '1'
           }}
         >
@@ -113,7 +114,7 @@ export default function MoviesPage() {
         <h1
           className="flex justify-center pt-[3.3333333vw]"
           style={{
-            fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
+            ...udKakugoLargeE,
             lineHeight: '1'
           }}
         >

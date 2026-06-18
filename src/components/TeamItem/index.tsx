@@ -1,5 +1,6 @@
 import ResponsiveImage from 'components/ResponsiveImage';
 import { TeamMember } from 'const/team';
+import { udKakugoLargeE } from 'libs/fonts';
 
 type TeamItemProps = {
   member: TeamMember;
@@ -19,7 +20,7 @@ const TeamItem = ({ member }: TeamItemProps) => (
       <div
         className="mt-[0.7291666667vw] drop-shadow-[0_0_0.15625vw_#000000] 4xl:mt-[14px] 4xl:drop-shadow-[0_0_3px_#000000]"
         style={{
-          fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
+          ...udKakugoLargeE,
           lineHeight: '1'
         }}
       >

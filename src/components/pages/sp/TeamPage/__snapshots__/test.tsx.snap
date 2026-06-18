@@ -31,7 +31,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
       >
         <div
           class="m-auto text-center align-middle text-[4.8vw]"
-          style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+          style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
         >
           運　営
         </div>
@@ -67,7 +67,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -187,7 +187,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -307,7 +307,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -427,7 +427,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -547,7 +547,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -667,7 +667,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -789,7 +789,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -909,7 +909,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -1031,7 +1031,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -1151,7 +1151,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -1273,7 +1273,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -1369,7 +1369,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
       >
         <div
           class="m-auto text-center align-middle text-[4.8vw]"
-          style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+          style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
         >
           制　作
         </div>
@@ -1405,7 +1405,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -1527,7 +1527,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -1647,7 +1647,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -1769,7 +1769,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -1889,7 +1889,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -2011,7 +2011,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -2131,7 +2131,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -2229,7 +2229,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
       >
         <div
           class="m-auto text-center align-middle text-[4.8vw]"
-          style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+          style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
         >
           立ち絵
         </div>
@@ -2265,7 +2265,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -2385,7 +2385,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -2505,7 +2505,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -2625,7 +2625,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -2745,7 +2745,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -2865,7 +2865,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -2985,7 +2985,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -3105,7 +3105,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -3203,7 +3203,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
       >
         <div
           class="m-auto text-center align-middle text-[4.8vw]"
-          style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+          style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
         >
           告　知
         </div>
@@ -3239,7 +3239,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -3359,7 +3359,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -3479,7 +3479,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -3599,7 +3599,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -3721,7 +3721,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -3843,7 +3843,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -3963,7 +3963,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -4085,7 +4085,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -4205,7 +4205,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -4325,7 +4325,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -4423,7 +4423,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
       >
         <div
           class="m-auto text-center align-middle text-[4.8vw]"
-          style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+          style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
         >
           放　送
         </div>
@@ -4459,7 +4459,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -4581,7 +4581,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -4701,7 +4701,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -4821,7 +4821,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -4943,7 +4943,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -5065,7 +5065,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -5185,7 +5185,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -5307,7 +5307,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -5423,7 +5423,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -5545,7 +5545,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -5663,7 +5663,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -5783,7 +5783,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -5901,7 +5901,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -6023,7 +6023,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -6145,7 +6145,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -6265,7 +6265,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -6387,7 +6387,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -6509,7 +6509,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -6629,7 +6629,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -6747,7 +6747,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -6867,7 +6867,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -6987,7 +6987,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -7107,7 +7107,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -7227,7 +7227,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -7347,7 +7347,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -7469,7 +7469,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -7589,7 +7589,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -7685,7 +7685,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
       >
         <div
           class="m-auto text-center align-middle text-[4.8vw]"
-          style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+          style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
         >
           特　番
         </div>
@@ -7721,7 +7721,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -7841,7 +7841,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -7963,7 +7963,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -8081,7 +8081,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -8203,7 +8203,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -8323,7 +8323,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -8443,7 +8443,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -8565,7 +8565,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -8685,7 +8685,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -8807,7 +8807,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -8927,7 +8927,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -9049,7 +9049,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -9169,7 +9169,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -9291,7 +9291,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -9413,7 +9413,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -9533,7 +9533,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -9653,7 +9653,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -9775,7 +9775,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -9897,7 +9897,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -10019,7 +10019,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -10139,7 +10139,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -10259,7 +10259,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -10381,7 +10381,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -10501,7 +10501,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -10623,7 +10623,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -10743,7 +10743,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -10865,7 +10865,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -10985,7 +10985,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -11107,7 +11107,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -11227,7 +11227,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -11347,7 +11347,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -11467,7 +11467,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -11587,7 +11587,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -11709,7 +11709,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -11829,7 +11829,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -11949,7 +11949,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -12071,7 +12071,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -12193,7 +12193,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -12313,7 +12313,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"
@@ -12433,7 +12433,7 @@ exports[`<TeamPage /> should render the heading 1`] = `
           </div>
           <div
             class="mt-[0.6666666667vw]"
-            style="font-family: FOT-UD角ゴ_ラージ Pr6 E; line-height: 1;"
+            style="font-family: fontFamily; font-weight: 800; font-feature-settings: 'palt'; line-height: 1;"
           >
             <p
               class="text-[2.6666666667vw] text-white"

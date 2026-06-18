@@ -3,6 +3,7 @@ import Image, { ImageProps } from 'next/image';
 import { useEffect, useState } from 'react';
 import ResponsiveImage from 'components/ResponsiveImage';
 import { Movie as MovieType } from 'const/movies';
+import { udKakugoLargeE } from 'libs/fonts';
 
 function MovieThumbnailResponsiveImage(
   props: Omit<ImageProps, 'fill' | 'width' | 'height'> & {
@@ -58,7 +59,7 @@ const Movie = ({ movie, onClick, onMouseEnter }: { movie: MovieType; onClick: ()
     <h1
       className="mt-[0.2083333333vw] text-center text-[1.71875vw] 4xl:mt-[4px] 4xl:text-[33px]"
       style={{
-        fontFamily: 'FOT-UD角ゴ_ラージ Pr6 E',
+        ...udKakugoLargeE,
         lineHeight: '1'
       }}
       data-testid="title"
