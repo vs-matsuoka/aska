@@ -14137,11 +14137,11 @@ __metadata:
   linkType: hard
 
 "microcms-js-sdk@npm:^3.0.0":
-  version: 3.1.2
-  resolution: "microcms-js-sdk@npm:3.1.2"
+  version: 3.5.1
+  resolution: "microcms-js-sdk@npm:3.5.1"
   dependencies:
     async-retry: "npm:^1.3.3"
-  checksum: 10c0/ee35ed41919f62251a3f4e61233281b5ceb3a21ff698e1cfa37bb11efb75373a13068af2f7295f0efd3a34fde48d12a8efe97f94121690feae7c4768d4ac83f9
+  checksum: 10c0/7121da37945e7d9229f3933d1b10c24ea7cb71b016f83dc8b2bf43cc815ef391caa7337857d6b3532d7c479c1310841682ca4cde7c92e97ff89c041b118b8a05
   languageName: node
   linkType: hard
 
