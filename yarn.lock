@@ -14146,11 +14146,11 @@ __metadata:
   linkType: hard
 
 "microcms-typescript@npm:^1.0.14":
-  version: 1.0.14
-  resolution: "microcms-typescript@npm:1.0.14"
+  version: 1.1.2
+  resolution: "microcms-typescript@npm:1.1.2"
   bin:
     microcms-typescript: dist/index.js
-  checksum: 10c0/e4ac919ce2522f0457420359b085319b9ccbdbec602512f59c144df79fbd0b6ae3b705d605678e6448632e3f2b848039e38e895e5993ef471d71d92183d0f493
+  checksum: 10c0/4c3596a65e9bdf1d3e5e9c42e4ad0322bd2ae538e468a8ffb8eeadbabc60b00197fb2a24f13ead3ac672763a2ea2b628a8a03eaeb9df73022b061abdc314ecef
   languageName: node
   linkType: hard
 
