@@ -19487,9 +19487,9 @@ __metadata:
   linkType: hard
 
 "url-join@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "url-join@npm:5.0.0"
-  checksum: 10c0/ed2b166b4b5a98adcf6828a48b6bd6df1dac4c8a464a73cf4d8e2457ed410dd8da6be0d24855b86026cd7f5c5a3657c1b7b2c7a7c5b8870af17635a41387b04c
+  version: 5.1.1
+  resolution: "url-join@npm:5.1.1"
+  checksum: 10c0/517e886d302527c7faa999f13e0d131a06dce3bb1577be210cf40f55d9cad83af07c0e2160e86ebe6d095cbbe992f9bb32811897b5fa5ddcc786ab02d03c109f
   languageName: node
   linkType: hard
 
