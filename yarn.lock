@@ -6994,7 +6994,7 @@ __metadata:
     storybook: "npm:^8.0.0"
     tailwindcss: "npm:^3.3.2"
     typescript: "npm:5.3.3"
-    url-join: "npm:^5.0.0"
+    url-join: "npm:^6.0.0"
     util: "npm:^0.12.5"
     webpack: "npm:^5.83.1"
   languageName: unknown
@@ -19486,10 +19486,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"url-join@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "url-join@npm:5.0.0"
-  checksum: 10c0/ed2b166b4b5a98adcf6828a48b6bd6df1dac4c8a464a73cf4d8e2457ed410dd8da6be0d24855b86026cd7f5c5a3657c1b7b2c7a7c5b8870af17635a41387b04c
+"url-join@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "url-join@npm:6.0.0"
+  checksum: 10c0/671c8501119b632e3ed3e84afe7fa2e21f558069ad287261a20be5d42add9387dfa1960e9e841e123ed6887e0774b8f1508c94643815670c4e05c5d0d9eeea17
   languageName: node
   linkType: hard
 
